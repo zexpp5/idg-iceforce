@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--选择行业弹出框-->
+    <color name="industry_bg">#f2faf0</color>
+    <color name="industry_item_bg">#d7ebd1</color>
+
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="leader_bg">#e1e1e1</color>
+    <color name="leader_tab_right1">#e1e1e1</color>
+    <color name="leader_all_bg">#9a9a9a</color>
+
+    <!--透明-->
+    <color name="transparency">#00000000</color>
+    <!-- 半透明 -->
+    <color name="transparent">#b0000000</color>
+    <!--小视频半透明-->
+    <color name="self_tran">#b0000000</color>
+
+    <color name="color_line_grey">#DDDDDD</color>
+
+    <color name="color_login_btn">#AE1129</color>
+    <color name="color_login_text_hint">#848E99</color>
+
+    //登录，注册，等按钮背景色。
+    <color name="top_btn_bg">#E6ecf8</color>
+    <color name="page_bg">#f6f6f6</color>
+    <!-- 首页背景色开始 -->
+    //状态栏颜色
+    <color name="status_bar_bg">#42516D</color>
+    //顶部标题背景色
+    <color name="top_bg">#42516D</color>
+    //提示字体颜色
+    <color name="hint_pre">#e3e3e3</color>
+
+    //登录，注册，等按钮背景色。
+    <color name="btn_green_noraml">#35343a</color>
+
+    <color name="top_bg_press">#aa35343a</color>
+
+    //我的
+    <color name="top_bg2">#343339</color>
+
+    <!--底部导航栏字体颜色-->
+    <color name="buttom_text_color">#9A9A9A</color>
+    <!-- 搜索图标背景色-->
+    <color name="search_icon_de_bg">#a6c49c</color>
+    <color name="search_icon_list_title_bg">#ecf8e7</color>
+
+    <color name="bottom_bg">#54545C</color>
+
+    <color name="staff_view_page_bg">#f8fff4</color>
+
+    <color name="normal_black">#050608</color>
+
+    <color name="main_about_black">#212121</color>
+    <!-- 首页背景色结束 -->
+
+    <color name="error_item_color">#F6EBE6</color>
+    <!--gridview 区域背景色-->
+    <color name="home_gridview_bg">#9A9A9A</color>
+
+    <!-- 分割线颜色 -->
+    <color name="dividing_line">#f2f1f7</color>
+
+    <color name="common_bg">#e8e8e8</color>
+    <!-- 白色 -->
+    <color name="white">#FFFFFF</color>
+    <!-- 浅灰色 -->
+    <color name="lightgrey">#d8d1c1</color>
+    <color name="button_cancel">#d0d0d0</color>
+    <color name="button_cancel_press">#ddd0d0d0</color>
+    <!-- 黑色 -->
+    <color name="black">#000000</color>
+    <color name="light_black">#212121</color>
+    <color name="gray">#aaaaaa</color>
+
+    <!-- 自定义下拉列表开始 -->
+    <color name="green">#7700ff00</color>
+    <!-- 银灰色 -->
+    <color name="silver_gray">#DDDDDD</color>
+    <!-- 自定义下拉列表结束 -->
+
+    <!--//mainfest颜色集合-->
+    <color name="gray_normal">#666667</color>
+
+    <!-- 蓝色 -->
+    <color name="blue">#159FE7</color>
+    <color name="main_blue">#0000FF</color>
+    <color name="bg_gray">#F2F2F3</color>
+    <color name="red_wood">#4B1D17</color>
+    <color name="red_wine">#A6463A</color>
+    <color name="green_grass">#109121</color>
+    <color name="orange_salmon">#EC5745</color>
+    <!--<color name="green_quarter">#73AB60</color>-->
+    <color name="orange">#FFA500</color>
+    <color name="btn_green_pressed">#90a120</color>
+    <color name="btn_green_normal">#44c318</color>
+
+    <color name="btn_red_normal">#ff5f5f</color>
+    <color name="btn_red_pressed">#ff1111</color>
+    <color name="btn_white_normal">#ffffff</color>
+    <color name="btn_white_pressed">#d6d1d1</color>
+    <color name="btn_green2_pressed">#FF63CF51</color>
+    <color name="btn_green2_normal">#71c863</color>
+    <color name="btn_gray_normal">#fff</color>
+
+    <!-- 红色 -->
+    <color name="red">#F70909</color>
+    <color name="main_red">#AE1129</color>
+    <!-- 全透明 -->
+    <color name="all_transparent">#00000000</color>
+    <!-- 8/15半透明 -->
+    <color name="eight_fifteen_transparent">#80000000</color>
+    <!-- 淡蓝色 -->
+
+    <color name="yellow">#FFFF00</color>
+    <color name="order_state_doing_bg">#f95345</color>
+    <color name="order_state_finish_bg">#41b56a</color>
+
+    <color name="cancel">#FF5553</color>
+    <color name="header_name">#0070c1</color>
+
+    <!--小视频颜色-->
+    <color name="greenyellow">#adff2f</color>
+
+    <!-- 背景色 -->
+    <color name="background">#F2F2F2</color>
+
+    <color name="voip_interface_text_color">#bababa</color>
+
+    <!--登陆背景颜色-->
+    //整块登录背景的颜色
+    <color name="login_bg_color">#FCFCFC</color>
+    //标题的颜色
+    <color name="color_login_title">#0F0F0F</color>
+    <color name="color_login_hint">#B0B0B0</color>
+    //登录按钮文字颜色
+    //
+
+    <color name="cutting_line">#c9c9c9</color>
+    <!-- 钱的分割线 -->
+    <color name="money_cutting_line">#6db0b4</color>
+
+    <color name="mana_fragment_bg">#FDF7EB</color>
+
+    <color name="mana__list_1">#fefbf4</color>
+    <!--秘书工作-->
+
+    <!--zxing-->
+    <color name="possible_result_points">#c0ffbd21</color> <!-- Android standard ICS color -->
+    <!-- Android standard ICS color -->
+    <color name="viewfinder_mask">#cb000000</color>
+    <!-- #ff0000ff -->
+    <color name="result_view">#b0000000</color>
+    <color name="fdf7eb">#fdf7eb</color>
+    //管理层列表-线条
+
+    <!-- 公共文本颜色集合 -->
+    <!-- 白色 渐变 由浅入深 -->
+    <color name="text_white">#FFFFFF</color>
+    <color name="text_white_m">#D9D9D9</color>
+    <!-- 黑色 渐变 由深入浅 -->
+    <color name="text_black_xxxl">#000000</color>
+    <color name="text_black_xxl">#1b1a1a</color>
+    <color name="text_black_xl">#333333</color>
+    <color name="text_black_l">#4C4C4C</color>
+    <color name="text_black_s">#797e84</color>
+    <color name="text_black_sl">#CCCCCC</color>
+    <color name="text_black_sll">#dedcdc</color>
+    <color name="text_black_slll">#f7f6f6</color>
+    <!--超信-->
+    <color name="im_tab_title_color">#AE1129</color>
+    <color name="cx_tab_bar_text_color_normal">#848E99</color>
+    <!--电商工作-->
+
+    <color name="btn_logout_normal">#d33f3f</color>
+    <color name="btn_logout_pressed">#DA5A4D</color>
+
+    <color name="province_line_border">#D0D0D0</color>
+
+    <!--资金简报颜色开始-->
+
+    <color name="finance_briefing_line">#A9CD97</color>
+    <color name="finance_briefing_dialog_line">#9A9A9A</color>
+    <!--简报弹窗按钮背景色-->
+
+    <!--简报弹窗按钮背景色-->
+    <color name="finance_briefing_button_title_bg">#ffffff</color>
+
+    <!--Guide页颜色-->
+    <color name="guide_background_color">#E5EFFF</color>
+    <color name="guide_logo_background_color">#05855e</color>
+    <!--Guide页颜色结束-->
+
+    <!--填写的内容颜色,全部-->
+
+    <color name="register_divider">#CCCCCC</color>
+    <color name="login_btn_text_color">#ffffff</color>
+
+    //线，
+    <color name="analy_line_pop_bg">#b89956</color>
+
+    //客户分析，pop界面，
+    <color name="analy_pop_bg">#e1cda1</color>
+
+    <color name="transparent_video">#0000</color>
+
+
+    <color name="erp_cutting_line_grey">#999999</color>
+
+    <!--设置，黄色左边style-->
+    <color name="erp_setting_left_bg">#fde6c4</color>
+
+    <!--设置，黄色左边style-->
+
+    <!--设置，黄色右边style-->
+    <color name="erp_setting_right_bg">#faf5ed</color>
+
+    <!--灰色提交删除按钮颜色-->
+    <color name="erp_submit_delete_btn_color_gray">#737373</color>
+
+
+    <color name="dialog_title_and_foot_bg">#f1f1f1</color>
+
+    <item name="gray_holo_dark" type="color">#ff464646</item>
+
+    <item name="gray_holo_light" type="color">#ffd0d0d0</item>
+    <color name="blackThree">#666666</color>
+    <color name="blackOne">#333333</color>
+    <color name="table_line_color">#bbbbbb</color>
+
+    <!-- 云镜 提交界面分割线1dp线条 默认灰色-->
+    <color name="erp_line_view_colors">#dcd9d9</color>
+
+    <!--云镜 table背景 换蓝色 -->
+    <color name="staff_tab_title_click_bg">#edf6fd</color>
+
+    <!-- 提交附件布局背景-->
+    <color name="submit_fill_ll_bg">#666666</color>
+
+    <color name="itemcolor">#f7f7f7</color>
+    <color name="title_color">#2b2a2f</color>
+
+    <color name="enclosure_color">#f0f0f0</color>
+    <color name="enclosure_color2">#fff</color>
+    <!-- 销售 列表title背景色 -->
+    <color name="list_title_color">#edf6fd</color>
+    <color name="list_title_line_v">#999999</color>
+
+    <!-- tab相关 列表item字体颜色-->
+    <color name="staff_tab_text_default_color">#000000</color>
+    <color name="staff_tab_text_click_color">#2a2a2a</color>
+    <color name="fund_tab_click_shouru_zhichu">#84CEFE</color>
+    <!--员工层各种背景颜色思密达-->
+    <color name="staff_activity_default_bg">#9A9A9A</color>
+    <color name="shadow_start">#40000000</color>
+    <color name="shadow_end">#00000000</color>
+    <color name="charcoal">#fff</color>
+
+    //
+    <color name="color_meeting_type01">#AE1129</color>
+    <color name="color_meeting_type02">#F5AF71</color>
+    <color name="color_meeting_type03">#848E99</color>
+
+    <color name="color_annual_more">#FEA346</color>
+    <color name="draw_text_blue">#668FD1</color>
+    <color name="hint_text_color">#CCD0D4</color>
+
+    <color name="idg_lie_bg">#f5f6f8</color>
+
+    <color name="idg_lie_bg2">#EAEAEB</color>
+
+    <color name="color_common_line">#f2f1f7</color>
+    <color name="top_data_bg">#E4E4E4</color>
+
+
+</resources>
+

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <yunjing.view.CustomNavigatorBar
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:leftImage="@mipmap/icon_public_back"
+        app:rightImageVisible="false"
+        app:leftTextVisibale="false"
+        app:leftText="@string/back_text"
+        app:leftTextFontSize="@dimen/sp_font_detail_content_15sp"
+        app:rightTextVisible="true"
+        app:rightText="@string/commit_text"
+        app:rightSecondImage="@mipmap/icon_public_search"
+        app:rightSecondImageVisble="false"
+        app:leftTextColor="@color/white"
+        app:rightTextColor="@color/white"
+        app:midTextFontColor="@color/white"
+        app:titleBarBackground="@color/top_bg"
+        app:rightImage="@mipmap/icon_public_add"
+        ></yunjing.view.CustomNavigatorBar>
+
+
+</RelativeLayout>

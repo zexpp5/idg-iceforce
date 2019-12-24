@@ -1,0 +1,56 @@
+1.格式
+新建模块,包名，Activgity，Fragment,遵循类似erp的格式
+eg:com.ui.erp路径下。
+
+2.字体颜色等
+新的配置寫在這裡，dimens_yj.xml
+通用的配置写在上，私用的写在下。都写在dimens_yj里。
+
+
+
+3.通用使用这个title布局(fragment和Activity都是)
+看 word文档
+
+
+关于提交界面样式：
+
+提交界面最外层套scrollview，包含背景颜色边距类
+
+style=“@style/erp_scrollview_style"
+
+1dp灰色横线
+  <include layout=“@layout/erp_line_one_view"/>
+
+提交界面5dp线条
+  <include layout="@layout/submit_line_five_view"/>
+
+ 提交界面个人信息部分公用
+
+ layout="@layout/submit_person_information"
+
+
+ 如果不知道登录返回了什么，就看这个类LoginUtils。155行开始。用保存到本地的各种信息。
+
+
+
+ 提交edittext style
+ d_s_content_font_edtext_sytle_title
+
+ 提交textview 左边标题描述style
+ d_s_left_font_sytle
+
+verticals
+
+textview右边下拉
+
+d_s_content_font_select_textview_sytle
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    //进度条的id
+    <item name="my_progress_view" type="id"/>
+
+    //提示文字的id
+    <item name="prompt_parent_ll" type="id"/>
+
+    <item name="text_view_prompt" type="id"/>
+
+    //录制视频的界面FrameLayout
+
+
+    <item type="id" name="auto_focus"/>
+    <item type="id" name="decode"/>
+    <item type="id" name="decode_failed"/>
+    <item type="id" name="decode_succeeded"/>
+    <item type="id" name="launch_product_query"/>
+    <item type="id" name="quit"/>
+    <item type="id" name="restart_preview"/>
+    <item type="id" name="return_scan_result"/>
+
+    <!--上下左右表格id-->
+    <item name="tag_view_holder" type="id"/>
+</resources>

@@ -1,0 +1,117 @@
+<?xml version = "1.0" encoding = "utf-8" ?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:id="@+id/ll_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:minHeight="@dimen/dp_height_title_48dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/rl_bacck"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:paddingRight="@dimen/dp_spacing_15dp"
+        >
+            <ImageView
+                android:id="@+id/left_image"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/icon_public_back"/>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/left_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/rl_bacck"
+            android:gravity="center"
+            android:minHeight="45dp"
+            android:text="left"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/mid_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxEms="12"
+        android:minHeight="45dp"
+        android:singleLine="true"
+        android:text="mid"
+        android:textSize="18sp"
+    />
+
+    <LinearLayout
+        android:id="@+id/ll_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:minHeight="@dimen/dp_height_title_48dp"
+        android:orientation="horizontal"
+    >
+
+        <TextView
+            android:id="@+id/right_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:layout_toLeftOf="@+id/right_image"
+            android:gravity="center"
+            android:minHeight="45dp"
+            android:text="right"/>
+
+        <!--android:paddingBottom="@dimen/dp_spacing_15dp"-->
+        <!--android:paddingLeft="@dimen/dp_spacing_10dp"-->
+        <!--android:paddingRight="@dimen/dp_spacing_10dp"-->
+        <!--android:paddingTop="@dimen/dp_spacing_15dp"-->
+
+        <RelativeLayout
+            android:id="@+id/ll_right_second_image"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/dp_spacing_15dp"
+            android:paddingRight="@dimen/dp_spacing_15dp"
+        >
+            <ImageView
+                android:id="@+id/right_second_image"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/icon_public_search"
+            />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/ll_right_image"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/dp_spacing_15dp"
+            android:paddingRight="@dimen/dp_spacing_15dp"
+        >
+            <ImageView
+                android:id="@+id/right_image"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/icon_public_add"
+            />
+        </RelativeLayout>
+    </LinearLayout>
+</merge>

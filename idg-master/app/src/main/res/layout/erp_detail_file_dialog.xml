@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.superdata.marketing.view.percent.PercentLinearLayout
+        android:id="@+id/show_file_img_ll_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="@dimen/dp8"
+        android:layout_marginTop="@dimen/dp8"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/add_photo_btn_detail_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_widthPercent="24%w">
+
+            <ImageView
+                android:id="@+id/add_photo_btn_detail_img"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:src="@mipmap/take_photo_bg" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp5"
+                android:text="@string/camera"
+                android:textSize="@dimen/sp13" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/add_pic_btn_detail_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_widthPercent="24%w">
+
+            <ImageView
+                android:id="@+id/add_pic_btn_detail_img"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:src="@mipmap/pic_img_bg_gray"
+                android:text="@string/attach_picture" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp5"
+                android:text="@string/attach_picture"
+                android:textSize="@dimen/sp13" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/add_void_btn_detail_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_widthPercent="24%w">
+
+            <ImageView
+                android:id="@+id/add_void_btn_detail_img"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:src="@mipmap/voice_img_bg_gray"
+                android:text="@string/voice_str" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp5"
+                android:text="@string/voice_str"
+                android:textSize="@dimen/sp13" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/add_file_btn_detail_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_widthPercent="24%w">
+
+            <ImageView
+                android:id="@+id/add_file_btn_detail_img"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:src="@mipmap/fj_img_bg_gray"
+                android:text="@string/file_add_str"
+                app:layout_widthPercent="20%w" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp5"
+                android:text="@string/file_add_str"
+                android:textSize="@dimen/sp13" />
+        </LinearLayout>
+    </com.superdata.marketing.view.percent.PercentLinearLayout>
+</RelativeLayout>

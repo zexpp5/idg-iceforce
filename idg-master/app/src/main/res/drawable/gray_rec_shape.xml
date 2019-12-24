@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- 圆角 -->
+    <corners
+        android:radius="1dp" />
+
+    <padding
+        android:bottom="1dp"
+        android:left="1dp"
+        android:right="1dp"
+        android:top="1dp" />
+    <!-- 各方向的间隔 -->
+    <!-- 填充 -->
+    <solid android:color="@android:color/white" />
+
+    <!-- 描边 -->
+    <stroke
+        android:dashWidth="1dp"
+        android:width="0.5dp"
+        android:color="@color/dividing_line" />
+
+</shape>

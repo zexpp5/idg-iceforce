@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/sex_picker_container"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:background="#FFFFFF"
+            >
+
+<!--
+    android:background="@color/erp_share_dialog_title_and_foot_bg"
+-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dialog_title_bottom_height"
+        >
+
+
+        <tablayout.view.textview.FontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textColor="#333333"
+            android:text="分享到"
+            android:textSize="16sp"/>
+
+    </RelativeLayout>
+    <View
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#dcdcdc"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="280dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+
+
+            <LinearLayout
+                android:id="@+id/weixin"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:background="@drawable/umeng_socialize_wechat"/>
+
+                <tablayout.view.textview.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="微信好友"
+                    android:textColor="#6b6b6b"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/wxcircle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/umeng_socialize_wxcircle"/>
+
+                <tablayout.view.textview.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="微信朋友圈"
+                    android:textColor="#6b6b6b"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/qq"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:background="@drawable/umeng_socialize_qq"
+                    />
+
+                <tablayout.view.textview.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="QQ好友"
+                    android:textColor="#6b6b6b"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/qzone"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:gravity="center"
+                android:orientation="vertical"
+                >
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:background="@drawable/umeng_socialize_sina"/>
+
+                <tablayout.view.textview.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="新浪微博"
+                    android:textColor="#6b6b6b"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <View
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#dcdcdc"/>
+
+    <tablayout.view.textview.FontTextView
+        android:background="#d9d9d9"
+        android:id="@+id/cancel_text"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:text="取  消"
+        android:textColor="#333333"
+        android:gravity="center"
+        android:textSize="16sp" />
+
+</LinearLayout>

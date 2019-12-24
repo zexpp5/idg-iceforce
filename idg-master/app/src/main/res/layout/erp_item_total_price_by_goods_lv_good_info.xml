@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_layout"
+    android:layout_width="750dp"
+    android:layout_height="50dp"
+    android:orientation="horizontal">
+    <tablayout.view.textview.FontTextView
+        android:background="@drawable/erp_shape_info_right"
+        android:id="@+id/tv_barcode"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_vertical"
+        android:gravity="center"
+        android:text=""
+        android:textSize="15sp" />
+
+    <tablayout.view.textview.FontTextView
+        android:background="@drawable/erp_shape_info_right"
+        android:id="@+id/iv_icon"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_vertical"
+        android:textSize="15sp"
+        android:text=""
+        android:gravity="center"
+        />
+    <tablayout.view.textview.FontTextView
+        android:background="@drawable/erp_shape_info_right"
+        android:id="@+id/tv_category"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_vertical"
+        android:gravity="center"
+        android:text=""
+        android:textSize="15sp" />
+    <tablayout.view.textview.FontTextView
+        android:background="@drawable/erp_shape_info_right"
+        android:id="@+id/tv_spec"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_vertical"
+        android:gravity="center"
+        android:text=""
+        android:textSize="15sp" />
+    <tablayout.view.textview.FontTextView
+        android:background="@drawable/erp_shape_info_right"
+        android:id="@+id/tv_unit"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_vertical"
+        android:gravity="center"
+        android:text=""
+        android:textSize="15sp" />
+    <tablayout.view.textview.FontTextView
+        android:background="@drawable/erp_shape_info_right"
+        android:id="@+id/tv_supplyer"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_vertical"
+        android:gravity="center"
+        android:text=""
+        android:textSize="15sp" />
+</LinearLayout>

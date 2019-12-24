@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#ffffff"
+              android:fitsSystemWindows="true"
+              android:orientation="vertical"
+              tools:ignore="RtlHardcoded,HardcodedText,RtlSymmetry,SmallSp">
+
+    <include
+        layout="@layout/public_title_01"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_idg_work_list_bg"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/rl_travel_11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:visibility="visible"
+        >
+
+            <RelativeLayout
+                android:id="@+id/rl_travel_1"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@color/white"
+            >
+
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_alignParentLeft="true"
+                          android:layout_centerVertical="true"
+                          android:layout_marginLeft="30dp"
+                          android:text="@string/im_work_my_approve_trip"
+                          android:textSize="17sp"
+                />
+
+                <tablayout.view.textview.FontTextView
+                    android:id="@+id/unread_msg_number_travel_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@android:color/holo_red_light"
+                    android:textSize="14sp"
+                    android:visibility="gone"
+                />
+
+
+            </RelativeLayout>
+            <include layout="@layout/erp_im_line_one_view_no_spacing"></include>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rl_travel_22"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:visibility="visible"
+        >
+
+            <RelativeLayout
+                android:id="@+id/rl_travel_2"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@color/white">
+
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_alignParentLeft="true"
+                          android:layout_centerVertical="true"
+                          android:layout_marginLeft="30dp"
+                          android:text="@string/im_work_my_approve_leave"
+                          android:textSize="17sp"
+                />
+
+                <tablayout.view.textview.FontTextView
+                    android:id="@+id/unread_msg_number_travel_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@android:color/holo_red_light"
+                    android:textSize="14sp"
+                    android:visibility="gone"
+                />
+
+            </RelativeLayout>
+
+            <include layout="@layout/erp_im_line_one_view_no_spacing"></include>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rl_travel_55"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:visibility="visible"
+        >
+
+            <RelativeLayout
+                android:id="@+id/rl_travel_5"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@color/white">
+
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_alignParentLeft="true"
+                          android:layout_centerVertical="true"
+                          android:layout_marginLeft="30dp"
+                          android:text="@string/im_work_my_approve_all_holiday"
+                          android:textSize="17sp"
+                />
+
+                <tablayout.view.textview.FontTextView
+                    android:id="@+id/unread_msg_number_travel_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@android:color/holo_red_light"
+                    android:textSize="14sp"
+                    android:visibility="gone"
+                />
+
+            </RelativeLayout>
+
+            <include layout="@layout/erp_im_line_one_view_no_spacing"></include>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rl_travel_44"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:visibility="visible"
+
+        >
+
+            <RelativeLayout
+                android:id="@+id/rl_travel_4"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@color/white">
+
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_alignParentLeft="true"
+                          android:layout_centerVertical="true"
+                          android:layout_marginLeft="30dp"
+                          android:text="@string/im_work_finish_leave_title"
+                          android:textSize="17sp"
+                />
+
+                <tablayout.view.textview.FontTextView
+                    android:id="@+id/unread_msg_number_travel_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:gravity="center"
+                    android:text="123"
+                    android:textColor="@android:color/holo_red_light"
+                    android:textSize="14sp"
+                    android:visibility="gone"
+                />
+
+            </RelativeLayout>
+            <include layout="@layout/erp_im_line_one_view_no_spacing"></include>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rl_travel_33"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:visibility="visible"
+        >
+            <RelativeLayout
+                android:id="@+id/rl_travel_3"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@color/white">
+
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_alignParentLeft="true"
+                          android:layout_centerVertical="true"
+                          android:layout_marginLeft="30dp"
+                          android:text="@string/im_work_my_approve_expense"
+                          android:textSize="17sp"
+                />
+
+                <tablayout.view.textview.FontTextView
+                    android:id="@+id/unread_msg_number_travel_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@android:color/holo_red_light"
+                    android:textSize="14sp"
+                    android:visibility="gone"
+                />
+
+            </RelativeLayout>
+            <include layout="@layout/erp_im_line_one_view_no_spacing"></include>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

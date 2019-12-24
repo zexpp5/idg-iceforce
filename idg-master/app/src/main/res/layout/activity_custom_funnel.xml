@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+    <include
+        layout="@layout/top_title_layout" />
+
+    <LinearLayout
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:weightSum="3"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:paddingLeft="5dp"
+            android:gravity="center_horizontal"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+            <tablayout.view.textview.FontTextView
+                android:gravity="center"
+                android:id="@+id/select_years"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingRight="15dp"
+                android:paddingLeft="15dp"
+                android:textSize="@dimen/sp_font_detail_content_15sp"
+                android:text="2017年"
+                style="@style/font_select_textview_content_sytle"
+                android:drawablePadding="8dp"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_text_radius"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+            <tablayout.view.textview.FontTextView
+                android:gravity="center"
+                android:id="@+id/select_month"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingRight="15dp"
+                android:paddingLeft="15dp"
+                android:textSize="@dimen/sp_font_detail_content_15sp"
+                android:text="全年"
+                style="@style/font_select_textview_content_sytle"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_text_radius"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+            <tablayout.view.textview.FontTextView
+                android:gravity="center"
+                android:id="@+id/select_man"
+                style="@style/font_select_textview_content_sytle"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_text_radius"
+                android:paddingBottom="10dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="10dp"
+                android:text="我的"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:textSize="@dimen/sp_font_detail_content_15sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <include layout="@layout/bottom_line_view_three" />
+
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <yunjing.ui.customs_relations.customs_funnel.RoundProgressBar
+            android:id="@+id/roundProgressBar"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            app:roundColor="#c0c0c0"
+            app:roundProgressColor="#3ca5f0"
+            app:text_Color="@color/blackThree"
+            app:textIsDisplayable="true"
+            app:roundWidth="7dp"
+            app:text_Size="@dimen/sp_font_detail_content_14sp"
+            />
+
+        <LinearLayout
+            android:layout_marginLeft="25dp"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <tablayout.view.textview.FontTextView
+                android:id="@+id/achievement_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="业绩目标：0元"
+                android:textColor="@color/blackOne"
+                android:singleLine="true"
+                android:textSize="@dimen/sp_font_detail_content_15sp" />
+
+            <tablayout.view.textview.FontTextView
+                android:id="@+id/complete_text"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/blackOne"
+                android:textSize="@dimen/sp_font_detail_content_15sp"
+                android:text="完成目标：0元"
+                android:singleLine="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+        <include layout="@layout/bottom_line_view_two" />
+
+       <RelativeLayout
+           android:layout_marginTop="@dimen/dp_spacing_20dp"
+           android:layout_marginBottom="2dp"
+          android:layout_marginLeft="@dimen/dp_spacing_12dp"
+           android:layout_marginRight="2dp"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+
+
+          <RelativeLayout
+              android:layout_centerVertical="true"
+              android:id="@+id/ti_xing_one_view"
+              android:background="@mipmap/one_layout"
+              android:layout_width="206dp"
+              android:layout_height="31dp">
+
+           <TextView
+               android:textColor="@color/white"
+               android:singleLine="true"
+               android:ellipsize="end"
+               android:textSize="@dimen/sp_font_detail_content_14sp"
+               android:id="@+id/ti_xing_one_text"
+               android:layout_centerHorizontal="true"
+               android:text="初期沟通(0)"
+               android:layout_centerVertical="true"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" />
+          </RelativeLayout>
+
+          <RelativeLayout
+              android:layout_toRightOf="@+id/ti_xing_one_view"
+              android:layout_centerVertical="true"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+              <View
+                  android:id="@+id/line_one_view"
+                  android:layout_centerVertical="true"
+                  android:background="#bbbbbb"
+                  android:layout_width="33dp"
+                  android:layout_height="1dp"/>
+
+              <TextView
+                  android:layout_marginLeft="5dp"
+                  android:layout_toRightOf="@+id/line_one_view"
+                  android:textSize="@dimen/sp_font_detail_content_15sp"
+                  android:id="@+id/state_one_text"
+                  android:text="0元"
+                  android:ellipsize="end"
+                  android:singleLine="true"
+                  android:layout_centerVertical="true"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content" />
+          </RelativeLayout>
+
+
+      </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="@dimen/dp_spacing_12dp"
+            android:layout_marginRight="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/ti_xing_two_view"
+                android:background="@mipmap/two_layout"
+                android:layout_width="206.5dp"
+                android:layout_height="31dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+
+                <TextView
+                    android:textColor="@color/white"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:textSize="@dimen/sp_font_detail_content_14sp"
+                    android:id="@+id/ti_xing_two_text"
+                    android:layout_centerHorizontal="true"
+                    android:text="立即跟踪(0)"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginLeft="-12dp"
+                android:layout_toRightOf="@+id/ti_xing_two_view"
+                android:layout_centerVertical="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <View
+                    android:id="@+id/line_two_view"
+                    android:layout_centerVertical="true"
+                    android:background="#bbbbbb"
+                    android:layout_width="44dp"
+                    android:layout_height="1dp"/>
+
+                <TextView
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/line_two_view"
+                    android:textSize="@dimen/sp_font_detail_content_15sp"
+                    android:id="@+id/state_two_text"
+                    android:text="0元"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="@dimen/dp_spacing_12dp"
+            android:layout_marginRight="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/ti_xing_three_view"
+                android:background="@mipmap/three_layout"
+                android:layout_width="207dp"
+                android:layout_height="41dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+
+                <TextView
+                    android:textColor="@color/white"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:textSize="@dimen/sp_font_detail_content_14sp"
+                    android:id="@+id/ti_xing_three_text"
+                    android:text="呈报方案(0)"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginLeft="-24dp"
+                android:layout_toRightOf="@+id/ti_xing_three_view"
+                android:layout_centerVertical="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <View
+                    android:id="@+id/line_three_view"
+                    android:layout_centerVertical="true"
+                    android:background="#bbbbbb"
+                    android:layout_width="57dp"
+                    android:layout_height="1dp"/>
+
+                <TextView
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/line_three_view"
+                    android:textSize="@dimen/sp_font_detail_content_15sp"
+                    android:id="@+id/state_three_text"
+                    android:text="0元"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="@dimen/dp_spacing_12dp"
+            android:layout_marginRight="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/ti_xing_four_view"
+                android:background="@mipmap/four_layout"
+                android:layout_width="206.5dp"
+                android:layout_height="51dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+
+                <TextView
+                    android:textColor="@color/white"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:textSize="@dimen/sp_font_detail_content_14sp"
+                    android:id="@+id/ti_xing_four_text"
+                    android:text="商务谈判(0)"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginLeft="-44dp"
+                android:layout_toRightOf="@+id/ti_xing_four_view"
+                android:layout_centerVertical="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <View
+                    android:id="@+id/line_four_view"
+                    android:layout_centerVertical="true"
+                    android:background="#bbbbbb"
+                    android:layout_width="77dp"
+                    android:layout_height="1dp"/>
+
+                <TextView
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/line_four_view"
+                    android:textSize="@dimen/sp_font_detail_content_15sp"
+                    android:id="@+id/state_four_text"
+                    android:text="0元"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1dp"
+            android:layout_marginLeft="@dimen/dp_spacing_12dp"
+            android:layout_marginRight="2dp">
+
+            <RelativeLayout
+                android:id="@+id/ti_xing_five_view"
+                android:layout_width="206dp"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:background="@mipmap/five_layout">
+
+                <TextView
+                    android:id="@+id/ti_xing_five_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="成交(0)"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_font_detail_content_14sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="-48dp"
+                android:layout_toRightOf="@+id/ti_xing_five_view">
+
+                <View
+                    android:id="@+id/line_five_view"
+                    android:layout_width="81dp"
+                    android:layout_height="1dp"
+                    android:layout_centerVertical="true"
+                    android:background="#bbbbbb" />
+
+                <TextView
+                    android:id="@+id/state_five_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/line_five_view"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="0元"
+                    android:textSize="@dimen/sp_font_detail_content_15sp" />
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/count_money"
+            android:textSize="@dimen/sp_font_detail_content_16sp"
+            android:text="总金额：222222222元"
+            android:layout_marginTop="@dimen/dp_spacing_20dp"
+            android:singleLine="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+
+    <include
+        android:id="@+id/share_icon_list_id"
+        style="@style/list_ShareLayout_Style"
+        layout="@layout/list_share_layout"/>
+
+</RelativeLayout>

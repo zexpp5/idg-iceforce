@@ -1,0 +1,49 @@
+apply plugin: 'com.android.library'
+
+android {
+
+    def versions = rootProject.ext.versions // 配置
+    compileSdkVersion versions.compileSdkVersion
+    buildToolsVersion versions.buildToolsVersion
+
+    defaultConfig {
+        minSdkVersion versions.minSdkVersion
+        targetSdkVersion versions.targetSdkVersion
+    }
+
+    sourceSets {
+        main {
+            manifest.srcFile 'AndroidManifest.xml'
+            java.srcDirs = ['src']
+            res.srcDirs = ['res']
+            jniLibs.srcDirs = ['libs']
+        }
+
+        buildTypes {
+            release {
+                minifyEnabled false
+//                proguardFiles getDefaultProguardFile('proguard-android.txt')
+            }
+        }
+    }
+
+    defaultConfig {
+
+        //极光推送
+        manifestPlaceholders = [
+                JPUSH_PKGNAME: libraries.jpushPackgerName,
+                JPUSH_APPKEY : libraries.jpushKey, //JPush上注册的包名对应的appkey.
+                JPUSH_CHANNEL: libraries.jpushChannel, //暂时填写默认值即可.
+        ]
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile files('libs/bolts-android-1.1.4.jar')
+    compile files('libs/drawee-v0.6.0.jar')
+    compile files('libs/fbcore-v0.6.0.jar')
+    compile files('libs/fresco-v0.6.0.jar')
+    compile files('libs/imagepipeline-v0.6.0.jar')
+    compile project(':SDFilePicker')
+}

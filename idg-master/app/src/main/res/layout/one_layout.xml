@@ -1,0 +1,575 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F0F2">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:fadingEdgeLength="0dp"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                style="@style/linear_row_style_common"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="0dp"
+                android:paddingTop="@dimen/dp16">
+
+
+                <tablayout.view.textview.FontTextView
+                    style="@style/font_text_content_sytle"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="立项日期"
+                    android:textColor="@color/text_black_s" />
+
+                <tablayout.view.textview.FontEditext
+                    android:id="@+id/create_time"
+                    style="@style/font_edtext_content_sytle"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:textColor="@color/text_black_xl" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                style="@style/linear_row_style_common"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="0dp"
+                android:paddingTop="@dimen/dp_spacing_10dp">
+
+
+                <tablayout.view.textview.FontTextView
+                    style="@style/font_text_content_sytle"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="投资阶段"
+                    android:textColor="@color/text_black_s" />
+
+                <tablayout.view.textview.FontEditext
+                    android:id="@+id/invest_state"
+                    style="@style/font_edtext_content_sytle"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:textColor="@color/text_black_xl" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/linear_row_style_common"
+                android:layout_height="wrap_content"
+                android:paddingBottom="0dp"
+                android:paddingTop="@dimen/dp_spacing_10dp">
+
+
+                <tablayout.view.textview.FontTextView
+                    style="@style/font_text_content_sytle"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="城市"
+                    android:textColor="@color/text_black_s" />
+
+                <tablayout.view.textview.FontEditext
+                    android:id="@+id/invest_city"
+                    style="@style/font_edtext_content_sytle"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:textColor="@color/text_black_xl" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                style="@style/linear_row_style_common"
+                android:layout_height="wrap_content"
+                android:paddingBottom="0dp"
+                android:paddingTop="@dimen/dp_spacing_10dp">
+
+
+                <tablayout.view.textview.FontTextView
+                    style="@style/font_text_content_sytle"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="行业"
+                    android:textColor="@color/text_black_s" />
+
+                <tablayout.view.textview.FontEditext
+                    android:id="@+id/invest_trade"
+                    style="@style/font_edtext_content_sytle"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:textColor="@color/text_black_xl" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                style="@style/linear_row_style_common"
+                android:layout_height="wrap_content"
+                android:paddingBottom="0dp"
+                android:paddingTop="@dimen/dp_spacing_10dp">
+
+                <tablayout.view.textview.FontTextView
+                    style="@style/font_text_content_sytle"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="项目负责人"
+                    android:textColor="@color/text_black_s" />
+
+                <tablayout.view.textview.FontEditext
+                    android:id="@+id/invest_respond_man"
+                    style="@style/font_edtext_content_sytle"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:textColor="@color/text_black_xl" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                style="@style/linear_row_style_common"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="0dp"
+                android:paddingTop="@dimen/dp_spacing_10dp"
+                android:visibility="gone">
+
+
+                <tablayout.view.textview.FontTextView
+                    style="@style/font_text_content_sytle"
+                    android:text="上  级：" />
+
+                <tablayout.view.textview.FontTextView
+                    android:id="@+id/tv_superior"
+                    style="@style/font_select_textview_content_sytle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                style="@style/linear_row_style_common"
+                android:layout_height="wrap_content"
+                android:paddingBottom="0dp"
+                android:paddingTop="@dimen/dp_spacing_10dp">
+
+
+                <tablayout.view.textview.FontTextView
+                    style="@style/font_text_content_sytle"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="小组成员"
+                    android:textColor="@color/text_black_s" />
+
+                <tablayout.view.textview.FontEditext
+                    android:id="@+id/group_members"
+                    style="@style/font_edtext_content_sytle"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:textColor="@color/text_black_xl" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/linear_row_style_common"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/dp_spacing_10dp"
+                android:paddingTop="@dimen/dp_spacing_10dp">
+
+
+                <tablayout.view.textview.FontTextView
+                    style="@style/font_text_content_sytle"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="行业小组"
+                    android:textColor="@color/text_black_s" />
+
+                <tablayout.view.textview.FontEditext
+                    android:id="@+id/group_trade"
+                    style="@style/font_edtext_content_sytle"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:textColor="@color/text_black_xl" />
+            </LinearLayout>
+
+            <include
+                layout="@layout/bottom_line_view"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_view_line_1dp"
+                android:layout_marginLeft="@dimen/dp_spacing_to_left_right_15dp"
+                android:layout_marginRight="@dimen/dp_spacing_to_left_right_15dp" />
+
+
+            <LinearLayout
+                style="@style/linear_row_style_common"
+                android:layout_height="wrap_content"
+                android:paddingBottom="0dp"
+                android:paddingTop="@dimen/dp_spacing_10dp">
+
+
+                <tablayout.view.textview.FontTextView
+                    style="@style/font_text_content_sytle"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="企业阶段"
+                    android:textColor="@color/text_black_s" />
+
+                <tablayout.view.textview.FontEditext
+                    android:id="@+id/company_state"
+                    style="@style/font_edtext_content_sytle"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:textColor="@color/text_black_xl" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                style="@style/linear_row_style_common"
+                android:layout_height="wrap_content"
+                android:paddingBottom="0dp"
+                android:paddingTop="@dimen/dp_spacing_10dp">
+
+
+                <tablayout.view.textview.FontTextView
+                    style="@style/font_text_content_sytle"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="项目律师"
+                    android:textColor="@color/text_black_s" />
+
+                <tablayout.view.textview.FontEditext
+                    android:id="@+id/project_loyal"
+                    style="@style/font_edtext_content_sytle"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:textColor="@color/text_black_xl" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                style="@style/linear_row_style_common"
+                android:layout_height="wrap_content"
+                android:paddingBottom="0dp"
+                android:paddingTop="@dimen/dp_spacing_10dp">
+
+
+                <tablayout.view.textview.FontTextView
+                    android:id="@+id/fontTextView5"
+                    style="@style/font_text_content_sytle"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="融资轮次"
+                    android:textColor="@color/text_black_s" />
+
+                <tablayout.view.textview.FontEditext
+                    android:id="@+id/financing_time"
+                    style="@style/font_edtext_content_sytle"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/text_black_xl" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/linear_row_style_common"
+                android:layout_height="wrap_content"
+                android:paddingBottom="0dp"
+                android:paddingTop="@dimen/dp_spacing_10dp">
+
+
+                <tablayout.view.textview.FontTextView
+                    style="@style/font_text_content_sytle"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="尽调负责人"
+                    android:textColor="@color/text_black_s" />
+
+                <tablayout.view.textview.FontEditext
+                    android:id="@+id/coordinate_respond_man"
+                    style="@style/font_edtext_content_sytle"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:textColor="@color/text_black_xl" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/linear_row_style_common"
+                android:layout_height="wrap_content"
+                android:paddingBottom="0dp"
+                android:paddingTop="@dimen/dp_spacing_10dp">
+
+                <tablayout.view.textview.FontTextView
+                    style="@style/font_text_content_sytle"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="项目负责人"
+                    android:textColor="@color/text_black_s" />
+
+                <tablayout.view.textview.FontEditext
+                    android:id="@+id/project_respond_man"
+                    style="@style/font_edtext_content_sytle"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:textColor="@color/text_black_xl" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/linear_row_style_common"
+                android:layout_height="wrap_content"
+                android:paddingBottom="0dp"
+                android:paddingTop="@dimen/dp_spacing_10dp">
+
+
+                <tablayout.view.textview.FontTextView
+                    style="@style/font_text_content_sytle"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="来源渠道"
+                    android:textColor="@color/text_black_s" />
+
+                <tablayout.view.textview.FontEditext
+                    android:id="@+id/source_channel"
+                    style="@style/font_edtext_content_sytle"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:textColor="@color/text_black_xl" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/linear_row_style_common"
+                android:layout_height="wrap_content"
+                android:paddingBottom="0dp"
+                android:paddingTop="@dimen/dp_spacing_10dp">
+
+
+                <tablayout.view.textview.FontTextView
+                    style="@style/font_text_content_sytle"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="来源人"
+                    android:textColor="@color/text_black_s" />
+
+                <tablayout.view.textview.FontEditext
+                    android:id="@+id/source_man"
+                    style="@style/font_edtext_content_sytle"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:textColor="@color/text_black_xl" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                style="@style/linear_row_style_common"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/dp16"
+                android:paddingTop="@dimen/dp_spacing_10dp">
+
+
+                <tablayout.view.textview.FontTextView
+                    style="@style/font_text_content_sytle"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="contributer"
+                    android:textColor="@color/text_black_s" />
+
+                <tablayout.view.textview.FontEditext
+                    android:id="@+id/contributer_text"
+                    style="@style/font_edtext_content_sytle"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:textColor="@color/text_black_xl" />
+            </LinearLayout>
+
+            <include layout="@layout/bottom_line_view_big" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="12dp"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/dp_spacing_4dp"
+                        android:layout_height="@dimen/dp_spacing_20dp"
+                        android:background="@color/red" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_spacing_5dp"
+                        android:text="累计投资"
+                        android:textColor="#333"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="@dimen/dp_spacing_8dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CNY："
+                        android:textColor="#666"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/invest_cny_money"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="155555555555"
+                        android:textColor="#333"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_spacing_8dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="USD："
+                        android:textColor="#666"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/invest_usd_money"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="0.000"
+                        android:textColor="#333"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="12dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="业务介绍"
+                        android:textColor="#333"
+                        android:textSize="17sp" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/trade_introduce_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:text=""
+
+                    android:textColor="@color/text_black_xl"
+                    android:textSize="@dimen/sp_font_detail_content_15sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+    <yunjing.view.StatusTipsView
+        android:id="@+id/loading_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:paddingBottom="150dp" />
+
+</RelativeLayout>

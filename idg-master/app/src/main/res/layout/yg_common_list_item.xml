@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+    <TextView
+        android:textSize="@dimen/sp_item_title_sp"
+
+        android:id="@+id/announ_item_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        tools:text="helloworldhelloworl"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+    <TextView
+
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/announ_item_name"
+
+        android:textSize="@dimen/sp_item_time_sp"
+
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        tools:text="hhhhhhh"
+        />
+
+    <TextView
+        android:textSize="@dimen/sp_item_time_sp"
+
+        android:id="@+id/announ_item_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:paddingBottom="5dp"
+
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:text="2017-04-12"/>
+
+    <TextView
+        android:textSize="@dimen/sp_item_time_sp"
+
+        android:id="@+id/type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/announ_item_time"
+        android:layout_marginRight="10dp"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        tools:text="hhhheeeeeeeehhh"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/status"
+        android:background="#f2f2f2"
+        />
+
+
+</RelativeLayout>

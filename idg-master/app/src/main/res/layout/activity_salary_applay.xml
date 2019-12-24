@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/top_title_layout" />
+
+    <include
+        android:id="@+id/head_bar_layout"
+        layout="@layout/person_information_layout" />
+
+    <include layout="@layout/bottom_line_view_three" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                style="@style/d_s_ll_style"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    style="@style/d_s_s_in_tow_ll_style"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/d_s_left_font_sytle"
+                        android:text="@string/work_name" />
+
+                    <TextView
+                        android:id="@+id/tv_work_name"
+                        style="@style/d_s_content_font_select_textview_sytle" />
+
+                </LinearLayout>
+
+                <LinearLayout style="@style/d_s_s_in_tow_ll_right_style">
+
+                    <TextView
+                        style="@style/d_s_right_font_sytle"
+                        android:text="@string/cc" />
+
+                    <TextView
+                        android:id="@+id/tv_cc"
+                        style="@style/d_s_content_font_select_textview_sytle" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <!--线条高度-->
+            <include layout="@layout/erp_line_one_view" />
+
+            <LinearLayout
+                style="@style/d_s_ll_style"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    style="@style/d_s_s_in_tow_ll_style"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/d_s_left_font_sytle"
+                        android:text="@string/work_department" />
+
+
+                    <TextView
+                        android:id="@+id/tv_workDepartment"
+                        style="@style/d_s_content_font_select_textview_sytle" />
+
+                </LinearLayout>
+
+
+                <LinearLayout style="@style/d_s_s_in_tow_ll_right_style">
+
+                    <TextView
+                        style="@style/d_s_right_font_sytle"
+                        android:text="@string/job_title" />
+
+                    <TextView
+                        android:id="@+id/tv_jobTitle"
+                        style="@style/d_s_content_font_select_textview_sytle" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <!--线条高度-->
+            <include layout="@layout/erp_line_one_view" />
+
+            <LinearLayout
+                style="@style/d_s_ll_style"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    style="@style/d_s_s_in_tow_ll_style"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/d_s_left_font_sytle"
+                        android:text="@string/salary_type" />
+
+                    <TextView
+                        android:id="@+id/tv_salary_type"
+                        style="@style/d_s_content_font_select_textview_sytle" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    style="@style/d_s_s_in_tow_ll_right_style"
+                    android:visibility="gone">
+
+                    <TextView
+
+                        style="@style/d_s_right_font_sytle"
+                        android:text="@string/sex" />
+
+                    <TextView
+                        android:id="@+id/tv_sex"
+                        style="@style/d_s_content_font_select_textview_sytle" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <!--线条高度-->
+            <include layout="@layout/erp_line_one_view" />
+
+            <LinearLayout
+                style="@style/d_s_ll_style"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    style="@style/d_s_s_in_tow_ll_style"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/d_s_left_font_sytle"
+                        android:text="@string/pre_salary" />
+
+                    <EditText
+                        android:id="@+id/et_pre_salary"
+                        android:inputType="numberDecimal"
+                        style="@style/personnel_affairs_applay_editextStyle" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/d_s_s_in_tow_ll_right_style"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/d_s_right_font_sytle"
+                        android:text="@string/later_salary" />
+
+                    <EditText
+                        android:id="@+id/et_later_salary"
+                        android:inputType="numberDecimal"
+                        style="@style/personnel_affairs_applay_editextStyle" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--线条高度-->
+            <include layout="@layout/erp_line_one_view" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingRight="10dp">
+
+                <TextView
+                    style="@style/d_s_left_font_sytle"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="@dimen/name_m_to_left_dp"
+                    android:paddingTop="8dp"
+                    android:text="@string/salary_expain" />
+
+                <EditText
+                    android:id="@+id/et_salary_expain"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@null"
+                    android:gravity="top"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/s_d_font_size" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <!--线条高度-->
+    <include layout="@layout/erp_line_one_view" />
+
+    <include layout="@layout/public_annex_layout" />
+
+    <include layout="@layout/bottom_line_view_three" />\
+
+    <View
+        android:id="@+id/spac_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.4"/>
+
+    <include
+        android:id="@+id/bottom_approvalLayout"
+        layout="@layout/approval_process_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        android:visibility="gone" />
+
+</LinearLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/topbarLayout"
+            layout="@layout/top_title_layout" />
+
+        <include layout="@layout/project_name_layout" />
+
+
+        <yunjing.view.excelpane.AdaptiveTableLayout
+            android:id="@+id/tableLayout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            app:dragAndDropEnabled="false"
+            app:fixedHeaders="true"
+            app:solidRowHeaders="false" />
+
+        <include layout="@layout/private_bottom_newadd_btnlayout" />
+
+    </LinearLayout>
+
+
+    <include
+        layout="@layout/list_share_layout"
+        style="@style/list_ShareLayout_Style"/>
+
+</RelativeLayout>

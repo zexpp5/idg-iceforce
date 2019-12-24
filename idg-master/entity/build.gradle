@@ -1,0 +1,24 @@
+apply plugin: 'com.android.library'
+
+android {
+    def versions = rootProject.ext.versions // 配置
+    compileSdkVersion versions.compileSdkVersion
+    buildToolsVersion versions.buildToolsVersion
+
+    defaultConfig {
+        minSdkVersion versions.minSdkVersion
+        targetSdkVersion versions.targetSdkVersion
+
+        //极光推送
+        manifestPlaceholders = [
+                JPUSH_PKGNAME : libraries.jpushPackgerName,
+                JPUSH_APPKEY  : libraries.jpushKey, //JPush上注册的包名对应的appkey.
+                JPUSH_CHANNEL : libraries.jpushChannel, //暂时填写默认值即可.
+        ]
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile project(':base')
+}

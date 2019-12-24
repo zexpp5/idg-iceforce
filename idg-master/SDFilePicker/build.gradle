@@ -1,0 +1,61 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+apply plugin: 'com.android.library'
+
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+//    dependencies {
+//        classpath 'com.android.tools.build:gradle:2.3.3'
+//    }
+}
+
+dependencies {
+    compile fileTree(include: '*.jar', dir: 'libs')
+    compile files('libs/cwac-merge-1.0.4.jar')
+    compile project(':base')
+}
+
+android {
+    def versions = rootProject.ext.versions // 配置
+    compileSdkVersion versions.compileSdkVersion
+    buildToolsVersion versions.buildToolsVersion
+
+    defaultConfig {
+        minSdkVersion versions.minSdkVersion
+        targetSdkVersion versions.targetSdkVersion
+
+        //极光推送
+        manifestPlaceholders = [
+                JPUSH_PKGNAME: libraries.jpushPackgerName,
+                JPUSH_APPKEY : libraries.jpushKey, //JPush上注册的包名对应的appkey.
+                JPUSH_CHANNEL: libraries.jpushChannel, //暂时填写默认值即可.
+        ]
+    }
+    sourceSets {
+        main {
+            manifest.srcFile 'AndroidManifest.xml'
+            java.srcDirs = ['src']
+            resources.srcDirs = ['src']
+            aidl.srcDirs = ['src']
+            renderscript.srcDirs = ['src']
+            res.srcDirs = ['res']
+            assets.srcDirs = ['assets']
+        }
+        buildTypes {
+            release {
+                minifyEnabled false
+//                proguardFiles getDefaultProguardFile('proguard-android.txt')
+            }
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_7
+    }
+
+//    retrolambda {
+//        javaVersion JavaVersion.VERSION_1_6
+//    }
+
+}

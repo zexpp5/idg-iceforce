@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_spacing_20dp"
+        android:layout_marginRight="@dimen/dp_spacing_20dp"
+        android:layout_marginBottom="@dimen/dp_spacing_4dp"
+        android:layout_marginTop="@dimen/dp_spacing_15dp">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:maxEms="10"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:textSize="@dimen/sp_font_detail_content_15sp"
+            android:textColor="@color/text_black_xxl"/>
+
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/sp_font_detail_content_13sp"
+            android:textColor="@color/text_black_s"/>
+
+        <TextView
+            android:id="@+id/tv_industry"
+            android:layout_width="72dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/tv_name"
+            android:layout_marginLeft="@dimen/dp_spacing_10dp"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:textColor="@color/main_blue"
+            android:textSize="@dimen/sp_font_detail_content_13sp"
+            android:background="@drawable/tv_bg_p_p"/>
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_spacing_20dp"
+        android:layout_marginRight="@dimen/dp_spacing_20dp"
+        android:layout_marginBottom="@dimen/dp_spacing_15dp"
+        android:layout_marginTop="@dimen/dp_spacing_4dp"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:textColor="@color/text_black_s"
+        android:textSize="@dimen/sp_font_detail_content_14sp"/>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_spacing_5dp"
+        android:background="@color/dividing_line" />
+
+</LinearLayout>

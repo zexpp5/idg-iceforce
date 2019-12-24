@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/ll_water"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/dp_spacing_10dp"
+        android:paddingLeft="@dimen/dp_spacing_15dp"
+        android:paddingRight="@dimen/dp_spacing_15dp"
+        android:paddingTop="@dimen/dp_spacing_10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+        >
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="标题标题"
+                android:textSize="@dimen/sp_font_title_center_18sp"/>
+
+            <RelativeLayout
+                android:id="@+id/rl_shrink"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:padding="8dp"
+            >
+
+                <TextView
+                    android:id="@+id/tv_edit"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:background="@mipmap/icon_project_info_edt"
+                    android:textColor="@color/white"
+                />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal"
+        >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.8"
+                android:minEms="4"
+                android:text="会议日期"
+                android:textColor="@color/text_black_s"
+
+            />
+
+            <TextView
+                android:id="@+id/item_one"
+                style="@style/item_investment_project_three_contentStyle"
+                android:layout_width="0dp"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="3.5"
+            />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.8"
+                android:maxLines="1"
+                android:minEms="4"
+                android:text="是否有重大决策"
+                android:textColor="@color/text_black_s"/>
+
+            <TextView
+                android:id="@+id/item_two"
+                style="@style/item_investment_project_three_contentStyle"
+                android:layout_width="0dp"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="3.5"
+            />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.8"
+                android:minEms="4"
+                android:text="决策类型"
+                android:textColor="@color/text_black_s"/>
+
+            <TextView
+                android:id="@+id/item_three"
+                style="@style/item_investment_project_three_contentStyle"
+                android:layout_width="0dp"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="3.5"
+            />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+        >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.8"
+                android:minEms="4"
+                android:text="具体表述"
+                android:textColor="@color/text_black_s"/>
+
+            <TextView
+                android:id="@+id/item_four"
+                style="@style/item_investment_project_three_contentStyle"
+                android:layout_width="0dp"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="3.5"
+            />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.8"
+                android:minEms="4"
+                android:text="相关文件"
+                android:textColor="@color/text_black_s"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="3.5"
+                android:gravity="left"
+                android:text="点击查看"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/sp_font_detail_content_15sp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

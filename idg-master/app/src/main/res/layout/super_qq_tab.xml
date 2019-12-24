@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/color_fragment_bg"
+              android:orientation="vertical">
+
+    <include
+        android:id="@+id/title_super"
+        layout="@layout/sd_top_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+    />
+
+    <ScrollView android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_mine_info_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical">
+
+                    <com.facebook.drawee.view.SimpleDraweeView
+                        android:id="@+id/iv_head"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:background="@mipmap/temp_user_head"
+                        android:gravity="center"
+                    />
+
+                    <tablayout.view.textview.FontTextView
+                        android:id="@+id/tv_nickName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:layout_toRightOf="@+id/iv_head"
+                        android:textColor="#000000"
+                        android:textSize="16sp"
+                    />
+
+                    <tablayout.view.textview.FontTextView
+                        android:id="@+id/text_name_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_nickName"
+                        android:layout_toRightOf="@+id/iv_head"
+                        android:text="属性:"
+                        android:textSize="12sp"
+                        android:visibility="gone"
+                        app:layout_marginLeftPercent="2%w"
+                        app:layout_marginTopPercent="1%w"
+                    />
+
+                    <tablayout.view.textview.FontTextView
+                        android:id="@+id/tv_department_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_nickName"
+                        android:layout_toRightOf="@+id/text_name_type"
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:maxLength="15"
+                        android:textSize="12sp"
+                    />
+
+                    <tablayout.view.textview.FontTextView
+                        android:id="@+id/text_company_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/iv_head"
+                        android:layout_below="@+id/text_name_type"
+                        android:layout_toRightOf="@+id/iv_head"
+                        android:gravity="center"
+                        android:text="部门:"
+                        android:textColor="#888888"
+                        android:textSize="@dimen/font_size_item_time"
+                        android:visibility="gone"
+                    />
+
+                    <tablayout.view.textview.FontTextView
+                        android:id="@+id/tv_company_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/iv_head"
+                        android:layout_below="@+id/text_name_type"
+                        android:layout_toRightOf="@+id/text_company_name"
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:maxLength="15"
+                        android:textColor="#888888"
+                        android:textSize="12sp"
+                        android:visibility="gone"
+                    />
+
+                    <LinearLayout
+                        android:id="@+id/ll_erweima"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="20dp"
+                        android:gravity="center"
+                        android:visibility="gone"
+                    >
+
+                        <ImageView
+                            android:layout_width="27dp"
+                            android:layout_height="27dp"
+                            android:background="@mipmap/icon_two_dimensional_code"
+                        />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_erweima_left"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                    >
+
+                        <ImageView
+                            android:layout_width="9dp"
+                            android:layout_height="16dp"
+                            android:background="@mipmap/left_img_bg"
+                            android:gravity="center_vertical|right"/>
+                    </LinearLayout>
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_my_config"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@color/color_fragment_bg"
+                android:gravity="center_vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                >
+
+                    <RelativeLayout
+                        android:id="@+id/rl_msg_notification"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:padding="10dp"
+                    >
+
+                        <tablayout.view.textview.FontTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:drawablePadding="5dp"
+                            android:text="接受新消息通知"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/font_size_item_name_business"/>
+
+                        <CheckBox
+                            android:id="@+id/cb_msg_notification"
+                            style="@style/SettingCheckboxTheme"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:clickable="false"/>
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_msg_notifycation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <View
+                            android:id="@+id/toHideLine"
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="#DDDDDD"/>
+
+                        <RelativeLayout
+                            android:id="@+id/rl_msg_voice"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                        >
+
+                            <tablayout.view.textview.FontTextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true"
+                                android:drawablePadding="5dp"
+                                android:text="声音"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/font_size_item_name_business"/>
+
+                            <CheckBox
+                                android:id="@+id/cb_msg_voice"
+                                style="@style/SettingCheckboxTheme"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:clickable="false"/>
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:background="#DDDDDD"/>
+
+                        <RelativeLayout
+                            android:id="@+id/rl_msg_vibrate"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                        >
+
+                            <tablayout.view.textview.FontTextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true"
+                                android:drawablePadding="5dp"
+                                android:text="震动"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/font_size_item_name_business"/>
+
+                            <CheckBox
+                                android:id="@+id/cb_msg_vibrate"
+                                style="@style/SettingCheckboxTheme"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:clickable="false"/>
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="#DDDDDD"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:orientation="vertical"
+                    >
+
+                        <RelativeLayout
+                            android:id="@+id/rl_speaker_play_voice"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                        >
+
+                            <tablayout.view.textview.FontTextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignBaseline="@+id/cb_speaker_play_voice"
+                                android:layout_alignBottom="@+id/cb_speaker_play_voice"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true"
+                                android:drawablePadding="5dp"
+                                android:text="使用扬声器播放语音"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/font_size_item_name_business"/>
+
+                            <CheckBox
+                                android:id="@+id/cb_speaker_play_voice"
+                                style="@style/SettingCheckboxTheme"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:clickable="false"/>
+                        </RelativeLayout>
+
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="#DDDDDD"/>
+
+                        <RelativeLayout
+                            android:id="@+id/rl_location"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone"
+                        >
+
+                            <tablayout.view.textview.FontTextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true"
+                                android:drawablePadding="5dp"
+                                android:text="定位"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/font_size_item_name_business"/>
+
+                            <CheckBox
+                                android:id="@+id/cb_location"
+                                style="@style/SettingCheckboxTheme"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:clickable="false"/>
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:background="@color/white"
+                        android:orientation="vertical"
+                    >
+
+                        <RelativeLayout
+                            android:id="@+id/rl_clear_cache"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp">
+
+                            <tablayout.view.textview.FontTextView
+                                android:id="@+id/tvClearCache"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:drawableRight="@mipmap/left_img_bg"
+                                android:gravity="center_vertical"
+                                android:text="@string/clear_cache"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/font_size_item_name_business"/>
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="#DDDDDD"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="vertical"
+                    >
+
+                        <RelativeLayout
+                            android:id="@+id/rl_setting_version_update"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone">
+
+                            <tablayout.view.textview.FontTextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true"
+                                android:layout_centerVertical="true"
+                                android:drawableRight="@mipmap/left_img_bg"
+                                android:gravity="center_vertical"
+                                android:text="@string/new_app"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/font_size_item_name_business"
+                                app:layout_marginBottomPercent="3%w"
+                                app:layout_marginTopPercent="3%w"/>
+
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:id="@+id/rl_send_client_download"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp">
+
+                            <tablayout.view.textview.FontTextView
+                                android:id="@+id/tvLoading"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:drawableRight="@mipmap/left_img_bg"
+                                android:gravity="center_vertical"
+                                android:text="@string/send_two_code"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/font_size_item_name_business"
+                            />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_my_quit"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="15dp"
+                android:background="#FFFFFF"
+                android:gravity="center_vertical|center_horizontal"
+            >
+                <tablayout.view.textview.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:text="退出登录"
+                    android:textSize="@dimen/font_size_item_name_business"
+                />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

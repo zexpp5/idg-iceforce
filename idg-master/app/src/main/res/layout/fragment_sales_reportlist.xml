@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical">
+
+    <include
+
+        android:id="@+id/title_layout"
+        layout="@layout/top_title_layout"
+        />
+    <yunjing.ui.work_sales.tablelist.VHTableView
+        android:visibility="gone"
+        android:id="@+id/vht_table"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    </yunjing.ui.work_sales.tablelist.VHTableView>
+
+    <yunjing.view.excelpane.AdaptiveTableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/topbarLayout"
+        app:dragAndDropEnabled="false"
+        app:fixedHeaders="true"
+        app:solidRowHeaders="false" />
+</LinearLayout>

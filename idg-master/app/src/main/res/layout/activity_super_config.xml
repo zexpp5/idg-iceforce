@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/top_layout"
+        layout="@layout/top_title_layout" />
+
+    <RelativeLayout
+        android:padding="@dimen/dp_spacing_10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_marginLeft="@dimen/dp_spacing_10dp"
+            android:textSize="16sp"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="提供定位"
+            />
+
+        <Button
+            android:id="@+id/stop_tv"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:focusable="false"
+            android:textColor="#506fa6"
+            android:background="@drawable/shape_blue_normal_btn"
+            android:textSize="@dimen/font_size_item_name_business"
+            android:text="停用"/>
+
+        <Button
+            android:id="@+id/start_tv"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_toLeftOf="@+id/stop_tv"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:focusable="false"
+            android:textColor="#506fa6"
+            android:background="@drawable/shape_blue_normal_btn"
+            android:textSize="@dimen/font_size_item_name_business"
+            android:text="启用"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#bbbbbb"
+        />
+
+    <RelativeLayout
+        android:padding="@dimen/dp_spacing_10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_marginLeft="@dimen/dp_spacing_10dp"
+            android:textSize="16sp"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="已阅未阅"
+            />
+
+        <Button
+            android:id="@+id/read_stop_tv"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:focusable="false"
+            android:textColor="#506fa6"
+            android:background="@drawable/shape_blue_normal_btn"
+            android:textSize="@dimen/font_size_item_name_business"
+            android:text="停用"/>
+
+        <Button
+            android:id="@+id/read_start_tv"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_toLeftOf="@+id/read_stop_tv"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:focusable="false"
+            android:textColor="#506fa6"
+            android:background="@drawable/shape_blue_normal_btn"
+            android:textSize="@dimen/font_size_item_name_business"
+            android:text="启用"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#bbbbbb"
+        />
+
+</LinearLayout>
+

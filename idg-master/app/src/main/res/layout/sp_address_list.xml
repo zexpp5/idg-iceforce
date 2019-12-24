@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/sd_top_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <LinearLayout
+        android:id="@+id/ll_dep_select"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <tablayout.view.textview.FontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="按部门选取"
+            android:textColor="#71A8D3"
+            android:textSize="15sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/dividing_line" />
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swipe_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/ll_newcolleague"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/iv_header_img"
+                        android:layout_width="38dp"
+                        android:layout_height="38dp"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@mipmap/icon_invite"/>
+
+                    <ImageView
+                        android:id="@+id/iv_dot"
+                        android:layout_width="58dp"
+                        android:layout_height="match_parent" />
+
+                    <tablayout.view.textview.FontTextView
+                        android:id="@+id/tv_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="14dp"
+                        android:layout_toRightOf="@+id/iv_header_img"
+
+                        android:text="新同事"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/font_size_item_name_business" />
+
+                </RelativeLayout>
+
+                <ListView
+                    android:id="@+id/list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:cacheColorHint="#00000000"
+                    android:divider="#D4D4D4"
+                    android:dividerHeight="1px" />
+            </LinearLayout>
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+        <com.cxgz.activity.cx.view.Sidebar.Sidebar
+            android:id="@+id/sidebar"
+            android:layout_width="25dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@android:color/transparent"
+            android:clickable="true"
+            android:paddingBottom="5dp" />
+
+        <tablayout.view.textview.FontTextView
+            android:id="@+id/floating_header"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/shape_sildebar_header_bg"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="40sp"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+</LinearLayout>

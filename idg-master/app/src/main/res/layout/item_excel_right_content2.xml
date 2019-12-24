@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/outerRightLayout"
+    android:layout_height="match_parent"
+    android:background="@color/charcoal">
+
+    <TextView
+        android:id="@+id/tvText"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:textColor="@color/table_content_text_color"
+        android:textSize="@dimen/sp_font_personal_records_15sp"
+        tools:text="Text" />
+
+
+    <LinearLayout
+        android:id="@+id/imgll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/ivImage"
+            style="@style/personal_records_add_imgStyle"
+            android:src="@mipmap/pic_img_bg_gray" />
+
+        <ImageView
+            android:id="@+id/ivImage2"
+            style="@style/personal_records_add_imgStyle"
+            android:layout_marginLeft="@dimen/dp_spacing_20dp"
+            android:layout_marginRight="@dimen/dp_spacing_20dp"
+            android:src="@mipmap/voice_img_bg_gray" />
+
+        <ImageView
+            android:id="@+id/ivImage3"
+            style="@style/personal_records_add_imgStyle"
+            android:src="@mipmap/fj_img_bg_gray" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="@dimen/dp_view_line_1dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:background="@color/table_content_line_color" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_view_line_1dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/table_content_line_color" />
+
+</RelativeLayout>

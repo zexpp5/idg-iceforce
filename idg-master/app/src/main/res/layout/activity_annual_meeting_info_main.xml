@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@mipmap/img_annual_bg"
+              android:orientation="vertical">
+
+
+    <include
+        layout="@layout/public_title_01"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="#33000000"
+        android:orientation="vertical"
+    >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+            >
+
+                <ImageView
+                    android:id="@+id/imageView9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@mipmap/icon_annual_meeting"/>
+
+                <tablayout.view.textview.FontTextView
+                    style="@style/font_text_content_sytle"
+                    android:layout_marginLeft="5dp"
+                    android:text="年会主题："
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_font_detail_content_15sp"/>
+
+                <tablayout.view.textview.FontTextView
+                    android:id="@+id/tv_title"
+                    style="@style/font_edtext_content_sytle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_font_detail_content_15sp"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+            >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@mipmap/icon_annual_meeting"/>
+
+                <tablayout.view.textview.FontTextView
+                    style="@style/font_text_content_sytle"
+                    android:layout_marginLeft="5dp"
+                    android:text="年份："
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_font_detail_content_15sp"/>
+
+                <tablayout.view.textview.FontTextView
+                    android:id="@+id/tv_year"
+                    style="@style/font_edtext_content_sytle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_font_detail_content_15sp"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+            >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@mipmap/icon_annual_meeting"/>
+
+                <tablayout.view.textview.FontTextView
+                    style="@style/font_text_content_sytle"
+                    android:layout_marginLeft="5dp"
+                    android:text="年会时间："
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_font_detail_content_15sp"/>
+
+                <tablayout.view.textview.FontTextView
+                    android:id="@+id/tv_time"
+                    style="@style/font_edtext_content_sytle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_font_detail_content_15sp"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/ll_person"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_toLeftOf="@+id/btn_more"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+            >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@mipmap/icon_annual_meeting"/>
+
+                <tablayout.view.textview.FontTextView
+                    style="@style/font_text_content_sytle"
+                    android:layout_marginLeft="5dp"
+                    android:text="签到人员："
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_font_detail_content_15sp"/>
+
+                <tablayout.view.textview.FontTextView
+                    android:id="@+id/tv_member"
+                    style="@style/font_edtext_content_sytle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_font_detail_content_15sp"/>
+
+            </LinearLayout>
+
+            <tablayout.view.textview.FontTextView
+                android:id="@+id/btn_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/shape_btn_check2"
+                android:gravity="center_vertical"
+                android:paddingBottom="2dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="2dp"
+                android:text="更 多"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_font_detail_content_15sp"
+            />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+        >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+            >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@mipmap/icon_annual_meeting"/>
+
+                    <tablayout.view.textview.FontTextView
+                        style="@style/font_text_content_sytle"
+                        android:layout_marginLeft="5dp"
+                        android:text="日程安排："
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/sp_font_detail_content_15sp"/>
+
+                </LinearLayout>
+
+                <tablayout.view.textview.FontTextView
+                    android:id="@+id/tv_plan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:maxLines="18"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_font_detail_content_15sp"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.superdata.marketing.view.percent.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/dividing_line" />
+
+    <com.superdata.marketing.view.percent.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_heightPercent="14.5%w">
+
+        <tablayout.view.textview.FontTextView
+            android:id="@+id/tv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/camera"
+            android:textColor="#54ABFF"
+            app:layout_textSizePercent="5.8%w" />
+
+        <tablayout.view.textview.FontTextView
+            android:id="@+id/tv_red_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@mipmap/unread_count_bg"
+            android:gravity="center"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:visibility="gone"
+            android:textColor="@color/white"
+            android:textSize="@dimen/ss_text_size"
+            app:layout_marginRightPercent="20%w"
+            app:layout_marginTopPercent="2%w" />
+    </com.superdata.marketing.view.percent.PercentRelativeLayout>
+
+</com.superdata.marketing.view.percent.PercentLinearLayout>

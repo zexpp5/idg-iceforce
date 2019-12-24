@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:cx="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/common_bg"
+              android:orientation="vertical">
+
+    <include layout="@layout/top_title_layout"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.superdata.marketing.view.percent.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <com.superdata.marketing.view.percent.PercentRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/content_padding"
+                android:orientation="horizontal">
+
+                <tablayout.view.textview.FontTextView
+                    android:id="@+id/l_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/btnAddContact"
+                    android:layout_alignParentLeft="true"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="3dp"
+                    android:text="@string/rec_l"
+                    android:textSize="15sp"/>
+
+                <com.cxgz.activity.cx.view.FixGridLayout
+                    android:id="@+id/ll_contact"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/s_padding"
+                    android:layout_toLeftOf="@+id/btnAddContact"
+                    android:layout_toRightOf="@id/l_title"/>
+
+                <ImageView
+                    android:id="@+id/btnAddContact"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:src="@mipmap/email_add"
+                    android:textColor="@color/white"/>
+            </com.superdata.marketing.view.percent.PercentRelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/dividing_line"/>
+
+            <com.superdata.marketing.view.percent.PercentLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/content_padding"
+                android:orientation="horizontal">
+
+                <tablayout.view.textview.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="3dp"
+                    android:text="@string/cc_l"
+                    android:textSize="15sp"/>
+
+                <com.cxgz.activity.cx.view.FixGridLayout
+                    android:id="@+id/ll_cc"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/s_padding"
+                    android:layout_weight="1"/>
+
+                <ImageView
+                    android:id="@+id/btnAddCc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/email_add"
+                    android:textColor="@color/white"/>
+            </com.superdata.marketing.view.percent.PercentLinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/dividing_line"/>
+
+            <com.superdata.marketing.view.percent.PercentLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/content_padding"
+                android:orientation="horizontal">
+
+                <tablayout.view.textview.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/theme_l"
+                    android:textSize="15sp"/>
+
+                <tablayout.view.textview.FontEditext
+                    android:id="@+id/et_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/transparency"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"/>
+            </com.superdata.marketing.view.percent.PercentLinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/dividing_line"/>
+
+            <com.superdata.marketing.view.percent.PercentLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/content_padding"
+                android:paddingRight="@dimen/content_padding">
+
+                <tablayout.view.textview.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="内　容："
+                    android:textSize="15sp"/>
+
+                <tablayout.view.textview.FontEditext
+                    android:id="@+id/et_content"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/transparency"
+                    android:gravity="start"
+                    android:paddingTop="@dimen/content_padding"
+                    android:paddingBottom="@dimen/content_padding"
+                    android:textSize="15sp"/>
+            </com.superdata.marketing.view.percent.PercentLinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/dividing_line"/>
+
+            <com.superdata.marketing.view.percent.PercentRelativeLayout
+                android:id="@+id/btnAddFile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/content_padding"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:src="@mipmap/email_file"/>
+
+                <tablayout.view.textview.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="3dp"
+                    android:text="附　件："
+                    android:textSize="15sp"/>
+
+                <tablayout.view.textview.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="3dp"
+                    cx:layout_textSizePercent="@string/text_size"/>
+
+            </com.superdata.marketing.view.percent.PercentRelativeLayout>
+
+            <com.superdata.marketing.view.percent.PercentLinearLayout
+                android:id="@+id/llFileList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"/>
+        </com.superdata.marketing.view.percent.PercentLinearLayout>
+    </ScrollView>
+
+</LinearLayout>

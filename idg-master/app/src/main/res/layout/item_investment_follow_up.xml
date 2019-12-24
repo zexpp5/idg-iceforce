@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_water"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/dp_spacing_10dp"
+        android:layout_marginLeft="@dimen/dp_spacing_15dp"
+        android:layout_marginRight="@dimen/dp_spacing_15dp"
+        android:layout_marginTop="@dimen/dp_spacing_10dp"
+        android:orientation="vertical"
+    >
+
+        <!--<com.mcxtzhang.swipemenulib.SwipeMenuLayout-->
+        <!--app:swipeEnable="true"-->
+        <!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:clickable="true"-->
+        <!--android:paddingBottom="1dp">-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal"
+        >
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="标题"
+                android:textSize="@dimen/sp_font_title_center_18sp"/>
+
+            <RelativeLayout
+                android:id="@+id/rl_shrink"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/text_black_sl"
+                android:padding="10dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp_spacing_10dp"
+                    android:layout_marginRight="@dimen/dp_spacing_10dp"
+                    android:text="编辑"
+                    android:textColor="@color/white"
+                    android:textSize="17sp"
+                />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <!--</com.mcxtzhang.swipemenulib.SwipeMenuLayout>-->
+
+
+        <LinearLayout
+            android:id="@+id/ll_follow_up_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/dp_spacing_5dp"
+            android:orientation="vertical"
+            android:paddingBottom="10dp"
+        >
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

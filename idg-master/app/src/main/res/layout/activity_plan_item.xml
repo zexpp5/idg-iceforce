@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.superdata.marketing.view.percent.PercentLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal">
+
+    <tablayout.view.textview.FontTextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        app:layout_widthPercent="30%w"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        app:layout_paddingPercent="5%w"
+        />
+
+    <View
+        android:layout_width="0.5dp"
+        android:layout_height="match_parent"
+        android:background="@color/lightgrey"/>
+
+    <tablayout.view.textview.FontTextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:padding="20dp"
+        />
+</com.superdata.marketing.view.percent.PercentLinearLayout>

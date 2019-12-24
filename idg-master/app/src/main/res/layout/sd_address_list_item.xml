@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/ll_item_main"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical">
+
+    <tablayout.view.textview.FontTextView
+        android:id="@+id/tv_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:background="#f2f2f2"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:textColor="@android:color/black"
+        android:textSize="15sp"
+    />
+
+    <RelativeLayout
+        android:id="@+id/ll_content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingBottom="8dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="8dp"
+    >
+
+        <RelativeLayout
+            android:id="@+id/avatar_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+        >
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/iv_header_img"
+                android:layout_width="@dimen/item_icon_wh"
+                android:layout_height="@dimen/item_icon_wh"
+                android:layout_centerVertical="true"
+                android:scaleType="fitXY"
+            />
+
+            <tablayout.view.textview.FontTextView
+                android:id="@+id/unread_msg_number"
+                android:layout_width="@dimen/dp_spacing_7dp"
+                android:layout_height="@dimen/dp_spacing_7dp"
+                android:layout_marginRight="-3dp"
+                android:layout_marginTop="-2dp"
+                android:layout_toRightOf="@+id/iv_header_img"
+                android:background="@drawable/dot_shape"
+                android:gravity="center"
+                android:visibility="gone"
+            />
+
+        </RelativeLayout>
+
+        <!--android:background="@drawable/icon_num"-->
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/cbAddress"
+            android:layout_toRightOf="@+id/avatar_container">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:orientation="vertical">
+
+                <tablayout.view.textview.FontTextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="王先生"
+                    android:textColor="#1F2228"
+                    android:textSize="18sp"/>
+
+                <LinearLayout
+                    android:id="@+id/message_info_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_name"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:visibility="gone"
+                >
+
+                    <tablayout.view.textview.FontTextView
+                        android:id="@+id/super_depart"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text=""
+                        android:textColor="@color/text_black_l"
+                        android:textSize="@dimen/font_size_item_name_business"
+                    />
+
+                    <tablayout.view.textview.FontTextView
+                        android:id="@+id/super_job"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:text=""
+                        android:textColor="@color/text_black_l"
+                        android:textSize="@dimen/font_size_item_name_business"
+                    />
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+        <CheckBox
+            android:id="@+id/cbAddress"
+            style="@style/CustomCheckboxTheme"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:clickable="false"
+            android:enabled="false"
+            android:gravity="center_vertical"
+        />
+
+        <!--android:visibility="gone"-->
+
+        <tablayout.view.textview.FontTextView
+            android:id="@+id/dept"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textColor="#aaaaaa"
+        />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

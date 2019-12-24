@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#ffffff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/department_title_layout"
+            layout="@layout/top_title_layout" />
+
+
+        <LinearLayout
+            android:weightSum="2"
+            style="@style/linear_row_style_common"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+
+                <tablayout.view.textview.FontTextView
+                    style="@style/font_text_content_sytle"
+                    android:text="编号：" />
+
+                <tablayout.view.textview.FontEditext
+                    android:id="@+id/opportunity_message_number"
+                    style="@style/font_edtext_content_sytle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:singleLine="true" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+
+
+                <tablayout.view.textview.FontTextView
+                    style="@style/font_text_content_sytle"
+                    android:text="机会类别：" />
+
+                <tablayout.view.textview.FontTextView
+                    android:id="@+id/opportunity_type"
+                    style="@style/font_select_textview_content_sytle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <include layout="@layout/bottom_line_view" />
+
+        <LinearLayout
+            android:weightSum="2"
+            style="@style/linear_row_style_common"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+
+
+                <tablayout.view.textview.FontTextView
+                    style="@style/font_text_content_sytle"
+                    android:text="机会来源：" />
+
+                <tablayout.view.textview.FontTextView
+                    android:id="@+id/opportunity_message_source"
+                    style="@style/font_select_textview_content_sytle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+
+                <tablayout.view.textview.FontTextView
+                    style="@style/font_text_content_sytle"
+                    android:text="销售阶段：" />
+
+                <tablayout.view.textview.FontTextView
+                    android:id="@+id/opportunity_message_sale"
+                    style="@style/font_select_textview_content_sytle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical" />
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <include layout="@layout/bottom_line_view" />
+
+
+        <LinearLayout
+            android:weightSum="2"
+            style="@style/linear_row_style_common"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                >
+
+                <tablayout.view.textview.FontTextView
+                    android:id="@+id/fontTextView"
+                    style="@style/font_text_content_sytle"
+                    android:text="@string/follow_man" />
+
+                <tablayout.view.textview.FontTextView
+                    android:id="@+id/opportunity_message_relation_people"
+                    style="@style/font_select_textview_content_sytle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+
+
+                <tablayout.view.textview.FontTextView
+                    style="@style/font_text_content_sytle"
+                    android:text="预计回款：" />
+
+                <tablayout.view.textview.FontEditext
+                    android:id="@+id/opportunity_message_payment"
+                    style="@style/font_edtext_content_sytle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <include layout="@layout/bottom_line_view" />
+
+    </LinearLayout>
+
+    <include
+        android:id="@+id/share_icon_list_id"
+        style="@style/list_ShareLayout_Style"
+        layout="@layout/list_share_layout"/>
+
+
+</RelativeLayout>

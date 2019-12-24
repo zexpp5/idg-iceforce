@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:orientation="vertical"
+>
+    <include
+        android:id="@+id/department_title_layout"
+        layout="@layout/top_title_layout"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/add_btn_ll"
+        android:layout_below="@+id/department_title_layout"
+        android:fadingEdgeLength="0dp"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+        >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#F4F5F7"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/rl_001"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/recyclerView"
+                    android:background="#F4F5F7"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="5dp"
+                >
+
+                    <tablayout.view.textview.FontTextView
+                        android:id="@+id/tv_meeting_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:gravity="center_vertical"
+                        android:paddingBottom="5dp"
+                        android:paddingRight="15dp"
+                        android:paddingTop="5dp" android:text="共0人"
+                        android:textColor="#848E99"/>
+
+                    <tablayout.view.textview.FontTextView
+                        android:id="@+id/btn_more"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:gravity="center_vertical"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:paddingTop="5dp"
+                        android:text="查看全部>>"
+                        android:textColor="#848E99"
+                    />
+
+                </RelativeLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="12dp"
+                    android:background="#F4F5F7"
+                    android:scrollbars="none"
+                />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <tablayout.view.textview.FontTextView
+                    style="@style/font_text_content_sytle"
+                    android:layout_gravity="left|center_vertical"
+                    android:text="会议名称"
+                    android:textColor="#848E99"
+                    android:textSize="14sp"/>
+
+                <tablayout.view.textview.FontTextView
+                    android:id="@+id/edt_title"
+                    style="@style/font_edtext_content_sytle2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:maxLines="3"
+                    android:textColor="#323232"
+                    android:textSize="18sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <tablayout.view.textview.FontTextView
+                    style="@style/font_text_content_sytle"
+                    android:layout_gravity="left|center_vertical"
+                    android:text="会议时间"
+                    android:textColor="#848E99"
+                    android:textSize="14sp"/>
+
+                <tablayout.view.textview.FontTextView
+                    android:id="@+id/tv_start_time"
+                    style="@style/font_select_textview_content_sytle_two"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_marginTop="10dp"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:text="2018-09-25 19:15"
+                    android:textColor="#323232"
+                    android:textSize="18sp"
+                />
+
+                <tablayout.view.textview.FontTextView
+                    android:id="@+id/tv_and_view"
+                    style="@style/font_text_content_sytle"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_marginTop="10dp"
+                    android:text="至"
+                    android:textColor="#848E99"
+                    android:textSize="14sp"/>
+
+                <tablayout.view.textview.FontTextView
+                    android:id="@+id/tv_end_time"
+                    style="@style/font_select_textview_content_sytle_two"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_marginTop="10dp"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:text="2018-09-25 19:15"
+                    android:textColor="#323232"
+                    android:textSize="18sp"
+                />
+            </LinearLayout>
+
+
+            <!-- <include layout_city="@layout_city/bottom_line_view" />-->
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <tablayout.view.textview.FontTextView
+                    style="@style/font_text_content_sytle"
+                    android:layout_gravity="left|center_vertical"
+                    android:text="会议地点"
+                    android:textColor="#848E99"
+                    android:textSize="14sp"/>
+
+                <tablayout.view.textview.FontEditext
+                    android:id="@+id/et_meet_address"
+                    style="@style/font_edtext_content_sytle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_marginTop="10dp"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:textColor="#323232"
+                    android:textSize="18sp"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#F4F5F7">
+            </View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+
+                <tablayout.view.textview.FontTextView
+                    style="@style/font_text_content_sytle"
+                    android:layout_gravity="top"
+                    android:text="会议内容"
+                    android:textColor="#848E99"
+                    android:textSize="14sp"
+                />
+
+                <tablayout.view.textview.FontEditext
+                    android:id="@+id/et_meet_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@null"
+                    android:gravity="top"
+                    android:maxLength="500"
+                    android:textColor="#1F2228"
+                    android:textSize="@dimen/sp_font_detail_content_14sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_annex"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#F4F5F7"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/dp_spacing_5dp"
+                android:paddingTop="@dimen/dp_spacing_20dp"
+                android:visibility="gone"
+            >
+
+                <include layout="@layout/public_annex_layout"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <include
+        android:id="@+id/add_btn_ll"
+        layout="@layout/public_add_btn_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"/>
+
+</RelativeLayout>

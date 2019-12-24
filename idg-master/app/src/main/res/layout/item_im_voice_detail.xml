@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/ll_container"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:descendantFocusability="blocksDescendants"
+              android:gravity="center_horizontal"
+              android:orientation="vertical"
+>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="15dp"
+    >
+
+        <ImageView
+            android:id="@+id/img_user_icon"
+            style="@style/chat_user_icon_left_style"/>
+
+        <RelativeLayout
+            android:id="@+id/iv_voice_ly"
+            android:layout_width="@dimen/chat_voice_width"
+            android:layout_height="@dimen/chat_icon_wh"
+            android:layout_below="@+id/iv_voice_ly222"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@+id/img_user_icon"
+            android:layout_toRightOf="@+id/img_user_icon"
+            android:background="@drawable/chatfrom_bg">
+
+            <ImageView
+                android:id="@+id/iv_voice"
+                style="@style/chat_voice_left_style"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+
+        <ProgressBar
+            android:id="@+id/pb_sending"
+            android:layout_width="@dimen/chat_item_progressbar_wh"
+            android:layout_height="@dimen/chat_item_progressbar_wh"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/tv_length"
+            android:layout_toRightOf="@+id/tv_length"
+            android:visibility="gone"
+        />
+
+        <RelativeLayout
+            android:id="@+id/iv_voice_ly222"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pb_sending" android:layout_toEndOf="@+id/img_user_icon"
+            android:layout_toRightOf="@+id/img_user_icon">
+
+            <tablayout.view.textview.FontTextView
+                android:id="@+id/tv_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="25dp"
+                android:gravity="center_vertical"
+                android:maxLength="8"
+                android:textColor="@color/color_item_user_name"
+                android:textSize="@dimen/font_size_item_name_received"
+            />
+
+        </RelativeLayout>
+
+        <tablayout.view.textview.FontTextView
+            android:id="@+id/tv_length"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/iv_voice_ly"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="@dimen/chat_item_otherIcon_spacing_lr"
+            android:layout_toRightOf="@+id/iv_voice_ly"
+            android:textColor="@color/color_item_user_name"
+            android:textSize="@dimen/font_size_item_name"
+        />
+    </RelativeLayout>
+
+</LinearLayout>

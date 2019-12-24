@@ -1,0 +1,152 @@
+apply plugin: 'com.android.application'
+//apply plugin: 'me.tatarka.retrolambda'
+
+buildscript {
+    repositories {
+        jcenter()
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:2.3.3'
+    }
+}
+
+android {
+    def versions = rootProject.ext.versions // 配置
+    compileSdkVersion versions.compileSdkVersion
+    buildToolsVersion versions.buildToolsVersion
+
+    defaultConfig {
+        minSdkVersion versions.minSdkVersion
+        targetSdkVersion versions.targetSdkVersion
+
+        versionCode 51
+        versionName "3.1.1"
+
+        ndk {
+            //选择要添加的对应cpu类型的.so库。
+            abiFilters 'armeabi', 'armeabi-v7a', 'x86_64'
+            // 还可以添加 'mips', 'mips64'
+            //  ,'x86', 'x86_64' 平板
+        }
+
+        //极光推送
+        manifestPlaceholders = [
+                JPUSH_PKGNAME: libraries.jpushPackgerName,
+                JPUSH_APPKEY : libraries.jpushKey, //JPush上注册的包名对应的appkey.
+                JPUSH_CHANNEL: libraries.jpushChannel, //暂时填写默认值即可.
+        ]
+
+        // Enabling multidex support.
+        multiDexEnabled true
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+//            signingConfig signingConfigs.releaseConfig
+        }
+//        signingConfigs {
+//            debug {
+//                keyAlias 'xxxxx.keystore'
+//                keyPassword '******'
+//                storeFile file('D:/xxxx.keystore')
+//                storePassword '******'
+//            }
+//        }
+    }
+
+    packagingOptions {
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/INDEX.LIST'
+    }
+
+    dexOptions
+            {
+                preDexLibraries = false
+            }
+
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_7
+    }
+
+    aaptOptions.cruncherEnabled = false
+    aaptOptions.useNewCruncher = false
+
+    useLibrary 'org.apache.http.legacy'
+}
+
+//retrolambda {
+//    javaVersion JavaVersion.VERSION_1_6
+//}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile project(':webrtc')
+    compile project(':emoji_library')
+    compile project(':SuperRecyclerView')
+    compile project(':calendarview')
+    //TabLayout库
+    //recyclerview 适配器封装
+    //compile 'com.flyco.tablayout:FlycoTabLayout_Lib:2.1.2@aar'
+    //没有使用特殊Header，可以不加这行
+    compile files('libs/open_sdk_r5788_lite.jar')
+    compile files('libs/SocialSDK_QQ_Full.jar')
+    compile files('libs/SocialSDK_Sina_Simplify.jar')
+    compile files('libs/SocialSDK_WeChat_Simplify.jar')
+    compile files('libs/umeng_social_api.jar')
+    compile files('libs/umeng_social_net.jar')
+    compile files('libs/umeng_social_tool.jar')
+    compile 'com.yqritc:android-scalablevideoview:1.0.1'
+    compile 'com.commit451:PhotoView:1.2.5'
+    compile 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.22'
+    compile 'com.scwang.smartrefresh:SmartRefreshLayout:1.0.3'
+    compile 'com.scwang.smartrefresh:SmartRefreshHeader:1.0.3'
+    compile 'com.android.support:multidex:1.0.1'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.github.ctiao:DanmakuFlameMaster:0.9.16'
+    compile files('libs/BaiduLBS_Android.jar')
+    compile('org.jaaksi:pickerview:2.0.0') {
+        exclude group: 'com.android.support'
+    }
+    compile 'com.weigan:loopView:0.1.2'
+    compile 'com.github.PhilJay:MPAndroidChart:v3.1.0'
+
+//    compile 'com.github.mcxtzhang:SwipeDelMenuLayout:V1.3.0'
+}
+/*  Filters main-dex classes
+ *  ========================
+ *  Excludes activity classes from main-dex
+ *  For more details see: http://blog.osom.info/2014/12/too-many-methods-in-main-dex.html
+ */
+afterEvaluate {
+    project.tasks.each { task ->
+        // Warning: this is using an unsupported api that will be replaced in the future.
+        // see: https://code.google.com/p/android/issues/detail?id=206131
+        if (task.name.startsWith('collect') && task.name.endsWith('MultiDexComponents')) {
+            println "main-dex-filter: found task $task.name"
+            task.filter { name, attrs ->
+                def componentName = attrs.get('android:name')
+                if ('activity'.equals(name)) {
+                    println "main-dex-filter: skipping, detected activity [$componentName]"
+                    return false
+                } else {
+                    println "main-dex-filter: keeping, detected $name [$componentName]"
+                    return true
+                }
+            }
+        }
+    }
+}

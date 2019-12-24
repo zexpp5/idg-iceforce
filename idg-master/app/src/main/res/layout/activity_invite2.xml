@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_fragment_bg"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/sd_top_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+    >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="erweima"
+            android:padding="20dp">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:background="@mipmap/invite_erweima"/>
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/imageView2"
+                android:text="二维码邀请"
+                android:textSize="@dimen/font_size_item_name"
+            />
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/dividing_line"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="copy"
+            android:padding="20dp">
+
+            <ImageView
+                android:id="@+id/imageView22"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:background="@mipmap/icon_invite_copy"/>
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/imageView22"
+                android:text="复制邀请"
+                android:textSize="@dimen/font_size_item_name"/>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+    <!--<tablayout.view.rippleview.MaterialRippleLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="0dp"-->
+    <!--app:layout_heightPercent="16%w">-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:background="#fff"-->
+    <!--android:gravity="center_vertical"-->
+    <!--android:onClick="erweima"-->
+    <!--android:orientation="horizontal">-->
+
+    <!--<ImageView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:src="@mipmap/invite_erweima"-->
+    <!--app:layout_marginLeftPercent="3.5%w"-->
+    <!--app:layout_paddingLeftPercent="@string/list_margin_left"/>-->
+
+    <!--<tablayout.view.textview.FontTextView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="二维码邀请"-->
+    <!--app:layout_marginLeftPercent="3.5%w"-->
+    <!--app:layout_paddingRightPercent="@string/list_margin_right"-->
+    <!--android:textSize="@dimen/font_size_item_name"-->
+    <!--/>-->
+
+    <!--</LinearLayout>-->
+    <!--</tablayout.view.rippleview.MaterialRippleLayout>-->
+
+    <!--<View-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="0.5dp"-->
+    <!--android:background="@color/dividing_line"/>-->
+
+    <!--<tablayout.view.rippleview.MaterialRippleLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="0dp"-->
+    <!--app:layout_heightPercent="16%w">-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:background="@color/white"-->
+    <!--android:gravity="center_vertical"-->
+    <!--android:onClick="copy"-->
+    <!--android:orientation="horizontal"-->
+    <!--&gt;-->
+
+    <!--<ImageView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:src="@mipmap/icon_invite_copy"-->
+    <!--app:layout_marginLeftPercent="1%w"-->
+    <!--app:layout_paddingLeftPercent="@string/list_margin_left"/>-->
+
+    <!--<tablayout.view.textview.FontTextView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="复制邀请"-->
+    <!--app:layout_marginLeftPercent="3.5%w"-->
+    <!--app:layout_paddingRightPercent="@string/list_margin_right"-->
+    <!--app:layout_textSizePercent="@string/text_size"/>-->
+    <!--</LinearLayout>-->
+    <!--</tablayout.view.rippleview.MaterialRippleLayout>-->
+
+    <!--<View-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="0.5dp"-->
+    <!--android:background="@color/dividing_line"-->
+    <!--android:visibility="gone"/>-->
+</LinearLayout>

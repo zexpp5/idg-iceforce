@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#f2f1f7"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:background="#ffffff"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <include
+            android:id="@+id/department_title_layout"
+            layout="@layout/top_title_layout" />
+
+
+        <LinearLayout
+            style="@style/linear_row_style_common"
+            android:orientation="horizontal">
+
+
+            <tablayout.view.textview.FontTextView
+                style="@style/font_text_content_sytle"
+                android:text="公司名称：" />
+
+            <tablayout.view.textview.FontEditext
+                android:id="@+id/company_name_text"
+                style="@style/font_edtext_content_sytle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:singleLine="true"
+                android:gravity="center_vertical"
+                android:maxLength="15"
+                android:hint="请输入公司名称"
+                />
+        </LinearLayout>
+
+
+
+        <include layout="@layout/bottom_line_view" />
+
+        <LinearLayout
+            style="@style/linear_row_style_common"
+            android:orientation="horizontal">
+
+
+            <tablayout.view.textview.FontTextView
+                style="@style/font_text_content_sytle"
+                android:text="@string/revenue" />
+
+            <tablayout.view.textview.FontEditext
+                android:id="@+id/revenue_ed"
+                style="@style/font_edtext_content_sytle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:singleLine="true"
+                android:gravity="center_vertical"
+                android:maxLength="15"
+                android:hint="请输入纳税号"
+                />
+        </LinearLayout>
+
+
+        <include layout="@layout/bottom_line_view" />
+
+        <LinearLayout
+            style="@style/linear_row_style_common"
+            android:orientation="horizontal">
+
+
+            <tablayout.view.textview.FontTextView
+                style="@style/font_text_content_sytle"
+                android:text="开票地址：" />
+
+            <tablayout.view.textview.FontEditext
+                android:id="@+id/address_ed"
+                style="@style/font_edtext_content_sytle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:singleLine="true"
+                android:gravity="center_vertical"
+                android:maxLength="15"
+                android:hint="请输入开票地址"
+                />
+        </LinearLayout>
+
+        <include layout="@layout/bottom_line_view" />
+
+        <LinearLayout
+            style="@style/linear_row_style_common"
+            android:orientation="horizontal">
+
+
+            <tablayout.view.textview.FontTextView
+                style="@style/font_text_content_sytle"
+                android:text="@string/user" />
+
+            <tablayout.view.textview.FontEditext
+                android:id="@+id/user_ed"
+                style="@style/font_edtext_content_sytle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:singleLine="true"
+                android:gravity="center_vertical"
+                android:maxLength="15"
+                android:hint="请输入账号"
+                />
+        </LinearLayout>
+
+        <include layout="@layout/bottom_line_view" />
+
+        <LinearLayout
+            style="@style/linear_row_style_common"
+            android:orientation="horizontal">
+
+
+            <tablayout.view.textview.FontTextView
+                style="@style/font_text_content_sytle"
+                android:text="@string/open_bank" />
+
+            <tablayout.view.textview.FontEditext
+                android:id="@+id/open_bank_ed"
+                style="@style/font_edtext_content_sytle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:singleLine="true"
+                android:gravity="center_vertical"
+                android:maxLength="15"
+                android:hint="请输入开户行"
+                />
+        </LinearLayout>
+
+        <include layout="@layout/bottom_line_view" />
+
+        <LinearLayout
+            style="@style/linear_row_style_common"
+            android:orientation="horizontal">
+
+
+            <tablayout.view.textview.FontTextView
+                style="@style/font_text_content_sytle"
+                android:text="@string/telephone" />
+
+            <tablayout.view.textview.FontEditext
+                android:id="@+id/telephone_ed"
+                style="@style/font_edtext_content_sytle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:singleLine="true"
+                android:gravity="center_vertical"
+                android:maxLength="15"
+                android:hint="请输入电话"
+                />
+        </LinearLayout>
+
+        <include layout="@layout/bottom_line_view" />
+
+        <LinearLayout
+            style="@style/linear_row_style_common"
+            android:orientation="horizontal">
+
+
+            <tablayout.view.textview.FontTextView
+                style="@style/font_text_content_sytle"
+                android:text="公司传真：" />
+
+            <tablayout.view.textview.FontEditext
+                android:id="@+id/company_fax_ed"
+                style="@style/font_edtext_content_sytle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:singleLine="true"
+                android:gravity="center_vertical"
+                android:maxLength="15"
+                android:hint="请输入公司传真"
+                />
+        </LinearLayout>
+
+        <include layout="@layout/bottom_line_view" />
+
+
+    </LinearLayout>
+
+    <include
+        layout="@layout/public_add_btn_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+
+
+</RelativeLayout>

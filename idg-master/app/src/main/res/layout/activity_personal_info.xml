@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.superdata.marketing.view.percent.PercentLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_fragment_bg"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/title_super"
+        layout="@layout/sd_top_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+    />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.superdata.marketing.view.percent.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.superdata.marketing.view.percent.PercentRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                app:layout_paddingPercent="@string/list_margin_top">
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/info_headImg"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:scaleType="fitXY"
+                    app:layout_heightPercent="13.8%w"
+                    app:layout_widthPercent="13.8%w"/>
+
+                <com.superdata.marketing.view.percent.PercentLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/info_headImg"
+                    app:layout_marginLeftPercent="@string/list_margin_left">
+
+                    <tablayout.view.textview.FontTextView
+                        android:id="@+id/info_userName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/font_size_item_name"
+                    />
+
+                    <ImageView
+                        android:id="@+id/info_sex"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center"
+                        android:layout_toRightOf="@+id/info_userName"
+                        app:layout_heightPercent="6%w"
+                        app:layout_marginLeftPercent="@string/list_margin_left"
+                        app:layout_widthPercent="6%w"
+
+                    />
+                </com.superdata.marketing.view.percent.PercentLinearLayout>
+
+                <tablayout.view.textview.FontTextView
+                    android:id="@+id/info_dept_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/info_headImg"
+                    android:layout_toRightOf="@+id/info_headImg"
+                    android:text="部门："
+                    android:textSize="@dimen/font_size_item_content"
+                    android:visibility="gone"
+                    app:layout_marginLeftPercent="@string/list_margin_left"
+                />
+
+                <tablayout.view.textview.FontTextView
+                    android:id="@+id/info_dept_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/info_dept_name"
+                    android:layout_toRightOf="@+id/info_dept_name"
+                    android:text=""
+                    android:textSize="@dimen/font_size_item_content"
+                    android:visibility="gone"
+                />
+
+            </com.superdata.marketing.view.percent.PercentRelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@color/common_bg"
+                app:layout_heightPercent="@string/space"></View>
+
+
+            <com.superdata.marketing.view.percent.PercentRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                app:layout_paddingPercent="@string/list_margin_top">
+
+                <tablayout.view.textview.FontTextView
+                    android:id="@+id/info_position_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="职位："
+                    android:textSize="@dimen/font_size_item_content"
+                />
+
+                <tablayout.view.textview.FontTextView
+                    android:id="@+id/info_position_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/info_position_name"
+                    android:text=""
+                    app:layout_textSizePercent="5%w"/>
+            </com.superdata.marketing.view.percent.PercentRelativeLayout>
+
+            <com.superdata.marketing.view.percent.PercentRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@color/common_bg"
+                app:layout_heightPercent="43%w"
+                app:layout_paddingLeftPercent="@string/list_margin_left"
+                app:layout_paddingRightPercent="@string/list_margin_left"
+                app:layout_paddingTopPercent="@string/space"
+            >
+
+                <ImageView
+                    android:id="@+id/webview_carousel"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                />
+
+                <tablayout.view.textview.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:background="#33ffffff"
+                    android:padding="2dp"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_size_item_content"
+                />
+            </com.superdata.marketing.view.percent.PercentRelativeLayout>
+
+            <com.superdata.marketing.view.percent.PercentLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/common_bg"
+                android:orientation="vertical">
+                <Button
+                    android:id="@+id/send_chat"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/btn_green_selector"
+                    android:text="发信息"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_size_item_name"
+                    app:layout_heightPercent="17%w"
+                    app:layout_marginLeftPercent="@string/list_margin_left"
+                    app:layout_marginRightPercent="@string/list_margin_left"
+                    app:layout_marginTopPercent="@string/list_margin_top"
+                />
+
+                <Button
+                    android:id="@+id/send_voice"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/btn_white_selector"
+                    android:text="语音通话"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/font_size_item_name"
+                    app:layout_heightPercent="14.7%w"
+                    app:layout_marginBottomPercent="5%w"
+                    app:layout_marginLeftPercent="@string/list_margin_left"
+                    app:layout_marginRightPercent="@string/list_margin_left"
+                    app:layout_marginTopPercent="5%w"
+                />
+            </com.superdata.marketing.view.percent.PercentLinearLayout>
+
+            <com.superdata.marketing.view.percent.PercentLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                app:layout_marginBottomPercent="8%w"
+                app:layout_marginTopPercent="8%w">
+
+                <Button
+                    android:id="@+id/send_phone"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_red_selector"
+                    android:text="打电话"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_size_item_name"
+                    app:layout_heightPercent="12.8%w"
+                    app:layout_marginLeftPercent="@string/list_margin_left"
+                    app:layout_marginRightPercent="@string/list_margin_left"
+                />
+
+                <Button
+                    android:id="@+id/send_msm"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_green2_selector"
+                    android:text="发短信"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_size_item_name"
+                    app:layout_heightPercent="12.8%w"
+                    app:layout_marginBottomPercent="@string/list_margin_right"
+                    app:layout_marginRightPercent="@string/list_margin_left"
+                />
+            </com.superdata.marketing.view.percent.PercentLinearLayout>
+
+        </com.superdata.marketing.view.percent.PercentLinearLayout>
+    </ScrollView>
+</com.superdata.marketing.view.percent.PercentLinearLayout>

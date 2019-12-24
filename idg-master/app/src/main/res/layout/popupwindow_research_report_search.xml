@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/dp_spacing_10dp"
+    android:paddingBottom="@dimen/dp_spacing_10dp"
+    android:background="@color/white">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="搜索"
+        android:textSize="@dimen/sp_font_detail_content_15sp"
+        android:gravity="center"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_view_line_1dp"
+        android:background="@color/dividing_line"/>
+
+    <EditText
+        android:id="@+id/et_keyword"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="@dimen/dp_spacing_10dp"
+        android:layout_marginBottom="@dimen/dp_spacing_10dp"
+        android:layout_marginLeft="@dimen/dp_spacing_20dp"
+        android:layout_marginRight="@dimen/dp_spacing_20dp"
+        android:drawablePadding="@dimen/dp_spacing_5dp"
+        android:drawableLeft="@mipmap/search_icon"
+        android:hint="请输入关键词"
+        android:background="@null"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="@dimen/dp_spacing_10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_reset"
+            android:layout_width="0dp"
+            android:layout_marginLeft="@dimen/dp_spacing_10dp"
+            android:layout_marginRight="@dimen/dp_spacing_10dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="重置"
+            android:textColor="@color/red"
+            android:background="@drawable/btn_red_reset_shape"/>
+
+        <Button
+            android:id="@+id/btn_search"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp_spacing_10dp"
+            android:layout_marginRight="@dimen/dp_spacing_10dp"
+            android:layout_weight="1"
+            android:text="搜索"
+            android:textColor="@color/white"
+            android:background="@drawable/btn_red_normal_shape"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

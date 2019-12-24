@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.superdata.marketing.view.percent.PercentLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/title_super"
+        layout="@layout/sd_top_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+    />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <tablayout.view.textview.FontTextView
+            android:id="@+id/tv_error"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#88FFA550"
+            android:drawableLeft="@mipmap/login_error_icon"
+            android:drawablePadding="5dp"
+            android:gravity="center_vertical"
+            android:padding="8dp"
+            android:textColor="#000"
+            android:visibility="gone"/>
+
+        <include
+            android:id="@+id/title_super"
+            layout="@layout/search_friend_top_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+        />
+
+        <ListView
+            android:id="@+id/lv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="@color/transparent"
+            android:divider="@color/gray"
+            android:dividerHeight="1px"
+            android:footerDividersEnabled="false"
+            android:headerDividersEnabled="false"
+            android:listSelector="@color/transparent"
+            android:scrollbars="none"/>
+
+    </LinearLayout>
+
+</com.superdata.marketing.view.percent.PercentLinearLayout>

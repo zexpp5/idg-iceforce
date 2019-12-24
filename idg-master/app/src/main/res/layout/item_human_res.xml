@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/login_bg_color"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/item_tv1"
+        style="@style/erp_human_res_itemStyle"
+        android:text="部门" />
+
+    <View
+        android:layout_width="@dimen/dp_view_line_1dp"
+        android:layout_height="match_parent"
+        android:background="@color/gray" />
+
+    <TextView
+        android:id="@+id/item_tv2"
+        style="@style/erp_human_res_itemStyle"
+        android:text="编制人数" />
+
+    <View
+        android:layout_width="@dimen/dp_view_line_1dp"
+        android:layout_height="match_parent"
+        android:background="@color/gray" />
+
+    <TextView
+        android:id="@+id/item_tv3"
+        style="@style/erp_human_res_itemStyle"
+        android:text="在职人数" />
+
+    <View
+        android:layout_width="@dimen/dp_view_line_1dp"
+        android:layout_height="match_parent"
+        android:background="@color/gray" />
+
+    <TextView
+        android:id="@+id/item_tv4"
+        style="@style/erp_human_res_itemStyle"
+        android:text="差额" />
+</LinearLayout>

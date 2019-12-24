@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/ll_container"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <tablayout.view.textview.FontTextView
+        android:id="@+id/timestamp"
+        style="@style/chat_text_date_style"/>
+
+    <RelativeLayout style="@style/chat_content_style">
+
+        <ImageView
+            android:id="@+id/img_user_icon"
+            style="@style/chat_user_icon_left_style"
+            android:background="@mipmap/icon_xzs"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_content_new"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_user_name"
+            android:layout_marginLeft="@dimen/chat_contentRelativeLayout_spacing_lr"
+            android:layout_marginRight="20dp"
+            android:layout_toRightOf="@id/img_user_icon"
+        >
+
+            <LinearLayout
+                android:id="@+id/rl_content"
+                style="@style/chat_content_viewGroup_left_style"
+                android:background="@drawable/chatfrom_bg"
+                android:orientation="vertical"
+            >
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/textView01"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:gravity="left|center"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:text="公司名称:"
+                        android:textColor="@color/text_black_xxl"
+                        android:textSize="@dimen/font_size_chat_content"/>
+
+                    <TextView
+                        android:id="@+id/tv_company_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_toRightOf="@+id/textView01"
+                        android:ellipsize="end"
+                        android:gravity="left|center"
+                        android:maxLines="2"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:text="公司名称公司名称"
+                        android:textSize="@dimen/font_size_chat_content"
+                    />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/textView02"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp" android:text="纳  税  号:"
+                        android:textColor="@color/text_black_xxl"
+                        android:textSize="@dimen/font_size_chat_content"/>
+
+                    <TextView
+                        android:id="@+id/tv_tax_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_toRightOf="@+id/textView02"
+                        android:ellipsize="end"
+                        android:gravity="left|center"
+                        android:maxLines="2"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:text="公司名称公司名称公司"
+                        android:textSize="@dimen/font_size_chat_content"
+                    />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/textView03"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:gravity="left|center"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:text="开票地址:"
+                        android:textColor="@color/text_black_xxl"
+                        android:textSize="@dimen/font_size_chat_content"/>
+
+                    <TextView
+                        android:id="@+id/tv_invoice_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_toRightOf="@+id/textView03"
+                        android:ellipsize="end"
+                        android:gravity="left|center"
+                        android:maxLines="2"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:text="公司名称公司名称公司"
+                        android:textSize="@dimen/font_size_chat_content"
+                    />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/textView04"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:gravity="left|center"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:text="账        户:"
+                        android:textColor="@color/text_black_xxl"
+                        android:textSize="@dimen/font_size_chat_content"/>
+
+                    <TextView
+                        android:id="@+id/tv_account"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_toRightOf="@+id/textView04"
+                        android:ellipsize="end"
+                        android:gravity="left|center"
+                        android:maxLines="2"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:text="公司名称公司名称公司"
+                        android:textSize="@dimen/font_size_chat_content"
+                    />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/textView05"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:gravity="left|center"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:text="开  户  行:"
+                        android:textColor="@color/text_black_xxl"
+                        android:textSize="@dimen/font_size_chat_content"/>
+
+                    <TextView
+                        android:id="@+id/tv_bank_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_toRightOf="@+id/textView05"
+                        android:ellipsize="end"
+                        android:gravity="left|center"
+                        android:maxLines="2"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:text="公司名称公司名称公司"
+                        android:textSize="@dimen/font_size_chat_content"
+                    />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/textView06"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:gravity="left|center"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:text="电        话:"
+                        android:textColor="@color/text_black_xxl"
+                        android:textSize="@dimen/font_size_chat_content"/>
+
+                    <TextView
+                        android:id="@+id/tv_telephone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_toEndOf="@+id/textView06"
+                        android:layout_toRightOf="@+id/textView06"
+                        android:ellipsize="end"
+                        android:gravity="left|center"
+                        android:maxLines="2"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp" android:text="020-123456789"
+                        android:textSize="@dimen/font_size_chat_content"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/textView07"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:gravity="left|center"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:text="公司传真:"
+                        android:textColor="@color/text_black_xxl"
+                        android:textSize="@dimen/font_size_chat_content"/>
+
+                    <TextView
+                        android:id="@+id/tv_fax_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_toRightOf="@+id/textView07"
+                        android:ellipsize="end"
+                        android:gravity="left|center"
+                        android:maxLines="2"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:text="020-123456789"
+                        android:textSize="@dimen/font_size_chat_content"
+                    />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/copy_layout"
+                android:layout_centerInParent="true"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/top_button_radius_gray"
+                >
+
+                <TextView
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:paddingRight="10dp"
+                    android:paddingLeft="10dp"
+                    android:id="@+id/copy_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="复制"
+                    android:textSize="16sp"
+                    />
+
+            </LinearLayout>
+
+            <!--</RelativeLayout>-->
+        </RelativeLayout>
+
+
+        <ImageView
+            android:id="@+id/icon_baidu"
+            style="@style/chat_left_baidu_style"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/rl_content_new"
+            android:layout_toRightOf="@+id/rl_content_new"
+        />
+
+        <tablayout.view.textview.FontTextView
+            android:id="@+id/tv_user_name"
+            style="@style/chat_text_name_style"
+            android:textSize="@dimen/font_size_item_content"
+            android:visibility="gone"
+        />
+
+        <tablayout.view.textview.FontTextView
+            android:id="@+id/tv_user_dept"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tv_user_name"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/tv_user_name"
+            android:gravity="center_vertical"
+            android:maxLength="10"
+            android:textColor="@color/color_item_user_name2"
+            android:textSize="@dimen/font_size_item_time"
+            android:visibility="gone"
+
+        />
+
+        <tablayout.view.textview.FontTextView
+            android:id="@+id/tv_user_job"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tv_user_dept"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/tv_user_dept"
+            android:gravity="center_vertical"
+            android:maxLength="10"
+            android:textColor="@color/color_item_user_name2"
+            android:textSize="@dimen/font_size_item_time"
+            android:visibility="gone"
+
+        />
+    </RelativeLayout>
+
+</LinearLayout>

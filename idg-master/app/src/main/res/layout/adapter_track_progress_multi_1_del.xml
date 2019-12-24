@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_height_line_45dp"
+        android:layout_marginLeft="@dimen/dp_spacing_to_left_20dp"
+        android:layout_marginRight="@dimen/dp_spacing_to_right_20dp"
+        android:orientation="horizontal">
+
+        <yunjing.view.RoundedImageView
+            android:id="@+id/head_bar_icon"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:src="@mipmap/temp_user_head"
+            app:oval="true"
+            android:layout_gravity="center_vertical"
+            />
+
+        <TextView
+            android:id="@+id/tv_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/head_bar_icon"
+            android:layout_marginLeft="@dimen/dp_spacing_15dp"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/sp_font_detail_content_15sp"/>
+
+        <ImageView
+            android:id="@+id/iv_del"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@mipmap/email_delete"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="82dp"
+        android:layout_marginRight="@dimen/dp_spacing_to_right_20dp"
+        android:orientation="horizontal">
+
+        <!--<TextView
+            android:id="@+id/tv_status_str"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            android:paddingLeft="@dimen/dp_spacing_8dp"
+            android:paddingRight="@dimen/dp_spacing_8dp"
+            android:text="超出预期"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/sp_font_detail_content_14sp"
+            android:background="@drawable/tv_bg_blue_2"/>-->
+
+        <com.cxgz.activity.cxim.workCircle.widgets.ExpandTextView
+            android:id="@+id/text_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:showLines="2"
+            />
+
+       <!-- <WebView
+            android:id="@+id/webView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />-->
+
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_spacing_8dp"
+        android:layout_marginBottom="@dimen/dp_spacing_8dp"
+        android:layout_marginLeft="82dp"
+        android:textColor="@color/text_black_s"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_view_line_1dp"
+        android:background="@color/dividing_line" />
+
+</LinearLayout>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#e8e8e8"
+    >
+
+        <View
+            android:visibility="gone"
+            android:id="@+id/space_view"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_spacing_15dp"
+            />
+
+        <TextView
+            android:layout_marginBottom="@dimen/dp_spacing_5dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="昨天 20:08"
+            android:textColor="#fff"
+            android:background="#bfbfbf"
+            android:textSize="14sp"
+            android:id="@+id/express_item_time"
+        />
+
+        <LinearLayout
+            android:id="@+id/express_content_layout"
+            android:paddingLeft="@dimen/dp_spacing_20dp"
+            android:paddingRight="@dimen/dp_spacing_20dp"
+            android:paddingTop="@dimen/dp_spacing_10dp"
+            android:paddingBottom="13dp"
+            android:background="@drawable/white_radius_gray_brim"
+            android:layout_marginRight="@dimen/dp_spacing_10dp"
+            android:layout_marginLeft="@dimen/dp_spacing_10dp"
+            android:layout_marginTop="@dimen/dp_spacing_10dp"
+            android:layout_marginBottom="@dimen/dp_spacing_15dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+            <TextView
+                android:id="@+id/express_item_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="#333333"
+                android:paddingBottom="10dp"
+                android:paddingTop="3dp"
+                />
+
+            <ImageView
+                android:layout_gravity="center"
+                android:id="@+id/express_item_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                />
+
+            <TextView
+                android:id="@+id/express_item_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="13dp"
+                android:paddingTop="8dp"
+                android:textColor="#888888"
+                android:textSize="15sp" />
+
+            <include layout="@layout/bottom_line_view"/>
+            
+            <RelativeLayout
+                android:layout_marginTop="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                
+                <TextView
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="#333333"
+                    android:text="阅读全文"
+                    />
+                <ImageView
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="9dp"
+                    android:layout_height="15dp"
+                    android:background="@mipmap/left_img_bg"
+                    />
+            </RelativeLayout>
+        </LinearLayout>
+    
+
+</LinearLayout>

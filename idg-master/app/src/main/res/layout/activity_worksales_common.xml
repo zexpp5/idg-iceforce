@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="yunjing.ui.work_sales.my_customer.MyCoustmerActivity">
+
+    <include
+
+        android:id="@+id/title_layout"
+        layout="@layout/top_title_layout"
+        android:visibility="gone"
+        />
+
+    <FrameLayout
+        android:id="@+id/frag_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+
+</LinearLayout>

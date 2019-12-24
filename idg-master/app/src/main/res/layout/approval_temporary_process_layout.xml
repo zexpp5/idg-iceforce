@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height_dp"
+        android:layout_marginLeft="0dp"
+        style="@style/d_s_ll_style"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            style="@style/d_s_s_in_tow_ll_right_style">
+
+            <tablayout.view.textview.FontTextView
+                style="@style/d_s_right_font_sytle"
+                android:text="批审人："/>
+
+            <tablayout.view.textview.FontTextView
+                android:id="@+id/approved_people_text"
+                android:layout_marginRight="10dp"
+                style="@style/d_s_content_font_select_textview_sytle"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <include layout="@layout/bottom_line_view" />
+
+    <LinearLayout
+        android:layout_marginRight="@dimen/dp_spacing_to_left_right_15dp"
+        android:layout_marginLeft="@dimen/dp_spacing_to_left_right_15dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+
+        <tablayout.view.textview.FontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_marginTop="8dp"
+            android:textSize="@dimen/sp_font_detail_content_15sp" />
+
+        <tablayout.view.textview.FontTextView
+            android:text=""
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@null"
+            android:gravity="top"
+            android:textSize="@dimen/sp_font_detail_content_15sp" />
+    </LinearLayout>
+
+    <include layout="@layout/bottom_line_view" />
+
+    <include layout="@layout/public_state_icon_layout"/>
+
+    <View
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/title_color"
+        />
+
+
+</LinearLayout>

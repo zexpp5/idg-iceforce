@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <include
+        android:id="@+id/top_bar_layout"
+        layout="@layout/top_title_layout" />
+
+        <yunjing.view.excelpane.AdaptiveTableLayout
+            android:visibility="gone"
+            android:layout_below="@+id/top_bar_layout"
+            android:layout_above="@+id/add_btn_layout"
+            android:id="@+id/contacts_tableLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:dragAndDropEnabled="false"
+            app:fixedHeaders="true"
+            app:solidRowHeaders="false" />
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/add_btn_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        >
+
+        <include
+            android:id="@+id/line_view"
+            layout="@layout/bottom_line_view" />
+
+        <Button
+            android:layout_below="@+id/line_view"
+            android:layout_marginTop="@dimen/dp_spacing_8dp"
+            android:layout_marginBottom="@dimen/dp_spacing_8dp"
+            android:layout_marginRight="@dimen/dp_spacing_20dp"
+            android:layout_marginLeft="@dimen/dp_spacing_20dp"
+            android:textSize="@dimen/sp_font_detail_content_16sp"
+            android:background="@drawable/button_radius"
+            android:id="@+id/add_btn"
+            android:text="新增"
+            android:textColor="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            />
+
+    </RelativeLayout>
+
+    <Button
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="80dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/btn_list_share"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@mipmap/share_list_icon" />
+
+    <FrameLayout
+        android:id="@+id/contacts_fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</RelativeLayout>

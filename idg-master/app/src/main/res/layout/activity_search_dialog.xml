@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout android:id="@+id/search_layout"
+                                             xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             xmlns:tools="http://schemas.android.com/tools"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="match_parent"
+                                             android:background="#33000000">
+
+    <LinearLayout
+        android:id="@+id/search_head_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <include
+            android:id="@+id/top_bar_layout"
+            layout="@layout/top_title_layout"/>
+
+        <include
+            android:id="@+id/search_bar_layout"
+            layout="@layout/search_title"/>
+
+        <include
+
+            layout="@layout/bottom_line_view"/>
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/search_select_layout"
+        android:layout_width="0dp"
+        android:layout_height="280dp"
+        android:background="#ffffff"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/search_head_layout">
+
+        <LinearLayout
+            android:id="@+id/one_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/search_one_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="12dp"
+                android:paddingTop="10dp"
+                android:text="负责人"
+                android:textColor="#333"
+                android:textSize="15sp"/>
+
+            <include
+                android:id="@+id/relation_one_layout"
+                layout="@layout/one_title"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/two_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/one_layout"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/search_two_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="12dp"
+                android:paddingTop="10dp"
+                android:text="摘要"
+                android:textColor="#333"
+                android:textSize="15sp"/>
+
+            <include
+                android:id="@+id/relation_two_layout"
+                layout="@layout/two_title"/>
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/two_layout"
+            android:fadingEdgeLength="0dp"
+            android:overScrollMode="never"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:id="@+id/linear_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+            </LinearLayout>
+        </ScrollView>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/search_bottom_layout"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/search_select_layout">
+
+        <include layout="@layout/bottom_line_view"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp">
+
+            <Button
+                android:id="@+id/reset_button"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_radius_brim_red"
+                android:text="重置"
+                android:textColor="#AE1129"
+                android:textSize="15sp"/>
+
+            <Button
+                android:id="@+id/search_button"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@+id/reset_button"
+                android:layout_weight="1"
+                android:background="@drawable/top_button_radius"
+                android:text="搜索"
+                android:textColor="#ffffff"
+                android:textSize="15sp"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <newProject.company.project_manager.SearchKeyView
+        android:id="@+id/search_key_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/search_select_layout"
+        app:layout_constraintLeft_toLeftOf="@+id/search_select_layout"
+        app:layout_constraintRight_toRightOf="@+id/search_select_layout"
+        app:layout_constraintTop_toTopOf="@+id/search_select_layout"/>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <tablayout.view.textview.FontTextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_centerInParent="true"
+        android:background="@color/dialog_title_and_foot_bg"
+        android:gravity="center"
+        android:textSize="@dimen/sp_font_lv_itme_content_15sp"
+    />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <!--<include-->
+        <!--layout="@layout/erp_sumbit_and_clear_button_layout"-->
+        <!--android:gravity="bottom"-->
+    <!--/>-->
+
+</LinearLayout>

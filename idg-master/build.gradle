@@ -1,0 +1,35 @@
+import com.sun.org.apache.xalan.internal.xsltc.cmdline.Compile
+
+apply from: 'buildsystem/dependencies.gradle'
+apply from: 'version.gradle'
+
+
+buildscript {
+
+    repositories {
+        jcenter()
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:2.3.3'
+    }
+}
+
+allprojects {
+    repositories {
+        jcenter()
+        maven { url "https://jitpack.io" }
+        maven {
+            url 'http://mirrors.huaweicloud.com/repository/maven/huaweicloudsdk/'
+        }
+        maven {
+            url 'http://mirrors.huaweicloud.com/repository/maven/'
+        }
+        mavenCentral()
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+

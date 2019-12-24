@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="60dp"
+    android:layout_height="match_parent"
+    android:minHeight="50dip"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical" >
+
+
+    <EditText
+        android:id="@+id/ievEditView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:maxLines="1"
+        android:maxWidth="60dp"
+        android:minWidth="60dp"
+        android:singleLine="true"
+        android:focusable="false"
+        android:textColor="#011" />
+
+</LinearLayout>

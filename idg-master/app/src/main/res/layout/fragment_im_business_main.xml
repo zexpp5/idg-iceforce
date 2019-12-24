@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/color_fragment_bg"
+              android:descendantFocusability="blocksDescendants"
+              android:orientation="vertical">
+
+    <include
+        android:id="@+id/title_super"
+        layout="@layout/sd_top_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+    />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_fragment_bg"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/ll_im_business_work_group"
+            style="@style/im_business_style">
+
+            <ImageView
+                android:id="@+id/icon_head_img"
+                style="@style/im_business_list_icon"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:src="@mipmap/icon_work_circle"
+            />
+
+            <tablayout.view.textview.FontTextView
+                android:id="@+id/unread_msg_number_work_group"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_marginBottom="-6dp"
+                android:layout_marginLeft="-6dp"
+                android:layout_toRightOf="@+id/icon_head_img"
+                android:background="@mipmap/icon_num"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/m_text_size"
+                android:visibility="gone"
+            />
+
+            <tablayout.view.textview.FontTextView
+                style="@style/im_business_list_font"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/icon_head_img"
+                android:layout_toRightOf="@+id/icon_head_img"
+                android:text="@string/im_business_work_group"
+                android:textColor="#333333"/>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/ll_im_business_work_report"
+            style="@style/im_business_style"
+            android:layout_marginTop="10dp"
+        >
+
+            <ImageView
+                android:id="@+id/img_work_journal"
+                style="@style/im_business_list_icon"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:src="@mipmap/icon_work_submit"
+            />
+
+            <tablayout.view.textview.FontTextView
+                android:id="@+id/unread_msg_number_work_report"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginBottom="-6dp"
+                android:layout_marginLeft="-6dp"
+                android:layout_toRightOf="@+id/img_work_journal"
+                android:background="@mipmap/icon_num"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/m_text_size"
+                android:visibility="gone"
+            />
+
+            <tablayout.view.textview.FontTextView
+                style="@style/im_business_list_font"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/img_work_journal"
+                android:layout_toRightOf="@+id/img_work_journal"
+                android:text="@string/im_business_work_record"
+                android:textColor="#333333"/>
+
+        </RelativeLayout>
+
+        <include layout="@layout/erp_im_line_one_view"></include>
+
+        <RelativeLayout
+            android:id="@+id/ll_im_business_project_cooperate"
+            style="@style/im_business_style"
+        >
+
+            <ImageView
+                android:id="@+id/icon_head_img2"
+                style="@style/im_business_list_icon"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:src="@mipmap/icon_project_coop"
+            />
+
+            <tablayout.view.textview.FontTextView
+                android:id="@+id/unread_msg_number_project_cooperate"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginBottom="-6dp"
+                android:layout_marginLeft="-6dp"
+                android:layout_toRightOf="@+id/icon_head_img2"
+                android:background="@mipmap/icon_num"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/m_text_size"
+                android:visibility="gone"
+            />
+
+            <tablayout.view.textview.FontTextView
+                style="@style/im_business_list_font"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/icon_head_img2"
+                android:layout_toRightOf="@+id/icon_head_img2"
+                android:text="@string/im_business_work_submit"
+                android:textColor="#333333"/>
+
+
+        </RelativeLayout>
+
+        <include layout="@layout/erp_im_line_one_view"></include>
+
+        <RelativeLayout
+            android:id="@+id/ll_im_business_voice_meeting"
+            style="@style/im_business_style"
+        >
+
+            <ImageView
+                android:id="@+id/icon_head_img4"
+                style="@style/im_business_list_icon"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:src="@mipmap/icon_voice_main"
+            />
+
+            <tablayout.view.textview.FontTextView
+                android:id="@+id/unread_msg_number_voice_meeting"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginBottom="-6dp"
+                android:layout_marginLeft="-6dp"
+                android:layout_toRightOf="@+id/icon_head_img4"
+                android:background="@mipmap/icon_num"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/m_text_size"
+                android:visibility="gone"
+            />
+
+            <tablayout.view.textview.FontTextView
+                style="@style/im_business_list_font"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/icon_head_img4"
+                android:layout_toRightOf="@+id/icon_head_img4"
+                android:text="@string/im_business_achievement_submit"
+                android:textColor="#333333"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/ll_im_business_work_out"
+            style="@style/im_business_style"
+            android:layout_marginTop="10dp"
+        >
+
+            <ImageView
+                android:id="@+id/icon_head_img3"
+                style="@style/im_business_list_icon"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:src="@mipmap/icon_goout"
+            />
+
+            <tablayout.view.textview.FontTextView
+                android:id="@+id/unread_msg_number_work_out"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginBottom="-6dp"
+                android:layout_marginLeft="-6dp"
+                android:layout_toRightOf="@+id/icon_head_img3"
+                android:background="@mipmap/icon_num"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/m_text_size"
+                android:visibility="gone"
+            />
+
+            <tablayout.view.textview.FontTextView
+                style="@style/im_business_list_font"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="11dp" android:layout_marginStart="11dp"
+                android:layout_toEndOf="@+id/icon_head_img3"
+                android:layout_toRightOf="@+id/icon_head_img3"
+                android:text="@string/im_business_borrow_money_submit"
+                android:textColor="#333333"/>
+        </RelativeLayout>
+
+
+        <include layout="@layout/erp_im_line_one_view"></include>
+
+        <RelativeLayout
+            android:id="@+id/ll_im_business_borrow"
+            style="@style/im_business_style"
+        >
+
+            <ImageView
+                android:id="@+id/icon_head_img5"
+                style="@style/im_business_list_icon"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:src="@mipmap/icon_borrow_money"
+            />
+
+            <tablayout.view.textview.FontTextView
+                android:id="@+id/unread_msg_number_borrow"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginBottom="-6dp"
+                android:layout_marginLeft="-6dp"
+                android:layout_toRightOf="@+id/icon_head_img5"
+                android:background="@mipmap/icon_num"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/m_text_size"
+                android:visibility="gone"
+            />
+
+            <tablayout.view.textview.FontTextView
+                style="@style/im_business_list_font"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/icon_head_img5"
+                android:layout_toRightOf="@+id/icon_head_img5"
+                android:text="@string/im_business_leave_submit"
+                android:textColor="#333333"/>
+
+        </RelativeLayout>
+
+        <include layout="@layout/erp_im_line_one_view"></include>
+
+        <RelativeLayout
+            android:id="@+id/ll_im_business_leave"
+            style="@style/im_business_style"
+        >
+
+            <ImageView
+                android:id="@+id/icon_head_img6"
+                style="@style/im_business_list_icon"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:src="@mipmap/icon_holiday"
+            />
+
+            <tablayout.view.textview.FontTextView
+                android:id="@+id/unread_msg_number_leave"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginBottom="-6dp"
+                android:layout_marginLeft="-6dp"
+                android:layout_toRightOf="@+id/icon_head_img6"
+                android:background="@mipmap/icon_num"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/m_text_size"
+                android:visibility="gone"
+            />
+
+
+            <tablayout.view.textview.FontTextView
+                style="@style/im_business_list_font"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/icon_head_img6"
+                android:layout_toRightOf="@+id/icon_head_img6"
+                android:text="@string/im_business_private_chat"
+                android:textColor="#333333"/>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/ll_im_business_work_journal"
+            style="@style/im_business_style"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:id="@+id/icon_head_img7"
+                style="@style/im_business_list_icon"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:src="@mipmap/icon_work_record"
+            />
+
+            <tablayout.view.textview.FontTextView
+                android:id="@+id/unread_msg_number_work_journal"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginBottom="-6dp"
+                android:layout_marginLeft="-6dp"
+                android:layout_toRightOf="@+id/icon_head_img7"
+                android:background="@mipmap/icon_num"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/m_text_size"
+                android:visibility="gone"
+            />
+
+            <tablayout.view.textview.FontTextView
+                style="@style/im_business_list_font"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/icon_head_img7"
+                android:layout_toRightOf="@+id/icon_head_img7"
+                android:text="@string/im_business_scan"
+                android:textColor="#333333"/>
+
+        </RelativeLayout>
+
+        <include layout="@layout/erp_im_line_one_view"></include>
+
+    </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

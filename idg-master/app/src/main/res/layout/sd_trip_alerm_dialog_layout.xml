@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.superdata.marketing.view.percent.PercentLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <com.superdata.marketing.view.percent.PercentLinearLayout
+        android:id="@+id/ll_trip_alerm_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="vertical">
+
+        <tablayout.view.textview.FontTextView
+            android:id="@+id/tv_trip_alerm_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_marginPercent="2.7%w"
+            android:gravity="center_horizontal"
+            android:text="@string/trip_alerm_title_remind"
+            android:textColor="#000000"
+            app:layout_textSizePercent="5.5%w"/>
+
+        <tablayout.view.textview.FontTextView
+            android:id="@+id/tv_trip_alerm_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textColor="#000000"
+            app:layout_textSizePercent="5%w"/>
+
+        <tablayout.view.textview.FontTextView
+            android:id="@+id/tv_trip_alerm_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_marginPercent="2.7%w"
+            android:gravity="center_horizontal"
+            android:textColor="#ffa113"
+            app:layout_textSizePercent="5%w"
+            android:textStyle="bold"/>
+    </com.superdata.marketing.view.percent.PercentLinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#cccccc"/>
+
+    <com.superdata.marketing.view.percent.PercentLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ebebeb">
+
+        <Button
+            android:id="@+id/btn_ok"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#ebebeb"
+            android:text="@string/ok"
+
+            android:textColor="@color/black"/>
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="#cccccc"/>
+
+        <Button
+            android:id="@+id/btn_close_remind"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#ebebeb"
+            android:text="@string/trip_close_remind"
+            android:textColor="#ffa113"/>
+    </com.superdata.marketing.view.percent.PercentLinearLayout>
+</com.superdata.marketing.view.percent.PercentLinearLayout>

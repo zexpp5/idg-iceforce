@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:layout_width="280dp" android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="58dp">
+        <tablayout.view.textview.FontTextView
+            android:paddingLeft="15dp"
+            android:textSize="14sp"
+            android:textColor="@color/blue"
+            android:layout_width="wrap_content"
+            android:text="附件列表"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <View
+        android:background="@color/blue"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <ListView
+        android:id="@+id/lv_file"
+        android:layout_width="match_parent"
+        android:divider="@color/bg_gray"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.superdata.marketing.view.percent.PercentLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cx="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <tablayout.view.textview.FontTextView
+        android:id="@+id/tv_nickname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:textColor="@color/black"
+        android:textSize="@dimen/font_size_item_name"
+        cx:layout_marginBottomPercent="@string/list_margin_bottom"
+        cx:layout_marginLeftPercent="@string/list_margin_left"
+        cx:layout_marginTopPercent="@string/list_margin_top"
+    />
+
+    <tablayout.view.textview.FontEditext
+        android:id="@+id/et_input_content"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#ffffff"
+        android:textColor="@color/black"
+        android:textSize="@dimen/font_size_item_name"
+        cx:layout_marginBottomPercent="@string/list_margin_bottom"
+        cx:layout_marginTopPercent="@string/list_margin_top"/>
+
+    <tablayout.view.textview.FontTextView
+        android:id="@+id/tv_content"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#ffffff"
+        android:textColor="@color/black"
+        android:textSize="@dimen/font_size_item_name"
+        android:visibility="gone"
+        cx:layout_marginBottomPercent="@string/list_margin_bottom"
+        cx:layout_marginRightPercent="@string/list_margin_right"
+        cx:layout_marginTopPercent="@string/list_margin_top"/>
+
+    <View
+        android:id="@+id/view_edit_marginright"
+        android:layout_width="0.5dp"
+        android:layout_height="match_parent"
+        cx:layout_marginRightPercent="@string/list_margin_right"/>
+    <tablayout.view.textview.FontTextView
+        android:id="@+id/tv_tad_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="元"
+        android:textColor="@color/black"
+        android:textSize="@dimen/font_size_item_name"
+        android:visibility="gone"
+        cx:layout_marginBottomPercent="@string/list_margin_bottom"
+        cx:layout_marginRightPercent="@string/list_margin_right"
+        cx:layout_marginTopPercent="@string/list_margin_top"/>
+    <tablayout.view.textview.FontTextView
+        android:id="@+id/tv_tad_rmb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="(币种：人民币)"
+        android:textColor="@color/gray"
+        android:visibility="gone"
+        cx:layout_marginBottomPercent="@string/list_margin_bottom"
+        cx:layout_marginRightPercent="@string/list_margin_right"
+        cx:layout_marginTopPercent="@string/list_margin_top"
+        cx:layout_textSizePercent="4%w"/>
+
+    <ImageView
+        android:id="@+id/iv_customer_add"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@mipmap/tad_customer_add"
+        android:visibility="gone"
+        cx:layout_heightPercent="7%w"
+        cx:layout_marginBottomPercent="@string/list_margin_bottom"
+        cx:layout_marginRightPercent="@string/list_margin_right"
+        cx:layout_marginTopPercent="@string/list_margin_top"
+        cx:layout_widthPercent="7%w"/>
+</com.superdata.marketing.view.percent.PercentLinearLayout>
+

@@ -1,0 +1,39 @@
+apply plugin: 'com.android.library'
+
+android {
+    def versions = rootProject.ext.versions // 配置
+    compileSdkVersion versions.compileSdkVersion
+    buildToolsVersion versions.buildToolsVersion
+
+    defaultConfig {
+        minSdkVersion versions.minSdkVersion
+        targetSdkVersion versions.targetSdkVersion
+
+        //极光推送
+        manifestPlaceholders = [
+                JPUSH_PKGNAME: libraries.jpushPackgerName,
+                JPUSH_APPKEY : libraries.jpushKey, //JPush上注册的包名对应的appkey.
+                JPUSH_CHANNEL: libraries.jpushChannel, //暂时填写默认值即可.
+        ]
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+        }
+    }
+}
+
+dependencies {
+    compile project(':base')
+}
+
+if (JavaVersion.current().isJava8Compatible()) {
+    tasks.withType(Javadoc) {
+        // disable the crazy super-strict doclint tool in Java 8
+        //noinspection SpellCheckingInspection
+        options.addStringOption('Xdoclint:none', '-quiet')
+    }
+}
+
+//apply from: 'https://raw.github.com/chrisbanes/gradle-mvn-push/master/gradle-mvn-push.gradle'

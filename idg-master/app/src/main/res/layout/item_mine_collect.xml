@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/list_item_bg">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/collect_user_icon_img"
+            android:layout_width="@dimen/item_icon_wh_small"
+            android:layout_height="@dimen/item_icon_wh_small"
+            android:layout_marginLeft="@dimen/head_imageView_leftSpacing"
+            android:layout_marginTop="@dimen/head_imageView_topSpacing"
+            android:background="@mipmap/contact_icon"/>
+
+        <tablayout.view.textview.FontTextView
+            android:id="@+id/collect_user_unread_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/circular_margin_bottom"
+            android:layout_marginLeft="@dimen/circular_margin_left"
+            android:layout_marginRight="@dimen/circular_margin_right"
+            android:layout_marginTop="@dimen/circular_margin_top"
+            android:layout_toRightOf="@+id/collect_user_icon_img"
+            android:background="@mipmap/icon_num"
+            android:gravity="center_vertical|center_horizontal"
+            android:textColor="@color/color_item_circular"
+            android:textSize="@dimen/font_size_item_circular"
+            android:visibility="gone"
+        />
+
+        <LinearLayout
+            android:id="@+id/head"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/collect_user_icon_img"
+            android:layout_marginTop="@dimen/head_spacing_top"
+            android:layout_toRightOf="@+id/collect_user_icon_img"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:baselineAligned="false" android:orientation="horizontal">
+
+                <tablayout.view.textview.FontTextView
+                    android:id="@+id/collect_user_name_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/content_lr_spacing"
+                    android:layout_marginRight="@dimen/content_lr_spacing"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="路人甲"
+                    android:textSize="@dimen/font_size_item_name"/>
+                <tablayout.view.textview.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text=":"
+                    android:textSize="@dimen/font_size_item_name"/>
+
+                <tablayout.view.textview.FontTextView
+                    android:id="@+id/collect_user_reason_type_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/content_lr_spacing"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="请假"
+                    android:textSize="@dimen/font_size_item_name"/>
+            </LinearLayout>
+
+            <tablayout.view.textview.FontTextView
+                android:id="@+id/collect_date_tv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/content_lr_spacing"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:gravity="right"
+                android:maxLines="1"
+                android:text="11月16日 11:17"
+                android:textColor="@color/color_item_time"
+                android:textSize="@dimen/font_size_item_time"/>
+        </LinearLayout>
+
+        <com.cc.emojilibrary.EmojiconTextView
+            android:id="@+id/message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/collect_user_icon_img"
+            android:layout_alignLeft="@+id/head"
+            android:layout_alignStart="@+id/head"
+            android:layout_marginBottom="@dimen/message_spacing_bottom"
+            android:layout_marginLeft="@dimen/content_lr_spacing"
+            android:layout_marginRight="@dimen/content_lr_spacing"
+            android:singleLine="true"
+            android:textColor="@color/color_item_content"
+            android:textSize="@dimen/font_size_item_content"/>
+
+        //使用marginBottom无法生效。为了兼容那个sb-oppo的机型-的系统。
+        //不得以加了一条白色的线在底部。用于分隔。
+        <View
+            android:id="@+id/view_001"
+            android:layout_width="wrap_content"
+            android:layout_height="10dp"
+            android:layout_below="@+id/collect_user_icon_img"
+        />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_below="@+id/view_001"
+            android:orientation="horizontal"
+            android:padding="@dimen/head_imageView_leftSpacing">
+
+            <ImageView
+                android:id="@+id/collect_user_reason_icon_img"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_gravity="top|left"
+                android:src="@mipmap/icon_my_invite_join"
+            />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/collect_user_reason_title_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="各种标题各种标题"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/collect_user_reason_content_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:ellipsize="end"
+                    android:maxLines="3"
+                    android:text="胜多负少东方水电费水电费水电费水电费水电费是地方上的发送到发送到发送到发送电风扇电风扇电风扇地方上的发送到发送到发送电风扇的是的闪电"
+                    android:textSize="15sp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="0.5dp"
+        android:background="@color/dividing_line"
+    />
+
+</LinearLayout>

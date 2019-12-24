@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+       xmlns:dandroid="http://schemas.android.com/tools">
+
+    <!-- 实心 -->
+    <solid
+        android:color="#AE1129"/>
+    <corners
+        android:radius="5dp"/>
+
+</shape>

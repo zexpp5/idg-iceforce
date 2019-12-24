@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.cxgz.activity.cxim.view.MaterialRippleLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                  android:layout_width="match_parent"
+                                                  android:layout_height="wrap_content"
+                                                  android:background="#e8e8e8"
+                                                  android:gravity="center_horizontal"
+                                                  android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/icon"
+            android:layout_width="@dimen/item_icon_wh"
+            android:layout_height="@dimen/item_icon_wh"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="@dimen/head_imageView_topSpacing"
+            android:layout_marginLeft="@dimen/head_imageView_leftSpacing"
+            android:layout_marginTop="@dimen/head_imageView_topSpacing"
+            android:background="@mipmap/group_icon"
+            android:scaleType="fitXY"/>
+
+        <tablayout.view.textview.FontTextView
+            android:id="@+id/unreadcount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/circular_margin_bottom"
+            android:layout_marginLeft="@dimen/circular_margin_left"
+            android:layout_marginRight="@dimen/circular_margin_right"
+            android:layout_marginTop="@dimen/circular_margin_top"
+            android:layout_toRightOf="@+id/icon"
+            android:background="@mipmap/icon_num"
+            android:gravity="center_vertical|center_horizontal"
+            android:textColor="@color/color_item_circular"
+            android:textSize="@dimen/font_size_item_circular"
+            android:visibility="gone"
+        />
+
+        <tablayout.view.textview.FontTextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toEndOf="@+id/icon"
+            android:layout_toRightOf="@+id/icon"
+            android:ellipsize="end"
+            android:maxLength="8"
+            android:singleLine="true"
+            android:text="@string/testing"
+            android:textSize="@dimen/font_size_item_name"/>
+
+        <tablayout.view.textview.FontTextView
+            android:id="@+id/num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="3dp"
+            android:layout_toRightOf="@+id/name"
+            android:layout_weight="1"
+            android:maxLength="4"
+            android:singleLine="true"
+            android:textColor="@color/color_item_time"
+            android:textSize="@dimen/font_size_item_time"
+        />
+
+        <tablayout.view.textview.FontTextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/imageView"
+            android:singleLine="true"
+            android:textColor="@color/color_item_time"
+            android:textSize="@dimen/font_size_item_content"/>
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:src="@mipmap/icon_meeting_paly"/>
+
+        <!--</LinearLayout>-->
+
+    </RelativeLayout>
+</com.cxgz.activity.cxim.view.MaterialRippleLayout>
+

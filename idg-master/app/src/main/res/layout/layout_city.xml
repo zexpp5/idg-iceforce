@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+>
+
+    <tablayout.view.textview.FontTextView
+        android:id="@+id/tx_01"
+        style="@style/font_text_content_sytle"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dp_spacing_to_left_right_15dp"
+        android:text="目的城市："/>
+
+    <tablayout.view.textview.FontEditext
+        android:id="@+id/tv_objective_city"
+        style="@style/font_select_textview_content_sytle_two"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/tx_del"
+        android:layout_toRightOf="@+id/tx_01"
+        android:background="@null"
+        android:gravity="center_vertical"
+        android:hint="请选择目的城市"
+        android:singleLine="true"/>
+
+    <tablayout.view.textview.FontTextView
+        android:id="@+id/tx_del"
+        style="@style/font_text_content_sytle"
+        android:layout_height="@dimen/dp_height_line_45dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="#FF3A32"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:text="删除"
+        android:textColor="@color/white"
+    />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_view_line_1dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/dividing_line">
+    </View>
+
+</RelativeLayout>

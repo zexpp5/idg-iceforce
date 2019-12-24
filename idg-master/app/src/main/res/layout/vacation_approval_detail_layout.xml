@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#f2f1f7"
+                android:orientation="vertical"
+>
+
+    <RelativeLayout
+        android:id="@+id/rl_view01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            android:id="@+id/department_title_layout"
+            layout="@layout/top_title_layout"/>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/add_btn_ll"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/rl_view01"
+        android:fadingEdgeLength="0dp"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="#ffffff"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                style="@style/linear_row_style_common"
+                android:orientation="horizontal">
+
+
+                <tablayout.view.textview.FontTextView
+                    style="@style/font_text_content_sytle"
+                    android:text="申  请  人："/>
+
+                <tablayout.view.textview.FontTextView
+                    android:id="@+id/tv_apply"
+                    style="@style/font_select_textview_content_sytle_one2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"/>
+            </LinearLayout>
+
+
+            <include layout="@layout/bottom_line_view"/>
+
+            <LinearLayout
+                style="@style/linear_row_style_common"
+                android:orientation="horizontal">
+
+
+                <tablayout.view.textview.FontTextView
+                    style="@style/font_text_content_sytle"
+                    android:text="申请日期："/>
+
+                <tablayout.view.textview.FontTextView
+                    android:id="@+id/tv_apply_day"
+                    style="@style/font_select_textview_content_sytle_one2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"/>
+            </LinearLayout>
+
+
+            <include layout="@layout/bottom_line_view"/>
+
+
+            <LinearLayout
+                style="@style/linear_row_style_common"
+                android:orientation="horizontal">
+
+
+                <tablayout.view.textview.FontTextView
+                    style="@style/font_text_content_sytle"
+                    android:text="请假类型："/>
+
+                <tablayout.view.textview.FontTextView
+                    android:id="@+id/tv_vacation_type"
+                    style="@style/font_select_textview_content_sytle_one2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"/>
+            </LinearLayout>
+
+
+            <include layout="@layout/bottom_line_view"/>
+
+
+            <LinearLayout
+                style="@style/linear_row_style_common"
+                android:orientation="horizontal">
+
+
+                <tablayout.view.textview.FontTextView
+                    style="@style/font_text_content_sytle"
+                    android:text="开始时间："/>
+
+                <tablayout.view.textview.FontTextView
+                    android:id="@+id/tv_start_time"
+                    style="@style/font_select_textview_content_sytle_one2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"/>
+            </LinearLayout>
+
+            <include layout="@layout/bottom_line_view"/>
+
+            <LinearLayout
+                style="@style/linear_row_style_common"
+                android:orientation="horizontal">
+
+
+                <tablayout.view.textview.FontTextView
+                    style="@style/font_text_content_sytle"
+                    android:text="结束时间："/>
+
+                <tablayout.view.textview.FontTextView
+                    android:id="@+id/tv_end_time"
+                    style="@style/font_select_textview_content_sytle_one2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"/>
+            </LinearLayout>
+
+            <include layout="@layout/bottom_line_view"/>
+
+            <LinearLayout
+                style="@style/linear_row_style_common"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+
+                <tablayout.view.textview.FontTextView
+                    style="@style/font_text_content_sytle"
+                    android:text="上  级："/>
+
+                <tablayout.view.textview.FontTextView
+                    android:id="@+id/tv_superior"
+                    style="@style/font_select_textview_content_sytle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"/>
+            </LinearLayout>
+
+            <!-- <include layout_city="@layout_city/bottom_line_view" />-->
+
+
+            <LinearLayout
+                style="@style/linear_row_style_common"
+                android:orientation="horizontal">
+
+
+                <tablayout.view.textview.FontTextView
+                    style="@style/font_text_content_sytle"
+                    android:text="时长："/>
+
+                <tablayout.view.textview.FontEditext
+                    android:id="@+id/et_vacation_time"
+                    style="@style/font_edtext_content_sytle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:enabled="false"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"/>
+            </LinearLayout>
+
+            <include layout="@layout/bottom_line_view"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginLeft="@dimen/dp_spacing_12dp"
+                android:layout_marginRight="@dimen/dp_spacing_12dp"
+                android:orientation="horizontal">
+
+
+                <tablayout.view.textview.FontTextView
+                    style="@style/font_text_content_sytle"
+                    android:layout_gravity="top"
+                    android:layout_marginTop="8dp"
+                    android:text="请假原因："/>
+
+                <tablayout.view.textview.FontEditext
+                    android:id="@+id/et_vacation_reson"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@null"
+                    android:enabled="false"
+                    android:gravity="top"
+                    android:maxLength="500"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_font_detail_content_15sp"/>
+            </LinearLayout>
+
+
+            <include layout="@layout/bottom_line_view"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginLeft="@dimen/dp_spacing_12dp"
+                android:layout_marginRight="@dimen/dp_spacing_12dp"
+                android:orientation="horizontal">
+
+
+                <tablayout.view.textview.FontTextView
+                    style="@style/font_text_content_sytle"
+                    android:layout_gravity="top"
+                    android:layout_marginTop="8dp"
+                    android:text="备注："/>
+
+                <tablayout.view.textview.FontEditext
+                    android:id="@+id/et_vacation_explain"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@null"
+                    android:enabled="false"
+                    android:gravity="top"
+                    android:maxLength="500"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_font_detail_content_15sp"/>
+            </LinearLayout>
+
+
+            <include layout="@layout/bottom_line_view"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <include
+        android:id="@+id/add_btn_ll"
+        layout="@layout/public_add_btn_layout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

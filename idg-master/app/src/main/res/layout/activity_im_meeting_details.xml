@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/sd_top_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <!--<ScrollView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="0dp"-->
+    <!--android:background="@color/common_bg"-->
+    <!--app:layout_heightPercent="92%h">-->
+
+
+    <ScrollView android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_heightPercent="100%h">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+            >
+                <tablayout.view.textview.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/text_black_xl"/>
+            </RelativeLayout>
+
+            <com.cxgz.activity.cxim.view.NoScrollWithGridView
+                android:id="@+id/group_detail"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:numColumns="4"
+                android:padding="10dp"
+                android:verticalSpacing="12dip"
+                app:layout_heightPercent="40%h"/>
+
+            <include layout="@layout/customs_view"
+                     android:layout_width="match_parent"
+                     android:layout_height="1px"
+            />
+
+            <RelativeLayout
+                android:id="@+id/ll_all_group_members"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/list_item_bg"
+                android:padding="@dimen/margin_12dp"
+            >
+
+                <tablayout.view.textview.FontTextView
+                    android:id="@+id/tv_group_mumber_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_12dp"
+                    android:gravity="center_vertical|left"
+                    android:text="@string/all_member"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/font_size_item_name"
+                />
+
+                <tablayout.view.textview.FontTextView
+                    android:id="@+id/all_group_members_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/tv_group_mumber_tv"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/font_size_item_content"
+                />
+
+            </RelativeLayout>
+
+            <include layout="@layout/customs_view"
+                     android:layout_width="match_parent"
+                     android:layout_height="1px"
+                     android:layout_alignParentBottom="true"
+            />
+
+
+            <include layout="@layout/customs_view"
+                     android:layout_width="match_parent"
+                     android:layout_height="1px"
+                     android:layout_alignParentBottom="true"
+            />
+
+            <Button
+                android:id="@+id/exit"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_margin="12dp"
+                android:background="@color/red"
+                android:text="结束会议"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_size_fragment_title"/>
+        </LinearLayout>
+
+    </ScrollView>
+
+    <!--</ScrollView>-->
+</LinearLayout>

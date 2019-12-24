@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/item_right_container0"
+        style="@style/project_manager_detail_layoutStyle">
+
+        <TextView
+            android:id="@+id/item_right_level0"
+            style="@style/project_manager_detail_rightTVStyle"
+            tools:text="还有谁who?" />
+
+        <View
+            style="@style/project_manager_detail_verticallineStyle"
+            android:layout_alignParentRight="true"
+            android:background="@color/gray" />
+
+        <View
+            style="@style/project_manager_detail_horizontallineStyle"
+            android:layout_alignParentBottom="true"
+            android:background="@color/gray" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/item_right_container1"
+        style="@style/project_manager_detail_layoutStyle"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/item_right_level1"
+            style="@style/project_manager_detail_rightTVStyle"
+            tools:text="还有谁who?" />
+
+        <View
+            style="@style/project_manager_detail_verticallineStyle"
+            android:layout_alignParentRight="true"
+            android:background="@color/gray" />
+
+        <View
+            style="@style/project_manager_detail_horizontallineStyle"
+            android:layout_alignParentBottom="true"
+            android:background="@color/gray" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/item_right_container2"
+        style="@style/project_manager_detail_layoutStyle"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/item_right_level2"
+            style="@style/project_manager_detail_rightTVStyle"
+            tools:text="还有谁who?" />
+
+        <View
+            style="@style/project_manager_detail_verticallineStyle"
+            android:layout_alignParentRight="true"
+            android:background="@color/gray" />
+
+        <View
+            style="@style/project_manager_detail_horizontallineStyle"
+            android:layout_alignParentBottom="true"
+            android:background="@color/gray" />
+
+    </RelativeLayout>
+
+</LinearLayout>

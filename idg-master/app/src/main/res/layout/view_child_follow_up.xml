@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:minHeight="60dp"
+        android:orientation="horizontal"
+    >
+
+        <tablayout.view.textview.FontTextView
+            android:id="@+id/tv_star"
+            style="@style/font_text_content_sytle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text=" * "
+            android:visibility="invisible"
+            android:textColor="@color/red"/>
+
+        <tablayout.view.textview.FontTextView
+            android:id="@+id/tv_key"
+            style="@style/font_text_content_sytle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:textColor="@color/text_black_s"/>
+
+        <tablayout.view.textview.FontEditext
+            android:id="@+id/tv_value"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="3"
+            android:background="@null"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:maxLines="8"
+            android:textColor="@color/text_black_xl"
+            android:textSize="@dimen/sp_font_detail_content_15sp"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+    >
+        <include layout="@layout/line_layout_05dp"
+        />
+    </RelativeLayout>
+
+</LinearLayout>
+

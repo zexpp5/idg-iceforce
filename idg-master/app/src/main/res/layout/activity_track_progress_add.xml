@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <include
+            android:id="@+id/top_bar_layout"
+            layout="@layout/top_title_layout" />
+
+        <tablayout.view.textview.FontEditext
+            android:id="@+id/fet_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/dp_spacing_15dp"
+            android:paddingBottom="@dimen/dp_spacing_15dp"
+            android:paddingLeft="@dimen/dp_spacing_15dp"
+            android:hint="新建/选择项目名称"
+            android:textColor="@color/text_black_l"
+            android:textSize="@dimen/sp_font_detail_content_15sp"
+            android:background="@color/white"
+            />
+
+        <tablayout.view.textview.FontEditext
+            android:id="@+id/fet_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="96dp"
+            android:layout_marginTop="@dimen/dp_spacing_4dp"
+            android:paddingBottom="@dimen/dp_spacing_15dp"
+            android:paddingTop="@dimen/dp_spacing_15dp"
+            android:paddingLeft="@dimen/dp_spacing_15dp"
+            android:paddingRight="@dimen/dp_spacing_15dp"
+            android:maxLines="10"
+            android:hint="请输入项目跟踪进展内容"
+            android:textColor="@color/text_black_l"
+            android:textSize="@dimen/sp_font_detail_content_15sp"
+            android:background="@color/white"/>
+
+        <!--<LinearLayout
+            android:id="@+id/ll_voice"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="@dimen/dp_spacing_4dp"
+            android:paddingLeft="@dimen/dp_spacing_15dp"
+            android:gravity="center_vertical"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="语音"
+                android:textColor="@color/text_black_l"/>
+
+            <ImageView
+                android:id="@+id/iv_voice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_spacing_15dp"
+                />
+
+
+        </LinearLayout>-->
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/voice_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:overScrollMode="never"
+            android:scrollbars="none"/>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/btn_press_to_speak"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="6dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/chat_press_speak_btn"
+        android:layout_alignParentBottom="true"
+        android:visibility="visible"
+        >
+
+        <tablayout.view.textview.FontTextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/button_pushtotalk"
+            android:textColor="#666666"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginBottom="@dimen/dp_spacing_20dp"
+        android:layout_above="@id/btn_press_to_speak"
+        android:overScrollMode="never"
+        android:scrollbars="none"
+        android:background="@color/bg_gray"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,599 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toplayout"
+        layout="@layout/top_title_layout" />
+
+
+    <ScrollView
+        android:layout_below="@+id/toplayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                style="@style/d_s_ll_style"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    style="@style/d_s_s_in_tow_ll_style"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/d_s_left_font_sytle"
+                        android:text="姓名：" />
+
+                    <EditText
+                        android:id="@+id/et_name"
+                        style="@style/personnel_affairs_applay_editextStyle" />
+
+                </LinearLayout>
+
+                <LinearLayout style="@style/d_s_s_in_tow_ll_right_style">
+
+                    <TextView
+                        style="@style/d_s_right_font_sytle"
+                        android:text="籍贯：" />
+
+                    <TextView
+                        android:id="@+id/tv_place"
+                        style="@style/d_s_content_font_select_textview_sytle" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!--线条高度-->
+            <include layout="@layout/erp_line_one_view" />
+
+            <LinearLayout
+                style="@style/d_s_ll_style"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    style="@style/d_s_s_in_tow_ll_style"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/d_s_left_font_sytle"
+                        android:text="身份证号：" />
+
+                    <EditText
+                        android:id="@+id/et_idcard"
+                        android:maxLength="18"
+                        style="@style/personnel_affairs_applay_editextStyle" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <!--线条高度-->
+            <include layout="@layout/erp_line_one_view" />
+
+            <LinearLayout
+                style="@style/d_s_ll_style"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    style="@style/d_s_s_in_tow_ll_style"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/d_s_left_font_sytle"
+                        android:text="出生年月：" />
+
+                    <TextView
+                        android:id="@+id/tv_birth"
+                        style="@style/d_s_content_font_select_textview_sytle" />
+
+                </LinearLayout>
+
+
+                <LinearLayout style="@style/d_s_s_in_tow_ll_right_style">
+
+                    <TextView
+                        style="@style/d_s_right_font_sytle"
+                        android:text="学历：" />
+
+                    <TextView
+                        android:id="@+id/tv_educatioon"
+                        style="@style/d_s_content_font_select_textview_sytle" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <!--线条高度-->
+            <include layout="@layout/erp_line_one_view" />
+
+            <LinearLayout
+                style="@style/d_s_ll_style"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    style="@style/d_s_s_in_tow_ll_style"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/d_s_left_font_sytle"
+                        android:text="部门：" />
+
+                    <TextView
+                        android:id="@+id/tv_department"
+                        style="@style/d_s_content_font_select_textview_sytle" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    style="@style/d_s_s_in_tow_ll_right_style"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        style="@style/d_s_right_font_sytle"
+                        android:text="职务：" />
+
+                    <EditText
+                        android:id="@+id/et_job"
+                        style="@style/personnel_affairs_applay_editextStyle"
+                        android:maxLength="10" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <!--线条高度-->
+            <include layout="@layout/erp_line_one_view" />
+
+            <LinearLayout
+                style="@style/d_s_ll_style"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    style="@style/d_s_s_in_tow_ll_style"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/d_s_left_font_sytle"
+                        android:text="层级归属：" />
+
+                    <TextView
+                        android:id="@+id/tv_level"
+                        style="@style/d_s_content_font_select_textview_sytle" />
+
+                </LinearLayout>
+
+
+                <LinearLayout style="@style/d_s_s_in_tow_ll_right_style">
+
+                    <TextView
+                        style="@style/d_s_right_font_sytle"
+                        android:text="性别：" />
+
+                    <TextView
+                        android:id="@+id/tv_sex"
+                        style="@style/d_s_content_font_select_textview_sytle" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <!--线条高度-->
+            <include layout="@layout/erp_line_one_view" />
+
+            <LinearLayout
+                style="@style/d_s_ll_style"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    style="@style/d_s_s_in_tow_ll_style"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/d_s_left_font_sytle"
+                        android:text="合约形式：" />
+
+                    <TextView
+                        android:id="@+id/tv_contract"
+                        style="@style/d_s_content_font_select_textview_sytle" />
+
+                </LinearLayout>
+
+
+                <LinearLayout style="@style/d_s_s_in_tow_ll_right_style">
+
+                    <TextView
+                        style="@style/d_s_right_font_sytle"
+                        android:text="任职状态：" />
+
+                    <TextView
+                        android:id="@+id/tv_jobStatus"
+                        style="@style/d_s_content_font_select_textview_sytle" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <!--线条高度-->
+            <include layout="@layout/erp_line_one_view" />
+
+            <LinearLayout
+                style="@style/d_s_ll_style"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    style="@style/d_s_s_in_tow_ll_style"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/d_s_left_font_sytle"
+                        android:text="家庭住址：" />
+
+                    <EditText
+                        android:id="@+id/et_home_address"
+                        style="@style/personnel_affairs_applay_editextStyle" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!--线条高度-->
+            <include layout="@layout/erp_line_one_view" />
+
+            <LinearLayout
+                style="@style/d_s_ll_style"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    style="@style/d_s_s_in_tow_ll_style"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/d_s_left_font_sytle"
+                        android:text="毕业院校：" />
+
+                    <EditText
+                        android:id="@+id/et_school"
+                        style="@style/personnel_affairs_applay_editextStyle"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!--线条高度-->
+            <include layout="@layout/erp_line_one_view" />
+
+            <LinearLayout
+                style="@style/d_s_ll_style"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    style="@style/d_s_s_in_tow_ll_style"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/d_s_left_font_sytle"
+                        android:text="联系住址：" />
+
+                    <EditText
+                        android:id="@+id/et_contact_address"
+                        style="@style/personnel_affairs_applay_editextStyle"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!--线条高度-->
+            <include layout="@layout/erp_line_one_view" />
+
+            <LinearLayout
+                style="@style/d_s_ll_style"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    style="@style/d_s_s_in_tow_ll_style"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/d_s_left_font_sytle"
+                        android:text="联系电话：" />
+
+                    <EditText
+                        android:id="@+id/et_contact_phone"
+                        style="@style/personnel_affairs_applay_editextStyle"
+                        android:inputType="phone" />
+
+                </LinearLayout>
+
+                <LinearLayout style="@style/d_s_s_in_tow_ll_right_style">
+
+                    <TextView
+                        style="@style/d_s_right_font_sytle"
+                        android:text="邮箱：" />
+
+                    <EditText
+                        android:id="@+id/et_email"
+                        style="@style/personnel_affairs_applay_editextStyle" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!--线条高度-->
+            <include layout="@layout/erp_line_one_view" />
+
+            <LinearLayout
+                style="@style/d_s_ll_style"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    style="@style/d_s_s_in_tow_ll_style"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/d_s_left_font_sytle"
+                        android:text="QQ：" />
+
+                    <EditText
+                        android:id="@+id/et_qq"
+                        style="@style/personnel_affairs_applay_editextStyle"
+                        android:inputType="number"
+                       />
+
+                </LinearLayout>
+
+                <LinearLayout style="@style/d_s_s_in_tow_ll_right_style">
+
+                    <TextView
+                        style="@style/d_s_right_font_sytle"
+                        android:text="微信：" />
+
+                    <EditText
+                        android:id="@+id/et_weixin"
+                        style="@style/personnel_affairs_applay_editextStyle" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!--线条高度-->
+            <include layout="@layout/erp_line_one_view" />
+
+            <LinearLayout
+                style="@style/d_s_ll_style"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    style="@style/d_s_s_in_tow_ll_style"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/d_s_left_font_sytle"
+                        android:text="婚姻状况：" />
+
+
+                    <TextView
+                        android:id="@+id/tv_marital_status"
+                        style="@style/d_s_content_font_select_textview_sytle" />
+
+                </LinearLayout>
+
+                <LinearLayout style="@style/d_s_s_in_tow_ll_right_style">
+
+                    <TextView
+                        style="@style/d_s_right_font_sytle"
+                        android:text="薪酬：" />
+
+                    <EditText
+                        android:id="@+id/et_pay"
+                        style="@style/personnel_affairs_applay_editextStyle"
+                        android:inputType="numberDecimal" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!--线条高度-->
+            <include layout="@layout/erp_line_one_view" />
+
+            <LinearLayout
+                style="@style/d_s_ll_style"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    style="@style/d_s_s_in_tow_ll_style"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/d_s_left_font_sytle"
+                        android:text="入职时间：" />
+
+                    <TextView
+                        android:id="@+id/tv_entry_time"
+                        style="@style/d_s_content_font_select_textview_sytle" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/d_s_s_in_tow_ll_right_style"
+                    android:visibility="invisible">
+
+                    <TextView
+                        style="@style/d_s_right_font_sytle"
+                        android:text="性别：" />
+
+                    <TextView
+                        android:id="@+id/xx"
+                        style="@style/d_s_content_font_select_textview_sytle" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!--线条高度-->
+            <include layout="@layout/erp_line_one_view" />
+
+            <LinearLayout
+                style="@style/d_s_ll_style"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    style="@style/d_s_s_in_tow_ll_style"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/d_s_left_font_sytle"
+                        android:text="系统账号：" />
+
+                    <EditText
+                        android:id="@+id/et_sys_number"
+                        style="@style/personnel_affairs_applay_editextStyle" />
+
+                </LinearLayout>
+
+                <LinearLayout style="@style/d_s_s_in_tow_ll_right_style">
+
+                    <TextView
+                        style="@style/d_s_right_font_sytle"
+                        android:text="密码：" />
+
+                    <EditText
+                        android:id="@+id/et_sys_password"
+                        style="@style/personnel_affairs_applay_editextStyle"
+                        android:inputType="textPassword" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!--线条高度-->
+            <include layout="@layout/erp_line_one_view" />
+
+            <LinearLayout
+                style="@style/d_s_ll_style"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    style="@style/d_s_s_in_tow_ll_style"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/d_s_left_font_sytle"
+                        android:text="系统授权：" />
+
+                    <RadioButton
+                        android:id="@+id/rbn_sys_start_use"
+                        style="@style/d_s_left_font_sytle"
+                        android:checked="true"
+                        android:text="启用" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/line_height_dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="0.95">
+
+                    <RadioButton
+                        android:id="@+id/rbn_sys_stop_use"
+                        style="@style/d_s_left_font_sytle"
+                        android:text="停用" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!--线条高度-->
+            <include layout="@layout/erp_line_one_view" />
+
+            <LinearLayout
+                style="@style/d_s_ll_style"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    style="@style/d_s_s_in_tow_ll_style"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/d_s_left_font_sytle"
+                        android:text="IM账号：" />
+
+                    <EditText
+                        android:id="@+id/et_im_number"
+                        style="@style/personnel_affairs_applay_editextStyle" />
+
+                </LinearLayout>
+
+                <LinearLayout style="@style/d_s_s_in_tow_ll_right_style">
+
+                    <TextView
+                        style="@style/d_s_right_font_sytle"
+                        android:text="密码：" />
+
+                    <EditText
+                        android:id="@+id/et_im_password"
+                        style="@style/personnel_affairs_applay_editextStyle"
+                        android:inputType="textPassword" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!--线条高度-->
+            <include layout="@layout/erp_line_one_view" />
+
+            <LinearLayout
+                style="@style/d_s_ll_style"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    style="@style/d_s_s_in_tow_ll_style"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/d_s_left_font_sytle"
+                        android:text="系统授权：" />
+
+                    <RadioButton
+                        android:id="@+id/rbn_im_start_use"
+                        style="@style/d_s_left_font_sytle"
+                        android:checked="true"
+                        android:text="启用" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/line_height_dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="0.95">
+
+                    <RadioButton
+                        android:id="@+id/rbn_im_stop_use"
+                        style="@style/d_s_left_font_sytle"
+                        android:text="停用" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <include layout="@layout/line_layout_5dp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <include
+        style="@style/list_ShareLayout_Style"
+        layout="@layout/list_share_layout" />
+</RelativeLayout>

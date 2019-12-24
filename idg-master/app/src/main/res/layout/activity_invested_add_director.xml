@@ -1,0 +1,476 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+    <include
+        android:id="@+id/top_bar_layout"
+        layout="@layout/public_title_01"/>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:focusable="true"
+                      android:focusableInTouchMode="true"
+                      android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/dp_spacing_to_left_right_15dp"
+                    android:layout_marginRight="@dimen/dp_spacing_to_left_right_15dp"
+                    android:minHeight="60dp"
+                    android:orientation="horizontal"
+                >
+
+                    <tablayout.view.textview.FontTextView
+                        style="@style/font_text_content_sytle"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.5"
+                        android:gravity="center_vertical"
+                        android:text="@string/edt_director_program1"
+                        android:textColor="@color/text_black_s"/>
+
+                    <tablayout.view.textview.FontEditext
+                        android:id="@+id/edt_program_project_name"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="3"
+                        android:background="@null"
+                        android:ellipsize="end"
+                        android:gravity="center_vertical"
+                        android:hint="@string/hint_director_program1"
+                        android:maxLines="5"
+                        android:textColor="@color/text_black_xl"
+                        android:textSize="@dimen/sp_font_detail_content_15sp"/>
+                </LinearLayout>
+
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp15"
+                android:layout_marginRight="@dimen/dp15"
+            >
+
+                <include layout="@layout/line_layout_05dp"
+                />
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/dp_spacing_to_left_right_15dp"
+                    android:layout_marginRight="@dimen/dp_spacing_to_left_right_15dp"
+                    android:minHeight="60dp"
+                    android:orientation="horizontal"
+                >
+
+                    <tablayout.view.textview.FontTextView
+                        style="@style/font_text_content_sytle"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.5"
+                        android:gravity="center_vertical"
+                        android:text="@string/edt_director_program2"
+                        android:textColor="@color/text_black_s"/>
+
+                    <tablayout.view.textview.FontTextView
+                        android:id="@+id/edt_program_time"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="3"
+                        android:background="@null"
+                        android:ellipsize="end"
+                        android:gravity="center_vertical"
+                        android:hint="@string/hint_director_program2"
+                        android:maxLines="5"
+                        android:textColor="@color/text_black_xl"
+                        android:textSize="@dimen/sp_font_detail_content_15sp"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp15"
+                android:layout_marginRight="@dimen/dp15"
+            >
+
+                <include layout="@layout/line_layout_05dp"
+                />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/dp_spacing_to_left_right_15dp"
+                    android:layout_marginRight="@dimen/dp_spacing_to_left_right_15dp"
+                    android:minHeight="60dp"
+                    android:orientation="horizontal"
+                >
+
+                    <tablayout.view.textview.FontTextView
+                        style="@style/font_text_content_sytle"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.5"
+                        android:gravity="center_vertical"
+                        android:text="@string/edt_director_program3"
+                        android:textColor="@color/text_black_s"/>
+
+                    <tablayout.view.textview.FontEditext
+                        android:id="@+id/edt_program_director_info"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="3"
+                        android:background="@null"
+                        android:ellipsize="end"
+                        android:gravity="center_vertical"
+                        android:hint="@string/hint_director_program3"
+                        android:maxLines="5"
+                        android:textColor="@color/text_black_xl"
+                        android:textSize="@dimen/sp_font_detail_content_15sp"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp15"
+                android:layout_marginRight="@dimen/dp15"
+            >
+
+                <include layout="@layout/line_layout_05dp"
+                />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/dp_spacing_to_left_right_15dp"
+                    android:layout_marginRight="@dimen/dp_spacing_to_left_right_15dp"
+                    android:minHeight="60dp"
+                    android:orientation="horizontal"
+                >
+
+                    <tablayout.view.textview.FontTextView
+                        style="@style/font_text_content_sytle"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.5"
+                        android:gravity="center_vertical"
+                        android:text="@string/edt_director_program4"
+                        android:textColor="@color/text_black_s"/>
+
+                    <RadioGroup
+                        android:id="@+id/radio_group"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="3"
+                        android:orientation="horizontal"
+                    >
+
+                        <RadioButton
+                            android:id="@+id/radioButton1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/select_follow_up_bg"
+                            android:button="@null"
+                            android:checked="false"
+                            android:paddingBottom="5dp"
+                            android:paddingLeft="@dimen/dp_spacing_30dp"
+                            android:paddingRight="@dimen/dp_spacing_30dp"
+                            android:paddingTop="5dp"
+                            android:text=" 是 "
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/sp_font_detail_content_15sp"/>
+
+
+                        <RadioButton
+                            android:id="@+id/radioButton2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dp_spacing_10dp"
+                            android:background="@drawable/select_follow_up_bg"
+                            android:button="@null"
+                            android:checked="true"
+                            android:paddingBottom="5dp"
+                            android:paddingLeft="@dimen/dp_spacing_30dp"
+                            android:paddingRight="@dimen/dp_spacing_30dp"
+                            android:paddingTop="5dp"
+                            android:text=" 否 "
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/sp_font_detail_content_15sp"/>
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_view_01"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dp15"
+                    android:layout_marginRight="@dimen/dp15"
+                >
+
+                    <include layout="@layout/line_layout_05dp"
+                    />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/dp_spacing_to_left_right_15dp"
+                    android:layout_marginRight="@dimen/dp_spacing_to_left_right_15dp"
+                    android:minHeight="60dp"
+                    android:orientation="horizontal"
+                >
+
+                    <tablayout.view.textview.FontTextView
+
+                        style="@style/font_text_content_sytle"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.5"
+                        android:gravity="center_vertical"
+                        android:text="@string/edt_director_program5"
+                        android:textColor="@color/text_black_s"/>
+
+                    <tablayout.view.textview.FontTextView
+                        android:id="@+id/edt_program_flag_type"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="3"
+                        android:background="@null"
+                        android:ellipsize="end"
+                        android:gravity="center_vertical"
+                        android:hint="@string/hint_director_program5"
+                        android:maxLines="5"
+                        android:textColor="@color/text_black_xl"
+                        android:textSize="@dimen/sp_font_detail_content_15sp"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_view_02"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dp15"
+                    android:layout_marginRight="@dimen/dp15"
+                >
+
+                    <include layout="@layout/line_layout_05dp"
+                    />
+                </RelativeLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/dp_spacing_to_left_right_15dp"
+                    android:layout_marginRight="@dimen/dp_spacing_to_left_right_15dp"
+                    android:minHeight="60dp"
+                    android:orientation="horizontal"
+                >
+
+                    <tablayout.view.textview.FontTextView
+                        style="@style/font_text_content_sytle"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.5"
+                        android:gravity="center_vertical"
+                        android:text="@string/edt_director_program6"
+                        android:textColor="@color/text_black_s"/>
+
+                    <tablayout.view.textview.FontEditext
+                        android:id="@+id/edt_program_content"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="3"
+                        android:background="@null"
+                        android:ellipsize="end"
+                        android:gravity="center_vertical"
+                        android:hint="@string/hint_director_program6"
+                        android:maxLines="5"
+                        android:textColor="@color/text_black_xl"
+                        android:textSize="@dimen/sp_font_detail_content_15sp"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp15"
+                android:layout_marginRight="@dimen/dp15"
+            >
+
+                <include layout="@layout/line_layout_05dp"
+                />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dp15"
+                    android:layout_marginRight="@dimen/dp15"
+                >
+
+                    <include layout="@layout/line_layout_05dp"
+                    />
+                </RelativeLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/dp_spacing_to_left_right_15dp"
+                    android:layout_marginRight="@dimen/dp_spacing_to_left_right_15dp"
+                    android:minHeight="60dp"
+                    android:orientation="horizontal"
+                >
+
+                    <tablayout.view.textview.FontTextView
+                        style="@style/font_text_content_sytle"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.5"
+                        android:gravity="center_vertical"
+                        android:text="@string/edt_director_program7"
+                        android:textColor="@color/text_black_s"/>
+
+                    <RelativeLayout
+                        android:id="@+id/ll_file"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                    >
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/recyclerview"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_centerVertical="true"
+                            android:visibility="gone"/>
+
+                        <tablayout.view.textview.FontTextView
+                            android:id="@+id/tv_choose_file"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:clickable="false"
+                            android:ellipsize="end"
+                            android:gravity="center_vertical"
+                            android:hint="请选择文件"
+                            android:maxLines="5"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/sp_font_detail_content_15sp"/>
+
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp15"
+                android:layout_marginRight="@dimen/dp15"
+            >
+
+                <include layout="@layout/line_layout_05dp"
+                />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <include layout="@layout/include_ll_save_btn_view"></include>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

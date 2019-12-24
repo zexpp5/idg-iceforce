@@ -1,0 +1,35 @@
+ext.versions = [
+//        code           : 7,
+//        name           : '1.1.4',
+//
+        minSdk         : 16,
+        targetSdk      : 27,
+        compileSdk     : 27,
+        buildTools     : '25.0.3',
+
+        // Library versions
+        supportLibs    : '27.1.1',
+        supportRecyclerView: '23.2.0',
+//        supportAnnotationsLibs    : '23.0.0',
+        nineOldAndroids: '2.4.0',
+        materialicons  : '1.0.1',
+        stickyheaders  : '0.5.0'
+]
+
+ext.libraries = [
+        supportRecyclerView: "com.android.support:recyclerview-v7:$versions.supportRecyclerView",
+        supportAppCompat   : "com.android.support:appcompat-v7:$versions.supportLibs",
+        supportDesign      : "com.android.support:design:$versions.supportLibs",
+        supportCardView    : "com.android.support:cardview-v7:$versions.supportLibs",
+        supportVfour       : "com.android.support:support-v4:${versions.supportLibs}@aar",
+        supportAnnotations : "com.android.support:support-annotations:${versions.supportLibs}",
+
+        nineOldAndroids    : "com.nineoldandroids:library:$versions.nineOldAndroids",
+        materialicons      : "com.malinskiy:materialicons:$versions.materialicons",
+        stickyheaders      : "com.eowise:recyclerview-stickyheaders:${versions.stickyheaders}@aar",
+
+//        推送的
+        jpushPackgerName    : "com.injoy.idg",
+        jpushKey            : "e50022543416e494a46561d8",
+        jpushChannel        : "developer-default"
+]

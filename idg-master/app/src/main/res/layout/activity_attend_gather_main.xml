@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/top_bar_layout"
+        layout="@layout/public_title_01"/>
+
+    <LinearLayout
+        android:id="@+id/ll_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top_bar_layout"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/dp_spacing_15dp"
+        android:paddingLeft="@dimen/dp_spacing_15dp"
+        android:paddingRight="@dimen/dp_spacing_15dp"
+        android:paddingTop="@dimen/dp_spacing_10dp"
+    >
+
+        <RelativeLayout
+            android:id="@+id/rl_dept_btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5">
+
+            <tablayout.view.textview.FontTextView
+                android:id="@+id/button1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_btn_bg2"
+                android:ellipsize="end"
+                android:maxLength="6"
+                android:maxLines="1"
+                android:padding="10dp"
+                android:text="部门"
+                android:textSize="@dimen/sp_font_title_15sp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-1dp"
+                android:layout_toRightOf="@+id/button1"
+                android:background="@drawable/shape_btn_bg"
+                android:paddingRight="10dp">
+
+                <tablayout.view.textview.FontTextView
+                    android:id="@+id/tv_dept"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:padding="10dp"
+                    android:textSize="@dimen/sp_font_title_15sp"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@mipmap/dao_sj_bg"
+                />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_month_btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1.1">
+
+            <tablayout.view.textview.FontTextView
+                android:id="@+id/button3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_btn_bg2"
+                android:ellipsize="end"
+                android:maxLength="6"
+                android:maxLines="1"
+                android:padding="10dp"
+                android:text="月份"
+                android:textSize="@dimen/sp_font_title_15sp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-1dp"
+                android:layout_toRightOf="@+id/button3"
+                android:background="@drawable/shape_btn_bg"
+                android:paddingRight="10dp">
+
+                <tablayout.view.textview.FontTextView
+                    android:id="@+id/tv_month"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:padding="10dp"
+                    android:textSize="@dimen/sp_font_title_15sp"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@mipmap/dao_sj_bg"
+                />
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/smart_refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ll_search"
+        app:srlEnableLoadmore="true"
+        app:srlEnableLoadmoreWhenContentNotFull="false"
+    >
+
+        <com.scwang.smartrefresh.layout.header.ClassicsHeader
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <yunjing.view.excelpane.AdaptiveTableLayout
+            android:id="@+id/tableLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:dragAndDropEnabled="false"
+            app:fixedHeaders="true"
+            app:solidRowHeaders="false"/>
+        <com.scwang.smartrefresh.layout.footer.ClassicsFooter
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</RelativeLayout>

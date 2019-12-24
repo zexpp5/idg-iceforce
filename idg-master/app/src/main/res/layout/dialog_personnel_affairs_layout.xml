@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/dp_width_dialog_250dp"
+    android:layout_height="wrap_content"
+    android:background="@color/color_personnel_affairs_dialog_bg"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/personnel_affairsTV"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:background="#33000000"
+        android:gravity="center"
+        android:text="@string/personnel_affairs"
+        android:textColor="@color/color_personnel_affairs_dialog"
+        android:textSize="@dimen/sp_font_detail_content_17sp" />
+
+    <TextView
+        android:id="@+id/entry_requestTV"
+        style="@style/dialog_personnel_affairs_textviewStyle"
+        android:text="@string/entry_request" />
+
+    <TextView
+        android:id="@+id/departure_requestTV"
+        style="@style/dialog_personnel_affairs_textviewStyle"
+        android:background="@color/itemcolor"
+        android:text="@string/departure_request" />
+
+    <TextView
+        android:id="@+id/salary_applicationTV"
+        style="@style/dialog_personnel_affairs_textviewStyle"
+        android:text="@string/salary_application" />
+
+    <TextView
+        android:id="@+id/transaction_requestTV"
+        style="@style/dialog_personnel_affairs_textviewStyle"
+        android:background="@color/itemcolor"
+        android:text="@string/transaction_request" />
+
+
+</LinearLayout>

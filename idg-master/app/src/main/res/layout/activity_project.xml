@@ -1,0 +1,138 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_fragment_bg">
+
+
+    <!-- 底部四个导航按钮 -->
+    <RelativeLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/ll_tabs"
+        android:layout_marginBottom="-20dp"
+        android:background="@color/color_fragment_bg"
+        />
+    <!--<View
+        android:id="@+id/view_01"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_above="@id/ll_tabs"
+        android:background="@color/dividing_line"/>-->
+
+    <RelativeLayout
+        android:id="@+id/ll_tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="bottom"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/transparency"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:orientation="horizontal"
+            android:paddingTop="20dp"
+            >
+
+            <com.cxgz.activity.cx.utils.dialog.HomeTab
+                android:id="@+id/home_tab_btn_1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:tabfocusable="true"
+                app:tabsrc="@drawable/tab_iceforce_work_bg"
+                app:tabtext="@string/super_tab_01"
+                app:tabtvbg="@color/cx_tab_bar_tv_bg"
+
+                />
+
+            <com.cxgz.activity.cx.utils.dialog.HomeTab
+                android:id="@+id/home_tab_btn_2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:tabfocusable="true"
+                app:tabsrc="@drawable/tab_iceforce_event_bg"
+                app:tabtext="@string/super_tab_03"
+                app:tabtvbg="@color/cx_tab_bar_tv_bg"/>
+
+            <LinearLayout
+                android:id="@+id/home_tab_btn_3"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/iv_icon_3"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="-15dp"
+                    android:layout_gravity="center"
+                    android:padding="3dp"
+                    android:src="@mipmap/iceforce_tab_add_select"/>
+
+                <tablayout.view.textview.FontTextView
+                    android:id="@+id/tv_name_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:text="新建"
+                    android:textColor="@color/cx_tab_bar_text_color_normal"
+                    android:textSize="12sp"/>
+
+
+            </LinearLayout>
+
+            <!--<com.cxgz.activity.cx.utils.dialog.HomeTab-->
+            <!--android:id="@+id/home_tab_btn_3"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="1"-->
+            <!--app:tabfocusable="true"-->
+            <!--app:tabsrc="@drawable/tab_iceforce_event_bg"-->
+            <!--app:tabtext="@string/super_tab_03"-->
+            <!--app:tabtvbg="@color/cx_tab_bar_tv_bg"/>-->
+
+            <com.cxgz.activity.cx.utils.dialog.HomeTab
+                android:id="@+id/home_tab_btn_4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:tabfocusable="true"
+                app:tabsrc="@drawable/tab_iceforce_projects_library_bg"
+                app:tabtext="@string/super_tab_04"
+                app:tabtvbg="@color/cx_tab_bar_tv_bg"
+                />
+
+            <com.cxgz.activity.cx.utils.dialog.HomeTab
+                android:id="@+id/home_tab_btn_5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:tabfocusable="true"
+                app:tabsrc="@drawable/tab_iceforce_my_bg"
+                app:tabtext="@string/super_tab_05"
+                app:tabtvbg="@color/cx_tab_bar_tv_bg"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!-- VIewPager 主要是加载内容的 -->
+
+    <!--<RelativeLayout-->
+    <!--android:id="@+id/fragment_container_test"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_alignBottom="@+id/view_01"-->
+    <!--android:visibility="gone"-->
+    <!--/>-->
+
+
+</RelativeLayout>

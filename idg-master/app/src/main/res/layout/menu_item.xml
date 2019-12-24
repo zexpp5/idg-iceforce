@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tablayout.view.rippleview.MaterialRippleLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    app:rippleColor="#fff">
+
+    <com.superdata.marketing.view.percent.PercentRelativeLayout
+        android:id="@+id/ly_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#2f3241">
+
+        <ImageView
+            android:id="@+id/menu_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            app:layout_heightPercent="13%w"
+            app:layout_marginLeftPercent="5%w"
+            app:layout_widthPercent="13%w"/>
+
+        <tablayout.view.textview.FontTextView
+            android:id="@+id/menu_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/menu_icon"
+            android:background="#2f3241"
+            android:gravity="center|left"
+            android:singleLine="true"
+            android:text="tablayout.view.textview.FontTextView"
+            android:textColor="#fff"
+            android:textSize="@dimen/font_size_item_name"
+            app:layout_paddingPercent="7%w"
+        />
+
+        <tablayout.view.textview.FontTextView
+            android:id="@+id/menu_item2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/menu_item"
+            android:background="#2f3241"
+            android:gravity="center|left"
+            android:singleLine="true"
+            android:textColor="@color/gray"
+            app:layout_textSizePercent="7%w"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/black"></View>
+    </com.superdata.marketing.view.percent.PercentRelativeLayout>
+</tablayout.view.rippleview.MaterialRippleLayout>

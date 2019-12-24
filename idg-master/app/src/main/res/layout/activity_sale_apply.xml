@@ -1,0 +1,122 @@
+<com.superdata.marketing.view.percent.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/common_bg"
+        android:visibility="gone"
+        app:layout_heightPercent="@string/space"></View>
+
+    <com.superdata.marketing.view.percent.PercentRelativeLayout
+        android:id="@+id/item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.superdata.marketing.view.percent.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <com.superdata.marketing.view.percent.PercentLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                app:layout_paddingBottomPercent="3%w"
+                app:layout_paddingTopPercent="3%w">
+
+                <com.superdata.marketing.view.percent.PercentLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    app:layout_paddingBottomPercent="1%w"
+                    app:layout_paddingLeftPercent="@string/list_padding_left">
+
+                    <tablayout.view.textview.FontTextView
+                        android:id="@+id/user_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:text="名字"
+                        android:textColor="@color/black"
+                        app:layout_textSizePercent="@string/text_size" />
+
+                    <tablayout.view.textview.FontTextView
+                        android:id="@+id/tv_maohao"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:text="："
+                        android:textColor="@color/black"
+                        app:layout_textSizePercent="@string/text_size" />
+
+                    <tablayout.view.textview.FontTextView
+                        android:id="@+id/title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLength="8"
+                        android:singleLine="true"
+                        android:ellipsize="end"
+                        android:text="标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题"
+                        android:textColor="@color/black"
+                        app:layout_textSizePercent="@string/text_size" />
+                </com.superdata.marketing.view.percent.PercentLinearLayout>
+
+                <com.superdata.marketing.view.percent.PercentLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    app:layout_paddingLeftPercent="@string/list_padding_left">
+
+                    <tablayout.view.textview.FontTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:text="空"
+                        android:textColor="@color/black"
+                        android:visibility="invisible"
+                        app:layout_textSizePercent="@string/text_size" />
+
+                    <tablayout.view.textview.FontTextView
+                        android:id="@+id/time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:text="2015-12-19"
+                        android:textColor="@color/black"
+                        app:layout_textSizePercent="@string/text_size" />
+
+                </com.superdata.marketing.view.percent.PercentLinearLayout>
+            </com.superdata.marketing.view.percent.PercentLinearLayout>
+
+
+        </com.superdata.marketing.view.percent.PercentLinearLayout>
+
+        <com.cxgz.activity.cx.utils.xListView.ChangeStatusView
+            android:id="@+id/apply_stauts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            app:layout_paddingRightPercent="@string/list_padding_right"
+            app:left_statusName="销售"
+            app:right_statusName="已阅" />
+    </com.superdata.marketing.view.percent.PercentRelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/common_bg"
+        app:layout_heightPercent="@string/space"></View>
+</com.superdata.marketing.view.percent.PercentLinearLayout>

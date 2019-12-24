@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/view_padding"
+    android:paddingRight="@dimen/view_padding"
+    android:orientation="vertical">
+
+    <tablayout.view.textview.FontTextView
+        android:textColor="@color/normal_black"
+        android:id="@+id/text"
+        android:textSize="16sp"
+        android:paddingTop="@dimen/chat_guangzhu_dp12"
+        android:paddingBottom="@dimen/chat_guangzhu_dp12"
+        android:text="加载中..."
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <View
+        android:background="@color/dividing_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+</LinearLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFF0F4"
+    android:orientation="vertical" >
+
+    <include layout="@layout/sd_top_title" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <tablayout.view.xlistview.XListView
+            android:id="@+id/lv_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none"
+            android:divider="@color/dividing_line"
+            android:dividerHeight="0.5dp"
+            android:listSelector="@color/transparency"
+            android:overScrollMode="never" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+    <include layout="@layout/sd_top_title"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#E8E8E8"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_corners">
+
+            <tablayout.view.textview.FontTextView
+                android:id="@+id/tv_pay_receive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/shape_pay_bg"
+                android:gravity="center"
+                android:padding="25dp"
+                android:text="收"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/white"
+                android:textSize="30sp"/>
+
+            <tablayout.view.textview.FontTextView
+                android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_below="@+id/tv_pay_receive"
+                      android:layout_centerHorizontal="true"
+                      android:layout_marginTop="10dp"
+                      android:text="我要收款"
+                      android:textAppearance="?android:attr/textAppearanceMedium"
+                      android:textSize="14sp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_corners">
+            <tablayout.view.textview.FontTextView
+                android:id="@+id/tv_pay_give"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/shape_pay_bg2"
+                android:gravity="center"
+                android:padding="25dp"
+                android:text="付"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/white"
+                android:textSize="30sp"/>
+
+            <tablayout.view.textview.FontTextView
+                android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_below="@+id/tv_pay_give"
+                      android:layout_centerHorizontal="true"
+                      android:layout_marginTop="10dp"
+                      android:text="我要付款"
+                      android:textAppearance="?android:attr/textAppearanceMedium"
+                      android:textSize="14sp"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="5dp"
+            android:layout_weight="0.5"
+            android:orientation="horizontal"
+        >
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

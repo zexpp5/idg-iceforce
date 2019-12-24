@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/department_title_layout"
+            layout="@layout/top_title_layout" />
+
+        <include
+            android:id="@+id/head_bar_layout"
+            layout="@layout/person_information_layout" />
+
+        <include layout="@layout/bottom_line_view_three" />
+
+        <LinearLayout
+            style="@style/linear_row_style_common"
+            android:orientation="horizontal">
+
+
+            <tablayout.view.textview.FontTextView
+                style="@style/font_text_content_sytle"
+                android:text="@string/send_to" />
+
+            <tablayout.view.textview.FontTextView
+                android:id="@+id/loan_chaosong_text"
+                style="@style/font_select_textview_content_sytle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:singleLine="true" />
+        </LinearLayout>
+
+        <include layout="@layout/bottom_line_view" />
+
+        <LinearLayout
+            style="@style/linear_row_style_common"
+            android:orientation="horizontal">
+
+
+            <tablayout.view.textview.FontTextView
+                style="@style/font_text_content_sytle"
+                android:text="借支事由：" />
+
+            <tablayout.view.textview.FontEditext
+                android:id="@+id/loan_borrow_reason"
+                style="@style/font_edtext_content_sytle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:maxLength="12"
+                android:singleLine="true" />
+        </LinearLayout>
+
+        <include layout="@layout/bottom_line_view" />
+
+
+        <LinearLayout
+            style="@style/file_center_explain_style"
+            android:orientation="horizontal">
+
+
+            <tablayout.view.textview.FontTextView
+                style="@style/font_text_content_sytle"
+                android:layout_gravity="top"
+                android:layout_marginTop="8dp"
+                android:text="借支说明：" />
+
+            <tablayout.view.textview.FontEditext
+                android:id="@+id/loan_explain_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@null"
+                android:gravity="top"
+                android:maxLength="500"
+                android:textSize="@dimen/sp_font_detail_content_15sp" />
+        </LinearLayout>
+
+        <include layout="@layout/bottom_line_view_two" />
+
+        <include layout="@layout/public_annex_layout" />
+
+        <include layout="@layout/bottom_line_view_two" />
+
+        <LinearLayout
+            android:layout_marginLeft="@dimen/dp_spacing_to_left_right_15dp"
+            android:layout_marginRight="@dimen/dp_spacing_3dp"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="@dimen/dp_height_line_45dp">
+
+            <tablayout.view.textview.FontTextView
+                android:id="@+id/tv_m"
+                style="@style/font_text_content_sytle"
+
+                android:text="金额" />
+
+            <tablayout.view.textview.FontTextView
+                android:id="@+id/tv_m2"
+                style="@style/font_text_content_sytle"
+                android:text="(小写)"
+                android:textColor="@color/blackThree"
+                android:textSize="@dimen/sp_font_detail_content_13sp" />
+
+            <tablayout.view.textview.FontTextView
+                android:id="@+id/tv_m3"
+                style="@style/font_text_content_sytle"
+                android:text="：" />
+
+            <com.view.TotalMoneyView
+                android:layout_gravity="center"
+                android:id="@+id/total_money_view"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginBottom="@dimen/dp2"
+                android:layout_marginTop="@dimen/dp2" />
+
+            <tablayout.view.textview.FontTextView
+                style="@style/font_text_content_sytle"
+                android:text="元" />
+
+            <View
+                android:layout_width="8dp"
+                android:layout_height="match_parent"/>
+            <LinearLayout
+                android:id="@+id/currency_layut"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <tablayout.view.textview.FontTextView
+                    style="@style/font_text_content_sytle"
+                    android:text="币种：" />
+
+                <tablayout.view.textview.FontTextView
+                    android:id="@+id/tv_currency"
+                    style="@style/font_text_content_sytle"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:text="人民币" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <include layout="@layout/bottom_line_view" />
+
+        <LinearLayout
+            style="@style/linear_row_style_common"
+            android:orientation="horizontal">
+
+
+            <tablayout.view.textview.FontTextView
+                style="@style/font_text_content_sytle"
+                android:text="金额" />
+
+            <tablayout.view.textview.FontTextView
+                style="@style/font_text_content_sytle"
+                android:text="(大写)"
+                android:textColor="@color/blackThree"
+                android:textSize="@dimen/sp_font_detail_content_13sp" />
+
+            <tablayout.view.textview.FontTextView
+                style="@style/font_text_content_sytle"
+                android:text="：" />
+
+            <tablayout.view.textview.FontEditext
+                android:id="@+id/max_money"
+                style="@style/font_edtext_content_sytle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:enabled="false"
+                android:focusable="false"
+                android:singleLine="true" />
+        </LinearLayout>
+        <include layout="@layout/bottom_line_view_two" />
+    </LinearLayout>
+
+
+</RelativeLayout>

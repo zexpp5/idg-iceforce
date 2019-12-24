@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/white"
+              android:orientation="vertical"
+>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/dp_spacing_10dp">
+
+
+        <RelativeLayout
+            android:id="@+id/ll_one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/one_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@+id/one_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="谁的申请"
+                android:textSize="@dimen/sp_font_detail_content_16sp"/>
+
+            <TextView
+                android:id="@+id/one_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="状态 "
+                android:textSize="@dimen/sp_font_detail_content_16sp"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_six"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_spacing_5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/six_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="休假时长："
+                android:textSize="@dimen/sp_font_detail_content_15sp"/>
+
+            <TextView
+                android:id="@+id/six_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textSize="@dimen/sp_font_detail_content_15sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_two"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_spacing_5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/two_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="休假类型："
+                android:textSize="@dimen/sp_font_detail_content_15sp"/>
+
+            <TextView
+                android:id="@+id/two_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textSize="@dimen/sp_font_detail_content_15sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_three"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_spacing_5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/three_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="开始时间："
+                android:textSize="@dimen/sp_font_detail_content_15sp"/>
+
+            <TextView
+                android:id="@+id/three_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textSize="@dimen/sp_font_detail_content_15sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_four"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_spacing_5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/four_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="结束时间："
+                android:textSize="@dimen/sp_font_detail_content_15sp"/>
+
+            <TextView
+                android:id="@+id/four_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textSize="@dimen/sp_font_detail_content_15sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_five"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_spacing_5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/five_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="休假时长："
+                android:textSize="@dimen/sp_font_detail_content_15sp"/>
+
+            <TextView
+                android:id="@+id/five_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textSize="@dimen/sp_font_detail_content_15sp"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_reason"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_spacing_5dp"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_title_reason"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="@string/string_psyj"
+                android:textSize="@dimen/sp_font_detail_content_15sp"/>
+
+            <TextView
+                android:id="@+id/tv_content_reason"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="#666666"
+                android:textSize="@dimen/sp_font_detail_content_15sp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#f2f2f2"
+    />
+
+</LinearLayout>

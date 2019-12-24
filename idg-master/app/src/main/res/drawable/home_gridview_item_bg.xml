@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#E4F1DF"/><!-- 实体设置为灰色 -->
+    <!--<corners android:topLeftRadius="6dp"-->
+        <!--android:topRightRadius="6dp"-->
+        <!--android:bottomRightRadius="6dp"-->
+        <!--android:bottomLeftRadius="6dp"/>-->
+    <corners android:radius="4dp" />
+    <stroke
+        android:width="1dp"
+        android:color="#E4F1DF" />
+    <!--<corners android:radius="3dp" />-->
+    <padding android:left="1.5dp" android:top="1.5dp" android:right="1.5dp"
+             android:bottom="1.5dp" />
+</shape>

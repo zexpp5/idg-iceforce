@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/ll_container"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:descendantFocusability="blocksDescendants"
+              android:gravity="center_horizontal"
+              android:orientation="vertical"
+              android:paddingTop="13dp">
+
+    <tablayout.view.textview.FontTextView
+        android:id="@+id/timestamp"
+        style="@style/chat_text_date_style"
+    />
+
+    <RelativeLayout
+        style="@style/chat_content_style">
+
+        <ImageView
+            android:id="@+id/img_user_icon"
+            style="@style/chat_user_icon_left_style"/>
+
+        <LinearLayout
+            style="@style/chat_content_viewGroup_left_style">
+
+            <tablayout.view.textview.FontTextView
+                android:id="@+id/tv_location"
+                style="@style/chat_content_date_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/location_msg"
+                android:ellipsize="start"
+                android:gravity="center"
+                android:maxLength="18"
+                android:textColor="@android:color/white"/>
+        </LinearLayout>
+
+        <tablayout.view.textview.FontTextView
+            android:id="@+id/tv_user_name"
+            style="@style/chat_text_name_style"/>
+    </RelativeLayout>
+
+</LinearLayout>

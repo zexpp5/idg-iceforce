@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/apply_typeTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/dp_spacing_10dp"
+        android:paddingTop="@dimen/dp_spacing_10dp"
+        android:textColor="@color/color_personnel_affairs_dialog"
+        android:textSize="@dimen/sp_item_title_sp"
+        tools:text="离职申s" />
+
+    <TextView
+        android:id="@+id/apply_statuTV"
+        style="@style/personnel_affairs_list_textviewStyle"
+        android:textColor="#b7b7b7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/apply_typeTV"
+        android:paddingBottom="@dimen/dp_spacing_10dp"
+        android:paddingLeft="@dimen/dp_spacing_10dp"
+        android:paddingRight="@dimen/dp_spacing_10dp"
+        android:paddingTop="@dimen/dp_spacing_3dp"
+        tools:text="申请状态" />
+
+
+    <TextView
+        android:id="@+id/timeTV"
+        style="@style/personnel_affairs_list_textviewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/apply_typeTV"
+        android:paddingLeft="@dimen/dp_spacing_10dp"
+        android:paddingRight="@dimen/dp_spacing_10dp"
+        android:paddingTop="@dimen/dp_spacing_10dp"
+        tools:text="李x四" />
+
+    <TextView
+        android:id="@+id/departmentTV"
+        style="@style/personnel_affairs_list_textviewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/apply_typeTV"
+        android:gravity="center"
+        android:paddingBottom="@dimen/dp_spacing_10dp"
+        android:paddingLeft="@dimen/dp_spacing_10dp"
+        android:paddingRight="@dimen/dp_spacing_10dp"
+        android:paddingTop="@dimen/dp_spacing_3dp"
+        tools:text="部门" />
+
+</RelativeLayout>

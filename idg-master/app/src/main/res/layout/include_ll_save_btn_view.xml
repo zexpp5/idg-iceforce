@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/ll_save"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginBottom="20dp"
+              android:layout_marginTop="50dp"
+              android:orientation="vertical">
+    
+    <TextView
+        android:id="@+id/tv_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:background="@drawable/shape_btn_edt_save"
+        android:paddingBottom="@dimen/dp_spacing_10dp"
+        android:paddingLeft="80dp"
+        android:paddingRight="80dp"
+        android:paddingTop="@dimen/dp_spacing_10dp"
+        android:text="@string/save"
+        android:textColor="@color/white"/>
+
+</LinearLayout>

@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+       xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.superdata.marketing.view.percent.PercentLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transparency"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/common_bg"
+            android:visibility="gone"
+            app:layout_marginBottomPercent="@string/space"
+            app:layout_marginTopPercent="@string/space"/>
+
+        <!-- 审批内容区 -->
+        <!--<com.superdata.marketing.view.percent.PercentLinearLayout-->
+        <!--android:id="@+id/ll_approval_content"-->
+        <!--android:visibility="gone"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--app:layout_marginLeftPercent="@string/list_margin_left"-->
+        <!--app:layout_marginRightPercent="@string/list_margin_right"-->
+        <!--android:orientation="vertical"-->
+        <!--android:layout_marginTop="6dp"-->
+        <!--android:background="@color/white">-->
+
+        <!--<ImageView-->
+        <!--android:gravity="center"-->
+        <!--android:id="@+id/ll_approval_img"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content" />-->
+        <!--</com.superdata.marketing.view.percent.PercentLinearLayout>-->
+
+
+        <!-- 回复图片内容区 -->
+        <!--<com.superdata.marketing.view.percent.PercentLinearLayout-->
+        <!--android:id="@+id/ll_reply_img_content"-->
+        <!--android:orientation="vertical"-->
+        <!--android:visibility="gone"-->
+        <!--app:layout_marginLeftPercent="@string/list_margin_left"-->
+        <!--app:layout_marginRightPercent="@string/list_margin_right"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_marginTop="6dp"-->
+        <!--android:layout_height="wrap_content">-->
+        <!-- -->
+        <!--<com.facebook.drawee.view.SimpleDraweeView-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="0dp"-->
+        <!--app:layout_widthPercent="25%w"-->
+        <!--app:layout_heightPercent="25%w"-->
+        <!--android:id="@+id/iv_reply_img"/>-->
+        <!-- -->
+        <!--<tablayout.view.textview.FontTextView-->
+        <!--app:layout_marginTopPercent="1%w"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textColor="@color/font_grey_color"-->
+        <!--android:id="@+id/tv_img_number"-->
+        <!--app:layout_textSizePercent="@string/text_size"/>-->
+        <!-- -->
+        <!--</com.superdata.marketing.view.percent.PercentLinearLayout>-->
+
+
+        <!-- 图片内容区 -->
+        <com.superdata.marketing.view.percent.PercentLinearLayout
+            android:id="@+id/ll_img_content_show"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone"
+        >
+
+            <com.cxgz.activity.cxim.view.NoScrollWithGridView
+                android:id="@+id/add_img_gridview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:horizontalSpacing="5dp"
+                android:numColumns="3"
+                android:verticalSpacing="5dp"
+                app:layout_marginBottomPercent="@string/space"
+                app:layout_marginLeftPercent="@string/list_margin_left"
+                app:layout_marginRightPercent="@string/list_margin_right"
+                app:layout_marginTopPercent="@string/space"/>
+        </com.superdata.marketing.view.percent.PercentLinearLayout>
+
+        <!-- 附件区 -->
+        <com.superdata.marketing.view.percent.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <!-- 审批 -->
+            <!--<com.superdata.marketing.view.percent.PercentLinearLayout-->
+            <!--android:id="@+id/ll_approval"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="#F2F2F4"-->
+            <!--android:visibility="gone"-->
+            <!--android:layout_marginTop="6dp"-->
+            <!--android:orientation="horizontal"-->
+            <!--app:layout_marginLeftPercent="@string/list_margin_left"-->
+            <!--app:layout_marginRightPercent="@string/list_margin_right"-->
+            <!-- >-->
+
+            <!--<tablayout.view.textview.FontTextView-->
+            <!--android:id="@+id/tv_approval_name"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:text="@string/approval_l"-->
+            <!--android:textColor="@color/black"-->
+            <!--app:layout_textSizePercent="@string/text_size"-->
+            <!--android:textSize="14sp" />-->
+
+            <!--<tablayout.view.textview.FontTextView-->
+            <!--android:id="@+id/tv_approval_desc"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:ellipsize="end"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:textColor="@color/black"-->
+            <!--app:layout_textSizePercent="@string/text_size"-->
+            <!--android:textSize="14sp" />-->
+            <!--</com.superdata.marketing.view.percent.PercentLinearLayout>-->
+
+            <!-- 语音 -->
+            <com.superdata.marketing.view.percent.PercentLinearLayout
+                android:id="@+id/ll_voice_show"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                app:layout_marginBottomPercent="@string/space"
+                app:layout_marginTopPercent="@string/space"
+            >
+
+                <tablayout.view.textview.FontTextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="@string/voice_l"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    app:layout_marginLeftPercent="@string/list_margin_left"
+                    app:layout_textSizePercent="@string/text_size"/>
+
+                <com.superdata.marketing.view.percent.PercentLinearLayout
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:background="#F2F2F4"
+                    app:layout_marginRightPercent="@string/list_margin_right">
+                    <ImageView
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:contentDescription="@string/not_found_img"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginBottom="3dp"
+                        android:scaleType="fitXY"
+                        android:src="@mipmap/chatfrom_voice_playing_f3"/>
+
+                </com.superdata.marketing.view.percent.PercentLinearLayout>
+
+            </com.superdata.marketing.view.percent.PercentLinearLayout>
+
+            <!-- 定位 -->
+            <com.superdata.marketing.view.percent.PercentLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                app:layout_marginTopPercent="@string/space">
+
+                <tablayout.view.textview.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="@string/sign_l"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    app:layout_marginLeftPercent="@string/list_margin_left"
+                    app:layout_textSizePercent="@string/text_size"/>
+
+                <tablayout.view.textview.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:textColor="@color/header_name"
+                    android:textSize="14sp"
+                    app:layout_marginRightPercent="@string/list_margin_right"
+                    app:layout_textSizePercent="4.5%w"/>
+            </com.superdata.marketing.view.percent.PercentLinearLayout>
+
+            <!-- 文件 -->
+            <com.superdata.marketing.view.percent.PercentLinearLayout
+                android:id="@+id/ll_file_show"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                app:layout_marginTopPercent="@string/space">
+
+                <tablayout.view.textview.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="@string/file_l"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    app:layout_marginLeftPercent="@string/list_margin_left"
+                    app:layout_textSizePercent="@string/text_size"/>
+
+                <tablayout.view.textview.FontTextView
+                    android:id="@+id/tv_file_name_show"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/header_name"
+                    android:textSize="14sp"
+                    app:layout_marginRightPercent="@string/list_margin_right"
+                    app:layout_textSizePercent="4.5%w"/>
+            </com.superdata.marketing.view.percent.PercentLinearLayout>
+
+            <!-- 关联客户 -->
+            <!--<com.superdata.marketing.view.percent.PercentLinearLayout-->
+            <!--android:id="@+id/ll_rel_customer"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:visibility="gone"-->
+            <!--app:layout_marginTopPercent="@string/space">-->
+
+            <!--<tablayout.view.textview.FontTextView-->
+            <!--app:layout_marginLeftPercent="@string/list_margin_left"-->
+            <!--android:id="@+id/tv_rel_customer_size"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:text="@string/link_customer_l"-->
+            <!--android:textColor="@color/black"-->
+            <!--android:textSize="14sp"-->
+            <!--app:layout_textSizePercent="@string/text_size" />-->
+
+            <!--<tablayout.view.textview.FontTextView-->
+            <!--app:layout_marginRightPercent="@string/list_margin_right"-->
+            <!--android:id="@+id/tv_rel_customer_name"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:ellipsize="end"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:singleLine="true"-->
+            <!--android:textColor="@color/header_name"-->
+            <!--android:textSize="14sp"-->
+            <!--app:layout_textSizePercent="@string/text_size" />-->
+            <!--</com.superdata.marketing.view.percent.PercentLinearLayout>-->
+
+            <!-- 关联联系人 -->
+            <!--<com.superdata.marketing.view.percent.PercentLinearLayout-->
+            <!--android:id="@+id/ll_rel_contact"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:visibility="gone"-->
+            <!--app:layout_marginTopPercent="@string/space">-->
+
+            <!--<tablayout.view.textview.FontTextView-->
+            <!--app:layout_marginLeftPercent="@string/list_margin_left"-->
+            <!--android:id="@+id/tv_rel_contact_size"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:text="@string/link_person_l"-->
+            <!--android:textColor="@color/black"-->
+            <!--android:textSize="14sp"-->
+            <!--app:layout_textSizePercent="@string/text_size" />-->
+
+            <!--<tablayout.view.textview.FontTextView-->
+            <!--app:layout_marginRightPercent="@string/list_margin_right"-->
+            <!--android:id="@+id/tv_rel_contact_name"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:ellipsize="end"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:singleLine="true"-->
+            <!--android:textColor="@color/header_name"-->
+            <!--android:textSize="14sp"-->
+            <!--app:layout_textSizePercent="@string/text_size" />-->
+            <!--</com.superdata.marketing.view.percent.PercentLinearLayout>-->
+
+            <!-- 关联客户详情页面使用 -->
+            <com.superdata.marketing.view.percent.PercentRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                app:layout_marginTopPercent="@string/space">
+
+                <tablayout.view.textview.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="@string/link_customer_l"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    app:layout_marginLeftPercent="@string/list_margin_left"
+                    app:layout_textSizePercent="@string/text_size"/>
+
+                <!--<com.cxgz.activity.cxim.view.NoScrollWithListView-->
+                <!--android:layout_marginTop="2dp"-->
+                <!--android:id="@+id/lv_reL_customs_list"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:divider="@null"-->
+                <!--app:layout_marginRightPercent="@string/list_margin_right"-->
+                <!--android:dividerHeight="0dp" />-->
+
+            </com.superdata.marketing.view.percent.PercentRelativeLayout>
+
+            <!-- 关联联系人详情页面使用 -->
+            <com.superdata.marketing.view.percent.PercentRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                app:layout_marginTopPercent="@string/space">
+
+                <tablayout.view.textview.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="@string/link_person_l"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    app:layout_marginLeftPercent="@string/list_margin_left"
+                    app:layout_textSizePercent="@string/text_size"/>
+
+                <!--<com.cxgz.activity.cxim.view.NoScrollWithListView-->
+                <!--android:gravity="center_vertical"-->
+                <!--app:layout_marginRightPercent="@string/list_margin_right"-->
+                <!--android:id="@+id/lv_rel_contact_list"-->
+                <!--android:layout_marginTop="2dp"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:divider="@null" />-->
+
+            </com.superdata.marketing.view.percent.PercentRelativeLayout>
+
+        </com.superdata.marketing.view.percent.PercentLinearLayout>
+    </com.superdata.marketing.view.percent.PercentLinearLayout>
+
+</merge>

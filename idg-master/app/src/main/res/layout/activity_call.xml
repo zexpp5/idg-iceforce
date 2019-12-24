@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/top_bg"
+              android:orientation="vertical">
+
+    <include
+        layout="@layout/sd_top_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:background="#252C39"
+        android:layout_marginBottom="15dp"
+    >
+
+        <com.cx.webrtc.PercentFrameLayout
+            android:id="@+id/local_video_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.opengl.GLSurfaceView
+                android:id="@+id/glview_call"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </com.cx.webrtc.PercentFrameLayout>
+
+        <com.superdata.marketing.view.percent.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/dp210"
+            android:layout_weight="2"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/swing_card"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="10dp"
+                android:background="@mipmap/temp_user_head"
+                android:scaleType="fitXY"/>
+
+            <tablayout.view.textview.FontTextView
+                android:id="@+id/tv_nick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="未知来源"
+                android:textColor="@android:color/white"
+                app:layout_textSizePercent="6%w"/>
+
+            <tablayout.view.textview.FontTextView
+                android:id="@+id/tv_call_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:singleLine="true"
+                android:text="邀请你进行语音聊天.."
+                android:textColor="@color/voip_interface_text_color"
+                android:textSize="20sp"
+                android:visibility="visible"
+                app:layout_textSizePercent="@string/text_size"/>
+        </com.superdata.marketing.view.percent.PercentLinearLayout>
+
+        //这行
+        <!--android:visibility="gone"-->
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:layout_above="@+id/ll_surface_baseline"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <tablayout.view.textview.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+
+                android:textSize="22sp"
+                android:visibility="visible"/>
+
+            <Chronometer
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:id="@+id/chronometer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:text="Chronometer"
+                android:textColor="#fff"
+                android:textSize="17sp"
+                android:visibility="invisible"
+            />
+            />
+
+
+            <tablayout.view.textview.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:visibility="gone"/>
+
+            <tablayout.view.textview.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:visibility="gone"
+                android:text="张三"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_surface_baseline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical"
+            android:paddingTop="8dp">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:orientation="vertical"
+
+                android:paddingBottom="18dp">
+
+                <LinearLayout
+                    android:id="@+id/ll_voice_control"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                >
+
+                    <LinearLayout
+                        android:id="@+id/ll_jingyin"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/iv_mute"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/icon_mute_normal"/>
+
+                        <tablayout.view.textview.FontTextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:gravity="center"
+                            android:text="@string/mute"
+                            android:textColor="#666167"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_quxiao"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/btn_hangup_call"
+                            android:layout_width="75dp"
+                            android:layout_height="75dp"
+                            android:background="@mipmap/handup"
+                            android:scaleType="fitCenter"/>
+
+                        <tablayout.view.textview.FontTextView
+                            android:id="@+id/tv_cancel"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:gravity="center"
+                            android:text="取消"
+                            android:textColor="#fff"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_mianti"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/iv_handsfree"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/icon_speaker_normal"/>
+
+                        <tablayout.view.textview.FontTextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:gravity="center"
+                            android:text="@string/Hands_free"
+                            android:textColor="#666167"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+
+                >
+
+                    <LinearLayout
+                        android:id="@+id/ll_coming_call"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:id="@+id/ll_guaduan"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <Button
+                                android:id="@+id/btn_refuse_call"
+                                android:layout_width="75dp"
+                                android:layout_height="75dp"
+                                android:background="@mipmap/handup"
+                                android:gravity="center"
+                                android:textColor="@android:color/white"
+                                android:textSize="20sp"/>
+
+                            <tablayout.view.textview.FontTextView
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="3dp"
+                                android:gravity="center"
+                                android:text="挂断"
+                                android:textColor="#fff"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_jietong"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <Button
+                                android:id="@+id/btn_answer_call"
+                                android:layout_width="75dp"
+                                android:layout_height="75dp"
+                                android:background="@mipmap/answer"
+                                android:gravity="center"
+                                android:textColor="@android:color/white"
+                                android:textSize="20sp"/>
+
+                            <tablayout.view.textview.FontTextView
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="3dp"
+                                android:gravity="center"
+                                android:text="接听"
+                                android:textColor="#fff"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </FrameLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View android:layout_width="match_parent"
+          android:layout_height="@dimen/dp15"
+          android:background="@color/top_bg">
+    </View>
+
+</LinearLayout>

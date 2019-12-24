@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <tablayout.view.textview.FontTextView
+        android:id="@+id/timestamp"
+        style="@style/chat_text_date_style" />
+
+    <RelativeLayout style="@style/chat_content_style">
+
+        <ImageView
+            android:id="@+id/img_user_icon"
+            style="@style/chat_user_icon_right_style" />
+
+        <LinearLayout
+            android:id="@+id/ll_click_area"
+            style="@style/chat_content_viewGroup_right_style"
+            android:layout_width="145dp"
+            android:layout_height="145dp"
+            android:background="@drawable/chatto_pic_bg"
+            android:layout_below="@+id/hot_lock_bg_img"
+            android:layout_toLeftOf="@id/img_user_icon">
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <ImageView
+                    android:id="@+id/chatting_content_iv"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:scaleType="fitXY"
+                />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@mipmap/video_play" />
+                </LinearLayout>
+
+            </FrameLayout>
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/hot_lock_bg_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|top"
+            android:layout_marginRight="-5dp"
+            android:layout_toLeftOf="@+id/ll_click_area"
+            android:visibility="invisible"
+            android:background="@mipmap/hot_not_lock_bg" />
+
+        <LinearLayout
+            android:id="@+id/ll_loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="@dimen/chat_item_otherIcon_spacing_lr"
+            android:layout_toLeftOf="@id/ll_click_area"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ProgressBar
+                android:id="@+id/pb_sending"
+                style="@style/chat_content_progressBar" />
+
+            <tablayout.view.textview.FontTextView
+                android:id="@+id/percentage"
+                style="@style/chat_percentage_num" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/msg_status"
+            style="@style/chat_msg_status_style"
+            android:layout_toLeftOf="@id/ll_click_area" />
+
+        <ImageView
+            android:id="@+id/icon_baidu"
+            style="@style/chat_right_baidu_style"
+            android:layout_toLeftOf="@id/ll_click_area" />
+
+        <tablayout.view.textview.FontTextView
+            android:id="@+id/tv_ack"
+            style="@style/chat_tv_ack_style"
+            android:layout_toLeftOf="@id/ll_click_area" />
+
+        <tablayout.view.textview.FontTextView
+            style="@style/chat_tv_delivered_style"
+            android:layout_toLeftOf="@id/ll_click_area" />
+        <TextView
+            android:id="@+id/tv_countdown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|top"
+            android:background="@mipmap/icon_num"
+            android:gravity="center"
+            android:text="10"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:layout_toRightOf="@+id/hot_not_lock_bg_img"
+            android:layout_marginLeft="5dp"
+            android:visibility="gone"
+            />
+    </RelativeLayout>
+
+</LinearLayout>

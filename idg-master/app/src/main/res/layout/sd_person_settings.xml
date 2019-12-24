@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#F1F0F6"
+              android:orientation="vertical">
+
+    <include
+        layout="@layout/super_top_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.superdata.marketing.view.percent.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#F1F0F6"
+            android:orientation="vertical">
+
+
+            <com.superdata.marketing.view.percent.PercentLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <com.superdata.marketing.view.percent.PercentLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    app:layout_paddingLeftPercent="@string/list_padding_left"
+                    app:layout_paddingRightPercent="@string/list_padding_right">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/gray"/>
+
+                    <com.superdata.marketing.view.percent.PercentRelativeLayout
+                        android:id="@+id/rl_msg_notification"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:layout_marginBottomPercent="3%w"
+                        app:layout_marginTopPercent="3%w">
+
+                        <tablayout.view.textview.FontTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:drawablePadding="5dp"
+                            android:text="接受新消息通知"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/font_size_item_name"/>
+
+                        <CheckBox
+                            android:id="@+id/cb_msg_notification"
+                            style="@style/SettingCheckboxTheme"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:clickable="false"/>
+                    </com.superdata.marketing.view.percent.PercentRelativeLayout>
+
+                    <com.superdata.marketing.view.percent.PercentLinearLayout
+                        android:id="@+id/ll_msg_notifycation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <View
+                            android:id="@+id/toHideLine"
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="#DDDDDD"/>
+
+                        <com.superdata.marketing.view.percent.PercentRelativeLayout
+                            android:id="@+id/rl_msg_voice"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:layout_marginBottomPercent="3%w"
+                            app:layout_marginTopPercent="3%w">
+
+                            <tablayout.view.textview.FontTextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true"
+                                android:drawablePadding="5dp"
+                                android:text="声音"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/font_size_item_name"/>
+
+                            <CheckBox
+                                android:id="@+id/cb_msg_voice"
+                                style="@style/SettingCheckboxTheme"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:clickable="false"/>
+                        </com.superdata.marketing.view.percent.PercentRelativeLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="#DDDDDD"/>
+
+                        <com.superdata.marketing.view.percent.PercentRelativeLayout
+                            android:id="@+id/rl_msg_vibrate"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:layout_marginBottomPercent="3%w"
+                            app:layout_marginTopPercent="3%w">
+
+                            <tablayout.view.textview.FontTextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true"
+                                android:drawablePadding="5dp"
+                                android:text="震动"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/font_size_item_name"/>
+
+                            <CheckBox
+                                android:id="@+id/cb_msg_vibrate"
+                                style="@style/SettingCheckboxTheme"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:clickable="false"/>
+                        </com.superdata.marketing.view.percent.PercentRelativeLayout>
+                    </com.superdata.marketing.view.percent.PercentLinearLayout>
+                </com.superdata.marketing.view.percent.PercentLinearLayout>
+
+                <com.superdata.marketing.view.percent.PercentLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    app:layout_marginTopPercent="3%w">
+
+                    <com.superdata.marketing.view.percent.PercentLinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="vertical"
+                        app:layout_paddingLeftPercent="@string/list_padding_left"
+                        app:layout_paddingRightPercent="@string/list_padding_right">
+
+
+                        <com.superdata.marketing.view.percent.PercentRelativeLayout
+                            android:id="@+id/rl_speaker_play_voice"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:layout_marginBottomPercent="3%w"
+                            app:layout_marginTopPercent="3%w">
+
+                            <tablayout.view.textview.FontTextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true"
+                                android:drawablePadding="5dp"
+                                android:text="使用扬声器播放语音"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/font_size_item_name"/>
+
+                            <CheckBox
+                                android:id="@+id/cb_speaker_play_voice"
+                                style="@style/SettingCheckboxTheme"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:clickable="false"/>
+                        </com.superdata.marketing.view.percent.PercentRelativeLayout>
+
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="#DDDDDD"/>
+
+
+                        <com.superdata.marketing.view.percent.PercentRelativeLayout
+                            android:id="@+id/rl_location"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:layout_marginBottomPercent="3%w"
+                            app:layout_marginTopPercent="3%w">
+
+                            <tablayout.view.textview.FontTextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true"
+                                android:drawablePadding="5dp"
+                                android:text="定位"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/font_size_item_name"/>
+
+                            <CheckBox
+                                android:id="@+id/cb_location"
+                                style="@style/SettingCheckboxTheme"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:clickable="false"/>
+                        </com.superdata.marketing.view.percent.PercentRelativeLayout>
+
+                    </com.superdata.marketing.view.percent.PercentLinearLayout>
+                </com.superdata.marketing.view.percent.PercentLinearLayout>
+
+                <com.superdata.marketing.view.percent.PercentLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    app:layout_marginBottomPercent="3%w"
+                    app:layout_marginTopPercent="3%w"
+                    app:layout_paddingLeftPercent="@string/list_padding_left"
+                    app:layout_paddingRightPercent="@string/list_padding_right">
+
+                    <!--  <tablayout.view.textview.FontTextView
+                          android:id="@+id/tvAbout"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:drawablePadding="5dp"
+                          android:drawableRight="@mipmap/left_img_bg"
+                          android:gravity="center_vertical"
+                          android:text="@string/home_about_tab"
+                          android:textColor="@color/black"
+
+                          android:textSize="@dimen/font_size_item_name"  />-->
+
+
+                    <com.superdata.marketing.view.percent.PercentRelativeLayout
+                        android:id="@+id/rl_setting_version_update"
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <tablayout.view.textview.FontTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawableRight="@mipmap/left_img_bg"
+                            android:gravity="center_vertical"
+                            android:text="@string/new_app"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/font_size_item_name"
+                            app:layout_marginBottomPercent="3%w"
+                            app:layout_marginTopPercent="3%w" android:layout_centerVertical="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"/>
+
+                    </com.superdata.marketing.view.percent.PercentRelativeLayout>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="#DDDDDD"/>
+
+                    <com.superdata.marketing.view.percent.PercentRelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <tablayout.view.textview.FontTextView
+                            android:id="@+id/tvLoading"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawableRight="@mipmap/left_img_bg"
+                            android:gravity="center_vertical"
+                            android:text="@string/send_two_code"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/font_size_item_name"
+                            app:layout_marginBottomPercent="3%w"
+                            app:layout_marginTopPercent="3%w"/>
+                    </com.superdata.marketing.view.percent.PercentRelativeLayout>
+                </com.superdata.marketing.view.percent.PercentLinearLayout>
+
+                <com.superdata.marketing.view.percent.PercentLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    app:layout_marginTopPercent="@string/space"
+                    app:layout_paddingLeftPercent="@string/list_padding_left"
+                    app:layout_paddingRightPercent="@string/list_padding_right">
+
+                    <tablayout.view.textview.FontTextView
+                        android:id="@+id/tv_setting_workreport"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="5dp"
+                        android:drawableRight="@mipmap/left_img_bg"
+                        android:gravity="center_vertical"
+                        android:text="@string/work_log"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/font_size_item_name"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="#DDDDDD"/>
+
+                    <tablayout.view.textview.FontTextView
+                        android:id="@+id/tv_setting_task"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="5dp"
+                        android:drawableRight="@mipmap/left_img_bg"
+                        android:gravity="center_vertical"
+                        android:text="@string/order"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/font_size_item_name"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="#DDDDDD"/>
+
+                    <tablayout.view.textview.FontTextView
+                        android:id="@+id/tv_setting_business"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="5dp"
+                        android:drawableRight="@mipmap/left_img_bg"
+                        android:gravity="center_vertical"
+                        android:text="@string/sd_setting_business"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/font_size_item_name"/>
+                </com.superdata.marketing.view.percent.PercentLinearLayout>
+
+                <com.superdata.marketing.view.percent.PercentLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    app:layout_paddingLeftPercent="@string/list_padding_left"
+                    app:layout_paddingRightPercent="@string/list_padding_right">
+
+                    <com.superdata.marketing.view.percent.PercentRelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <tablayout.view.textview.FontTextView
+                            android:id="@+id/tvClearCache"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginTop="10dp"
+                            android:drawableRight="@mipmap/left_img_bg"
+                            android:gravity="center_vertical"
+                            android:text="@string/clear_cache"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/font_size_item_name"/>
+                    </com.superdata.marketing.view.percent.PercentRelativeLayout>
+                </com.superdata.marketing.view.percent.PercentLinearLayout>
+
+                <com.superdata.marketing.view.percent.PercentLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    app:layout_paddingLeftPercent="@string/list_padding_left"
+                    app:layout_paddingRightPercent="@string/list_padding_right">
+
+                    <com.superdata.marketing.view.percent.PercentRelativeLayout
+                        android:id="@+id/login_out_ll"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal">
+
+                        <tablayout.view.textview.FontTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="20dp"
+                            android:layout_marginTop="20dp"
+                            android:gravity="center_vertical"
+                            android:text="@string/login_out"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/font_size_item_name"/>
+                    </com.superdata.marketing.view.percent.PercentRelativeLayout>
+                </com.superdata.marketing.view.percent.PercentLinearLayout>
+
+            </com.superdata.marketing.view.percent.PercentLinearLayout>
+
+        </com.superdata.marketing.view.percent.PercentLinearLayout>
+    </ScrollView>
+</LinearLayout>

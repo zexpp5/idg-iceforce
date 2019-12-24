@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="320dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dialog_title_bottom_height"
+        android:background="@color/dialog_title_and_foot_bg">
+
+
+        <tablayout.view.textview.FontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="物流信息"
+            android:textSize="16sp"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            style="@style/d_s_ll_style"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <tablayout.view.textview.FontTextView
+                style="@style/d_s_left_font_sytle"
+                android:text="物流公司："/>
+
+            <tablayout.view.textview.FontTextView
+                android:id="@+id/name"
+                style="@style/d_s_content_font_textview_sytle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"/>
+        </LinearLayout>
+
+        <include layout="@layout/erp_line_one_view_grey"/>
+
+        <LinearLayout
+            style="@style/d_s_ll_style"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <tablayout.view.textview.FontTextView
+                style="@style/d_s_left_font_sytle"
+                android:text="快递单号："/>
+
+            <tablayout.view.textview.FontEditext
+                android:id="@+id/number"
+                android:textColor="@color/black"
+                style="@style/d_s_content_font_edtext_sytle_remark"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:inputType="number"/>
+        </LinearLayout>
+
+        <include layout="@layout/erp_line_one_view_grey"/>
+
+        <LinearLayout
+            style="@style/d_s_ll_style"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <!--统一定义-->
+            <tablayout.view.textview.FontTextView
+                style="@style/d_s_left_font_sytle"
+                android:text="@string/customer_relations_cus_notice_file_ic"/>
+
+            <include
+                android:id="@+id/file_btn_include"
+                layout="@layout/erp_add_goods_file_dialog"/>
+
+        </LinearLayout>
+
+        <include layout="@layout/erp_line_one_view_grey"/>
+
+        <LinearLayout
+            style="@style/d_s_ll_style"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <tablayout.view.textview.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="* 附件内容，建议您拍摄物流单据或其他"
+                android:textColor="@color/erp_submit_delete_btn_color_gray"
+                android:textSize="14sp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <include layout="@layout/erp_line_one_view_grey"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dialog_title_bottom_height">
+
+        <com.superdata.marketing.view.percent.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dialog_title_bottom_height"
+            android:background="@color/dialog_title_and_foot_bg"
+            android:gravity="center">
+
+            <RelativeLayout
+                android:id="@+id/send_bottom_rl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/erp_submit_delete_btn_item_bg">
+
+                <LinearLayout
+                    android:layout_width="@dimen/dialog_button_width"
+                    android:layout_height="@dimen/dialog_button_height"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:background="@mipmap/btn_submit_bg" />
+
+                    <tablayout.view.textview.FontTextView
+                        android:id="@+id/send_bottom_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:textColor="#ffffff"
+                        android:text="确  认"
+                        android:textSize="@dimen/sumb_detail_size_15" />
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/delete_bottom_rl"
+                android:layout_width="@dimen/dialog_button_width"
+                android:layout_height="@dimen/dialog_button_height"
+                android:layout_marginLeft="20dp"
+
+                android:background="@drawable/erp_submit_delete_btn_item_bg"
+                android:clickable="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+
+                        android:background="@mipmap/btn_submit_cancer" />
+
+                    <tablayout.view.textview.FontTextView
+                        android:id="@+id/delete_bottom_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:textColor="#ffffff"
+                        android:text="取  消"
+                        android:textSize="@dimen/sumb_detail_size_15" />
+                </LinearLayout>
+            </RelativeLayout>
+
+        </com.superdata.marketing.view.percent.PercentLinearLayout>
+    </LinearLayout>
+</LinearLayout>

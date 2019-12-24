@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white">
+
+    <include
+        android:id="@+id/top_bar_layout"
+        layout="@layout/top_title_layout" />
+
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/smart_refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/top_bar_layout"
+        app:srlEnableLoadmore="true"
+        app:srlEnableLoadmoreWhenContentNotFull="false"
+        >
+
+
+        <ProgressBar
+            style="@style/CustomProgressStyle"
+            android:padding="@dimen/dp_spacing_15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/all_recycler_layout">
+        </android.support.v7.widget.RecyclerView>
+
+        <ProgressBar
+            style="@style/CustomProgressStyle"
+            android:padding="@dimen/dp_spacing_15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+    <yunjing.view.StatusTipsView
+        android:layout_centerInParent="true"
+        android:id="@+id/loading_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </yunjing.view.StatusTipsView>
+
+
+    <FrameLayout
+        android:id="@+id/all_fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</RelativeLayout>

@@ -1,0 +1,534 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+    <include
+        android:id="@+id/top_bar_layout"
+        layout="@layout/top_title_layout"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/button_layout"
+        android:layout_below="@+id/top_bar_layout"
+        android:fadingEdgeLength="0dp"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                style="@style/linear_row_style_common"
+                android:orientation="horizontal">
+
+
+                <tablayout.view.textview.FontTextView
+                    style="@style/font_text_content_sytle"
+                    android:text="@string/apply"
+                    android:textColor="#666"/>
+
+                <tablayout.view.textview.FontEditext
+                    android:id="@+id/apply_name"
+                    style="@style/font_edtext_content_sytle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:textColor="#333"/>
+            </LinearLayout>
+            <include layout="@layout/bottom_line_view"/>
+
+            <LinearLayout
+                style="@style/linear_row_style_common"
+                android:orientation="horizontal">
+
+
+                <tablayout.view.textview.FontTextView
+                    style="@style/font_text_content_sytle"
+                    android:text="@string/time"
+                    android:textColor="#666"/>
+
+                <tablayout.view.textview.FontEditext
+                    android:id="@+id/expense_time"
+                    style="@style/font_edtext_content_sytle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:textColor="#333"/>
+            </LinearLayout>
+            <include layout="@layout/bottom_line_view"/>
+            <LinearLayout
+                style="@style/linear_row_style_common"
+                android:orientation="horizontal">
+
+
+                <tablayout.view.textview.FontTextView
+                    style="@style/font_text_content_sytle"
+                    android:text="@string/company"
+                    android:textColor="#666"/>
+
+                <tablayout.view.textview.FontEditext
+                    android:id="@+id/company_name"
+                    style="@style/font_edtext_content_sytle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:textColor="#333"/>
+            </LinearLayout>
+            <include layout="@layout/bottom_line_view_big"/>
+
+            <LinearLayout
+                android:id="@+id/item_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:id="@+id/item_container_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+
+                <include layout="@layout/bottom_line_view_big"/>
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/linear_row_style_common"
+                android:orientation="horizontal">
+
+
+                <tablayout.view.textview.FontTextView
+                    style="@style/font_text_content_sytle"
+                    android:text="发票费用合计："
+                    android:textColor="#666"/>
+
+                <tablayout.view.textview.FontEditext
+                    android:id="@+id/ticket_all"
+                    style="@style/font_edtext_content_sytle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:textColor="#333"/>
+            </LinearLayout>
+            <include layout="@layout/bottom_line_view"/>
+
+            <LinearLayout
+                style="@style/linear_row_style_common"
+                android:orientation="horizontal">
+
+                <tablayout.view.textview.FontTextView
+                    style="@style/font_text_content_sytle"
+                    android:text="RMB费用合计："
+                    android:textColor="#666"/>
+
+                <tablayout.view.textview.FontEditext
+                    android:id="@+id/rmb_all"
+                    style="@style/font_edtext_content_sytle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:textColor="#333"/>
+            </LinearLayout>
+
+            <include layout="@layout/bottom_line_view_big"/>
+
+            <LinearLayout
+                style="@style/linear_row_style_common"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+
+                    <tablayout.view.textview.FontTextView
+                        style="@style/font_text_content_sytle"
+                        android:text="一级审批："
+                        android:textColor="#666"/>
+
+                    <tablayout.view.textview.FontEditext
+                        android:id="@+id/one_approval"
+                        style="@style/font_edtext_content_sytle"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:singleLine="true"
+                        android:textColor="#333"
+                    />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+
+                    <tablayout.view.textview.FontTextView
+                        style="@style/font_text_content_sytle"
+                        android:text="二级审批："
+                        android:textColor="#666"
+                    />
+
+                    <tablayout.view.textview.FontEditext
+                        android:id="@+id/two_approval"
+                        style="@style/font_edtext_content_sytle"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:singleLine="true"
+                        android:textColor="#333"
+                    />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <include layout="@layout/bottom_line_view"/>
+
+            <LinearLayout
+                style="@style/linear_row_style_common"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+
+                    <tablayout.view.textview.FontTextView
+                        style="@style/font_text_content_sytle"
+                        android:text="@string/accountant"
+                        android:textColor="#666"/>
+
+                    <tablayout.view.textview.FontEditext
+                        android:id="@+id/accountant_text"
+                        style="@style/font_edtext_content_sytle"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:singleLine="true"
+                        android:textColor="#333"
+                    />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+
+                    <tablayout.view.textview.FontTextView
+                        style="@style/font_text_content_sytle"
+                        android:text="@string/teller"
+                        android:textColor="#666"
+                    />
+
+                    <tablayout.view.textview.FontEditext
+                        android:id="@+id/teller_text"
+                        style="@style/font_edtext_content_sytle"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:singleLine="true"
+                        android:textColor="#333"
+                    />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="#f2f1f7">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp_spacing_to_left_right_15dp"
+                    android:text="汇款/支票单位信息"
+                    android:textColor="#666"
+                    android:textSize="15sp"
+                />
+            </RelativeLayout>
+
+            <LinearLayout
+                style="@style/linear_row_style_common"
+                android:layout_height="wrap_content"
+                android:minHeight="@dimen/dp_height_line_45dp"
+                android:orientation="horizontal"
+            >
+
+                <tablayout.view.textview.FontTextView
+                    android:id="@+id/fontTextView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:gravity="top"
+                    android:text="收款单位名称："
+                    android:textColor="#666"
+                    android:textSize="@dimen/sp_font_detail_content_15sp"/>
+
+                <tablayout.view.textview.FontEditext
+                    android:id="@+id/unit_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@null"
+                    android:gravity="top|left"
+                    android:textColor="#2a2a2a"
+                    android:textSize="15sp"/>
+            </LinearLayout>
+            <include layout="@layout/bottom_line_view"/>
+
+            <LinearLayout
+                style="@style/linear_row_style_common"
+                android:layout_height="wrap_content"
+                android:minHeight="@dimen/dp_height_line_45dp"
+                android:orientation="horizontal">
+
+                <tablayout.view.textview.FontTextView
+                    style="@style/font_text_content_sytle"
+                    android:text="收款单位开户行："
+                    android:textColor="#666"/>
+
+                <tablayout.view.textview.FontEditext
+                    android:id="@+id/unit_bank"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@null"
+                    android:gravity="top|left"
+                    android:textColor="#2a2a2a"
+                    android:textSize="15sp"/>
+            </LinearLayout>
+            <include layout="@layout/bottom_line_view"/>
+
+            <LinearLayout
+                style="@style/linear_row_style_common"
+                android:layout_height="wrap_content"
+                android:minHeight="@dimen/dp_height_line_45dp"
+                android:orientation="horizontal">
+
+
+                <tablayout.view.textview.FontTextView
+                    style="@style/font_text_content_sytle"
+                    android:text="收款单位账号："
+                    android:textColor="#666"/>
+
+                <tablayout.view.textview.FontEditext
+                    android:id="@+id/unit_account"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@null"
+                    android:gravity="top|left"
+                    android:textColor="#2a2a2a"
+                />
+            </LinearLayout>
+
+            <include layout="@layout/bottom_line_view_big"/>
+
+            <LinearLayout
+                style="@style/linear_row_style_common"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <tablayout.view.textview.FontTextView
+                    style="@style/font_text_content_sytle"
+                    android:layout_gravity="top"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/remark"
+                    android:textColor="#666"/>
+
+                <tablayout.view.textview.FontEditext
+                    android:id="@+id/edt_remark"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@null"
+                    android:gravity="top"
+                    android:maxHeight="120dp"
+                    android:maxLines="10"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_font_detail_content_15sp"/>
+            </LinearLayout>
+
+            <include layout="@layout/layout_psyj2"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="#f2f1f7">
+
+                <TextView
+                    android:id="@+id/tv_annex"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp_spacing_to_left_right_15dp"
+                    android:text="附件"
+                    android:textColor="#666"
+                    android:textSize="15sp"
+                />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relative_fragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <include layout="@layout/bottom_line_view_big"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/button_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:background="#fff">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_spacing_30dp"
+            android:layout_marginTop="@dimen/dp_spacing_20dp"
+            android:text="审批意见"
+            android:textColor="@color/text_black_l"
+            android:textSize="@dimen/sp_font_detail_content_14sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="@dimen/dp_spacing_20dp"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/ll_agree"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dp_spacing_20dp"
+                android:layout_marginRight="@dimen/dp_spacing_20dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_ll_bg">
+
+                <ImageView
+                    android:id="@+id/img_agree"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/dp_spacing_10dp"
+                    android:layout_toLeftOf="@+id/tv_tongyi"
+                    android:background="@mipmap/public_commit_white"/>
+
+                <TextView
+                    android:id="@+id/tv_tongyi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center_vertical"
+                    android:text="同意"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_font_detail_content_14sp"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/ll_dis_agree"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dp_spacing_20dp"
+                android:layout_marginRight="@dimen/dp_spacing_20dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_ll_bg">
+
+                <ImageView
+                    android:id="@+id/img_dis_agree"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/dp_spacing_10dp"
+                    android:layout_toLeftOf="@+id/tv_disagree"
+                    android:background="@mipmap/public_commit_white"/>
+
+                <TextView
+                    android:id="@+id/tv_disagree"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="不同意"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_font_detail_content_14sp"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <tablayout.view.textview.FontEditext
+            android:id="@+id/fet_comment"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginBottom="@dimen/dp_spacing_10dp"
+            android:layout_marginLeft="@dimen/dp_spacing_30dp"
+            android:layout_marginRight="@dimen/dp_spacing_30dp"
+            android:layout_marginTop="@dimen/dp_spacing_20dp"
+            android:background="@drawable/tv_bg_gray"
+            android:gravity="top"
+            android:visibility="gone"
+            android:hint="如不同意，请输入审批意见"
+            android:padding="@dimen/dp_spacing_10dp"
+            android:textColor="@color/text_black_s"
+            android:textSize="@dimen/sp_font_detail_content_14sp"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp_spacing_30dp"
+            android:layout_marginTop="@dimen/dp_spacing_30dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_ok"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="@dimen/dp_spacing_30dp"
+                android:layout_marginRight="@dimen/dp_spacing_30dp"
+                android:background="@drawable/shape_blue_btn_bg"
+                android:text="确定并提交"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_font_detail_content_14sp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

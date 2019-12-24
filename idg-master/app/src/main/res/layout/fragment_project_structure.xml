@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/top_title_layout" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+
+            <!--线条高度-->
+            <include layout="@layout/erp_line_one_view" />
+
+            <LinearLayout
+                style="@style/d_s_ll_style"
+                android:orientation="horizontal"
+                android:paddingRight="10dp">
+
+                <TextView
+                    style="@style/d_s_left_font_sytle"
+                    android:text="项目名称：" />
+
+                <EditText
+                    android:id="@+id/et_project_name"
+                    style="@style/personnel_affairs_applay_editextStyle" />
+            </LinearLayout>
+
+            <!--线条高度-->
+            <include layout="@layout/erp_line_one_view" />
+
+            <LinearLayout
+                style="@style/d_s_ll_style"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    style="@style/d_s_s_in_tow_ll_style"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/d_s_left_font_sytle"
+                        android:text="负责人：" />
+
+                    <TextView
+                        android:id="@+id/tv_userName"
+                        style="@style/d_s_content_font_select_textview_sytle" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!--线条高度-->
+            <include layout="@layout/erp_line_one_view" />
+
+            <LinearLayout
+                style="@style/d_s_ll_style"
+                android:orientation="horizontal"
+                android:paddingRight="10dp">
+
+                <TextView
+                    style="@style/d_s_left_font_sytle"
+                    android:text="计划金额：" />
+
+                <EditText
+                    android:id="@+id/et_plan_money"
+                    android:inputType="numberDecimal"
+                    style="@style/personnel_affairs_applay_editextStyle" />
+            </LinearLayout>
+
+            <!--线条高度-->
+            <include layout="@layout/erp_line_one_view" />
+
+            <LinearLayout
+                style="@style/d_s_ll_style"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    style="@style/d_s_s_in_tow_ll_style"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/d_s_left_font_sytle"
+                        android:text="级别：" />
+
+                    <RadioGroup
+                        android:id="@+id/radioGroup"
+                        style="@style/d_s_content_font_select_textview_sytle"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/rbn1"
+                            style="@style/project_radiobtn_style"
+                            android:checked="true"
+                            android:text="一级" />
+
+                        <RadioButton
+                            android:id="@+id/rbn2"
+                            style="@style/project_radiobtn_style"
+                            android:layout_margin="@dimen/dp_spacing_to_left_10dp"
+                            android:text="二级" />
+
+
+                        <RadioButton
+                            android:id="@+id/rbn3"
+                            style="@style/project_radiobtn_style"
+                            android:text="三级" />
+                    </RadioGroup>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!--线条高度-->
+            <include layout="@layout/erp_line_one_view" />
+
+            <LinearLayout
+                style="@style/d_s_ll_style"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    style="@style/d_s_s_in_tow_ll_style"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        style="@style/d_s_right_font_sytle"
+                        android:text="一级子项目：" />
+
+                    <TextView
+                        android:id="@+id/tv_one_project"
+                        style="@style/d_s_content_font_select_textview_sytle" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!--线条高度-->
+            <include layout="@layout/erp_line_one_view" />
+
+            <LinearLayout
+                style="@style/d_s_ll_style"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    style="@style/d_s_s_in_tow_ll_style"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        style="@style/d_s_right_font_sytle"
+                        android:text="二级子项目：" />
+
+                    <TextView
+                        android:id="@+id/tv_two_project"
+                        style="@style/d_s_content_font_select_textview_sytle" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <!--线条高度-->
+            <include layout="@layout/erp_line_one_view" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

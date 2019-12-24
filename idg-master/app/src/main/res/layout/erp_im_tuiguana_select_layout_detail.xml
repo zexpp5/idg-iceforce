@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/praise_item_default"
+              android:gravity="center_vertical"
+              android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/show_file_img_ll_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:background="@color/praise_item_default"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/img_guangwang"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:background="@mipmap/icon_guangwang"
+            android:visibility="gone"
+        />
+
+
+        <ImageView
+            android:id="@+id/img_taobao"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_weight="1"
+            android:background="@mipmap/icon_taobao"
+            android:visibility="gone"
+        />
+
+        <ImageView
+            android:id="@+id/img_tianmao"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_weight="1"
+            android:background="@mipmap/icon_tianmao"
+            android:visibility="gone"
+        />
+
+        <ImageView
+            android:id="@+id/img_jingdong"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_weight="1"
+            android:background="@mipmap/icon_jingdong"
+            android:visibility="gone"
+        />
+
+        <ImageView
+            android:id="@+id/img_weidian"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_weight="1"
+            android:background="@mipmap/icon_weidian"
+            android:visibility="gone"
+        />
+
+        <ImageView
+            android:id="@+id/img_alipapa"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_weight="1"
+            android:background="@mipmap/icon_alipapa"
+            android:visibility="gone"
+        />
+
+        <!--app:layout_widthPercent="10%w"-->
+    </LinearLayout>
+
+</LinearLayout>

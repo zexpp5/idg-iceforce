@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/second_main_ll_dialog"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ebebec"
+    android:focusable="false"
+    android:focusableInTouchMode="false"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/menu_left_ll"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_weight="1.5"
+        android:background="#bedaaf"
+        android:gravity="center">
+
+        <tablayout.view.textview.FontTextView
+            android:id="@+id/name_second_left"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:background="@drawable/bg_statistical_report_left_red"
+            android:gravity="center"
+            android:text="A"
+            android:textSize="@dimen/erp_menu_setting_title_font_left_size_sp" />
+
+        <tablayout.view.textview.FontTextView
+            android:id="@+id/name_second_left_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="A"
+            android:textSize="@dimen/erp_menu_setting_title_font_left_size_sp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+
+    <!--android:background="@mipmap/icon_num"-->
+    <LinearLayout
+        android:id="@+id/name_second_center_and_right"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="8"
+        android:orientation="horizontal">
+
+        <tablayout.view.textview.FontTextView
+            android:id="@+id/name_second_center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:gravity="center|left"
+            android:textSize="@dimen/erp_menu_setting_title_font_right_size_sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="4dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/name_second_right_ll"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="4dp"
+                android:orientation="horizontal"></LinearLayout>
+
+            <tablayout.view.textview.FontTextView
+                android:id="@+id/unread_msg_number"
+                style="@style/red_point_style"
+                android:layout_alignParentRight="true" />
+
+            <ImageView
+                android:id="@+id/img_right_set"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@mipmap/icon_right_arrow_tip"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/dp20"
+                android:layout_centerVertical="true"
+            />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

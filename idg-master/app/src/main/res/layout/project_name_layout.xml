@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/taskLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:visibility="gone"
+    tools:visibility="visible">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/dp_spacing_15dp"
+            android:paddingLeft="@dimen/dp_spacing_15dp"
+            android:paddingTop="@dimen/dp_spacing_15dp"
+            android:text="项目名称："
+            android:textColor="@color/color_personnel_affairs_dialog"
+            android:textSize="@dimen/sp_font_detail_content_15sp" />
+
+        <TextView
+            android:id="@+id/tv_task_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:paddingBottom="@dimen/dp_spacing_15dp"
+            android:paddingTop="@dimen/dp_spacing_15dp"
+            android:textColor="@color/color_personnel_affairs_dialog"
+            android:textSize="@dimen/sp_font_detail_content_15sp"
+            tools:text="某某项目" />
+    </LinearLayout>
+
+    <include layout="@layout/line_layout_5dp" />
+</LinearLayout>

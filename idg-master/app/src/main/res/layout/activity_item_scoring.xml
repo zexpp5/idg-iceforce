@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/btn_ok"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/dp_spacing_8dp"
+        android:layout_marginTop="@dimen/dp_spacing_8dp"
+        android:background="@drawable/shape_blue_btn_bg"
+        android:text="提交"
+        android:textSize="@dimen/sp_font_detail_content_14sp"
+        android:textColor="@color/white" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/btn_ok"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/top_bar_layout"
+            layout="@layout/top_title_layout" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp_spacing_8dp"
+                android:layout_marginLeft="@dimen/dp_spacing_20dp"
+                android:layout_marginTop="@dimen/dp_spacing_8dp"
+                android:text="项目记录"
+                android:textColor="@color/text_black_l"
+                android:textSize="@dimen/sp_font_detail_content_14sp" />
+
+            <TextView
+                android:id="@+id/tv_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp_spacing_8dp"
+                android:layout_marginLeft="@dimen/dp_spacing_30dp"
+                android:layout_marginTop="@dimen/dp_spacing_8dp"
+                android:textColor="@color/text_black_l"
+                android:textSize="@dimen/sp_font_detail_content_14sp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="@dimen/dp_spacing_20dp"
+            android:layout_marginRight="@dimen/dp_spacing_20dp"
+            android:background="@color/dividing_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp_spacing_8dp"
+                android:layout_marginLeft="@dimen/dp_spacing_20dp"
+                android:layout_marginTop="@dimen/dp_spacing_8dp"
+                android:text="讨论内容"
+                android:textColor="@color/text_black_l"
+                android:textSize="@dimen/sp_font_detail_content_14sp" />
+
+            <EditText
+                android:id="@+id/et_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp_spacing_8dp"
+                android:layout_marginLeft="@dimen/dp_spacing_30dp"
+                android:layout_marginTop="@dimen/dp_spacing_8dp"
+                android:background="@null"
+                android:hint="请输入讨论内容"
+                android:textColor="@color/text_black_l"
+                android:textSize="@dimen/sp_font_detail_content_14sp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="@dimen/dp_spacing_20dp"
+            android:layout_marginRight="@dimen/dp_spacing_20dp"
+            android:background="@color/dividing_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_spacing_20dp"
+            android:layout_marginRight="@dimen/dp_spacing_20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp_spacing_8dp"
+                android:layout_marginTop="@dimen/dp_spacing_8dp"
+                android:layout_marginLeft="@dimen/dp_spacing_10dp"
+                android:layout_weight="1"
+                android:text="见过的人"
+                android:textColor="@color/text_black_l"
+                android:textSize="@dimen/sp_font_detail_content_14sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp_spacing_8dp"
+                android:layout_marginTop="@dimen/dp_spacing_8dp"
+                android:layout_weight="1"
+                android:text="团队评分"
+                android:textColor="@color/text_black_l"
+                android:textSize="@dimen/sp_font_detail_content_14sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp_spacing_8dp"
+                android:layout_marginTop="@dimen/dp_spacing_8dp"
+                android:layout_weight="1"
+                android:text="市场评分"
+                android:textColor="@color/text_black_l"
+                android:textSize="@dimen/sp_font_detail_content_14sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp_spacing_8dp"
+                android:layout_marginTop="@dimen/dp_spacing_8dp"
+                android:layout_weight="1"
+                android:text="项目讨论"
+                android:textColor="@color/text_black_l"
+                android:textSize="@dimen/sp_font_detail_content_14sp"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/dividing_line" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</RelativeLayout>

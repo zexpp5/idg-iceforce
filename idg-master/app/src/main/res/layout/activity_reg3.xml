@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/login_bg_color"
+              android:orientation="vertical">
+
+    <include
+        android:id="@+id/title_super"
+        layout="@layout/sd_top_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:orientation="vertical"
+        android:padding="@dimen/margin_20dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cn_register_company_name"
+                android:textSize="@dimen/l_text_size_16"
+            />
+
+            <tablayout.view.textview.FontEditext
+                android:id="@+id/edt_register_company_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:gravity="left|center_vertical"
+                android:hint="@string/cn_hint_register_company_name"
+                android:paddingLeft="15dp"
+                android:textColorHint="@color/color_login_hint"
+                android:textSize="@dimen/sp14"
+            />
+        </LinearLayout>
+
+        <include layout="@layout/erp_line_one_view"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:text="@string/cn_register_email"
+                android:textSize="@dimen/l_text_size_16"
+            />
+
+            <tablayout.view.textview.FontEditext
+                android:id="@+id/edt_register_email"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:background="@android:color/transparent"
+                android:gravity="left|center_vertical"
+                android:hint="@string/cn_hint_register_email"
+                android:paddingLeft="15dp"
+                android:textColorHint="@color/color_login_hint"
+                android:textSize="@dimen/sp14"
+            />
+        </LinearLayout>
+
+        <include layout="@layout/erp_line_one_view"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:text="@string/cn_register_card_account"
+                android:textSize="@dimen/l_text_size_16"
+            />
+
+            <tablayout.view.textview.FontEditext
+                android:id="@+id/edt_register_card_account"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:background="@android:color/transparent"
+                android:gravity="left|center_vertical"
+                android:hint="@string/cn_hint_register_card_account"
+                android:paddingLeft="15dp"
+                android:textColorHint="@color/color_login_hint"
+                android:textSize="@dimen/sp14"
+            />
+        </LinearLayout>
+
+        <include layout="@layout/erp_line_one_view"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/register_password"
+                android:textSize="@dimen/l_text_size_16"
+            />
+            <tablayout.view.textview.FontEditext
+                android:id="@+id/edt_register_card_password"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:gravity="left|center_vertical"
+                android:hint="@string/cn_hint_register_card_password"
+                android:inputType="textPassword"
+                android:paddingLeft="15dp"
+                android:text=""
+                android:textColorHint="@color/color_login_hint"
+                android:textSize="@dimen/sp14"
+            />
+        </LinearLayout>
+
+        <include layout="@layout/erp_line_one_view"/>
+
+        <Button
+            android:id="@+id/btn_register_input_finish"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/register_bt_bg"
+            android:text="@string/register_input_finish"
+            android:textColor="@color/white"
+            android:textSize="@dimen/l_l_text_size"
+        />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,513 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="newProject.company.project_manager.bad_assets.BadAssetsDetailActivity">
+
+    <include
+        android:id="@+id/top_bar_layout"
+        layout="@layout/top_title_layout" />
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/smart_refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/top_bar_layout"
+        android:background="@color/page_bg"
+        app:srlEnableLoadmore="true"
+        app:srlEnableLoadmoreWhenContentNotFull="false">
+
+        <ProgressBar
+            style="@style/CustomProgressStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp_spacing_15dp" />
+
+        <android.support.v4.widget.NestedScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/dp_spacing_to_left_right_15dp"
+                        android:paddingRight="@dimen/dp_spacing_to_left_right_15dp"
+                        android:paddingTop="@dimen/dp10"
+                        android:text="基本资料"
+                        android:textColor="#333"
+                        android:textSize="17sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/linear_row_style_common"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="0dp"
+                    android:paddingTop="@dimen/dp10">
+
+
+                    <tablayout.view.textview.FontTextView
+                        style="@style/font_text_content_sytle"
+                        android:layout_width="0dp"
+                        android:layout_weight="1.4"
+                        android:text="日期"
+                        android:textColor="@color/text_black_s" />
+
+                    <TextView
+                        android:id="@+id/tv_date"
+                        style="@style/font_edtext_content_sytle"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:gravity="center_vertical"
+                        android:singleLine="true"
+                        android:textColor="#333" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    style="@style/linear_row_style_common"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="0dp"
+
+                    android:paddingTop="@dimen/dp10">
+
+
+                    <tablayout.view.textview.FontTextView
+                        style="@style/font_text_content_sytle"
+                        android:layout_width="0dp"
+                        android:layout_weight="1.4"
+                        android:text="项目负责人"
+                        android:textColor="@color/text_black_s" />
+
+                    <TextView
+                        android:id="@+id/tv_respond_man"
+                        style="@style/font_edtext_content_sytle"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:gravity="center_vertical"
+                        android:singleLine="true"
+                        android:textColor="#333" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    style="@style/linear_row_style_common"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="0dp"
+
+                    android:paddingTop="@dimen/dp10">
+
+
+                    <tablayout.view.textview.FontTextView
+                        style="@style/font_text_content_sytle"
+                        android:layout_width="0dp"
+                        android:layout_weight="1.4"
+                        android:text="律师"
+                        android:textColor="@color/text_black_s" />
+
+                    <TextView
+                        android:id="@+id/tv_lawyer"
+                        style="@style/font_edtext_content_sytle"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:gravity="center_vertical"
+                        android:singleLine="true"
+                        android:textColor="#333" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    style="@style/linear_row_style_common"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="0dp"
+
+                    android:paddingTop="@dimen/dp10">
+
+
+                    <tablayout.view.textview.FontTextView
+                        style="@style/font_text_content_sytle"
+                        android:layout_width="0dp"
+                        android:layout_weight="1.4"
+                        android:text="项目名称"
+                        android:textColor="@color/text_black_s" />
+
+                    <TextView
+                        android:id="@+id/tv_project_name"
+                        style="@style/font_edtext_content_sytle"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:gravity="center_vertical"
+                        android:singleLine="true"
+                        android:textColor="#333" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    style="@style/linear_row_style_common"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="0dp"
+
+                    android:paddingTop="@dimen/dp10">
+
+
+                    <tablayout.view.textview.FontTextView
+                        style="@style/font_text_content_sytle"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.4"
+                        android:text="投资金额"
+                        android:textColor="@color/text_black_s" />
+
+                    <TextView
+                        android:id="@+id/tv_invest_money"
+                        style="@style/font_edtext_content_sytle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:gravity="center_vertical"
+                        android:maxLength="100"
+                        android:singleLine="false"
+                        android:textColor="#333" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    style="@style/linear_row_style_common"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="0dp"
+
+                    android:paddingTop="@dimen/dp10">
+
+
+                    <tablayout.view.textview.FontTextView
+                        style="@style/font_text_content_sytle"
+                        android:layout_width="0dp"
+                        android:layout_weight="1.4"
+                        android:text="占比"
+                        android:textColor="@color/text_black_s" />
+
+                    <TextView
+                        android:id="@+id/tv_percentage"
+                        style="@style/font_edtext_content_sytle"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:gravity="center_vertical"
+                        android:singleLine="true"
+                        android:textColor="#333" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    style="@style/linear_row_style_common"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="0dp"
+
+                    android:paddingTop="@dimen/dp10">
+
+
+                    <tablayout.view.textview.FontTextView
+                        style="@style/font_text_content_sytle"
+                        android:layout_width="0dp"
+                        android:layout_weight="1.4"
+                        android:text="境内实体"
+                        android:textColor="@color/text_black_s" />
+
+                    <TextView
+                        android:id="@+id/tv_inside"
+                        style="@style/font_edtext_content_sytle"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:gravity="center_vertical"
+                        android:singleLine="true"
+                        android:textColor="#333" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    style="@style/linear_row_style_common"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="0dp"
+
+                    android:paddingTop="@dimen/dp10">
+
+
+                    <tablayout.view.textview.FontTextView
+                        style="@style/font_text_content_sytle"
+                        android:layout_width="0dp"
+                        android:layout_weight="1.4"
+                        android:text="境外实体"
+                        android:textColor="@color/text_black_s" />
+
+                    <TextView
+                        android:id="@+id/tv_outside"
+                        style="@style/font_edtext_content_sytle"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:gravity="center_vertical"
+                        android:singleLine="true"
+                        android:textColor="#333" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    style="@style/linear_row_style_common"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="0dp"
+
+                    android:paddingTop="@dimen/dp10">
+
+
+                    <tablayout.view.textview.FontTextView
+                        style="@style/font_text_content_sytle"
+                        android:layout_width="0dp"
+                        android:layout_weight="1.4"
+                        android:text="unknown"
+                        android:textColor="@color/text_black_s" />
+
+                    <TextView
+                        android:id="@+id/tv_unknown"
+                        style="@style/font_edtext_content_sytle"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:gravity="center_vertical"
+                        android:singleLine="true"
+                        android:textColor="#333" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    style="@style/linear_row_style_common"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="0dp"
+
+                    android:paddingTop="@dimen/dp10">
+
+
+                    <tablayout.view.textview.FontTextView
+                        style="@style/font_text_content_sytle"
+                        android:layout_width="0dp"
+                        android:layout_weight="1.4"
+                        android:text="评级"
+                        android:textColor="@color/text_black_s" />
+
+                    <TextView
+                        android:id="@+id/tv_grade"
+                        style="@style/font_edtext_content_sytle"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:gravity="center_vertical"
+                        android:singleLine="true"
+                        android:textColor="#333" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    style="@style/linear_row_style_common"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/dp10">
+
+
+                    <tablayout.view.textview.FontTextView
+                        style="@style/font_text_content_sytle"
+                        android:layout_width="0dp"
+                        android:layout_weight="1.4"
+                        android:text="行业"
+                        android:textColor="@color/text_black_s" />
+
+                    <TextView
+                        android:id="@+id/tv_industry"
+                        style="@style/font_edtext_content_sytle"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:gravity="center_vertical"
+                        android:singleLine="true"
+                        android:textColor="#333" />
+                </LinearLayout>
+
+
+
+                <include
+                    layout="@layout/bottom_line_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_view_line_1dp"
+                    android:layout_marginLeft="@dimen/dp_spacing_to_left_right_15dp"
+                    android:layout_marginTop="@dimen/dp10" />
+                <LinearLayout
+                    style="@style/linear_row_style_common"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="0dp"
+
+                    android:paddingTop="@dimen/dp10">
+
+
+                    <tablayout.view.textview.FontTextView
+                        style="@style/font_text_content_sytle"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.4"
+                        android:text="当前情况"
+                        android:textColor="@color/text_black_s" />
+
+                    <TextView
+                        android:id="@+id/tv_situation"
+                        style="@style/font_edtext_content_sytle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:gravity="center_vertical"
+                        android:maxLength="200"
+                        android:singleLine="false"
+                        android:text=""
+                        android:textColor="#333" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    style="@style/linear_row_style_common"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="0dp"
+
+                    android:paddingTop="@dimen/dp10">
+
+
+                    <tablayout.view.textview.FontTextView
+                        style="@style/font_text_content_sytle"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.4"
+                        android:text="确认信息"
+                        android:textColor="@color/text_black_s" />
+
+                    <TextView
+                        android:id="@+id/tv_confirm_info"
+                        style="@style/font_edtext_content_sytle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:gravity="center_vertical"
+                        android:maxLength="200"
+                        android:singleLine="false"
+                        android:textColor="#333" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    style="@style/linear_row_style_common"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="0dp"
+                    android:paddingTop="@dimen/dp10">
+
+
+                    <tablayout.view.textview.FontTextView
+                        style="@style/font_text_content_sytle"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.4"
+                        android:text="项目分析"
+                        android:textColor="@color/text_black_s" />
+
+                    <TextView
+                        android:id="@+id/tv_project_analysis"
+                        style="@style/font_edtext_content_sytle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:gravity="center_vertical"
+                        android:maxLength="200"
+                        android:singleLine="false"
+                        android:textColor="#333" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    style="@style/linear_row_style_common"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/dp10"
+                    android:paddingTop="@dimen/dp10">
+
+
+                    <tablayout.view.textview.FontTextView
+                        style="@style/font_text_content_sytle"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.4"
+                        android:text="风险控制与纠偏"
+                        android:textColor="@color/text_black_s" />
+
+                    <TextView
+                        android:id="@+id/tv_risk"
+                        style="@style/font_edtext_content_sytle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:gravity="center_vertical"
+                        android:maxLength="200"
+                        android:singleLine="false"
+                        android:textColor="#333" />
+                </LinearLayout>
+
+
+
+
+                <LinearLayout
+                    android:id="@+id/linear_follow"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <include layout="@layout/bottom_line_view_big" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/dp_spacing_to_left_right_15dp"
+                        android:paddingRight="@dimen/dp_spacing_to_left_right_15dp"
+                        android:paddingTop="@dimen/dp10"
+                        android:text="进展"
+                        android:textColor="#333"
+                        android:textSize="17sp" />
+
+                </LinearLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+
+        <ProgressBar
+            style="@style/CustomProgressStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp_spacing_15dp" />
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</RelativeLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv_back"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/dp_spacing_30dp"
+        android:background="@mipmap/icon_x" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/iv_back"
+        android:layout_marginBottom="45dp"
+        android:gravity="center">
+
+        <LinearLayout
+            android:id="@+id/ll_potential"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:background="@drawable/shape_view_bg"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/iv_icon_1"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:background="@mipmap/icon_p_1" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_text_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_spacing_4dp"
+                android:text="潜在项目" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_follow"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp_spacing_30dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:background="@drawable/shape_view_bg"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/iv_icon_2"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:background="@mipmap/icon_p_2" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_text_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_spacing_4dp"
+                android:text="跟踪进展" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

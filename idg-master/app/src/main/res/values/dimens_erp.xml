@@ -1,0 +1,37 @@
+<resources>
+    <!--1dp的线条-->
+    <dimen name="erp_line_view_one">1dp</dimen>
+    <!--2dp的线条-->
+    <dimen name="erp_line_view_two">2dp</dimen>
+    <!--每行高度-->
+    <dimen name="line_height_dp">45dp</dimen>
+
+    <!--字体离左边的边距-->
+    <dimen name="name_m_to_left_dp">12dp</dimen>
+
+    <!--提交详情里面的字体大小-->
+    <dimen name="s_d_font_size">14.5sp</dimen>
+
+    <!--提交详情里面的输入的内容的字体大小-->
+    <dimen name="s_d_content_font_size">14.5sp</dimen>
+
+    <!--提交详情里面的带有倒三角下拉框字体大小-->
+    <dimen name="s_d_content_select_font_size">13sp</dimen>
+
+    <!--输入的内容的字体离左边的边距  2017年08月08日09:46:37  5dp修改到0dp-->
+    <dimen name="name_m_to_content_left_dp">0dp</dimen>
+
+    <!--表格头部字体大小-->
+    <dimen name="b_content_font_size">14.5sp</dimen>
+
+    <!--二级界面，设置界面dialog 左边字体大小-->
+    <dimen name="erp_menu_setting_title_font_left_size_sp">12sp</dimen>
+    <!--二级界面，设置界面dialog 右边字体大小-->
+    <dimen name="erp_menu_setting_title_font_right_size_sp">13sp</dimen>
+
+
+    <dimen name="dp2">2dp</dimen>
+
+    <dimen name="dp20">20dp</dimen>
+
+</resources>

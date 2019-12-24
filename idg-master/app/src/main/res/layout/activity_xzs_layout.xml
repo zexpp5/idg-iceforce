@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ffffff">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" android:layout_alignParentTop="true" android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <include
+            android:id="@+id/department_title_layout"
+            layout="@layout/public_title_01"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_speak_for_project"
+            android:layout_width="match_parent"
+            android:background="#E9EAEA"
+            android:layout_height="match_parent"
+        >
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/rl_speak"
+                android:layout_below="@+id/view_01"
+                android:background="#E9EAEA"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+            />
+
+            <RelativeLayout
+                android:id="@+id/rl_speak"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+            >
+
+                <View
+                    android:id="@+id/view2"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/text_black_l">
+                </View>
+
+                <LinearLayout
+                    android:id="@+id/rl_bottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#aaffffff"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:orientation="horizontal"
+                >
+
+                    <RelativeLayout
+                        android:id="@+id/edittext_layout"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="5dp"
+                    >
+                        
+                        <com.cc.emojilibrary.EmojiconEditText
+                            android:id="@+id/et_sendmessage"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5dp"
+                            android:layout_toLeftOf="@+id/btn_send"
+                            android:background="@drawable/shape_edt_bg2"
+                            android:maxLines="3"
+                            android:minHeight="40dp"
+                            android:padding="3dp"
+                            android:textSize="18sp"
+                        />
+
+                        <Button
+                            android:id="@+id/btn_send"
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:background="@mipmap/icon_keyboard"
+                            android:onClick="onClick"
+                            android:textColor="#ffffff"
+                            android:textSize="15sp"/>
+
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <!--<RelativeLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--&gt;-->
+
+                <!--</RelativeLayout>-->
+
+
+                <!--<RelativeLayout-->
+                <!--android:id="@+id/rl_record_btn"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:background="@drawable/shape_im_meeting_btn_bg"-->
+                <!--android:paddingBottom="3dp"-->
+                <!--android:paddingLeft="40dp"-->
+                <!--android:paddingRight="40dp"-->
+                <!--android:paddingTop="3dp"-->
+                <!--&gt;-->
+                <!--<tablayout.view.textview.FontTextView-->
+                <!--android:id="@+id/fontTextView2"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignParentTop="true"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:drawableLeft="@mipmap/voice_img_bg_gray"-->
+                <!--android:drawablePadding="10dp"-->
+                <!--android:gravity="center"-->
+                <!--android:text="@string/button_pushtotalk"-->
+                <!--android:textColor="#666666" android:textSize="15sp"/>-->
+                <!--</RelativeLayout>-->
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

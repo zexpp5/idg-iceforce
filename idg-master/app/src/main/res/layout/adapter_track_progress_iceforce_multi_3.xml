@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_height_line_45dp"
+        android:layout_marginLeft="@dimen/dp_spacing_to_left_20dp"
+        android:layout_marginRight="@dimen/dp_spacing_to_right_20dp"
+        android:orientation="horizontal">
+
+        <yunjing.view.RoundedImageView
+            android:id="@+id/head_bar_icon"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:src="@mipmap/temp_user_head"
+            app:oval="true"
+            android:layout_gravity="center_vertical"
+            />
+
+        <TextView
+            android:id="@+id/tv_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_spacing_15dp"
+            android:layout_gravity="center_vertical"
+            android:textSize="@dimen/sp_font_detail_content_15sp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_status_str"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="3dp"
+        android:layout_marginLeft="82dp"
+        android:textColor="@color/top_bg"
+        android:textSize="@dimen/sp_font_detail_content_14sp"
+        android:background="@drawable/tv_bg_blue_2"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="@dimen/dp_spacing_to_left_20dp"
+        android:layout_marginRight="@dimen/dp_spacing_to_right_20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="62dp"
+            android:layout_gravity="center_vertical"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textColor="@color/blue"
+            />
+
+        <LinearLayout
+            android:id="@+id/ll_voice"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_spacing_4dp"
+            android:layout_marginBottom="@dimen/dp_spacing_4dp"
+            android:layout_marginLeft="@dimen/dp_spacing_4dp"
+            android:layout_marginRight="@dimen/dp_spacing_20dp"
+            android:background="@drawable/chatfrom_bg">
+
+            <ImageView
+                android:id="@+id/iv_voice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/play_annex_voice"
+                />
+
+            <TextView
+                android:id="@+id/tv_second"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_spacing_4dp"
+                android:layout_marginLeft="@dimen/dp_spacing_4dp"
+                android:textColor="@color/text_black_s"
+                android:textSize="@dimen/sp_font_detail_content_11sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_spacing_8dp"
+        android:layout_marginBottom="@dimen/dp_spacing_8dp"
+        android:layout_marginLeft="82dp"
+        android:textColor="@color/text_black_s"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/dividing_line" />
+
+</LinearLayout>

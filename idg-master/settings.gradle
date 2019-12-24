@@ -1,0 +1,8 @@
+include ':app',
+        ':SDFilePicker',
+        ':SwipeMenuListView',
+        ':base', ':entity', ':microsoft-azure-storage',
+        ':imNetwork', ':imlibrary', ':SDFresco', ':imsdk',
+        ':webrtc', 'generatorentity', ':emoji_library', ':SuperRecyclerView', ':calendarview'
+
+//':social_sdk_library_project', ':MPChartLib',

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f2f2f2"
+   >
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/public_title_01" />
+
+    <RelativeLayout
+        android:id="@+id/layPsw"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/white"
+    >
+
+        <ImageView
+            android:id="@+id/img_003"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:src="@mipmap/icon_im_mine_password"
+        />
+
+        <tablayout.view.textview.FontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/img_003"
+            android:text="修改密码"
+            android:textSize="@dimen/font_size_item_name"
+        />
+
+        <ImageView
+            android:id="@+id/img02"
+            android:layout_width="8dp"
+            android:layout_height="13dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:src="@mipmap/left_img_bg"/>
+
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>

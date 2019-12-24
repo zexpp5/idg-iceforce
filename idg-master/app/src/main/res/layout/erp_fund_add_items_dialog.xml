@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="320dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:background="@color/dialog_title_and_foot_bg">
+
+
+        <tablayout.view.textview.FontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="附件"
+            android:textSize="16sp"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+
+
+        <LinearLayout
+            style="@style/d_s_ll_style"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <!--统一定义-->
+            <tablayout.view.textview.FontTextView
+                style="@style/d_s_left_font_sytle"
+                android:text="@string/customer_relations_cus_notice_file_ic"/>
+
+            <include
+                android:id="@+id/file_btn_include"
+                 android:layout_width="match_parent"
+                android:layout_height="100dp"
+                layout="@layout/erp_add_goods_file_dialog"/>
+
+        </LinearLayout>
+
+
+
+    <com.superdata.marketing.view.percent.PercentLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="30dp"
+        android:background="@color/dialog_title_and_foot_bg"
+
+        android:gravity="center">
+
+        <RelativeLayout
+            android:id="@+id/send_bottom_rl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/erp_submit_delete_btn_item_bg"
+            app:layout_heightPercent="12%w"
+            app:layout_marginLeftPercent="8%w"
+            app:layout_marginRightPercent="5%w"
+            app:layout_widthPercent="35%w">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/send_bottom_tv"
+                android:background="@mipmap/btn_submit_bg"/>
+
+            <tablayout.view.textview.FontTextView
+                android:id="@+id/send_bottom_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="@string/sumbit"
+                android:textSize="@dimen/sumb_detail_size_15"/>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/delete_bottom_rl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/erp_submit_delete_btn_item_bg"
+            android:clickable="true"
+            app:layout_heightPercent="12%w"
+            app:layout_marginLeftPercent="8%w"
+            app:layout_marginRightPercent="5%w"
+            app:layout_widthPercent="35%w">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/delete_bottom_tv"
+                android:background="@mipmap/btn_submit_cancer"
+                />
+
+            <tablayout.view.textview.FontTextView
+                android:id="@+id/delete_bottom_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="@string/clear"
+                android:textSize="@dimen/sumb_detail_size_15"
+                />
+
+        </RelativeLayout>
+
+    </com.superdata.marketing.view.percent.PercentLinearLayout>
+        </LinearLayout>
+</LinearLayout>

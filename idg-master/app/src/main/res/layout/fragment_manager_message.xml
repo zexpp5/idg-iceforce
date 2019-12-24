@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#ffffff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/department_title_layout"
+            layout="@layout/top_title_layout" />
+
+
+        <LinearLayout
+            android:weightSum="2"
+            style="@style/linear_row_style_common"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+
+                <tablayout.view.textview.FontTextView
+                    style="@style/font_text_content_sytle"
+                    android:text="编号：" />
+
+                <tablayout.view.textview.FontEditext
+                    android:id="@+id/manager_message_number"
+                    style="@style/font_edtext_content_sytle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:singleLine="true" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+
+
+                <tablayout.view.textview.FontTextView
+                    style="@style/font_text_content_sytle"
+                    android:text="关联业务：" />
+
+                <TextView
+                    android:id="@+id/manager_message_relation_type"
+                    style="@style/font_select_textview_content_sytle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <include layout="@layout/bottom_line_view" />
+
+        <LinearLayout
+            android:weightSum="2"
+            style="@style/linear_row_style_common"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+
+                <tablayout.view.textview.FontTextView
+                    style="@style/font_text_content_sytle"
+                    android:text="等级：" />
+
+                <tablayout.view.textview.FontTextView
+                    android:id="@+id/manager_message_grade"
+                    style="@style/font_select_textview_content_sytle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+
+
+                <tablayout.view.textview.FontTextView
+                    style="@style/font_text_content_sytle"
+                    android:text="@string/type_class" />
+
+                <tablayout.view.textview.FontTextView
+                    android:id="@+id/manager_message_type"
+                    style="@style/font_select_textview_content_sytle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <include layout="@layout/bottom_line_view" />
+
+        <LinearLayout
+            android:weightSum="2"
+            style="@style/linear_row_style_common"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+
+                <tablayout.view.textview.FontTextView
+                    style="@style/font_text_content_sytle"
+                    android:text="关联人：" />
+
+                <tablayout.view.textview.FontTextView
+                    android:id="@+id/manager_message_relation_people"
+                    style="@style/font_select_textview_content_sytle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+
+
+                <tablayout.view.textview.FontTextView
+                    android:id="@+id/area_text"
+                    style="@style/font_text_content_sytle"
+                    android:text="客户区域：" />
+
+                <tablayout.view.textview.FontEditext
+                    android:id="@+id/manager_message_region"
+                    style="@style/font_edtext_content_sytle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <include layout="@layout/bottom_line_view" />
+
+    </LinearLayout>
+
+    <include
+        android:id="@+id/share_icon_list_id"
+        style="@style/list_ShareLayout_Style"
+        layout="@layout/list_share_layout"/>
+
+</RelativeLayout>

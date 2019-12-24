@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <include
+
+        android:id="@+id/title_layout"
+        layout="@layout/top_title_layout"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <!--一行的高度style-->
+        <LinearLayout
+            style="@style/d_s_ll_style"
+            android:orientation="horizontal">
+
+
+            <!--左边的textview的style-->
+            <tablayout.view.textview.FontTextView
+                style="@style/d_s_left_font_sytle"
+                android:text="客户单位："/>
+            <!--非输入的textview的style-->
+            <tablayout.view.textview.FontEditext
+                android:id="@+id/unit"
+                style="@style/d_s_content_font_edtext_sytle_title"/>
+
+
+            <!--LinearLayout右边title的style-->
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--线条高度-->
+        <include layout="@layout/erp_line_one_view"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <!--一行的高度style-->
+        <LinearLayout
+            style="@style/d_s_ll_style"
+            android:orientation="horizontal">
+
+
+            <!--左边的textview的style-->
+            <tablayout.view.textview.FontTextView
+                style="@style/d_s_left_font_sytle"
+                android:text="客户简称："/>
+            <!--非输入的textview的style-->
+            <tablayout.view.textview.FontEditext
+                android:id="@+id/abbreviation"
+                style="@style/d_s_content_font_edtext_sytle_title"/>
+
+
+            <!--LinearLayout右边title的style-->
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <include layout="@layout/erp_line_one_view"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <!--一行的高度style-->
+        <LinearLayout
+            style="@style/d_s_ll_style"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                style="@style/d_s_s_in_tow_ll_style"
+                android:layout_width="0dp"
+                android:layout_weight="5"
+                android:orientation="horizontal">
+                <!--左边的textview的style-->
+                <tablayout.view.textview.FontTextView
+                    style="@style/d_s_left_font_sytle"
+                    android:text="联系人："/>
+                <!--非输入的textview的style-->
+                <tablayout.view.textview.FontEditext
+                    android:id="@+id/contact_person"
+                    style="@style/d_s_content_font_edtext_sytle_title"/>
+
+            </LinearLayout>
+            <!--LinearLayout右边title的style-->
+            <LinearLayout
+                style="@style/d_s_s_in_tow_ll_right_style"
+                android:layout_width="0dp"
+                android:layout_weight="6">
+                <!--右边title的style-->
+                <tablayout.view.textview.FontTextView
+                    style="@style/d_s_right_font_sytle"
+                    android:text="联系方式："/>
+
+                <tablayout.view.textview.FontEditext
+                    android:id="@+id/contact_information"
+                    style="@style/d_s_content_font_edtext_sytle_title"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+        <!--线条高度-->
+        <include layout="@layout/erp_line_one_view"/>
+
+</LinearLayout>

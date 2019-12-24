@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.superdata.marketing.view.percent.PercentLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical">
+
+    <tablayout.view.textview.FontTextView
+        android:id="@+id/tv_header"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#f2f2f2"
+        android:gravity="center_vertical"
+        android:textColor="@android:color/black"
+        android:visibility="gone"
+        app:layout_heightPercent="5.5%w"
+        app:layout_paddingLeftPercent="3.5%w"
+        app:layout_textSizePercent="3.5%w"/>
+
+    <com.superdata.marketing.view.percent.PercentRelativeLayout
+        android:id="@+id/ll_content"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:gravity="center_vertical"
+        app:layout_heightPercent="16%w"
+        app:layout_paddingLeftPercent="3.5%">
+
+
+        <!--<com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/iv_header_img"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            app:layout_heightPercent="10.3%w"
+            app:layout_marginRightPercent="3.5%w"
+            app:layout_widthPercent="10.3%w" />-->
+
+        <com.superdata.marketing.view.percent.PercentRelativeLayout
+            android:id="@+id/avatar_container"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            app:layout_widthPercent="15%w">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/iv_header_img"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:layout_centerVertical="true"
+                android:scaleType="fitXY"
+            />
+
+            <tablayout.view.textview.FontTextView
+                android:id="@+id/unread_msg_number"
+                android:layout_width="@dimen/dp_spacing_7dp"
+                android:layout_height="@dimen/dp_spacing_7dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="3dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/dot_shape"
+                android:gravity="center"
+                android:visibility="gone"
+            />
+
+            <!--<tablayout.view.textview.FontTextView-->
+            <!--android:id="@+id/unread_msg_number"-->
+            <!--android:layout_width="10dp"-->
+            <!--android:layout_height="10dp"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:background="@mipmap/icon_num"-->
+            <!--android:gravity="center"-->
+            <!--android:textColor="@android:color/white"-->
+            <!--android:textSize="@dimen/ss_text_size"-->
+            <!--app:layout_heightPercent="20%w"-->
+            <!--app:layout_marginRightPercent="4%w"-->
+            <!--app:layout_marginTopPercent="2%w"-->
+            <!--app:layout_widthPercent="20%w"/>-->
+        </com.superdata.marketing.view.percent.PercentRelativeLayout>
+
+        <!--android:background="@drawable/icon_num"-->
+        <tablayout.view.textview.FontTextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="5dp"
+            android:paddingBottom="2dp"
+            android:layout_marginTop="5dp"
+            android:layout_centerVertical="true"
+            android:layout_alignTop="@+id/iv_header_img"
+            android:layout_toRightOf="@+id/avatar_container"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_size_item_name_business"
+        />
+        <tablayout.view.textview.FontTextView
+            android:id="@+id/tv_dept"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:layout_below="@+id/tv_name"
+            android:layout_toRightOf="@+id/avatar_container"
+            android:text=""
+            android:textColor="@color/gray"
+            android:textSize="13sp"
+            android:visibility="gone"
+            />
+
+        <tablayout.view.textview.FontTextView
+            android:id="@+id/tv_job"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:layout_below="@+id/tv_name"
+            android:layout_toRightOf="@+id/tv_dept"
+            android:text=""
+            android:textColor="@color/gray"
+            android:textSize="13sp"
+            android:visibility="gone"
+            />
+
+        <CheckBox
+            android:id="@+id/cbAddress"
+            style="@style/CustomCheckboxTheme"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:visibility="gone"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:clickable="false"
+            android:enabled="false"
+            android:gravity="center_vertical"
+            app:layout_marginRightPercent="7.7%w"/>
+
+        <tablayout.view.textview.FontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="免费"
+            android:textColor="@color/red"
+            android:visibility="gone"
+            app:layout_marginRightPercent="7.7%w"
+            app:layout_textSizePercent="4%w"/>
+
+        <!--android:visibility="gone"-->
+
+        <tablayout.view.textview.FontTextView
+            android:id="@+id/dept"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textColor="#aaaaaa"
+
+            app:layout_marginRightPercent="14%w"
+            app:layout_textSizePercent="4%w"/>
+
+
+        <Button
+            android:id="@+id/stop_tv"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="40dp"
+            android:gravity="center"
+            android:focusable="false"
+            android:textColor="#9e9e9e"
+            android:background="@drawable/shape_blue_normal_btn"
+            android:textSize="@dimen/font_size_item_name_business"
+            android:text="停用"/>
+
+        <Button
+            android:id="@+id/start_tv"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_toLeftOf="@+id/stop_tv"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="5dp"
+            android:gravity="center"
+            android:focusable="false"
+            android:textColor="#fff"
+            android:background="@drawable/shape_blue_press_btn"
+            android:textSize="@dimen/font_size_item_name_business"
+            android:text="启用"/>
+    </com.superdata.marketing.view.percent.PercentRelativeLayout>
+
+
+</com.superdata.marketing.view.percent.PercentLinearLayout>

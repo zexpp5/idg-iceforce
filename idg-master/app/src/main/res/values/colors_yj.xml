@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    /********/
+    /**首页**/
+    //首页标题栏背景颜色
+    <color name="color_home_page_title_bg">#2b2b30</color>
+    //首页一级、二级界面item偶数背景颜色
+    <color name="color_home_page_item_bg">#f5f9fc</color>
+    //首页一级、二级界面第一个大item背景
+    <color name="color_home_page_item_infor_bg">#edf6fb</color>
+    /********/
+
+    //首页标题颜色
+    <color name="color_home_page_title_center">#ffffff</color>
+    //首页标题-左小标题-颜色
+    <color name="color_home_page_title_left">#ffffff</color>
+    //首页标题-右小标题-颜色
+    <color name="color_home_page_title_right">#ffffff</color>
+
+    /************/
+    /**二级界面**/
+    /************/
+
+
+    /************/
+    /**每个模块**/
+    /************/
+    //模块标题栏中间文字颜色
+    <color name="color_title_center">#ffffff</color>
+    //模块标题栏左边文字颜色
+    <color name="color_title_left">#ffffff</color>
+    //模块标题栏右边文字颜色
+    <color name="color_title_right">#ffffff</color>
+
+
+    /***********************人事档案 人事事务********************************/
+    //人事档案 表格标题文字颜色
+    <color name="color_personal_records_top_title">#54595d</color>
+    //人事档案 表格内容文字颜色
+    <color name="color_personal_records_content">#bdbdbd</color>
+    //人事事务 弹窗字体颜色
+    <color name="color_personnel_affairs_dialog">#0d0d0d</color>
+    //人事事务 弹出背景颜色
+    <color name="color_personnel_affairs_dialog_bg">#fff</color>
+    //人事事务列表字体颜色
+    <color name="color_personnel_affairs_list">#959595</color>
+    //人事事务列表弹窗按钮背景
+    <color name="color_personnel_affairs_list_dialog_btn_bg">#747474</color>
+    //人事事务列表弹窗按钮字体颜色
+    <color name="color_personnel_affairs_list_dialog_btn_text">#fff</color>
+
+    //部门弹框按钮的颜色
+    <color name="color_dialog_btn_bg">#EDF6FD</color>
+
+    //表格顶部背景颜色
+    <color name="table_top_background">#edf6fc</color>
+    //表格标题文字颜色
+    <color name="table_head_text_color">#101010</color>
+    // 表格内容文字颜色
+    <color name="table_content_text_color">#303030</color>
+    // 表格线条颜色
+    <color name="table_content_line_color">#dcdcdc</color>
+    // 表格行间距颜色
+    <color name="table_row_bg">#f5f9fc</color>
+
+    <color name="color_add_depart_bg">#517fcc</color>
+
+
+    //IDG
+    <color name="color_idg_work_list_bg">#F4F5F7</color>
+
+
+
+
+</resources>

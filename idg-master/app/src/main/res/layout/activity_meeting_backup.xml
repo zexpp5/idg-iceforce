@@ -1,0 +1,279 @@
+<com.superdata.marketing.view.percent.PercentLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/top_bg"
+    android:orientation="vertical"
+    tools:context="com.cxgz.activity.cxim.ui.voice.detail.MeetingActivity">
+
+    <include
+        layout="@layout/super_top_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+    />
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:background="#33373a"
+                  android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/rl_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="right"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/selector_meeting_exit"
+                app:layout_marginRightPercent="3%w">
+
+                <tablayout.view.textview.FontTextView
+                    android:id="@+id/iv_exit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="退出"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/l_text_size"/>
+            </RelativeLayout>
+
+            <com.superdata.marketing.view.percent.PercentLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_toLeftOf="@+id/rl_text"
+                android:orientation="vertical"
+                android:padding="10dp"
+            >
+
+                <tablayout.view.textview.FontTextView
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:text="主题："
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                />
+
+                <tablayout.view.textview.FontTextView
+                    android:id="@+id/author"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:ellipsize="end"
+                    android:text="主持人："
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                />
+
+                <tablayout.view.textview.FontTextView
+                    android:id="@+id/time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:ellipsize="end"
+                    android:text="时间："
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                />
+
+            </com.superdata.marketing.view.percent.PercentLinearLayout>
+
+        </RelativeLayout>
+
+        <com.superdata.marketing.view.percent.PercentRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.superdata.marketing.view.percent.PercentLinearLayout
+                android:id="@+id/ll_meeted"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:orientation="vertical"
+                app:layout_heightPercent="45%w"
+                app:layout_paddingBottomPercent="6.9%w"
+                app:layout_paddingTopPercent="6.9%w">
+
+                <com.superdata.marketing.view.percent.PercentLinearLayout
+                    android:id="@+id/ll_process_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <tablayout.view.textview.FontTextView
+                        android:id="@+id/total_len"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0.00"
+                        android:textColor="@color/white"
+                        app:layout_marginLeftPercent="2%"
+                        app:layout_widthPercent="16%"/>
+
+                    <com.cxgz.activity.cxim.view.MySeekBar
+                        android:id="@+id/sb_progress"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:maxHeight="8px"
+                        android:minHeight="8px"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:progress="30"
+                        android:progressDrawable="@drawable/seek_bar"
+                        android:thumb="@mipmap/seek_point"
+                        android:thumbOffset="5dp"/>
+
+                    <tablayout.view.textview.FontTextView
+                        android:id="@+id/max_len"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1000.00"
+                        android:textColor="@color/white"
+                        app:layout_marginRightPercent="2%"
+                        app:layout_widthPercent="16%"/>
+                </com.superdata.marketing.view.percent.PercentLinearLayout>
+
+                <com.superdata.marketing.view.percent.PercentRelativeLayout
+                    android:id="@+id/btn_status"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_marginTopPercent="6%w">
+
+                    <ImageView
+                        android:id="@+id/stop_status"
+                        android:layout_width="62dp"
+                        android:layout_height="62dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@mipmap/stop"/>
+
+                    <ImageView
+                        android:id="@+id/play_status"
+                        android:layout_width="62dp"
+                        android:layout_height="62dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@mipmap/play"/>
+                </com.superdata.marketing.view.percent.PercentRelativeLayout>
+
+            </com.superdata.marketing.view.percent.PercentLinearLayout>
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/iv_user_icon"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_vertical"
+                android:visibility="invisible"
+                app:layout_heightPercent="25%w"
+                app:layout_marginTopPercent="8%w"
+                app:layout_widthPercent="25%w"/>
+
+            <tablayout.view.textview.FontTextView
+                android:id="@+id/say_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_user_icon"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/white"
+                app:layout_marginTopPercent="2%w"
+                app:layout_textSizePercent="6%w"/>
+
+            <tablayout.view.textview.FontTextView
+                android:id="@+id/tv_talking"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/say_name"
+                android:layout_centerHorizontal="true"
+                android:text="正在说话..."
+                android:textColor="@color/white"
+                android:visibility="invisible"
+                app:layout_marginTopPercent="2%w"
+                app:layout_textSizePercent="5%w"/>
+
+            <LinearLayout
+                android:id="@+id/iv_recording"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="#24282e"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:visibility="gone"
+                app:layout_marginTopPercent="8%w">
+
+                <ImageView
+                    android:id="@+id/mic_image"
+                    android:layout_width="117dp"
+                    android:layout_height="117dp"
+                    android:src="@mipmap/mt_center"/>
+
+                <tablayout.view.textview.FontTextView
+                    android:id="@+id/recordingHint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:padding="3dp"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"/>
+            </LinearLayout>
+
+            <com.superdata.marketing.view.percent.PercentRelativeLayout
+                android:id="@+id/pl_talk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="#1d2027"
+                android:orientation="vertical"
+                app:layout_heightPercent="40%w">
+
+                <tablayout.view.textview.FontTextView
+                    android:id="@+id/tv_voice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/voice_btn"
+                    android:layout_centerHorizontal="true"
+                    android:text="按住说话"
+                    android:textColor="@color/white"
+                    app:layout_marginBottomPercent="5%w"
+                    app:layout_textSizePercent="4.1%w"/>
+
+                <ImageView
+                    android:id="@+id/voice_btn"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/mt_recoding_selector"
+                    android:visibility="gone"
+                    app:layout_marginBottomPercent="6.9%w"/>
+            </com.superdata.marketing.view.percent.PercentRelativeLayout>
+
+            <ImageView
+                android:id="@+id/iv_error"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/meeting_error"
+                android:visibility="gone"
+                app:layout_marginRightPercent="5%w"
+                app:layout_marginTopPercent="5%w"/>
+        </com.superdata.marketing.view.percent.PercentRelativeLayout>
+
+    </LinearLayout>
+</com.superdata.marketing.view.percent.PercentLinearLayout>

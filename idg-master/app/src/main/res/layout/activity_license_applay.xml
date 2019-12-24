@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/top_title_layout" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/head_bar_layout"
+                android:visibility="gone"
+                layout="@layout/person_information_layout" />
+
+      <!--      <include layout_city="@layout_city/bottom_line_view_three" />-->
+
+            <LinearLayout
+                style="@style/d_s_ll_style"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    style="@style/d_s_s_in_tow_ll_style"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/d_s_left_font_sytle"
+                        android:text="@string/use_human" />
+
+                    <TextView
+                        android:id="@+id/tv_use_human"
+                        style="@style/d_s_content_font_select_textview_sytle" />
+
+                </LinearLayout>
+
+                <LinearLayout style="@style/d_s_s_in_tow_ll_right_style">
+
+                    <TextView
+                        style="@style/d_s_right_font_sytle"
+                        android:text="@string/use_department" />
+
+                    <TextView
+                        android:id="@+id/tv_use_department"
+                        style="@style/d_s_content_font_select_textview_sytle" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <!--线条高度-->
+            <include layout="@layout/erp_line_one_view" />
+
+            <LinearLayout
+                style="@style/d_s_ll_style"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    style="@style/d_s_s_in_tow_ll_style"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/d_s_left_font_sytle"
+                        android:text="@string/license_type" />
+
+                    <TextView
+                        android:id="@+id/tv_license_type"
+                        style="@style/d_s_content_font_select_textview_sytle" />
+
+                </LinearLayout>
+
+
+                <LinearLayout style="@style/d_s_s_in_tow_ll_right_style">
+
+                    <TextView
+
+                        style="@style/d_s_right_font_sytle"
+                        android:text="@string/use_time" />
+
+                    <TextView
+                        android:id="@+id/tv_use_time"
+                        style="@style/d_s_content_font_select_textview_sytle" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <!--线条高度-->
+            <include layout="@layout/erp_line_one_view" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingRight="10dp">
+
+                <TextView
+                    style="@style/d_s_left_font_sytle"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="@dimen/name_m_to_left_dp"
+                    android:paddingTop="8dp"
+                    android:text="@string/use_reason" />
+
+                <EditText
+                    android:id="@+id/et_use_reason"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginTop="8dp"
+                    android:maxLength="500"
+                    android:background="@null"
+                    android:textColor="@color/black"
+                    android:gravity="top"
+                    android:textSize="@dimen/s_d_font_size" />
+            </LinearLayout>
+
+            <!--线条高度-->
+            <include layout="@layout/erp_line_one_view" />
+
+            <include layout="@layout/public_annex_layout" />
+
+            <include layout="@layout/bottom_line_view_three" />
+
+            <include
+                android:id="@+id/bottom_approvalLayout"
+                layout="@layout/approval_process_layout"
+                android:visibility="gone" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

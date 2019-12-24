@@ -1,0 +1,144 @@
+<resources>
+    /*******************/
+    /**控件宽高，边距等**/
+    /*******************/
+
+    <dimen name="dp_view_line_05dp">0.5dp</dimen>
+    // 1dp的线条-->
+
+    <dimen name="dp_view_line_1dp">1dp</dimen>
+    // 2dp的线条-->
+    <dimen name="dp_view_line_2dp">2dp</dimen>
+    <dimen name="dp_view_line_5dp">5dp</dimen>
+    <dimen name="dp_view_line_10dp">10dp</dimen>
+
+    //首页
+    //首页个人头像
+    <dimen name="dp_home_page_personal_icon">48dp</dimen>
+    <!--二级界面左边图标-->
+    <dimen name="dp_personal_info_second_icon">22dp</dimen>
+
+    //toolBar的高度(title 高度等等，)
+    <dimen name="dp_height_title_48dp">48dp</dimen>
+    //返回按鈕等左右兩邊
+    <dimen name="dp_spacing_title_left_btn_5dp">5dp</dimen>
+
+    // 每行高度-如item的高度-->
+    <dimen name="dp_height_line_45dp">45dp</dimen>
+
+    // 字体，或者一般控件离左边的边距-->
+    <dimen name="dp_spacing_to_left_10dp">10dp</dimen>
+
+    <dimen name="dp_spacing_to_left_20dp">20dp</dimen>
+    // 字体，或者一般控件离右边的边距-->
+    <dimen name="dp_spacing_to_right_10dp">10dp</dimen>
+
+    <dimen name="dp_spacing_to_right_20dp">20dp</dimen>
+
+    //一般控件离左右边的边距-->
+    <dimen name="dp_spacing_to_left_right_15dp">15dp</dimen>
+    <dimen name="dp_spacing_to_left_right_10dp">10dp</dimen>
+
+    //字体边距-->
+    <dimen name="dp_spacing_to_text_5dp">5dp</dimen>
+    <dimen name="dp_spacing_18dp">18dp</dimen>
+    //间距-->
+    <dimen name="dp_spacing_30dp">30dp</dimen>
+    //间距-->
+    <dimen name="dp_spacing_25dp">25dp</dimen>
+    <dimen name="dp_spacing_20dp">20dp</dimen>
+    //间距-->
+    <dimen name="dp_spacing_15dp">15dp</dimen>
+    //间距-->
+    <dimen name="dp_spacing_12dp">12dp</dimen>
+    //间距-->
+    <dimen name="dp_spacing_10dp">10dp</dimen>
+    //间距-->
+    <dimen name="dp_spacing_8dp">8dp</dimen>
+    //间距-->
+    <dimen name="dp_spacing_7dp">7dp</dimen>
+    //间距-->
+    <dimen name="dp_spacing_6dp">6dp</dimen>
+    //间距-->
+    <dimen name="dp_spacing_5dp">5dp</dimen>
+    //间距-->
+    <dimen name="dp_spacing_4dp">4dp</dimen>
+    //间距-->
+    <dimen name="dp_spacing_3dp">3dp</dimen>
+    //间距-->
+    <dimen name="dp_spacing_1dp">1dp</dimen>
+
+    <!--描述输入框-->
+    <dimen name="dp_space_height_dp">140dp</dimen>
+
+    <!--通知内容输入框-->
+    <dimen name="dp_notify_height_dp">140dp</dimen>
+
+    /************/
+    /**字体大小**/
+    /************/
+    //首页
+    <dimen name="sp_font_home_page_title_20sp">20sp</dimen>
+    sp_font_human_res_15sp
+    //首頁個人信息,名字
+    <dimen name="sp_font_home_page_personal_16sp">16sp</dimen>
+
+    //首页RecyclerView的item的标题
+    <dimen name="sp_font_home_page_item_title_16sp">16sp</dimen>
+
+    //选项字体大小
+    <dimen name="sp_font_title_15sp">15sp</dimen>
+
+    //toolBar内的(title内字体大小等等，)
+    <dimen name="sp_font_title_center_18sp">18sp</dimen>
+    //l_r =left+right
+    <dimen name="sp_font_title_l_r_14sp">15sp</dimen>
+
+    //二级界面，
+    //（每个模块进入后的，如：点击了首页我的办公）
+    <dimen name="sp_font_lv_itme_content_15sp">16sp</dimen>
+    // 模块item的批审状态字体大小
+    <dimen name="sp_font_lv_itme_approve_13sp">14sp</dimen>
+
+
+    //相当于二级界面点击进去的每个模块的表格和列表。
+    //列表-表格-标题
+    <dimen name="sp_item_title_sp">16sp</dimen>
+    //(列表表格)中间时间-类型。
+    <dimen name="sp_item_time_sp">14sp</dimen>
+
+
+    //详情和添加的字体大小
+    <dimen name="sp_font_detail_content_25sp">25sp</dimen>
+    <dimen name="sp_font_detail_content_20sp">20sp</dimen>
+    <dimen name="sp_font_detail_content_15sp">15sp</dimen>
+    <dimen name="sp_font_detail_content_16sp">16sp</dimen>
+    <dimen name="sp_font_detail_content_18sp">18sp</dimen>
+    <dimen name="sp_font_detail_content_17sp">17sp</dimen>
+    <dimen name="sp_font_detail_content_14sp">14sp</dimen>
+    <dimen name="sp_font_detail_content_13sp">13sp</dimen>
+    <dimen name="sp_font_detail_content_12sp">12sp</dimen>
+    <dimen name="sp_font_detail_content_11sp">11sp</dimen>
+    <dimen name="sp_font_detail_content_10sp">10sp</dimen>
+    //人力资源表格字体大小
+    <dimen name="sp_font_human_res_15sp">15sp</dimen>
+    //表格内容字体大小
+    <dimen name="sp_font_personal_records_15sp">15sp</dimen>
+    //表格标题膱字体大小
+    <dimen name="sp_font_personal_records_16sp">16sp</dimen>
+
+
+    //人事事务列表dialog弹出的
+    <dimen name="dp_width_dialog_250dp">250dp</dimen>
+
+    <!--excel 宽高1-->
+    <dimen name="dp_column_width_100dp">100dp</dimen>
+    <dimen name="dp_row_height_40dp">45dp</dimen>
+    <dimen name="dp_row_header_width_100dp">100dp</dimen>
+    <dimen name="dp_column_header_height_40dp">45dp</dimen>
+
+    <!--excel 宽高2-->
+    <dimen name="dp_column_width_200dp">200dp</dimen>
+    <dimen name="dp_row_header_width_150dp">150dp</dimen>
+    <dimen name="dp_row_header_width_200dp">200dp</dimen>
+</resources>

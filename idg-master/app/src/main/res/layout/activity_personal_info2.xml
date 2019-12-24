@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/title_super"
+        layout="@layout/sd_top_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+    />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:background="@color/common_bg"
+        >
+
+            <ImageView
+                android:id="@+id/webview_carousel"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@mipmap/pic_im_bg"
+            />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-65dp"
+            android:gravity="center_horizontal"
+            android:paddingBottom="20dp">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/info_headImg"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:scaleType="fitXY"/>
+
+            <tablayout.view.textview.FontTextView
+                android:id="@+id/info_userName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/info_headImg"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:textSize="@dimen/font_size_item_name"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#E8E8E8">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/common_bg"
+                android:orientation="vertical"
+                android:padding="20dp">
+                <Button
+                    android:id="@+id/send_chat"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/btn_green_selector"
+                    android:text="发信息"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_size_item_name"
+                />
+
+                <Button
+                    android:id="@+id/send_voice"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/btn_white_selector"
+                    android:text="语音通话"
+                    android:textColor="#333333"
+                    android:textSize="@dimen/font_size_item_name"
+                />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="#ffffff"
+                android:orientation="horizontal"
+                android:paddingBottom="20dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="20dp">
+
+                <Button
+                    android:id="@+id/send_phone"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_red_selector"
+                    android:text="打电话"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_size_item_name"
+                />
+
+                <Button
+                    android:id="@+id/send_msm"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_green2_selector"
+                    android:text="发短信"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_size_item_name"
+                />
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

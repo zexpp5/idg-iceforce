@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+    <include
+        android:id="@+id/top_bar_layout"
+        layout="@layout/public_title_01"/>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:focusable="true"
+                      android:focusableInTouchMode="true"
+                      android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_add_frequency"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/dp_spacing_to_left_right_15dp"
+                    android:layout_marginRight="@dimen/dp_spacing_to_left_right_15dp"
+                    android:minHeight="60dp"
+                    android:orientation="horizontal"
+                >
+
+                    <tablayout.view.textview.FontTextView
+                        android:id="@+id/tv_star1"
+                        style="@style/font_text_content_sytle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text=" * "
+                        android:textColor="@color/red"
+                        android:visibility="gone"/>
+
+                    <tablayout.view.textview.FontTextView
+                        style="@style/font_text_content_sytle"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="@string/edt_iceforce_follow_up1"
+                        android:textColor="@color/text_black_s"/>
+
+                    <tablayout.view.textview.FontTextView
+                        android:id="@+id/edt_follow_frequency"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="3"
+                        android:background="@null"
+                        android:ellipsize="end"
+                        android:gravity="center_vertical"
+                        android:hint="@string/hint_iceforce_follow_up1"
+                        android:maxLines="5"
+                        android:textColor="@color/text_black_xl"
+                        android:textSize="@dimen/sp_font_detail_content_15sp"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_add_frequency"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp15"
+                android:layout_marginRight="@dimen/dp15"
+            >
+
+                <include layout="@layout/line_layout_05dp"
+                />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_year"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/dp_spacing_to_left_right_15dp"
+                    android:layout_marginRight="@dimen/dp_spacing_to_left_right_15dp"
+                    android:minHeight="60dp"
+                    android:orientation="horizontal"
+                >
+                    <tablayout.view.textview.FontTextView
+                        android:id="@+id/tv_star2"
+                        style="@style/font_text_content_sytle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text=" * "
+                        android:textColor="@color/red"
+                        android:visibility="gone"/>
+
+                    <tablayout.view.textview.FontTextView
+                        style="@style/font_text_content_sytle"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="@string/edt_iceforce_follow_up2"
+                        android:textColor="@color/text_black_s"/>
+
+                    <tablayout.view.textview.FontTextView
+                        android:id="@+id/edt_follow_year"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="3"
+                        android:background="@null"
+                        android:ellipsize="end"
+                        android:gravity="center_vertical"
+                        android:hint="@string/hint_iceforce_follow_up2"
+                        android:maxLines="5"
+                        android:textColor="@color/text_black_xl"
+                        android:textSize="@dimen/sp_font_detail_content_15sp"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_year"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp15"
+                android:layout_marginRight="@dimen/dp15"
+            >
+                <include layout="@layout/line_layout_05dp"
+                />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/dp_spacing_to_left_right_15dp"
+                    android:layout_marginRight="@dimen/dp_spacing_to_left_right_15dp"
+                    android:minHeight="60dp"
+                    android:orientation="horizontal"
+                >
+
+                    <tablayout.view.textview.FontTextView
+                        android:id="@+id/tv_star3"
+                        style="@style/font_text_content_sytle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text=" * "
+                        android:textColor="@color/red"
+                        android:visibility="gone"/>
+
+                    <tablayout.view.textview.FontTextView
+                        style="@style/font_text_content_sytle"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="@string/edt_iceforce_follow_up3"
+                        android:textColor="@color/text_black_s"/>
+
+                    <tablayout.view.textview.FontTextView
+                        android:id="@+id/edt_follow_time"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="3"
+                        android:background="@null"
+                        android:ellipsize="end"
+                        android:gravity="center_vertical"
+                        android:hint="@string/hint_iceforce_follow_up3"
+                        android:maxLines="5"
+                        android:textColor="@color/text_black_xl"
+                        android:textSize="@dimen/sp_font_detail_content_15sp"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp15"
+                android:layout_marginRight="@dimen/dp15"
+            >
+                <include layout="@layout/line_layout_05dp"
+                />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_follow_up_main"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingBottom="10dp"
+                android:paddingLeft="@dimen/dp_spacing_to_left_right_15dp"
+                android:paddingRight="@dimen/dp_spacing_to_left_right_15dp"
+                android:paddingTop="10dp">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+            >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    android:text="项目评级"
+                    android:textColor="@color/text_black_s"
+                    android:textSize="@dimen/sp_font_detail_content_15sp"/>
+
+                <TextView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/circle_shape2"
+                    android:gravity="center"
+                    android:text="？"
+                    android:textColor="@color/white"
+                    android:textSize="11sp"/>
+            </LinearLayout>
+
+            <com.chaoxiang.base.view.CustomRadioGroup
+                android:id="@+id/radio_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dp_spacing_15dp"
+            >
+
+                <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:paddingBottom="10dp"-->
+                <!--android:paddingLeft="@dimen/dp_spacing_to_left_right_15dp"-->
+                <!--android:paddingRight="@dimen/dp_spacing_to_left_right_15dp"-->
+                <!--android:paddingTop="10dp">-->
+
+                <!--<RadioButton-->
+                <!--android:id="@+id/radioButton1"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:background="@drawable/select_follow_up_bg"-->
+                <!--android:button="@null"-->
+                <!--android:checked="true"-->
+                <!--android:paddingBottom="5dp"-->
+                <!--android:paddingLeft="15dp"-->
+                <!--android:paddingRight="15dp"-->
+                <!--android:paddingTop="5dp"-->
+                <!--android:text="@string/choose_iceforce_follow_up1"-->
+                <!--android:textColor="@color/white"-->
+                <!--android:textSize="@dimen/sp_font_detail_content_15sp"/>-->
+
+                <!--</LinearLayout>-->
+
+            </com.chaoxiang.base.view.CustomRadioGroup>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <LinearLayout android:id="@+id/ll_save"
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:layout_marginBottom="20dp"
+                              android:layout_marginTop="50dp"
+                              android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_save"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:background="@drawable/shape_btn_edt_save"
+                        android:paddingBottom="@dimen/dp_spacing_10dp"
+                        android:paddingLeft="80dp"
+                        android:paddingRight="80dp"
+                        android:paddingTop="@dimen/dp_spacing_10dp"
+                        android:text="完成"
+                        android:textColor="@color/white"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

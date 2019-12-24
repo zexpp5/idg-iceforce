@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tablayout.view.rippleview.MaterialRippleLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    app:rippleColor="#fff">
+
+    <RelativeLayout
+        android:id="@+id/ly_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+    >
+
+        <tablayout.view.textview.FontTextView
+            android:id="@+id/menu_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/menu_icon"
+            android:gravity="center"
+            android:minEms="4"
+            android:singleLine="true"
+            android:text="投票选择"
+            android:textColor="#000000"
+            android:textSize="@dimen/font_size_item_name"
+        />
+
+        <tablayout.view.textview.FontTextView
+            android:id="@+id/menu_item2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/menu_item"
+            android:background="#2f3241"
+            android:gravity="center|left"
+            android:singleLine="true"
+            android:textColor="@color/gray"
+            android:visibility="gone"
+        />
+
+        <View
+            android:id="@+id/view_001"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/text_black_sll"></View>
+    </RelativeLayout>
+</tablayout.view.rippleview.MaterialRippleLayout>

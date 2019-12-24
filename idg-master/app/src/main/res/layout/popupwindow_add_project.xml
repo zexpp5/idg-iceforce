@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/top_bg">
+
+    <LinearLayout
+        android:id="@+id/ll_new_potential"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_spacing_15dp"
+        android:layout_marginBottom="@dimen/dp_spacing_15dp"
+        android:paddingLeft="@dimen/dp_spacing_10dp"
+        android:paddingRight="@dimen/dp_spacing_30dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:background="@mipmap/add_project_pic" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_spacing_8dp"
+            android:text="潜在项目"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view_line"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/dp_spacing_10dp"
+        android:layout_marginRight="@dimen/dp_spacing_20dp"
+        android:layout_height="1dp"
+        android:background="@color/white" />
+
+    <LinearLayout
+        android:id="@+id/ll_track_progress_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_spacing_15dp"
+        android:layout_marginBottom="@dimen/dp_spacing_15dp"
+        android:paddingLeft="@dimen/dp_spacing_10dp"
+        android:paddingRight="@dimen/dp_spacing_30dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:background="@mipmap/add_project_pic" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_spacing_8dp"
+            android:text="跟踪进展"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+</LinearLayout>

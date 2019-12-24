@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <LinearLayout
+        style="@style/d_s_ll_style"
+        android:orientation="horizontal"
+        android:paddingRight="10dp">
+
+        <tablayout.view.textview.FontTextView
+            style="@style/d_s_left_font_sytle"
+            android:text="客户单位："/>
+
+        <EditText
+            style="@style/d_s_content_font_edtext_sytle_title"
+            android:id="@+id/unit"
+            />
+
+    </LinearLayout>
+
+    <!--线条高度-->
+    <include layout="@layout/erp_line_one_view"/>
+
+
+    <LinearLayout
+        style="@style/d_s_ll_style"
+        android:orientation="horizontal"
+        android:paddingRight="10dp">
+
+        <tablayout.view.textview.FontTextView
+            style="@style/d_s_left_font_sytle"
+            android:text="客户简称："/>
+
+        <EditText
+            style="@style/d_s_content_font_edtext_sytle_title"
+            android:id="@+id/name"
+          />
+
+    </LinearLayout>
+
+    <!--线条高度-->
+    <include layout="@layout/erp_line_one_view"/>
+
+
+    <LinearLayout
+        style="@style/d_s_ll_style"
+        android:orientation="horizontal"
+        android:paddingRight="10dp">
+
+        <tablayout.view.textview.FontTextView
+            style="@style/d_s_left_font_sytle"
+            android:text="联系电话："/>
+
+        <EditText
+            style="@style/d_s_content_font_edtext_sytle_title"
+            android:id="@+id/tell"
+           />
+
+    </LinearLayout>
+
+    <!--线条高度-->
+    <include layout="@layout/erp_line_one_view"/>
+
+
+    <LinearLayout
+        style="@style/d_s_ll_style"
+        android:orientation="horizontal"
+        android:paddingRight="10dp">
+
+        <tablayout.view.textview.FontTextView
+            style="@style/d_s_left_font_sytle"
+            android:text="联系地址："/>
+
+        <EditText
+            style="@style/d_s_content_font_edtext_sytle_title"
+            android:id="@+id/address"
+         />
+
+    </LinearLayout>
+
+    <!--线条高度-->
+    <include layout="@layout/erp_line_one_view"/>
+
+
+    <LinearLayout
+        style="@style/d_s_ll_style"
+        android:orientation="horizontal"
+        android:paddingRight="10dp">
+
+        <tablayout.view.textview.FontTextView
+            style="@style/d_s_left_font_sytle"
+            android:text="传 真："/>
+
+        <EditText
+            style="@style/d_s_content_font_edtext_sytle_title"
+            android:id="@+id/fax"
+           />
+
+    </LinearLayout>
+
+    <!--线条高度-->
+    <include layout="@layout/erp_line_one_view"/>
+
+    <LinearLayout
+        style="@style/d_s_ll_style"
+        android:orientation="horizontal"
+        android:paddingRight="10dp">
+
+        <tablayout.view.textview.FontTextView
+            style="@style/d_s_left_font_sytle"
+            android:text="邮 箱："/>
+
+        <EditText
+            style="@style/d_s_content_font_edtext_sytle_title"
+            android:id="@+id/mail"
+           />
+
+    </LinearLayout>
+
+    <!--线条高度-->
+    <include layout="@layout/erp_line_one_view"/>
+
+</LinearLayout>

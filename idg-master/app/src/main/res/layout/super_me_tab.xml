@@ -1,0 +1,713 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/color_fragment_bg"
+              android:orientation="vertical">
+    <!--<include layout_city="@layout_city/super_top_title"/>-->
+
+    <include
+        android:id="@+id/title_super"
+        layout="@layout/sd_top_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+    />
+
+
+    <include
+        layout="@layout/chat_neterror_item"
+        android:visibility="gone"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:overScrollMode="never"
+        android:fadingEdgeLength="0dp"
+        android:scrollbars="none"
+        >
+
+    <com.superdata.marketing.view.percent.PercentLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.superdata.marketing.view.percent.PercentLinearLayout
+            android:id="@+id/ll_mine_info_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="@dimen/dp_spacing_10dp">
+
+            <com.superdata.marketing.view.percent.PercentRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center_vertical">
+
+                <com.superdata.marketing.view.percent.PercentRelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center_vertical">
+
+                    <com.facebook.drawee.view.SimpleDraweeView
+                        android:id="@+id/iv_head"
+                        android:layout_width="55dp"
+                        android:layout_height="55dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:background="@mipmap/temp_user_head"
+                        android:gravity="center" />
+
+                    <tablayout.view.textview.FontTextView
+                        android:id="@+id/tv_nickName"
+                        android:text=""
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="@dimen/dp_spacing_5dp"
+                        android:layout_toRightOf="@+id/iv_head"
+                        android:textColor="#000000"
+                        android:textSize="16sp" />
+
+                    <tablayout.view.textview.FontTextView
+                        android:id="@+id/text_name_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_nickName"
+                        android:layout_toRightOf="@+id/iv_head"
+                        android:text="属性:"
+                        android:textSize="12sp"
+                        android:visibility="gone"
+                        app:layout_marginLeftPercent="2%w"
+                        app:layout_marginTopPercent="1%w" />
+
+                    <tablayout.view.textview.FontTextView
+                        android:id="@+id/tv_department_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_nickName"
+                        android:layout_toRightOf="@+id/text_name_type"
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:maxLength="15"
+                        android:textSize="12sp"
+                        app:layout_marginLeftPercent="2%w"
+                        app:layout_marginTopPercent="1%w" />
+
+                    <tablayout.view.textview.FontTextView
+                        android:id="@+id/text_company_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/iv_head"
+                        android:layout_toRightOf="@+id/iv_head"
+                        android:layout_marginBottom="@dimen/dp_spacing_5dp"
+                        android:text=""
+                        android:textColor="#888888"
+                        android:textSize="14sp"
+                        android:layout_marginLeft="@dimen/dp_spacing_10dp"
+                        />
+
+                    <tablayout.view.textview.FontTextView
+                        android:id="@+id/tv_company_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/iv_head"
+                        android:layout_below="@+id/text_name_type"
+                        android:layout_toRightOf="@+id/text_company_name"
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:maxLength="15"
+                        android:textColor="#888888"
+                        android:textSize="12sp"
+                        android:visibility="gone"
+                        app:layout_marginBottomPercent="1%w"
+                        app:layout_marginLeftPercent="2%w" />
+
+                    <com.superdata.marketing.view.percent.PercentLinearLayout
+
+                        android:id="@+id/ll_erweima"
+                        android:layout_width="55dp"
+                        android:layout_height="55dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="20dp"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:background="@mipmap/icon_two_dimensional_code" />
+
+                    </com.superdata.marketing.view.percent.PercentLinearLayout>
+
+                    <com.superdata.marketing.view.percent.PercentLinearLayout
+                        android:id="@+id/ll_erweima_left"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="2dp">
+
+                        <ImageView
+                            android:id="@+id/imageView4"
+                            android:layout_width="9dp"
+                            android:layout_height="16dp"
+                            android:background="@mipmap/left_img_bg"
+                            android:gravity="center_vertical|right" />
+                    </com.superdata.marketing.view.percent.PercentLinearLayout>
+
+                </com.superdata.marketing.view.percent.PercentRelativeLayout>
+            </com.superdata.marketing.view.percent.PercentRelativeLayout>
+        </com.superdata.marketing.view.percent.PercentLinearLayout>
+
+        <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="0.4dp"-->
+        <!--android:background="#888888"-->
+        <!--/>-->
+        <!--<View-->
+        <!--android:id="@+id/view01"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="0.3dp"-->
+        <!--android:layout_marginTop="20dp"-->
+        <!--android:background="#888888"-->
+
+        //拷贝开始点
+
+        <com.superdata.marketing.view.percent.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            android:background="#FFFFFF"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <com.superdata.marketing.view.percent.PercentLinearLayout
+                android:id="@+id/ll_kaoqin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:gravity="center_vertical">
+
+                <com.superdata.marketing.view.percent.PercentLinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_spacing_15dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:padding="@dimen/dp_spacing_3dp"
+                        android:src="@mipmap/icon_item_kaoqin" />
+
+                    <tablayout.view.textview.FontTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_spacing_10dp"
+                        android:text="考勤"
+                        android:textColor="#333333"
+                        android:textSize="@dimen/font_size_item_name_business" />
+                </com.superdata.marketing.view.percent.PercentLinearLayout>
+
+                <com.superdata.marketing.view.percent.PercentLinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dp_spacing_10dp"
+                    android:gravity="center_vertical|right">
+
+                    <ImageView
+                        android:layout_width="9dp"
+                        android:layout_height="16dp"
+                        android:background="@mipmap/left_img_bg"
+                        android:gravity="center_vertical|right" />
+                </com.superdata.marketing.view.percent.PercentLinearLayout>
+
+            </com.superdata.marketing.view.percent.PercentLinearLayout>
+
+        </com.superdata.marketing.view.percent.PercentLinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#DDDDDD"
+            android:visibility="gone"
+            app:layout_marginLeftPercent="2%w"
+            app:layout_marginRightPercent="2%w" />
+
+        <com.superdata.marketing.view.percent.PercentLinearLayout
+            android:id="@+id/ll_collect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:gravity="center_vertical"
+            android:visibility="visible">
+
+            <com.superdata.marketing.view.percent.PercentLinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_spacing_15dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:padding="@dimen/dp_spacing_4dp"
+                    android:src="@mipmap/icon_item_collect" />
+
+                <tablayout.view.textview.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_spacing_10dp"
+                    android:text="备忘收藏"
+                    android:textColor="#333333"
+                    android:textSize="@dimen/font_size_item_name_business" />
+            </com.superdata.marketing.view.percent.PercentLinearLayout>
+
+            <com.superdata.marketing.view.percent.PercentLinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dp_spacing_10dp"
+                android:gravity="center_vertical|right">
+
+                <ImageView
+                    android:layout_width="9dp"
+                    android:layout_height="16dp"
+                    android:background="@mipmap/left_img_bg"
+                    android:gravity="center_vertical|right" />
+            </com.superdata.marketing.view.percent.PercentLinearLayout>
+
+        </com.superdata.marketing.view.percent.PercentLinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            >
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="@dimen/dp_spacing_10dp"
+                android:layout_marginRight="@dimen/dp_spacing_10dp"
+                android:background="#DDDDDD" />
+        </LinearLayout>
+
+        //拷贝结束点
+        <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="0.3dp"-->
+        <!--android:background="#888888"-->
+        <!--/>-->
+
+        <!--<View-->
+        <!--android:id="@+id/view03"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="0.3dp"-->
+        <!--android:layout_marginTop="20dp"-->
+        <!--android:background="#888888"-->
+        <!--/>-->
+
+        <com.superdata.marketing.view.percent.PercentLinearLayout
+            android:id="@+id/ll_logistics"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:gravity="center_vertical"
+            android:visibility="visible">
+
+            <com.superdata.marketing.view.percent.PercentLinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_spacing_15dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:padding="@dimen/dp_spacing_4dp"
+                    android:src="@mipmap/icon_item_cargo" />
+
+                <tablayout.view.textview.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_spacing_10dp"
+                    android:text="物流查询"
+                    android:textColor="#333333"
+                    android:textSize="@dimen/font_size_item_name_business" />
+            </com.superdata.marketing.view.percent.PercentLinearLayout>
+
+            <com.superdata.marketing.view.percent.PercentLinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dp_spacing_10dp"
+                android:gravity="center_vertical|right">
+
+                <ImageView
+                    android:layout_width="9dp"
+                    android:layout_height="16dp"
+                    android:background="@mipmap/left_img_bg"
+                    android:gravity="center_vertical|right" />
+            </com.superdata.marketing.view.percent.PercentLinearLayout>
+
+        </com.superdata.marketing.view.percent.PercentLinearLayout>
+
+        <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="0.5dp"-->
+        <!--android:background="#DDDDDD"-->
+        <!--app:layout_marginLeftPercent="2%w"-->
+        <!--app:layout_marginRightPercent="2%w"/>-->
+
+        <LinearLayout
+            android:id="@+id/ll_super_layout"
+            android:layout_marginTop="15dp"
+            android:visibility="gone"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+        <com.superdata.marketing.view.percent.PercentLinearLayout
+            android:id="@+id/ll_super_user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:gravity="center_vertical"
+            android:visibility="visible">
+
+            <com.superdata.marketing.view.percent.PercentLinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_spacing_15dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:padding="@dimen/dp_spacing_4dp"
+                    android:src="@mipmap/icon_item_user" />
+
+                <tablayout.view.textview.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_spacing_10dp"
+                    android:text="超级用户"
+                    android:textColor="#333333"
+                    android:textSize="@dimen/font_size_item_name_business" />
+            </com.superdata.marketing.view.percent.PercentLinearLayout>
+
+            <com.superdata.marketing.view.percent.PercentLinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dp_spacing_10dp"
+                android:gravity="center_vertical|right">
+
+                <ImageView
+                    android:layout_width="9dp"
+                    android:layout_height="16dp"
+                    android:background="@mipmap/left_img_bg"
+                    android:gravity="center_vertical|right" />
+            </com.superdata.marketing.view.percent.PercentLinearLayout>
+
+        </com.superdata.marketing.view.percent.PercentLinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            >
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="@dimen/dp_spacing_10dp"
+                android:layout_marginRight="@dimen/dp_spacing_10dp"
+                android:background="#DDDDDD" />
+        </LinearLayout>
+
+        <com.superdata.marketing.view.percent.PercentLinearLayout
+            android:id="@+id/ll_super_power"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:gravity="center_vertical"
+            android:visibility="visible">
+
+            <com.superdata.marketing.view.percent.PercentLinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_spacing_15dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:padding="@dimen/dp_spacing_4dp"
+                    android:src="@mipmap/icon_item_permit" />
+
+                <tablayout.view.textview.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_spacing_10dp"
+                    android:text="超级权限"
+                    android:textColor="#333333"
+                    android:textSize="@dimen/font_size_item_name_business" />
+            </com.superdata.marketing.view.percent.PercentLinearLayout>
+
+            <com.superdata.marketing.view.percent.PercentLinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dp_spacing_10dp"
+                android:gravity="center_vertical|right">
+
+                <ImageView
+                    android:layout_width="9dp"
+                    android:layout_height="16dp"
+                    android:background="@mipmap/left_img_bg"
+                    android:gravity="center_vertical|right" />
+            </com.superdata.marketing.view.percent.PercentLinearLayout>
+
+        </com.superdata.marketing.view.percent.PercentLinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            >
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="@dimen/dp_spacing_10dp"
+                android:layout_marginRight="@dimen/dp_spacing_10dp"
+                android:background="#DDDDDD" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+            android:background="#888888"
+            android:visibility="gone" />
+
+        <!--<View-->
+
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="0.3dp"-->
+        <!--android:layout_marginTop="20dp"-->
+        <!--android:background="#888888"-->
+        <!--/>-->
+
+        <com.superdata.marketing.view.percent.PercentLinearLayout
+            android:id="@+id/ll_super_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:gravity="center_vertical"
+            android:visibility="visible">
+
+            <com.superdata.marketing.view.percent.PercentLinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_spacing_15dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:padding="@dimen/dp_spacing_4dp"
+                    android:src="@mipmap/icon_item_search" />
+
+                <tablayout.view.textview.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_spacing_10dp"
+                    android:text="超级搜索"
+                    android:textColor="#333333"
+                    android:textSize="@dimen/font_size_item_name_business" />
+            </com.superdata.marketing.view.percent.PercentLinearLayout>
+
+            <com.superdata.marketing.view.percent.PercentLinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dp_spacing_10dp"
+                android:gravity="center_vertical|right">
+
+                <ImageView
+                    android:layout_width="9dp"
+                    android:layout_height="16dp"
+                    android:background="@mipmap/left_img_bg"
+                    android:gravity="center_vertical|right" />
+            </com.superdata.marketing.view.percent.PercentLinearLayout>
+
+        </com.superdata.marketing.view.percent.PercentLinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                >
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="@dimen/dp_spacing_10dp"
+                    android:layout_marginRight="@dimen/dp_spacing_10dp"
+                    android:background="#DDDDDD" />
+            </LinearLayout>
+
+        <com.superdata.marketing.view.percent.PercentLinearLayout
+                android:id="@+id/ll_super_config"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:gravity="center_vertical"
+                android:visibility="visible">
+
+                <com.superdata.marketing.view.percent.PercentLinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_spacing_15dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:padding="@dimen/dp_spacing_4dp"
+                        android:src="@mipmap/super_config" />
+
+                    <tablayout.view.textview.FontTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_spacing_10dp"
+                        android:text="超级配置"
+                        android:textColor="#333333"
+                        android:textSize="@dimen/font_size_item_name_business" />
+                </com.superdata.marketing.view.percent.PercentLinearLayout>
+
+                <com.superdata.marketing.view.percent.PercentLinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dp_spacing_10dp"
+                    android:gravity="center_vertical|right">
+
+                    <ImageView
+                        android:layout_width="9dp"
+                        android:layout_height="16dp"
+                        android:background="@mipmap/left_img_bg"
+                        android:gravity="center_vertical|right" />
+                </com.superdata.marketing.view.percent.PercentLinearLayout>
+
+            </com.superdata.marketing.view.percent.PercentLinearLayout>
+        </LinearLayout>
+
+        <com.superdata.marketing.view.percent.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            android:background="#FFFFFF"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <com.superdata.marketing.view.percent.PercentLinearLayout
+                android:id="@+id/ll_my_setting_pl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:gravity="center_vertical">
+
+                <com.superdata.marketing.view.percent.PercentLinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_spacing_15dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:padding="@dimen/dp_spacing_4dp"
+                        android:src="@mipmap/icon_item_setting" />
+
+                    <tablayout.view.textview.FontTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_spacing_10dp"
+                        android:text="设置"
+                        android:textColor="#333333"
+                        android:textSize="@dimen/font_size_item_name_business" />
+                </com.superdata.marketing.view.percent.PercentLinearLayout>
+
+                <com.superdata.marketing.view.percent.PercentLinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dp_spacing_10dp"
+                    android:gravity="center_vertical|right">
+
+                    <ImageView
+                        android:layout_width="9dp"
+                        android:layout_height="16dp"
+                        android:background="@mipmap/left_img_bg"
+                        android:gravity="center_vertical|right" />
+                </com.superdata.marketing.view.percent.PercentLinearLayout>
+
+            </com.superdata.marketing.view.percent.PercentLinearLayout>
+
+        </com.superdata.marketing.view.percent.PercentLinearLayout>
+
+        <com.superdata.marketing.view.percent.PercentLinearLayout
+            android:id="@+id/ll_my_quit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="#FFFFFF"
+            android:gravity="center_vertical"
+            android:visibility="gone">
+
+            <com.superdata.marketing.view.percent.PercentLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center_vertical|center_horizontal"
+                app:layout_marginLeftPercent="2%w">
+
+                <tablayout.view.textview.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:text="退出登录"
+                    android:textSize="@dimen/font_size_item_name" />
+            </com.superdata.marketing.view.percent.PercentLinearLayout>
+
+        </com.superdata.marketing.view.percent.PercentLinearLayout>
+
+    </com.superdata.marketing.view.percent.PercentLinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>

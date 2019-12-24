@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/title_super"
+        layout="@layout/comm_top_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:id="@+id/rl_log_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+        <!-- 图片内容区 -->
+        <com.superdata.marketing.view.percent.PercentLinearLayout
+            android:id="@+id/ll_img_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/mana__list_1"
+            android:orientation="vertical">
+
+            <tablayout.view.addview.AddViewForRelativeLayout
+                android:id="@+id/add_img"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:add_view_bg="@mipmap/temp_compose_pic_add"
+                app:layout_widthPercent="80%w" />
+        </com.superdata.marketing.view.percent.PercentLinearLayout>
+
+        <!-- 附件内容区 -->
+        <com.superdata.marketing.view.percent.PercentLinearLayout
+            android:id="@+id/ll_plus_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll_img_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            app:layout_marginTopPercent="@string/space" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/rl_log_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/transaction_content"
+        >
+
+        <include layout="@layout/sd_workcircle_list_file_content" />
+    </LinearLayout>
+
+</LinearLayout>

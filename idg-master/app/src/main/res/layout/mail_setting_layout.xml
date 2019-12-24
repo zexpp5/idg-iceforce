@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:cx="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/common_bg"
+              android:orientation="vertical">
+
+    <include layout="@layout/top_title_layout"/>
+
+    <com.superdata.marketing.view.percent.PercentLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <com.cxgz.activity.cx.view.TextAndEditView
+            android:id="@+id/tad_mail_account"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            cx:max_Length="30"
+            android:textSize="@dimen/sp_font_detail_content_15sp"
+            cx:name="邮箱账号"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/dividing_line"/>
+
+        <com.cxgz.activity.cx.view.TextAndEditView
+
+            android:id="@+id/tad_mail_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            cx:inputType="password"
+            cx:max_Length="30"
+            cx:name="邮箱密码"
+            android:textSize="@dimen/sp_font_detail_content_15sp"
+            />
+
+
+        <tablayout.view.textview.FontTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:text="请选择收件服务器的类型"
+            android:textColor="#c0c0c0"
+            cx:layout_marginTopPercent="@string/space"
+            cx:layout_paddingPercent="5%w"
+            android:textSize="@dimen/sp_font_detail_content_15sp"/>
+
+        <com.superdata.marketing.view.percent.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            cx:layout_paddingBottomPercent="3%w">
+
+            <CheckBox
+                android:id="@+id/cb_pop3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/mail_protocol_checkbox"
+                android:checked="true"
+                android:paddingLeft="10dp"
+                android:text="POP3"
+                cx:layout_marginLeftPercent="5%w"
+                android:textSize="@dimen/sp_font_detail_content_15sp"/>
+
+            <CheckBox
+                android:id="@+id/cb_imap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/mail_protocol_checkbox"
+                android:paddingLeft="10dp"
+                android:text="IMAP"
+                cx:layout_marginLeftPercent="10%w"
+                android:textSize="@dimen/sp_font_detail_content_15sp"/>
+        </com.superdata.marketing.view.percent.PercentLinearLayout>
+
+        <com.superdata.marketing.view.percent.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:orientation="vertical"
+            cx:layout_marginTopPercent="@string/space"
+            cx:layout_paddingPercent="5%w">
+
+            <tablayout.view.textview.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="提醒："
+                android:textColor="#c0c0c0"
+                android:textSize="@dimen/sp_font_detail_content_15sp"/>
+
+            <tablayout.view.textview.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1.请开启邮箱的POP3/IMAP/SMPT。"
+                android:textColor="#c0c0c0"
+                android:textSize="@dimen/sp_font_detail_content_15sp"/>
+
+            <tablayout.view.textview.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2.请先在您的邮箱设置开启授权码，并使用该授权码作为密码登录。"
+                android:textColor="#c0c0c0"
+                android:textSize="@dimen/sp_font_detail_content_15sp"/>
+        </com.superdata.marketing.view.percent.PercentLinearLayout>
+
+        <com.cxgz.activity.cx.view.BottomMenuView
+            android:id="@+id/bottom_menu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            cx:layout_marginTopPercent="@string/space"
+            cx:left_icon="@mipmap/mail_setting_done"
+            android:textSize="@dimen/sp_font_detail_content_16sp"
+            cx:left_name="完成"
+            cx:right_hide="true"/>
+    </com.superdata.marketing.view.percent.PercentLinearLayout>
+</LinearLayout>

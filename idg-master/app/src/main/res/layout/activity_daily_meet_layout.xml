@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f2f1f7"
+    >
+    <include
+        android:id="@+id/department_title_layout"
+        layout="@layout/top_title_layout" />
+
+    <ScrollView
+        android:layout_above="@+id/add_btn_ll"
+        android:layout_below="@+id/department_title_layout"
+        android:fadingEdgeLength="0dp"
+        android:scrollbars="none"
+        android:overScrollMode="never"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:background="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+       >
+
+
+
+        <LinearLayout
+            style="@style/linear_row_style_common"
+            android:orientation="horizontal">
+
+
+            <tablayout.view.textview.FontTextView
+                style="@style/font_text_content_sytle"
+                android:text="会议标题：" />
+
+            <tablayout.view.textview.FontEditext
+                android:id="@+id/et_title"
+                style="@style/font_edtext_content_sytle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:hint="请输入会议标题"
+                android:singleLine="true" />
+        </LinearLayout>
+
+
+        <include layout="@layout/bottom_line_view" />
+
+
+        <LinearLayout
+            style="@style/linear_row_style_common"
+            android:orientation="horizontal">
+
+
+            <tablayout.view.textview.FontTextView
+                style="@style/font_text_content_sytle"
+                android:text="开始时间：" />
+
+            <tablayout.view.textview.FontTextView
+                android:id="@+id/tv_start_time"
+                style="@style/font_select_textview_content_sytle_two"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:hint="请选择开始时间"
+                android:singleLine="true" />
+        </LinearLayout>
+
+        <include layout="@layout/bottom_line_view" />
+
+        <LinearLayout
+            style="@style/linear_row_style_common"
+            android:orientation="horizontal">
+
+
+            <tablayout.view.textview.FontTextView
+                style="@style/font_text_content_sytle"
+                android:text="结束时间：" />
+
+            <tablayout.view.textview.FontTextView
+                android:id="@+id/tv_end_time"
+                style="@style/font_select_textview_content_sytle_two"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:hint="请选择结束时间"
+                android:singleLine="true" />
+        </LinearLayout>
+
+        <include layout="@layout/bottom_line_view" />
+
+        <LinearLayout
+            style="@style/linear_row_style_common"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+
+            <tablayout.view.textview.FontTextView
+                style="@style/font_text_content_sytle"
+                android:text="上  级：" />
+
+            <tablayout.view.textview.FontTextView
+                android:id="@+id/tv_superior"
+                style="@style/font_select_textview_content_sytle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:singleLine="true" />
+        </LinearLayout>
+
+        <!-- <include layout_city="@layout_city/bottom_line_view" />-->
+
+
+        <LinearLayout
+            style="@style/linear_row_style_common"
+            android:orientation="horizontal">
+
+
+            <tablayout.view.textview.FontTextView
+                style="@style/font_text_content_sytle"
+                android:text="会议地点：" />
+
+            <tablayout.view.textview.FontEditext
+                android:id="@+id/et_meet_address"
+                style="@style/font_edtext_content_sytle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:hint="请输入会议地点"
+                android:singleLine="true" />
+        </LinearLayout>
+
+        <include layout="@layout/bottom_line_view" />
+
+
+        <LinearLayout
+            style="@style/linear_row_style_common"
+            android:orientation="horizontal">
+
+
+            <tablayout.view.textview.FontTextView
+                style="@style/font_text_content_sytle"
+                android:text="会议种类：" />
+
+            <tablayout.view.textview.FontTextView
+                android:id="@+id/tv_meet_type"
+                style="@style/font_select_textview_content_sytle_two"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:hint="请选择会议种类"
+                android:singleLine="true" />
+        </LinearLayout>
+
+        <include layout="@layout/bottom_line_view" />
+
+
+        <LinearLayout
+            style="@style/linear_row_style_common"
+            android:orientation="horizontal">
+
+
+            <tablayout.view.textview.FontTextView
+                style="@style/font_text_content_sytle"
+                android:text="参  与  人：" />
+
+            <tablayout.view.textview.FontTextView
+                android:id="@+id/tv_participant"
+                style="@style/font_select_textview_content_sytle_two"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:hint="请选择参与人"
+                android:singleLine="true" />
+
+        </LinearLayout>
+
+        <include layout="@layout/bottom_line_view" />
+
+        <LinearLayout
+            style="@style/file_center_explain_style"
+            android:orientation="horizontal">
+
+
+            <tablayout.view.textview.FontTextView
+                style="@style/font_text_content_sytle"
+                android:layout_gravity="top"
+                android:layout_marginTop="8dp"
+                android:text="会议内容：" />
+
+            <tablayout.view.textview.FontEditext
+                android:id="@+id/et_meet_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@null"
+                android:gravity="top"
+                android:hint="请输入会议内容"
+                android:maxLength="500"
+                android:textSize="@dimen/sp_font_detail_content_15sp" />
+        </LinearLayout>
+
+
+        <include layout="@layout/bottom_line_view" />
+
+        <LinearLayout
+            android:background="#f2f1f7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/dp_spacing_20dp"
+            android:paddingBottom="@dimen/dp_spacing_5dp"
+            android:orientation="vertical">
+
+            <include layout="@layout/bottom_line_view" />
+
+            <include layout="@layout/public_annex_layout" />
+
+            <include layout="@layout/bottom_line_view" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    </ScrollView>
+
+    <include
+        android:visibility="gone"
+        android:id="@+id/add_btn_ll"
+        layout="@layout/public_add_btn_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

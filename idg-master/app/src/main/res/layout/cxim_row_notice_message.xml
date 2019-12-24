@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/ll_container"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:clickable="true"
+              android:orientation="vertical">
+
+    <tablayout.view.textview.FontTextView
+        android:id="@+id/timestamp"
+        style="@style/chat_text_date_style"
+    />
+
+    <RelativeLayout
+        style="@style/chat_content_style"
+        android:layout_marginTop="10dp"
+    >
+        <tablayout.view.textview.FontTextView
+            android:id="@+id/tv_notice_msg"
+            android:lineSpacingMultiplier="1.2"
+            style="@style/chat_notice_msg_style"
+        />
+    </RelativeLayout>
+</LinearLayout>

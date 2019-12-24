@@ -1,0 +1,84 @@
+apply plugin: 'com.android.library'
+
+android {
+    def versions = rootProject.ext.versions // 配置
+    compileSdkVersion versions.compileSdkVersion
+    buildToolsVersion versions.buildToolsVersion
+
+    defaultConfig {
+        minSdkVersion versions.minSdkVersion
+        targetSdkVersion versions.targetSdkVersion
+
+//        ndk {
+//            //选择要添加的对应cpu类型的.so库。
+//            abiFilters 'armeabi', 'armeabi-v7a', 'x86_64'
+//            // 还可以添加 'mips', 'mips64'
+//            //  ,'x86', 'x86_64' 平板
+//        }
+        //极光推送
+        manifestPlaceholders = [
+                JPUSH_PKGNAME: libraries.jpushPackgerName,
+                JPUSH_APPKEY : libraries.jpushKey, //JPush上注册的包名对应的appkey.
+                JPUSH_CHANNEL: libraries.jpushChannel, //暂时填写默认值即可.
+        ]
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+//            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    //butterknife配置
+    lintOptions {
+
+        disable 'InvalidPackage'
+    }
+    //butterknife配置
+    packagingOptions {
+        exclude 'META-INF/services/javax.annotation.processing.Processor'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/NOTICE'
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    //    testCompile 'junit:junit:4.12'
+    compile 'com.google.code.gson:gson:2.3.1'
+    compile 'com.jakewharton:butterknife:7.0.1'
+    //权限等。
+    //    compile 'com.tbruyelle.rxpermissions:rxpermissions:0.7.0@aar'
+    //    compile 'io.reactivex:rxjava:1.0.14'
+    //    compile 'io.reactivex:rxandroid:1.0.1'
+    compile libraries.supportAppCompat
+    compile libraries.supportDesign
+    compile libraries.supportCardView
+    compile libraries.materialicons
+    compile libraries.stickyheaders
+    compile libraries.nineOldAndroids
+    compile libraries.supportRecyclerView
+    compile libraries.supportAnnotations
+    compile libraries.supportVfour
+    compile 'org.greenrobot:greendao:2.2.1'
+    compile 'cn.jiguang.sdk:jpush:3.1.7'
+    // 此处以JPush 3.1.6 版本为例。
+    compile 'cn.jiguang.sdk:jcore:1.2.6'
+    compile 'com.huawei.storage:esdk-obs-android:3.0.1'
+
+    compile "me.leolin:ShortcutBadger:1.1.22@aar"
+
+
+    // 此处以JCore 1.2.5 版本为例。
+    //    compile 'org.greenrobot:greendao-encryption:2.2.0'
+    //    compile 'net.zetetic:android-database-sqlcipher:3.4.0'
+//    compile files('libs/esdk-obs-android-3.0.1.jar')
+//            {
+//                exclude group: 'okhttp3'
+//            }
+//    compile files('libs/java-xmlbuilder-1.1.jar')
+//
+//    compile files('libs/okhttp-3.10.0.jar')
+//    compile files('libs/okio-1.14.0.jar')
+}

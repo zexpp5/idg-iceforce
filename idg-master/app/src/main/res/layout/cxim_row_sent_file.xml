@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/ll_container"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:descendantFocusability="blocksDescendants"
+              android:gravity="center_horizontal"
+              android:orientation="vertical">
+
+    <tablayout.view.textview.FontTextView
+        android:id="@+id/timestamp"
+        style="@style/chat_text_date_style"
+    />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_chat_activity"
+        android:paddingLeft="40dp">
+
+        <ImageView
+            android:id="@+id/img_user_icon"
+            style="@style/chat_user_icon_right_style"/>
+
+        <LinearLayout
+            android:id="@+id/ll_file_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/chat_item_otherIcon_spacing_lr"
+            android:layout_toLeftOf="@id/img_user_icon"
+            android:layout_toRightOf="@+id/ll_loading"
+            android:background="@drawable/chatto_bg">
+
+            <ImageView
+                android:layout_width="@dimen/chat_document_icon_size"
+                android:layout_height="@dimen/chat_document_icon_size"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="@dimen/chat_item_otherIcon_spacing_lr"
+                android:layout_marginTop="5dp"
+                android:src="@mipmap/chat_item_file"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <tablayout.view.textview.FontTextView
+                    android:id="@+id/tv_file_name"
+                    style="@style/chat_send_file"
+                />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp">
+
+                    <tablayout.view.textview.FontTextView
+                        android:id="@+id/tv_file_size"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:textColor="#818181"
+                        android:textSize="13sp"/>
+
+                    <tablayout.view.textview.FontTextView
+                        android:id="@+id/tv_file_state"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="center_vertical"
+                        android:textColor="#818181"
+                        android:textSize="13sp"/>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <tablayout.view.textview.FontTextView
+            android:id="@+id/tv_ack"
+            style="@style/chat_tv_ack_style"
+            android:layout_toLeftOf="@id/ll_file_container"
+        />
+
+        <tablayout.view.textview.FontTextView
+            style="@style/chat_tv_delivered_style"
+            android:layout_toLeftOf="@id/ll_file_container"/>
+
+        <ImageView
+            android:id="@+id/msg_status"
+            style="@style/chat_msg_status_style"
+            android:layout_toLeftOf="@id/ll_file_container"
+        />
+        <LinearLayout
+            android:id="@+id/ll_loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ProgressBar
+                android:id="@+id/pb_sending"
+                style="@style/chat_content_progressBar"
+            />
+
+            <tablayout.view.textview.FontTextView
+                android:id="@+id/percentage"
+                style="@style/chat_percentage_num"
+            />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/icon_baidu"
+            style="@style/chat_right_baidu_style"
+            android:layout_toLeftOf="@id/ll_file_container"
+        />
+    </RelativeLayout>
+
+</LinearLayout>

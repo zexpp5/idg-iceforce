@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+        <RelativeLayout
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/dp_spacing_10dp"
+            android:paddingRight="@dimen/dp_spacing_10dp"
+            android:paddingBottom="@dimen/dp_spacing_10dp"
+            android:paddingTop="@dimen/dp_spacing_10dp"
+            >
+
+            <TextView
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:id="@+id/label_title_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="项目阶段"
+                android:textColor="#333333"
+                android:textSize="16sp"
+                android:singleLine="true"
+                android:maxEms="10"
+                />
+
+            <LinearLayout
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/label_tips_text"
+                    android:paddingRight="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="全部"
+                    android:textSize="14sp"
+                    android:textColor="#999999"
+                    />
+                <ImageView
+                    android:id="@+id/label_arrow_image"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:background="@mipmap/search_down_arrow"
+                    />
+
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/label_container_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </LinearLayout>
+
+
+</LinearLayout>

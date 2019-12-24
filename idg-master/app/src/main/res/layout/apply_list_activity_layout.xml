@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white">
+
+    <include
+        android:id="@+id/top_bar_layout"
+        layout="@layout/top_title_layout" />
+
+    <RelativeLayout
+        android:background="#E6ecf8"
+        android:layout_below="@+id/top_bar_layout"
+        android:id="@+id/top_btn_layout"
+        android:layout_width="match_parent"
+        android:layout_height="56dp">
+
+
+
+        <LinearLayout
+            android:clickable="true"
+            android:paddingRight="@dimen/dp_spacing_10dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="37dp"
+            android:id="@+id/first_layout"
+            android:background="@drawable/top_button_radius"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:id="@+id/top_add_icon"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@mipmap/public_add_white"
+                android:background="@drawable/top_button_radius_left"
+                android:padding="@dimen/dp_spacing_10dp"
+                />
+
+            <TextView
+                android:textSize="@dimen/sp_font_detail_content_16sp"
+                android:id="@+id/apply_add_text"
+                android:text="新增"
+                android:textColor="#ffffff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:clickable="true"
+            android:paddingLeft="@dimen/dp_spacing_10dp"
+            android:paddingRight="@dimen/dp_spacing_10dp"
+            android:paddingTop="@dimen/dp_spacing_8dp"
+            android:paddingBottom="@dimen/dp_spacing_8dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="37dp"
+            android:background="@drawable/top_button_radius"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:id="@+id/top_add_icon_two"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:background="@mipmap/public_search_white"
+                />
+
+            <TextView
+                android:layout_marginLeft="@dimen/dp_spacing_10dp"
+                android:textSize="@dimen/sp_font_detail_content_16sp"
+                android:id="@+id/apply_search_text"
+                android:text="查找"
+                android:textColor="#ffffff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/space_view"
+        android:layout_below="@+id/top_btn_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_spacing_10dp"
+        android:background="@color/page_bg"
+        />
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/smart_refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/space_view"
+        app:srlEnableLoadmore="true"
+        app:srlEnableLoadmoreWhenContentNotFull="false"
+        android:background="@color/page_bg"
+        >
+
+        <com.scwang.smartrefresh.layout.header.ClassicsHeader
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:background="@color/page_bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/apply_recycler_layout">
+        </android.support.v7.widget.RecyclerView>
+
+        <com.scwang.smartrefresh.layout.footer.ClassicsFooter
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+    <yunjing.view.StatusTipsView
+        android:layout_centerInParent="true"
+        android:id="@+id/loading_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </yunjing.view.StatusTipsView>
+
+
+    <FrameLayout
+        android:id="@+id/apply_fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

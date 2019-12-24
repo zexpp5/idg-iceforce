@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_spacing_15dp"
+        android:layout_marginLeft="@dimen/dp_spacing_20dp"
+        android:layout_marginRight="@dimen/dp_spacing_20dp">
+
+        <TextView
+            android:id="@+id/tv_1"
+            android:layout_width="72dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tv_bg_expand_gray"
+            android:gravity="center"
+            android:paddingBottom="2dp"
+            android:paddingTop="2dp"
+            android:text="跟进"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_font_detail_content_14sp" />
+
+        <TextView
+            android:id="@+id/tv_2"
+            android:layout_width="72dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_spacing_10dp"
+            android:layout_toRightOf="@id/tv_1"
+            android:background="@drawable/tv_bg_expand_gray"
+            android:gravity="center"
+            android:paddingBottom="2dp"
+            android:paddingTop="2dp"
+            android:text="聊过PASS"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_font_detail_content_14sp" />
+
+        <TextView
+            android:id="@+id/tv_3"
+            android:layout_width="88dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_spacing_10dp"
+            android:layout_toRightOf="@id/tv_2"
+            android:background="@drawable/tv_bg_expand_gray"
+            android:gravity="center"
+            android:paddingBottom="2dp"
+            android:paddingTop="2dp"
+            android:text="PASS"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_font_detail_content_14sp" />
+
+        <ImageView
+            android:id="@+id/iv_arrow"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@mipmap/search_up_arrow" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_spacing_8dp"
+        android:background="@color/dividing_line" />
+
+</LinearLayout>

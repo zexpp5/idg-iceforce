@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioButton
+    android:id="@+id/radioButton1"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/select_follow_up_bg"
+    android:button="@null"
+    android:checked="true"
+    android:paddingBottom="5dp"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:paddingTop="5dp"
+    android:text="@string/choose_iceforce_follow_up1"
+    android:textColor="@color/white"
+    android:textSize="@dimen/sp_font_detail_content_15sp"/>

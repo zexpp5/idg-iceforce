@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/top_title_layout" />
+
+        <include
+            android:id="@+id/head_bar_layout"
+            layout="@layout/person_information_layout" />
+
+        <include layout="@layout/bottom_line_view_three" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.1"
+                android:orientation="vertical">
+
+
+                    <LinearLayout
+                        style="@style/linear_row_style_common"
+                        android:orientation="horizontal">
+
+                        <tablayout.view.textview.FontTextView
+                            style="@style/font_text_content_sytle"
+                            android:text="@string/file_center_name" />
+
+                        <tablayout.view.textview.FontEditext
+                            android:id="@+id/file_center_detail_name"
+                            style="@style/font_edtext_content_sytle"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:maxLength="15"
+                            />
+                    </LinearLayout>
+
+                    <include layout="@layout/bottom_line_view" />
+
+                    <LinearLayout
+                        android:weightSum="2"
+                        style="@style/linear_row_style_common"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+
+                            <tablayout.view.textview.FontTextView
+                                style="@style/font_text_content_sytle"
+                                android:text="@string/file_center_class" />
+
+                            <tablayout.view.textview.FontTextView
+                                android:id="@+id/file_center_detail_class"
+                                style="@style/font_select_textview_content_sytle"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent">
+
+
+                            <tablayout.view.textview.FontTextView
+                                style="@style/font_text_content_sytle"
+                                android:text="@string/file_center_type" />
+
+                            <tablayout.view.textview.FontTextView
+                                android:id="@+id/file_center_detail_type"
+                                style="@style/font_select_textview_content_sytle"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <include layout="@layout/bottom_line_view" />
+
+                    <LinearLayout
+                        android:id="@+id/content_layout"
+                        android:layout_marginRight="@dimen/dp_spacing_to_left_right_15dp"
+                        android:layout_marginLeft="@dimen/dp_spacing_to_left_right_15dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <tablayout.view.textview.FontTextView
+                            android:layout_marginTop="8dp"
+                            style="@style/font_text_content_sytle"
+                            android:layout_gravity="top"
+                            android:text="@string/file_center_explain" />
+
+                        <tablayout.view.textview.FontEditext
+                            android:id="@+id/file_center_detail_explain"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="8dp"
+                            android:layout_marginTop="8dp"
+                            android:background="@null"
+                            android:gravity="top"
+                            android:textSize="@dimen/sp_font_detail_content_15sp"
+                            />
+                    </LinearLayout>
+                    <include layout="@layout/bottom_line_view" />
+
+                    <LinearLayout
+                        style="@style/enclosure_ll_style"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="附件："
+                            android:textSize="@dimen/sp_font_detail_content_15sp"
+                            />
+
+                        <include
+                            layout="@layout/erp_file_select_layout_detail"/>
+                    </LinearLayout>
+                    <include layout="@layout/bottom_line_view_three" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:visibility="invisible"
+                android:id="@+id/approval_process_all_layout"
+                android:orientation="vertical"
+                android:layout_weight="0.9"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+
+                <include layout="@layout/approval_process_layout"/>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

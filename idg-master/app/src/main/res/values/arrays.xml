@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+       <string-array name="item_left_strings_home">
+        <item>公告·文件</item>
+        <item>我的办公</item>
+        <item>工作报告</item>
+        <item>人事行政</item>
+
+        <item>项目任务</item>
+        <item>销售运营</item>
+        <item>市场工作</item>
+        <item>客户关系</item>
+        <item>超级用户</item>
+    </string-array>
+
+    <!--首页item左边图标-->
+    <integer-array name="item_left_imgs_home">
+        <item>@mipmap/file3x</item>
+        <item>@mipmap/myoffice3x</item>
+        <item>@mipmap/work_reportx</item>
+        <item>@mipmap/person3x</item>
+        <item>@mipmap/project_task3x</item>
+        <item>@mipmap/sale3x</item>
+        <item>@mipmap/market_work3x</item>
+        <item>@mipmap/custum_relation3x</item>
+        <item>@mipmap/super_user3x</item>
+        <item>@mipmap/icon_casestatus</item>
+    </integer-array>
+
+    <!--公告。文件-->
+    <string-array name="item_left_strings_announfile">
+        <item>公司公告</item>
+        <item>部门通知</item>
+        <item>文件中心</item>
+        <item>批审</item>
+    </string-array>
+
+    <!--我的办公-->
+    <string-array name="item_left_strings_myoffice">
+        <item>工作日志</item>
+       <!-- <item>邮件管理</item>-->
+        <item>事务申请</item>
+        <item>批审</item>
+    </string-array>
+
+    <!--工作报告-->
+    <string-array name="item_left_strings_workreport">
+        <item>我的报告</item>
+        <item>临时报告</item>
+        <item>抄送给我</item>
+        <item>报告批审</item>
+    </string-array>
+    <!--人事行政-->
+    <string-array name="item_left_strings_personneladministration">
+        <item>人力资源</item>
+        <item>人事档案</item>
+        <item>人事事务</item>
+        <item>证照使用</item>
+        <item>事务批审</item>
+    </string-array>
+    <!--项目任务-->
+    <string-array name="item_left_strings_projecttask">
+        <item>事务协作</item>
+        <item>工作任务</item>
+        <item>项目管理</item>
+    </string-array>
+
+    <!--销售运营-->
+    <string-array name="item_left_strings_salesoperation">
+        <item>我的客户</item>
+        <item>业绩报告</item>
+        <item>业绩管理</item>
+        <item>销售申请</item>
+        <item>商品管理</item>
+        <item>销售批审</item>
+    </string-array>
+    <!--市场工作-->
+    <string-array name="item_left_strings_marketingwork">
+        <item>市场客户</item>
+        <item>市场业务</item>
+        <item>市场调查</item>
+        <item>市场批审</item>
+    </string-array>
+    <!--客户关系-->
+    <string-array name="item_left_strings_customerrelations">
+        <item>客户资料</item>
+        <item>客户机会</item>
+        <item>客户漏斗</item>
+        <item>客户事务</item>
+        <item>客户项目</item>
+        <item>找客户</item>
+        <item>找商情</item>
+        <item>客户批审</item>
+    </string-array>
+    <!--超级用户-->
+    <string-array name="item_left_strings_superuser">
+        <item>查找</item>
+        <!--<item>删除</item>-->
+    </string-array>
+
+    <string-array name="item_left_strings_attendance">
+        <item>我的考勤</item>
+        <item>考勤汇总</item>
+    </string-array>
+
+</resources>

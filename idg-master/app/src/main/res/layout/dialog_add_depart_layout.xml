@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="250dp"
+    android:layout_height="wrap_content"
+    android:background="@color/color_personnel_affairs_dialog_bg"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f9f9f9"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="新增部门"
+        android:textColor="@color/color_personnel_affairs_dialog"
+        android:textSize="@dimen/sp_font_home_page_title_20sp" />
+
+    <LinearLayout
+        style="@style/linear_row_style_common"
+        android:orientation="horizontal">
+
+
+        <tablayout.view.textview.FontTextView
+            style="@style/font_text_content_sytle"
+            android:text="部门名称：" />
+
+        <tablayout.view.textview.FontEditext
+            android:id="@+id/et_name"
+            style="@style/font_edtext_content_sytle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:maxLength="12"
+            android:singleLine="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fafafa"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="@dimen/dp_spacing_10dp">
+
+        <Button
+            android:id="@+id/btnOk"
+            style="@style/listDialog_add_depart_btnStyle"
+            android:layout_marginRight="15dp"
+            android:drawableLeft="@mipmap/btn_submit_bg"
+            android:text="新增" />
+
+        <Button
+            android:id="@+id/btnCancel"
+            style="@style/listDialog_add_depart_btnStyle"
+            android:background="#c8c8c8"
+            android:textColor="#878787"
+            android:drawableLeft="@mipmap/btn_submit_cancer"
+            android:layout_marginLeft="15dp"
+            android:text="取消" />
+
+    </LinearLayout>
+</LinearLayout>

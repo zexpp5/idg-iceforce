@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:background="#fdfdfd"
+              android:gravity="center_vertical"
+              android:orientation="vertical"
+              android:paddingBottom="5dp"
+              android:paddingLeft="@dimen/padding_search_bar"
+              android:id="@+id/ll_search"
+              android:paddingRight="5dp"
+              android:visibility="gone"
+              android:paddingTop="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <com.cxgz.activity.cxim.view.MyHorizontalScroll
+            android:id="@+id/myhorizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:scrollbars="none"
+        />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="#fdfdfd"
+            android:paddingLeft="@dimen/padding_search_bar"
+        >
+
+            <tablayout.view.textview.FontEditext
+                android:id="@+id/query"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_toLeftOf="@+id/search_clear"
+                android:background="@null"
+                android:drawableLeft="@mipmap/search_bar_icon_normal"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:singleLine="true"
+                android:textCursorDrawable="@drawable/shape_search_cursor_bg"
+                android:textSize="14sp"/>
+
+            <ImageButton
+                android:id="@+id/search_clear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+
+                android:layout_marginRight="3dp"
+                android:background="@android:color/transparent"
+                android:padding="5dp"
+                android:src="@drawable/search_clear"
+                android:visibility="gone"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View android:layout_width="match_parent"
+          android:layout_height="0.5dp"
+          android:background="#c1c1c1"></View>
+
+    <!--<RelativeLayout-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1.5"-->
+    <!--android:background="#ededed"-->
+    <!--android:paddingBottom="5dp"-->
+    <!--android:paddingRight="10dp"-->
+    <!--android:paddingTop="5dp">-->
+
+    <!--<tablayout.view.textview.FontTextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:text="搜索"-->
+    <!--android:textSize="14sp"-->
+    <!--/>-->
+
+    <!--</RelativeLayout>-->
+
+
+</LinearLayout>

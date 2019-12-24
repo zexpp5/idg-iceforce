@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#f6f6f6"
+              android:descendantFocusability="blocksDescendants"
+              android:orientation="vertical">
+
+    <include
+        layout="@layout/public_title_01"
+    />
+
+    <LinearLayout
+        android:id="@+id/ll_imfragment_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <tablayout.view.textview.FontTextView
+            android:id="@+id/tv_error"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#88FFA550"
+            android:drawableLeft="@mipmap/login_error_icon"
+            android:drawablePadding="5dp"
+            android:gravity="center_vertical"
+            android:padding="8dp"
+            android:textColor="#000"
+            android:visibility="gone"
+        />
+
+        <ListView
+            android:id="@+id/lv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="@color/transparency"
+            android:divider="@color/transparency"
+            android:dividerHeight="1px"
+            android:footerDividersEnabled="false"
+            android:headerDividersEnabled="false"
+            android:listSelector="@color/transparency"
+            android:scrollbars="none"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

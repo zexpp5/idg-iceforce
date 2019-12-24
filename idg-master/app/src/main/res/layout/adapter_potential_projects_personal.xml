@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/dp_spacing_4dp"
+    android:layout_marginRight="@dimen/dp_spacing_4dp"
+    android:layout_marginTop="@dimen/dp_spacing_8dp"
+    android:background="@drawable/item_bg_radius"
+    android:orientation="horizontal">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/dp_spacing_10dp"
+        android:layout_marginRight="@dimen/dp_spacing_10dp"
+        app:cardCornerRadius="@dimen/dp_spacing_25dp"
+        app:cardElevation="3dp">
+
+        <yunjing.view.DrawText
+            android:id="@+id/draw_text"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+    </android.support.v7.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_spacing_10dp"
+        android:layout_marginLeft="@dimen/dp_spacing_10dp"
+        android:layout_marginTop="@dimen/dp_spacing_10dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_font_detail_content_15sp" />
+
+                <TextView
+                    android:id="@+id/tv_state"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_spacing_8dp"
+                    android:background="@drawable/tv_bg_p_p"
+                    android:paddingBottom="@dimen/dp_spacing_4dp"
+                    android:paddingLeft="@dimen/dp_spacing_8dp"
+                    android:paddingRight="@dimen/dp_spacing_8dp"
+                    android:paddingTop="@dimen/dp_spacing_4dp"
+                    android:textColor="@color/main_blue"
+                    android:textSize="@dimen/sp_font_detail_content_13sp" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_star"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="@dimen/dp_spacing_20dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_spacing_15dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textSize="@dimen/sp_font_detail_content_14sp" />
+
+    </LinearLayout>
+</LinearLayout>

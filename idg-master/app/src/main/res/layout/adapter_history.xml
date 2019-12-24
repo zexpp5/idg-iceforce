@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_spacing_20dp"
+        android:layout_marginBottom="@dimen/dp_spacing_10dp"
+        android:textColor="@color/text_black_s"
+        android:layout_gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_spacing_20dp"
+        android:layout_marginRight="@dimen/dp_spacing_20dp"
+        android:orientation="vertical"
+        android:background="@drawable/shape_ll_bg">
+
+        <TextView
+            android:id="@+id/tv_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_spacing_20dp"
+            android:layout_marginTop="@dimen/dp_spacing_20dp"
+            android:textSize="@dimen/sp_font_detail_content_16sp"
+            android:textColor="@color/text_black_l"/>
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_spacing_20dp"
+            android:layout_marginTop="@dimen/dp_spacing_10dp"
+            android:textSize="@dimen/sp_font_detail_content_13sp"
+            android:textColor="@color/text_black_s"/>
+
+        <TextView
+            android:id="@+id/tv_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_spacing_20dp"
+            android:layout_marginRight="@dimen/dp_spacing_20dp"
+            android:layout_marginTop="@dimen/dp_spacing_15dp"
+            android:textSize="@dimen/sp_font_detail_content_14sp"
+            android:textColor="@color/text_black_s"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_spacing_20dp"
+            android:layout_marginTop="@dimen/dp_spacing_15dp"
+            android:layout_marginBottom="@dimen/dp_spacing_20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="审批意见："
+                android:textColor="@color/text_black_s"
+                android:textSize="@dimen/sp_font_detail_content_14sp"
+                />
+
+            <TextView
+                android:id="@+id/tv_result"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_black_l"
+                android:textSize="@dimen/sp_font_detail_content_14sp"/>
+
+            </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

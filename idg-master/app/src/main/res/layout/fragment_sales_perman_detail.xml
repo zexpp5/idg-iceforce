@@ -1,0 +1,521 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:focusableInTouchMode="false"
+             >
+
+    <include
+        android:id="@+id/totle_layout"
+
+        layout="@layout/top_title_layout"
+        />
+
+    <RelativeLayout
+        android:layout_below="@+id/totle_layout"
+        android:id="@+id/rll"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginBottom="5dp"
+        >
+        <RelativeLayout
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <!--<EditText-->
+                <!--android:inputType="number"-->
+                <!--android:id="@+id/year"-->
+                <!--android:hint="2017"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--/>-->
+
+            <TextView
+                android:id="@+id/year"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+
+                android:text="2017年业绩计划"/>
+
+        </RelativeLayout>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:text="单位：万元"/>
+
+    </RelativeLayout>
+
+
+    <HorizontalScrollView
+        android:layout_below="@+id/rll"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include layout="@layout/submit_line_five_view"/>
+
+            <!--年度任务-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="年度任务"/>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/erp_cutting_line_grey"/>
+
+                <EditText
+                    android:id="@+id/year_task_value"
+                    style="@style/d_s_content_font_edtext_sytle_title_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_vertical"
+                    tools:text="5888"/>
+
+
+            </LinearLayout>
+
+            <include layout="@layout/erp_line_one_view"/>
+
+
+            <!--月度任务-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="月度任务"/>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/erp_cutting_line_grey"/>
+
+                <!--月表格-->
+                <LinearLayout
+                    android:layout_width="800dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <!--月表格 头 -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/erp_shape_info_right"
+                            android:gravity="center"
+                            android:text="1月"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+
+                            android:layout_weight="1"
+                            android:background="@drawable/erp_shape_info_right"
+                            android:gravity="center"
+                            android:text="2月"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+
+                            android:layout_weight="1"
+                            android:background="@drawable/erp_shape_info_right"
+                            android:gravity="center"
+                            android:text="3月"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+
+                            android:layout_weight="1"
+                            android:background="@drawable/erp_shape_info_right"
+                            android:gravity="center"
+                            android:text="4月"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+
+                            android:layout_weight="1"
+                            android:background="@drawable/erp_shape_info_right"
+                            android:gravity="center"
+                            android:text="5月"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+
+                            android:layout_weight="1"
+                            android:background="@drawable/erp_shape_info_right"
+                            android:gravity="center"
+                            android:text="6月"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+
+                            android:layout_weight="1"
+                            android:background="@drawable/erp_shape_info_right"
+                            android:gravity="center"
+                            android:text="7月"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+
+                            android:layout_weight="1"
+                            android:background="@drawable/erp_shape_info_right"
+                            android:gravity="center"
+                            android:text="8月"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+
+                            android:layout_weight="1"
+                            android:background="@drawable/erp_shape_info_right"
+                            android:gravity="center"
+                            android:text="9月"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+
+                            android:layout_weight="1"
+                            android:background="@drawable/erp_shape_info_right"
+                            android:gravity="center"
+                            android:text="10月"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+
+                            android:layout_weight="1"
+                            android:background="@drawable/erp_shape_info_right"
+                            android:gravity="center"
+                            android:text="11月"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+
+                            android:layout_weight="1"
+                            android:background="@drawable/erp_shape_info_right"
+                            android:gravity="center"
+                            android:text="12月"/>
+                    </LinearLayout>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/erp_cutting_line_grey"/>
+                    <!--月表格 值-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/one"
+                            style="@style/d_s_content_font_edtext_sytle_title_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/erp_shape_info_right"/>
+
+                        <EditText
+                            android:id="@+id/two"
+
+                            style="@style/d_s_content_font_edtext_sytle_title_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/erp_shape_info_right"/>
+
+                        <EditText
+                            android:id="@+id/three"
+
+                            style="@style/d_s_content_font_edtext_sytle_title_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/erp_shape_info_right"/>
+
+                        <EditText
+                            android:id="@+id/four"
+
+                            style="@style/d_s_content_font_edtext_sytle_title_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/erp_shape_info_right"/>
+
+                        <EditText
+                            android:id="@+id/five"
+
+                            style="@style/d_s_content_font_edtext_sytle_title_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/erp_shape_info_right"/>
+
+                        <EditText
+                            android:id="@+id/sex"
+
+                            style="@style/d_s_content_font_edtext_sytle_title_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/erp_shape_info_right"/>
+
+                        <EditText
+                            android:id="@+id/seven"
+
+                            style="@style/d_s_content_font_edtext_sytle_title_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/erp_shape_info_right"/>
+
+                        <EditText
+                            android:id="@+id/eight"
+
+                            style="@style/d_s_content_font_edtext_sytle_title_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/erp_shape_info_right"/>
+
+                        <EditText
+                            android:id="@+id/nine"
+
+                            style="@style/d_s_content_font_edtext_sytle_title_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/erp_shape_info_right"/>
+
+                        <EditText
+                            android:id="@+id/ten"
+
+                            style="@style/d_s_content_font_edtext_sytle_title_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/erp_shape_info_right"/>
+
+                        <EditText
+                            android:id="@+id/eleven"
+
+                            style="@style/d_s_content_font_edtext_sytle_title_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/erp_shape_info_right"/>
+
+                        <EditText
+                            android:id="@+id/twelve"
+
+                            style="@style/d_s_content_font_edtext_sytle_title_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/erp_shape_info_right"/>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <include layout="@layout/erp_line_one_view"/>
+
+
+            <!--季度任务-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/quarterly_task"
+                    android:layout_width="180dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="季度任务"/>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/erp_cutting_line_grey"/>
+
+                <!--季度表格-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <!--季表格 头 -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/erp_shape_info_right"
+                            android:gravity="center"
+                            android:text="第一季度"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/erp_shape_info_right"
+                            android:gravity="center"
+                            android:text="第二季度"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/erp_shape_info_right"
+                            android:gravity="center"
+                            android:text="第三季度"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+
+                            android:layout_height="match_parent"
+
+                            android:layout_weight="1"
+                            android:background="@drawable/erp_shape_info_right"
+                            android:gravity="center"
+                            android:text="第四季度"/>
+
+                    </LinearLayout>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/erp_cutting_line_grey"/>
+                    <!--月表格 值-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/quarterly_one"
+
+                            android:layout_width="match_parent"
+
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/erp_shape_info_right"
+                            android:gravity="center"/>
+
+                        <TextView
+                            android:id="@+id/quarterly_two"
+
+                            android:layout_width="match_parent"
+
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/erp_shape_info_right"
+                            android:gravity="center"/>
+
+                        <TextView
+                            android:id="@+id/quarterly_three"
+
+                            android:layout_width="match_parent"
+
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/erp_shape_info_right"
+                            android:gravity="center"/>
+
+                        <TextView
+                            android:id="@+id/quarterly_four"
+
+                            android:layout_width="match_parent"
+
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/erp_shape_info_right"
+                            android:gravity="center"/>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <include layout="@layout/erp_line_one_view"/>
+
+
+        </LinearLayout>
+    </HorizontalScrollView>
+    <include
+        style="@style/list_ShareLayout_Style"
+        layout="@layout/list_share_layout"
+        />
+</RelativeLayout>

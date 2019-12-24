@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+           />
+        <TextView
+
+            android:id="@+id/total_financial_money"
+
+            android:gravity="center|right"
+            android:background="@color/search_icon_list_title_bg"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp45" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/search_icon_de_bg" />
+
+        <TextView
+
+            android:id="@+id/total_order_money"
+            android:paddingLeft="@dimen/dp16"
+            android:paddingRight="@dimen/dp16"
+            android:gravity="center|right"
+            android:background="@color/search_icon_list_title_bg"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp45" />
+    </LinearLayout>
+</LinearLayout>

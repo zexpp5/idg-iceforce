@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    //Im开始定义，上面部分有IM使用的，后期清除未使用的！
+    <!--5个Fragment的背景色-->
+    <color name="color_fragment_bg">#F1F0F6</color>
+    //ImFragment
+    //对聊的名字
+    <color name="color_item_name">#000000</color>
+    //时间
+    <color name="color_item_time">#b1b1b1</color>
+    //内容-最后一条记录
+    <color name="color_item_content">#808080</color>
+    //小圆点的颜色
+    <color name="color_item_circular">#ffffff</color>
+    //chatActivity
+    <color name="color_item_user_name">#545454</color>
+
+    <color name="color_item_user_name2">#818181</color>
+
+    //聊天内容背景色
+    <color name="color_content_listview_bg">#ebebeb</color>
+    //聊天界面，时间颜色。
+    <color name="color_content_time">#d2d2d2</color>
+
+    //线条颜色
+
+    //分享头部
+    <color name="color_share_up_bg">#FFFFFF</color>
+
+    <color name="color_share_down_bg">#EDEDED</color>
+
+    //工作圈
+    <color name="color_title">#000000</color>
+
+    <color name="color_content">#8e8e8e</color>
+
+    <color name="color_aeaeae">#aeaeae</color>
+
+    <color name="im_social_dig_name_bg">#DDDDDD</color>
+
+    <color name="im_font_color_text_hint">#abb1b6</color>
+
+    <color name="im_line_color">#dadada</color>
+
+    <color name="name_selector_color">#cccccc</color>
+
+    <color name="bg_no_photo">#EEEEEE</color>
+
+    <color name="video_bg">#ededed</color>
+
+    //收起，全文
+    <color name="im_color_cricle_content">#1e1e1e</color>
+    <color name="im_cricle_content_bg">#59669E</color>
+
+    <!--========================-->
+
+    <color name="praise_item_default">#EBEBEB</color>
+
+    <color name="praise_item">#8290AF</color>
+
+</resources>
+

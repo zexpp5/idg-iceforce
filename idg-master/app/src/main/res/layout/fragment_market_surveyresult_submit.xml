@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+
+    >
+
+    <LinearLayout
+        android:orientation="vertical"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <include
+
+        android:id="@+id/title_layout"
+        layout="@layout/top_title_layout"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <!--一行的高度style-->
+        <LinearLayout
+            style="@style/d_s_ll_style"
+            android:orientation="horizontal">
+
+
+            <!--左边的textview的style-->
+            <tablayout.view.textview.FontTextView
+                style="@style/d_s_left_font_sytle"
+                android:text="相关要点："/>
+            <!--非输入的textview的style-->
+            <tablayout.view.textview.FontEditext
+                android:id="@+id/relatedpoints"
+                style="@style/d_s_content_font_edtext_sytle_title"
+                android:maxLength="15"
+                />
+
+
+            <!--LinearLayout右边title的style-->
+
+        </LinearLayout>
+    </LinearLayout>
+    <!--线条高度-->
+    <include layout="@layout/erp_line_one_view"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <!--一行的高度style-->
+        <LinearLayout
+            style="@style/d_s_ll_style"
+            android:orientation="horizontal">
+
+
+            <!--左边的textview的style-->
+            <tablayout.view.textview.FontTextView
+                style="@style/d_s_left_font_sytle"
+                android:text="优点："/>
+            <!--非输入的textview的style-->
+            <tablayout.view.textview.FontEditext
+                android:id="@+id/advantage"
+                style="@style/d_s_content_font_edtext_sytle_title"
+                android:maxLength="15"
+
+                />
+
+
+            <!--LinearLayout右边title的style-->
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <include layout="@layout/erp_line_one_view"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <!--一行的高度style-->
+        <LinearLayout
+            style="@style/d_s_ll_style"
+            android:orientation="horizontal">
+
+
+            <!--左边的textview的style-->
+            <tablayout.view.textview.FontTextView
+                style="@style/d_s_left_font_sytle"
+                android:text="缺点："/>
+            <!--非输入的textview的style-->
+            <tablayout.view.textview.FontEditext
+                android:id="@+id/disadvantages"
+                style="@style/d_s_content_font_edtext_sytle_title"
+                android:maxLength="15"
+                />
+
+
+            <!--LinearLayout右边title的style-->
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <include layout="@layout/erp_line_one_view"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <!--一行的高度style-->
+        <LinearLayout
+            style="@style/d_s_ll_style"
+            android:orientation="horizontal">
+
+
+            <!--左边的textview的style-->
+            <tablayout.view.textview.FontTextView
+                style="@style/d_s_left_font_sytle"
+                android:text="备注："/>
+            <!--非输入的textview的style-->
+            <tablayout.view.textview.FontEditext
+
+                android:id="@+id/remarks"
+                style="@style/d_s_content_font_edtext_sytle_title"
+                android:maxLength="15"
+                />
+
+
+            <!--LinearLayout右边title的style-->
+
+        </LinearLayout>
+        <include layout="@layout/erp_line_one_view"/>
+    </LinearLayout>
+    </LinearLayout>
+    <include
+        android:visibility="gone"
+        style="@style/list_ShareLayout_Style"
+        layout="@layout/list_share_layout"
+        />
+</RelativeLayout>

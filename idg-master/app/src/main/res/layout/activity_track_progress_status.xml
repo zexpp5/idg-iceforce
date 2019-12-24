@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/top_bar_layout"
+            layout="@layout/top_title_layout" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp_spacing_20dp"
+            android:layout_marginLeft="@dimen/dp_spacing_20dp"
+            android:layout_marginTop="@dimen/dp_spacing_20dp"
+            android:text="项目介绍"
+            android:textSize="@dimen/sp_font_detail_content_15sp" />
+
+        <TextView
+            android:id="@+id/tv_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp_spacing_20dp"
+            android:layout_marginLeft="@dimen/dp_spacing_20dp"
+            android:textColor="@color/text_black_s"
+            android:textSize="@dimen/sp_font_detail_content_14sp" />
+
+
+        <TextView
+            android:id="@+id/tv_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bg_gray"
+            android:gravity="center"
+            android:paddingBottom="@dimen/dp_spacing_20dp"
+            android:paddingTop="@dimen/dp_spacing_20dp"
+            android:text="--------    跟踪进展    --------" />
+    </LinearLayout>
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/smart_refresh_layout"
+        android:layout_below="@id/top"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ProgressBar
+            style="@style/CustomProgressStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp_spacing_15dp" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="never"
+            android:scrollbars="none" />
+
+        <ProgressBar
+            style="@style/CustomProgressStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp_spacing_15dp" />
+
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+    <Button
+        android:id="@+id/btn_ok"
+        android:layout_width="160dp"
+        android:layout_height="32dp"
+        android:layout_marginBottom="@dimen/dp_spacing_10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shape_blue_btn_bg"
+        android:text="已知悉"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_font_detail_content_14sp" />
+
+</RelativeLayout>

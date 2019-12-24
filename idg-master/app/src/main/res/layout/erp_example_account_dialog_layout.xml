@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dialog_title_bottom_height"
+        android:background="#e3e6e5">
+
+        <tablayout.view.textview.FontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/example_account_title_str"
+            android:textSize="@dimen/sumb_detail_size_15"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dialog_height"
+        android:background="@color/white">
+
+        <tablayout.view.textview.FontTextView
+            android:id="@+id/texthint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/example_account_hint"
+            android:textSize="15sp"/>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dialog_title_bottom_height">
+
+        <com.superdata.marketing.view.percent.PercentLinearLayout
+            android:id="@+id/bottom_send"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dialog_title_bottom_height"
+            android:background="@color/dialog_title_and_foot_bg"
+            android:gravity="center">
+
+            <RelativeLayout
+                android:id="@+id/erp_dialog_sure_tv_str"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+            >
+
+                <LinearLayout
+                    android:layout_width="@dimen/dialog_button_width"
+                    android:layout_height="@dimen/dialog_button_height"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/erp_submit_delete_btn_item_bg"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:visibility="gone"
+                    />
+
+                    <tablayout.view.textview.FontTextView
+                        android:id="@+id/send_bottom_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:text="@string/example_account_sure_str"
+                        android:textColor="#ffffff"
+                        android:textSize="@dimen/sumb_detail_size_15"/>
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/erp_dialog_cancer_tv_str"
+                android:layout_width="@dimen/dialog_button_width"
+                android:layout_height="@dimen/dialog_button_height"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/erp_submit_delete_btn_item_bg"
+                android:clickable="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:background="@mipmap/btn_submit_cancer"
+                        android:visibility="gone"/>
+
+                    <tablayout.view.textview.FontTextView
+                        android:id="@+id/delete_bottom_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:text="@string/example_account_cancer_str"
+                        android:textColor="#ffffff"
+                        android:textSize="@dimen/sumb_detail_size_15"/>
+                </LinearLayout>
+            </RelativeLayout>
+
+        </com.superdata.marketing.view.percent.PercentLinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

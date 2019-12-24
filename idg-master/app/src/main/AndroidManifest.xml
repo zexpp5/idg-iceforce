@@ -1,0 +1,954 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest package="com.injoy.idg"
+          xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- 指纹权限 -->
+    <uses-permission android:name="android.permission.USE_FINGERPRINT"/>
+    <!-- 友盟 -->
+    <uses-permission android:name="android.permission.SET_DEBUG_APP"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.USE_CREDENTIALS"/>
+
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS"/>
+
+    <!-- 百度定位 -->
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+
+    <!-- 允许程序振动 -->
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <!-- 这个权限用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <!-- 这个权限用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <!-- 获取运营商信息，用于支持提供运营商信息相关的接口 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <!-- 用于读取手机当前的状态 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <!-- 写入扩展存储，向扩展卡写入数据，用于写入离线定位数据 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <!-- 访问网络，网络定位需要上网 -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <!-- SD卡读取权限，用户写入离线定位数据 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <!-- 相机权限 -->
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <!-- 录音权限 -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <!-- 开机广播 -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+
+    <uses-feature android:name="android.hardware.camera.autofocus"/>
+
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+
+    <uses-permission android:name="android.permission.READ_CALENDAR"/>
+    <uses-permission android:name="android.permission.WRITE_CALENDAR"/>
+
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    //华为的红点权限
+    <uses-permission android:name="com.huawei.android.launcher.permission.CHANGE_BADGE"/>
+
+    <!-- 闪光灯 -->
+    <permission
+        android:name="android.permission.FLASHLIGHT"
+        android:permissionGroup="android.permission-group.HARDWARE_CONTROLS"
+        android:protectionLevel="normal"/>
+
+    <!-- //相机 -->
+    <uses-feature android:name="android.hardware.camera"/>
+    <uses-feature
+        android:name="android.hardware.camera.front"
+        android:required="false"/>
+
+    <!-- dfsdff -->
+    <!-- android:theme="@style/MetrialTheme" -->
+    <application
+        android:name="com.base.BaseApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:launchMode="singleInstance"
+        android:persistent="true"
+        android:supportsRtl="true"
+        android:theme="@style/MetrialTheme"
+        tools:replace="android:icon, android:theme">
+
+        <activity
+            android:name="com.ui.SDLoginActivity"
+            android:windowSoftInputMode="stateHidden">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+
+        <!-- <activity -->
+        <!-- android:name="com.ui.MainActivity" -->
+        <!-- android:launchMode="singleTask" -->
+        <!-- android:screenOrientation="portrait" -->
+        <!-- android:windowSoftInputMode="stateAlwaysHidden"> -->
+        <!-- </activity> -->
+
+
+        <!-- 超享主页 -->
+        <activity
+            android:name="com.cxgz.activity.superqq.SuperMainActivity"
+            android:launchMode="standard"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity
+            android:name="com.cxgz.activity.superqq.activity.InviteActivity"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity
+            android:name="com.cxgz.activity.cxim.person.NotFriendPersonalInfoActivity"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity
+            android:name="com.cxgz.activity.cxim.NewFriendActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/CXIMTheme"
+            android:windowSoftInputMode="stateHidden"/>
+        //搜索模块的
+        <activity
+            android:name="com.cxgz.activity.cxim.search.SearchActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/CXIMTheme"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity android:name="com.cxgz.activity.superqq.activity.SDPersonLoadingAddressActivity"/>
+        <!-- 我的设置 -->
+
+
+        <!-- 二维码 -->
+        <activity
+            android:name="com.cxgz.activity.superqq.activity.ErweimaActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.ui.activity.CaptureActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/CXIMTheme"
+            android:windowSoftInputMode="stateHidden"/>
+
+        <activity android:name="com.cxgz.activity.superqq.activity.SDCommSelectedActivity"/>
+
+        <!-- &lt;!&ndash; 我的日程安排 &ndash;&gt; -->
+        <!-- <activity -->
+        <!-- android:name="com.cxgz.activity.superqq.activity.TripMainActivity" -->
+        <!-- android:screenOrientation="portrait" -->
+        <!-- android:theme="@style/CXIMTheme" -->
+        <!-- android:windowSoftInputMode="stateHidden"/> -->
+        <!-- &lt;!&ndash; 新建日程安排 &ndash;&gt; -->
+        <!-- <activity -->
+        <!-- android:name="com.cxgz.activity.superqq.activity.NewTripActivity" -->
+        <!-- android:screenOrientation="portrait" -->
+        <!-- android:theme="@style/CXIMTheme" -->
+        <!-- android:windowSoftInputMode="stateHidden"/> -->
+        <!-- 草稿箱 -->
+        <!-- <activity -->
+        <!-- android:name="com.cxgz.activity.superqq.activity.SDDraftActivity" -->
+        <!-- android:screenOrientation="portrait" -->
+        <!-- android:theme="@style/CXIMTheme" -->
+        <!-- android:windowSoftInputMode="stateHidden"/> -->
+
+
+        <!-- 附件播放 -->
+        <activity
+            android:name="com.ui.activity.VoicePlayActivity"
+            android:screenOrientation="portrait"/>
+
+        <!-- 附件dialog -->
+        <activity android:name="tablayout.view.dialog.FileNewPickerDialog"/>
+
+        <!-- 超信部分 -->
+        <!-- 个人信息 -->
+        <activity
+            android:name="com.cxgz.activity.cxim.PersonalInfoActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/CXIMTheme"
+            android:windowSoftInputMode="stateHidden"/>
+
+        <!-- 设置 -->
+        <activity
+            android:name="com.cxgz.activity.superqq.activity.SettingsActivitiy"
+            android:screenOrientation="portrait"
+            android:theme="@style/CXIMTheme"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity
+
+
+            android:name="com.cxgz.activity.cxim.person.SDPersonalAlterActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/CXIMTheme"
+            android:windowSoftInputMode="stateHidden|stateAlwaysHidden"/>
+        <activity
+            android:name="com.cxgz.activity.cx.ui.SDCrmEditTextActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/CXIMTheme"
+            android:windowSoftInputMode="stateHidden"/>
+
+        <!-- 修改密码 -->
+
+        <activity
+            android:name="com.cxgz.activity.cxim.person.SDPersonAlterPswActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/CXIMTheme"
+            android:windowSoftInputMode="stateHidden"/>
+
+        <!-- CXIM那里用新的theme -->
+        <!-- 群聊页面 -->
+        <activity
+            android:name="com.cxgz.activity.cxim.ContactActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/CXIMTheme"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity
+            android:name="com.cxgz.activity.cxim.ContactShareActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/CXIMTheme"/>
+
+        <!-- 收付款 -->
+        <activity
+            android:name="com.cxgz.activity.cxim.PayActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/CXIMTheme"/>
+        //群组所有成员列表
+        <activity
+            android:name="com.cxgz.activity.cxim.MumberContactActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/CXIMTheme"
+            android:windowSoftInputMode="stateHidden"/>
+
+        <!-- 聊天页面 -->
+
+        <activity
+            android:name="com.cxgz.activity.cxim.base.SDSelectContactActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/CXIMTheme"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity
+            android:name="com.cxgz.activity.cxim.ChatActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/CXIMTheme"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity
+            android:name="com.cxgz.activity.cxim.VideoActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="fullUser"
+            android:theme="@style/CXIMTheme"/>
+        <activity
+            android:name="com.cxgz.activity.cxim.VoiceActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="fullUser"
+            android:theme="@style/CXIMTheme"/>
+        <activity
+            android:name="com.cxgz.activity.cxim.mine.BusinessFileActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="fullUser"
+            android:theme="@style/CXIMTheme"/>
+
+        <!-- 群主详情页面 -->
+        <activity
+            android:name="com.cxgz.activity.cxim.GroupDetailsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/CXIMTheme"/>
+        <!-- &lt;!&ndash;群主页面&ndash;&gt; -->
+        <!-- <activity android:name="com.cxgz.activity.cxim.GroupsActivity" -->
+        <!-- /> -->
+        <!-- 百度地图页面 -->
+        <activity
+            android:name="com.cxgz.activity.cxim.BaiduMapActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/CXIMTheme"/>
+        />
+        <!-- 查看大图页面 -->
+        <activity
+            android:name="com.cxgz.activity.cxim.BigImgActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/CXIMTheme"/>
+
+        <!-- 查看大图页面 阅后即焚带有倒计时的 -->
+        <activity
+            android:name="com.cxgz.activity.cxim.BigCountDownImgActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/CXIMTheme"/>
+        <activity
+            android:name="com.cxgz.activity.cx.view.MultiImageSelectorActivity"
+            android:configChanges="orientation|screenSize"/>
+        <activity android:name="paul.arian.fileselector.FileSelectionActivity"/>
+        <activity
+            android:name="com.ui.activity.VoiceVideoActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/CXIMTheme_video"/>
+        <activity
+            android:name="com.cxgz.activity.cx.workcircle.SDBigImagePagerActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/CXIMTheme"/>
+
+        <!-- //百度地图sdk配置开始 -->
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote">
+            <intent-filter>
+                <action android:name="com.baidu.location.service_v2.2"/>
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="a4h6QFjIPk8fmotqRcGs5Qh338w6o3Pp"/>
+
+        <!-- //百度地图sdk配置结束 -->
+
+
+        <!-- 群聊选择 -->
+        <activity
+            android:name="com.cxgz.activity.cx.msg.SDSelectContactActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/CXIMTheme"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity
+            android:name="com.cxgz.activity.cxim.SDChatGroupList"
+            android:screenOrientation="portrait"
+            android:theme="@style/CXIMTheme"/>
+        <activity
+            android:name="com.cxgz.activity.cxim.camera.main.NewRecordVideoActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/myTransparent"/>
+        <activity
+            android:name="com.cxgz.activity.cxim.camera.main.PlayVideoActiviy"
+            android:screenOrientation="portrait"
+            android:theme="@style/CXIMTheme"/>
+        //联系人
+        <activity
+            android:name="com.cxgz.activity.cxim.ui.contact.SDSelectVoiceCallActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/CXIMTheme"
+            android:windowSoftInputMode="stateHidden"/>
+        //搜索好友
+        <activity
+            android:name="com.cxgz.activity.cxim.SearchNewFriendActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/CXIMTheme"
+            android:windowSoftInputMode="stateVisible"/>
+        <activity android:name="com.cxgz.activity.cxim.LocationActiviy"/>
+
+        <activity
+            android:name="com.ui.activity.ShowAnnexDataActivity"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity
+            android:name="com.cxgz.activity.cxim.ui.voice.detail.MeetingActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity
+            android:name="com.ui.RegActivity2"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity
+            android:name="com.ui.RegActivity1"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity
+            android:name="com.ui.RegActivityPassWord"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity
+            android:name="com.ui.ForgetActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"/>
+
+        <!-- GuideACtivity  引导页 -->
+        <!--
+             设置启动app就加载图片 解决启动应用长时间白屏
+            android:theme="@style/SplashTheme"
+        -->
+        <activity
+            android:name="com.ui.activity.guide.GuideActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+
+                <data
+                    android:host="idg.cn"
+                    android:pathPrefix="/idGOa5"
+                    android:scheme="idgapp"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.ui.activity.std.STDImChatSearchActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"/>
+        <!-- 单聊，群聊超级搜索 -->
+        <activity
+            android:name="com.ui.activity.std.SDTChatGroupListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity
+            android:name="com.ui.activity.std.STDChatActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity
+            android:name="com.ui.activity.std.STDGroupChatActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"/>
+        //工作提交
+        <activity
+            android:name="com.cxgz.activity.cxim.ui.business.BusinessActivity"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"/>
+        //工作圈入口
+        <activity
+            android:name="com.cxgz.activity.cxim.workCircle.activity.WorkCircleMainActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.cxgz.activity.cxim.workCircle.activity.WorkCircleMainNewActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.cxgz.activity.cxim.workCircle.activity.WorkCircleDetailActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.cxgz.activity.cxim.workCircle.activity.ImagePagerActivity"
+            android:screenOrientation="portrait"/>
+        //评论列表
+        <activity
+            android:name="com.cxgz.activity.cxim.workCircle.activity.WorkCircleCommentListActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.ui.UpdatePasswordActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.cxgz.activity.cxim.SearchContactActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/CXIMTheme"/>
+        <activity
+            android:name="com.cxgz.activity.cxim.KefuListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/CXIMTheme"/>
+        <activity
+            android:name="com.cxgz.activity.cxim.ui.company.activity.CompanyListActivity"
+            android:screenOrientation="portrait"/>
+        <!-- 邮件管理列表 -->
+        <activity
+            android:name="com.cxgz.activity.cx.msg.email.MailActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"/>
+        <!-- 邮件详情 -->
+        <activity
+            android:name="com.cxgz.activity.cx.msg.email.MailDetailActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"/>
+        <!-- 邮件账号设置 -->
+        <activity
+            android:name="com.cxgz.activity.cx.msg.email.MailSettingActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"/>
+        <!-- 邮件发送 -->
+        <activity
+            android:name="com.cxgz.activity.cx.msg.email.MailSendActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"/>
+        //分享开始
+        //友盟
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="5a3cb0e3b27b0a648c0000c0"/>
+        //新浪
+        <activity
+            android:name="com.umeng.socialize.media.WBShareCallBackActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity
+            android:name="com.sina.weibo.sdk.share.WbShareTransActivity"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        //QQ完整版
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                //
+                <data android:scheme="tencent1106363396"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        //微信
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+
+        <!-- 跟进记录 -->
+        <activity
+            android:name="newProject.ApplyListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity
+            android:name="newProject.company.affairs.AffairListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity
+            android:name="com.cxgz.activity.cxim.ui.voice.list.VoiceMeetingListActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="newProject.company.collect.AllListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity
+            android:name="newProject.mine.CollectActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="newProject.mine.LogisticSearchActivity"/>
+        <activity
+            android:name="newProject.company.superpower.NewColleagueListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity
+            android:name="newProject.company.superpower.SuperPowerActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity
+            android:name="newProject.company.superuser.SuperUserListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity
+            android:name="newProject.company.superpower.NewColleagueActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity
+            android:name="newProject.company.superpower.NewColleagueDetailActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity
+            android:name="com.cxgz.activity.cxim.ui.voice.infoDetail.MeetingDetailsActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="newProject.mine.SuperFindActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity
+            android:name="newProject.finger.FingerActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="newProject.mine.SuperConfigActivity"/>
+        <activity
+            android:name="newProject.company.superpower.SuperiorListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity
+            android:name="newProject.xzs.XZSActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity
+            android:name="newProject.d.MsnMessageActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity
+            android:name="newProject.company.myapproval.MyApprovalActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity
+            android:name="newProject.company.vacation.VacationApprovalListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity
+            android:name="newProject.company.vacation.VacationApprovalDetailActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="newProject.company.vacation.VacationActivity"/>
+        <activity android:name="newProject.company.vacation.VacationListActivity"/>
+        <activity android:name="newProject.company.vacation.WebVacationActivity"/>
+        <activity android:name="newProject.company.vacation.VacationDetailActivity"/>
+        <activity
+            android:name="newProject.ui.work.GeneralMeetingActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="newProject.ui.work.list.GeneralAllMeetingListActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="newProject.ui.work.SuperGMeetingActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="newProject.company.project_manager.investment_project.ProjectListActivity"/>
+        <activity android:name="newProject.company.project_manager.investment_project.ProjectActivity"/>
+        <activity android:name="newProject.company.project_manager.investment_project.ProjectManagerListActivity"/>
+        <activity
+            android:name="newProject.company.project_manager.investment_project.SearchListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/myTranslucent"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="newProject.company.capital_express.CapitalExpressActivity"/>
+        <activity
+            android:name="newProject.ui.news.NewsListActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="newProject.ui.news.detail.NewsDetailAcitity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="newProject.ui.annual_meeting.AnnualMeetingMainActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity
+            android:name="newProject.ui.annual_meeting.AnnualMeetingInfoActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="newProject.company.magazine.MaganizeListActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="newProject.company.project_manager.growth_project.SearchRelationActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/myTranslucent"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="newProject.company.tools.ToolsListActivity"/>
+        <activity android:name="newProject.company.project_manager.growth_project.PeActivity"/>
+        <activity android:name="newProject.company.project_manager.tmt_project.TmtDetailActivity"/>
+        <activity android:name="newProject.company.project_manager.growth_project.PEDetailActivity"/>
+        <activity android:name="newProject.company.project_manager.growth_project.PeAddActivity"/>
+        <activity android:name="newProject.company.project_manager.growth_project.AddFollowActivity"/>
+        <activity android:name="newProject.company.expense.ExpenseListActivity"/>
+        <activity android:name="newProject.company.expense.ExpenseApprovalListActivity"/>
+        <activity android:name="newProject.company.expense.ExpenseBillActivity"/>
+        <activity android:name="newProject.company.expense.ExpenseAndPayActivity"/>
+        <activity android:name="newProject.company.expense.PayBillActivity"/>
+        <activity android:name="newProject.company.expense.LoanBillActivity"/>
+        <activity android:name="newProject.company.resumption.LeaveMsgListActivity"/>
+        <activity android:name="newProject.company.resumption.ReLeaveListActivity"/>
+        <activity android:name="newProject.company.resumption.ReLeaveActivity"/>
+        <activity android:name="newProject.company.leave_approval.LeaveAppListActivity"/>
+        <activity android:name="newProject.company.leave_approval.VacationAgreeActivity"/>
+        <activity
+            android:name="newProject.company.project_manager.investment_project.EmployeeGuideActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="newProject.company.travel.TravelActivity"
+
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="newProject.company.hr.HrActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="newProject.company.expense.ExpenseActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="newProject.company.business_trip.BusinessTripAddActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="newProject.company.myapproval.MyApprovalNewActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="newProject.company.business_trip.BusinessTripListActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="newProject.company.business_trip.approval.BusinessTripApprovalListActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="newProject.company.hr.LeaveApplyActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="newProject.company.business_trip.approval.BusinessTripApprovalDetailActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="newProject.company.project_manager.estate_project.ProjectEstateListActivity"/>
+        <activity android:name="newProject.company.project_manager.estate_project.detail.ProjectEstateDetailActivity"/>
+        <activity
+            android:name="newProject.company.business_trip.approval.BusinessTripDetailActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="newProject.company.project_manager.bad_assets.BadAssetsListActivity"/>
+        <activity android:name="newProject.company.project_manager.bad_assets.BadAssetsDetailActivity"/>
+        <activity android:name="newProject.company.project_manager.bad_assets.FollowUpActivity"/>
+        <activity android:name="newProject.ui.system_msg.SystemMsgListActivity"/>
+        <activity android:name="newProject.company.newsletter.NewsletterListActivity"/>
+        <activity android:name="newProject.company.expense.DDFeeActivity"/>
+        <activity android:name="newProject.company.project_manager.investment_project.PotentialProjectsAddActivity"/>
+        <activity android:name="newProject.company.project_manager.investment_project.TrackProgressActivity"/>
+        <activity android:name="newProject.company.project_manager.investment_project.TrackProgressAddActivity"
+                  android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity android:name="newProject.company.project_manager.investment_project.PotentialProjectsActivity"/>
+        <activity android:name="newProject.company.project_manager.investment_project.PotentialProjectsList2Activity"/>
+        <activity android:name="newProject.company.project_manager.investment_project.PotentialProjectsDetailActivity"/>
+        <activity android:name="newProject.company.project_manager.investment_project.PotentialProjectsEditActivity"/>
+        <activity android:name="newProject.company.project_manager.investment_project.AtActivity"/>
+        <activity android:name="newProject.company.project_manager.investment_project.ScoreRecordActivity"/>
+        <activity android:name="newProject.company.project_manager.investment_project.ItemRatingActivity"/>
+        <activity android:name="newProject.company.project_manager.investment_project.TrackProgressIceForceActivity"/>
+        <activity android:name="newProject.company.project_manager.investment_project.PublicUserListActivity"
+                  android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity android:name="newProject.company.project_manager.investment_project.FollowProjectListActivity"/>
+        <activity android:name="newProject.company.project_manager.investment_project.FollowProjectList2Activity"/>
+        <activity android:name="newProject.company.project_manager.investment_project.FollowProjectDetailActivity"/>
+        <activity android:name="newProject.company.project_manager.investment_project.InvestedProjectListActivity"/>
+        <activity android:name="newProject.company.project_manager.investment_project.InvestedProjectList2Activity"/>
+        <activity android:name="newProject.company.project_manager.investment_project.InvestedProjectsDetailActivity"/>
+        <activity android:name="newProject.company.project_manager.investment_project.WorkSummaryListActivity"/>
+        <activity android:name="newProject.company.project_manager.investment_project.FollowOnSummaryActivity"/>
+        <activity android:name="newProject.company.project_manager.investment_project.FollowOnDetailActivity"/>
+        <activity android:name="newProject.company.project_manager.investment_project.InvestmentAndFinancingInformationActivity"/>
+        <activity android:name="newProject.company.project_manager.investment_project.ResearchReportActivity"/>
+        <activity android:name="newProject.company.project_manager.investment_project.NewsLetterActivity"/>
+        <activity android:name="newProject.company.project_manager.investment_project.PostInvestmentManagementActivity"/>
+        <activity
+            android:name="newProject.company.project_manager.investment_project.PostInvestmentManagementForPartnerActivity"/>
+        <activity android:name="newProject.company.project_manager.investment_project.PostInvestmentManagementDetailActivity"/>
+        <activity android:name="newProject.company.project_manager.investment_project.ProjectLibrarySearchActivity"/>
+        <activity android:name="newProject.company.project_manager.investment_project.WorkSummaryDetailActivity"/>
+        <activity android:name="newProject.company.project_manager.investment_project.WorkCircleActivity"/>
+        <activity android:name="newProject.company.project_manager.investment_project.TrackProgressStatusActivity"/>
+        <activity android:name="newProject.company.project_manager.investment_project.PotentialVoiceAddActivity"
+                  android:windowSoftInputMode="stateHidden|adjustResize"/>
+
+
+        <receiver
+            android:name="com.jpush.MyReceiver"
+            android:enabled="true"
+            android:exported="false"
+            tools:node="replace">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTRATION"/> <!-- Required  用户注册SDK的intent -->
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED"/> <!-- Required  用户接收SDK消息的intent -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED"/> <!-- Required  用户接收SDK通知栏信息的intent -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED"/> <!-- Required  用户打开自定义通知栏的intent -->
+                <action android:name="cn.jpush.android.intent.CONNECTION"/> <!-- 接收网络变化 连接/断开 since 1.6.3 -->
+                <category android:name="com.injoy.idg"/> <!--JPush上注册的包名 -->
+            </intent-filter>
+        </receiver>
+
+        <!-- User defined.  For test only  用户自定义接收消息器,3.0.7开始支持,目前新tag/alias接口设置结果会在该广播接收器对应的方法中回调-->
+        <receiver android:name="com.jpush.MyJPushMessageReceiver">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.RECEIVE_MESSAGE"/>
+                <category android:name="com.idg.test"></category>
+            </intent-filter>
+        </receiver>
+
+        <!-- since 1.8.0 option 可选项。用于同一设备中不同应用的 JPush 服务相互拉起的功能。 -->
+        <!-- 若不启用该功能可删除该组件，或把 enabled 设置成 false ；拉起服务被关闭，App 不会通过拉起服务拉起其他的 App，也不会被其他 App 拉起。 -->
+        <service
+            android:name="cn.jpush.android.service.DaemonService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.DaemonService"/>
+                <category android:name="com.injoy.idg"/>
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name="newProject.company.invested_project.InVestedProjectInfoActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="newProject.company.invested_project.editinfo.ActivityBaseInfo"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="newProject.company.invested_project.editinfo.ActivityProjectInfo"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="newProject.company.invested_project.editinfo.ActivityProgram"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="newProject.company.invested_project.web.ProjectWebVacationActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="newProject.company.invested_project.editinfo.ActivityAddFollowUp"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="newProject.company.invested_project.ActivityFollowUp"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="newProject.company.fileLib.ActivityFileLibrary"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="newProject.company.fileLib.ActivityFileTypeChoose"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="newProject.company.project_manager.investment_project.ProjectLibraryActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="newProject.company.project_manager.investment_project.FeedBackActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="newProject.company.project_manager.investment_project.TrackProgressActivity2"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="newProject.company.invested_project.ActivityQxb"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="newProject.company.invested_project.ActivityQxbMajorMember"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="newProject.company.invested_project.ActivityQxbShareholderInfo"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="newProject.company.invested_project.ActivityQxbLawsuitInfo"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="newProject.company.invested_project.ActivityQxbRiskInfo"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="newProject.company.invested_project.ActivityQxbSearch"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="newProject.company.invested_project.ActivityInvestmentMeeting"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="newProject.company.invested_project.ActivityInvestmentFile"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="newProject.company.business_trip.approval.ActivityAllHolidayList"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="newProject.company.project_manager.investment_project.PublicChooseProjectActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="newProject.company.project_manager.investment_project.ProjectPopupActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="newProject.company.invested_project.editinfo.ActivityDirectorInfo"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="newProject.company.project_manager.investment_project.WorkLogActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="newProject.company.project_manager.investment_project.PotentialProjectsListForVCGroupActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="newProject.company.project_manager.investment_project.FollowProjectListForVCGroupActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="newProject.company.project_manager.investment_project.FollowProjectDetailForVCGroupActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="newProject.company.project_manager.investment_project.ScoreRecordForVCGroupActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="newProject.company.project_manager.investment_project.PotentialProjectsAddForVCActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="newProject.company.project_manager.investment_project.PotentialProjectsDetailForWaitingToSeeActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="newProject.company.project_manager.investment_project.ItemScoringActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="newProject.company.project_manager.investment_project.fragment.WaitingToSeeProjectActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="newProject.company.project_manager.investment_project.WaitingToSeeUserListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize"/>
+
+        <activity
+            android:name="newProject.company.invested_project.editinfo.ActivityPersonalFileLib"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="newProject.company.business_trip.approval.ActivityPersonalHolidayList"
+            android:screenOrientation="portrait"/>
+
+
+        <activity
+            android:name="newProject.company.investment.ProjectForInvestmentActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name="newProject.company.investment.EventActivity" />
+
+        <activity android:name="newProject.company.investment.ApproveHistoryActivity" />
+
+        <activity android:name="newProject.company.investment.ApproveDetailActivity" />
+
+        <activity android:name="newProject.company.investment.WorkReportActivity" />
+
+        <activity android:name="newProject.company.investment.WorkReportDetailActivity" />
+        <activity android:name="newProject.company.investment.FragmentActivity" />
+        <activity android:name="newProject.company.investment.TopDataActivity" />
+        <activity android:name="newProject.company.investment.ActivitySetting" />
+
+        <activity android:name="newProject.company.investment.ApprovalBusinessTripDetailActivity" />
+
+        <activity android:name="newProject.company.project_manager.investment_project.PostInvestmentManagementForProjectActivity"/>
+        <activity android:name="newProject.company.investment.TopData2Activity"/>
+
+        <service
+            android:name="com.service.BadgeIntentService"
+            android:exported="false"></service>
+
+    </application>
+
+    <uses-sdk
+        tools:overrideLibrary="android.support.design
+        ,android.support.v7.appcompat,android.support.v7.cardview,com.malinskiy.materialicons
+        ,com.eowise.recyclerview.stickyheaders,android.support.v7.recyclerview,android.support.v4,
+        cn.jpush.client.android,cn.jcore.client.android"/>
+
+</manifest>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/ll_container"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:descendantFocusability="blocksDescendants"
+              android:gravity="center_horizontal"
+              android:orientation="vertical">
+
+    <tablayout.view.textview.FontTextView
+        android:id="@+id/timestamp"
+        style="@style/chat_text_date_style"
+    />
+
+    <RelativeLayout
+        style="@style/chat_content_style"
+    >
+
+        <ImageView
+            android:id="@+id/img_user_icon"
+            style="@style/chat_user_icon_left_style"
+        />
+
+        <!--android:background="@drawable/chatfrom_pic_bg"-->
+
+        <RelativeLayout
+            android:id="@+id/row_recv_pic"
+            style="@style/chat_content_viewGroup_left_style"
+            android:background="@drawable/chatfrom_pic_bg"
+        >
+
+            <ImageView
+                android:id="@+id/iv_sendPicture"
+                style="@style/chat_receivePic_style"
+            />
+
+            <ImageView
+                android:id="@+id/iv_hot_see"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitCenter"
+                android:src="@mipmap/chatting_hot_received_picture"
+                android:visibility="gone"
+            />
+            <TextView
+                android:id="@+id/tv_countdown"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/iv_hot_see"
+                android:background="@mipmap/icon_num"
+                android:gravity="center"
+                android:text="10"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:visibility="gone"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/row_recv_pic"
+            android:layout_marginLeft="@dimen/chat_item_otherIcon_spacing_lr"
+            android:layout_toRightOf="@+id/icon_baidu"
+            android:gravity="center"
+            android:orientation="vertical"
+        >
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="@style/chat_content_progressBar"/>
+
+            <tablayout.view.textview.FontTextView
+                android:id="@+id/percentage"
+                style="@style/chat_percentage_num"
+            />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/icon_baidu"
+            style="@style/chat_left_baidu_style"
+            android:layout_toRightOf="@id/row_recv_pic"
+        />
+
+        <tablayout.view.textview.FontTextView
+            android:id="@+id/tv_user_name"
+            style="@style/chat_text_name_style"
+        />
+    </RelativeLayout>
+
+</LinearLayout>

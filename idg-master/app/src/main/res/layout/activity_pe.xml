@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/top_bar_layout"
+        layout="@layout/top_title_layout"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/top_bar_layout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp20"
+            android:layout_marginRight="@dimen/dp20"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/add_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/button_radius_brim_gray">
+
+                <ImageView
+                    android:id="@+id/add_project_image"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_margin="15dp"
+                    android:background="@mipmap/add_project_pic"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/add_project_image"
+                    android:text="新建项目"
+                    android:textColor="#333"
+                    android:textSize="17sp"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:padding="2dp"
+                    android:src="@mipmap/icon_right_arrow_tip"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/oppor_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/button_radius_brim_gray">
+
+                <ImageView
+                    android:id="@+id/oppor_project_image"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_margin="15dp"
+                    android:background="@mipmap/oppor_pic"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/oppor_project_image"
+                    android:text="已约见项目"
+                    android:textColor="#333"
+                    android:textSize="17sp"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:padding="2dp"
+                    android:src="@mipmap/icon_right_arrow_tip"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/unoppor_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/button_radius_brim_gray">
+
+                <ImageView
+                    android:id="@+id/unoppor_project_image"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_margin="15dp"
+                    android:background="@mipmap/unoppor_pic"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/unoppor_project_image"
+                    android:text="未约见项目"
+                    android:textColor="#333"
+                    android:textSize="17sp"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:padding="2dp"
+                    android:src="@mipmap/icon_right_arrow_tip"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/all_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/button_radius_brim_gray"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/all_project_image"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_margin="15dp"
+                    android:background="@mipmap/all_project"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/all_project_image"
+                    android:text="潜在项目(所有)"
+                    android:textColor="#333"
+                    android:textSize="17sp"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:padding="2dp"
+                    android:src="@mipmap/icon_right_arrow_tip"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/influence_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/button_radius_brim_gray"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/influence_project_image"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_margin="15dp"
+                    android:background="@mipmap/icon_influence"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/influence_project_image"
+                    android:text="最具影响力公司"
+                    android:textColor="#333"
+                    android:textSize="17sp"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:padding="2dp"
+                    android:src="@mipmap/icon_right_arrow_tip"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

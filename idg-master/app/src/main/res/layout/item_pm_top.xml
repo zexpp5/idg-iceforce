@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        style="@style/project_manager_detail_layoutStyle"
+        android:background="@color/color_home_page_item_infor_bg">
+
+        <TextView
+            android:id="@+id/item_topTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            tools:text="2017-10-25" />
+
+        <View
+            style="@style/project_manager_detail_verticallineStyle"
+            android:layout_alignParentRight="true"
+            android:background="@color/gray" />
+
+        <View
+            style="@style/project_manager_detail_horizontallineStyle"
+            android:layout_alignParentBottom="true"
+            android:background="@color/gray" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,1294 @@
+<resources>
+    <string name="app_name">IDG Capital</string>
+    <string name="app_name_info">IDG Capital</string>
+    <string name="action_settings">Settings</string>
+    <string name="cloud_works">Cloud works</string>
+    <string name="empty_str">--</string>
+
+    <string name="app_tips">提\u0020\u0020示</string>
+
+    <!--公用-->
+    <string name="no_power_hint">无权访问</string>
+    <string name="ok">确\u0020\u0020\u0020定</string>
+
+    <string name="allow">允\u0020\u0020许</string>
+    <string name="deny">拒\u0020\u0020绝</string>
+
+    <!--<string name="cancel">取消</string>-->
+    <string name="yes">是</string>
+
+    <string name="no">否</string>
+    <string name="add">添加</string>
+    <!--定义内容行数-->
+    <string name="minLines_3">2</string>
+
+    <string name="server_failure">服务器出错！</string>
+    <string name="check_network_status">请检查网络连接</string>
+    <string name="had_no_data">暂无数据</string>
+
+    <string name="not_found_img">图片不存在</string>
+
+    <string name="Monday">星期一</string>
+    <string name="Tuesday">星期二</string>
+    <string name="Wednesday">星期三</string>
+    <string name="Thursday">星期四</string>
+    <string name="Friday">星期五</string>
+    <string name="Saturday">星期六</string>
+    <string name="Sunday">星期日</string>
+    <string name="network_disable">当前网络不可用,请检查网络设置</string>
+    <string name="header_hint_refresh_normal">下拉刷新</string>
+    <string name="header_hint_refresh_ready">释放立即刷新</string>
+    <string name="header_hint_refresh_loading">刷新中&#8230;</string>
+    <string name="header_hint_refresh_time">时间:</string>
+    <string name="footer_hint_load_normal">加载更多...</string>
+    <string name="footer_hint_load_ready">释放立即加载更多</string>
+    <string name="connect_failuer_toast">请检查网络或稍候重试</string>
+    <string name="net_error">访问网络失败</string>
+    <string name="empty_message">没有数据</string>
+    <string name="error_message">发生错误了...</string>
+    <string name="empty_button">再试一次</string>
+    <string name="loading_button">取消</string>
+    <string name="error_button">再试一次</string>
+    <string name="loading_message">请稍等</string>
+    <string name="failed">failed</string>
+    <string name="done">done</string>
+
+    <string name="opinion">意\t见:</string>
+    <string name="title_activity_my_document">MyDocumentActivity</string>
+    <string name="title_activity_document2">Document2Activity</string>
+    <string name="my_document">我的文档</string>
+    <string name="im_work_circle_message">消息</string>
+    <string name="im_mine_collect">收藏</string>
+    <string name="if_delete_cache">是否清除本地缓存？</string>
+    <string name="delete_cache">清除本地缓存</string>
+    <string name="send_two_code">发送客户端地址/二维码</string>
+    <string name="sd_setting_business">事务审批</string>
+    <string name="clear_cache">清除本地缓存(1KB)</string>
+    <string name="new_app">版本升级</string>
+    <string name="login_out">退出登录</string>
+
+    <string name="sumbit">确\u0020\u0020\u0020认</string>
+    <string name="delete">刪\u0020\u0020\u0020除</string>
+    <string name="sure">确认</string>
+    <string name="im_notice">消息通知</string>
+    <string name="accouncement">公告</string>
+    <string name="work_log">工作报告</string>
+    <string name="order">工作任务</string>
+    <string name="share">分享</string>
+    <string name="work_report">工作报告</string>
+    <string name="leave">请假</string>
+    <string name="cost">费用</string>
+    <string name="travel">差旅</string>
+    <string name="workreport">事务申请</string>
+    <string name="specialworkreport">特殊事务申请</string>
+    <string name="customer_type">全部</string>
+    <!-- 登录页面 -->
+    <string name="login">登&#160;&#160;&#160;录</string>
+    <string name="login_new">登\u0020\u0020\u0020\u0020录</string>
+    <string name="register_title">注\u0020\u0020\u0020\u0020册</string>
+
+    <string name="login_password">请填写密码</string>
+    <string name="network_isnot_available">网络不可用</string>
+    <string name="User_name_cannot_be_empty">用户名不能为空！</string>
+
+    <string name="Password_cannot_be_empty">密码不能为空！</string>
+    <string name="Is_landing">正在登录...</string>
+    <string name="list_is_for">正在获取通讯录...</string>
+    <string name="get_data_fail">获取失败，网络异常</string>
+    <string name="response_fail">获取失败，网络异常</string>
+
+    <!--行程-->
+    <string name="new_trip">新建行程</string>
+    <string name="new_trip_title">新建标题</string>
+    <string name="new_trip_start_time">开始时间</string>
+    <string name="trip_period">重复周期</string>
+    <string name="trip_period_not">永不</string>
+    <string name="trip_remind">提醒</string>
+    <string name="trip_add_remark">添加备注</string>
+    <string name="trip_close_remind">关闭提醒</string>
+    <string name="trip_alerm_title_remind">行程提醒</string>
+    <string name="new_trip_success">操作成功</string>
+    <string name="delete_success">删除成功</string>
+    <string name="delete_trip">删除行程</string>
+    <string name="trip_remind_not">无</string>
+    <string name="trip_starttime_can_not_currenttime">开始时间不能小于当前时间</string>
+    <string name="trip_currenttime_must_samll_remindtime">当前时间已超过提醒时间</string>
+    <string name="trip_endtime_can_not_starttime">结束时间不能小于开始时间</string>
+    <string name="new_trip_all_day">全天</string>
+    <string name="new_trip_period_everyday">每天</string>
+    <string name="new_trip_period_everyweek">每周</string>
+    <string name="new_trip_period_everymonth">每月</string>
+    <string-array name="trip_period_data">
+        <item>永不</item>
+        <item>每天</item>
+        <item>每周</item>
+        <item>每月</item>
+    </string-array>
+    <string name="trip_punctuality_remind">准点提醒</string>
+    <string name="trip_minutes">分钟前</string>
+    <string name="trip_hours">小时前</string>
+    <string name="trip_days">天前</string>
+    <string name="trip_weeks">周前</string>
+    <string-array name="trip_remind_data">
+        <item>无</item>
+        <item>准点提醒</item>
+        <item>5分钟前</item>
+        <item>10分钟前</item>
+        <item>15分钟前</item>
+        <item>30分钟前</item>
+        <item>1小时前</item>
+        <item>2小时前</item>
+        <item>1天前</item>
+        <item>2天前</item>
+        <item>1周前</item>
+    </string-array>
+    <string name="save">保存</string>
+    <string name="sd_setting_set_approve_del_finish">完成</string>
+    <string name="data_not_whole">资料不完整!</string>
+    <string name="clean_draft_item">删除该条草稿</string>
+    <string name="clean_draft_all">清空草稿箱</string>
+    <string name="contasts_pic">头像</string>
+    <string name="contasts_name">姓名</string>
+    <string name="crm_cluesetsex">设置性别</string>
+    <string name="select_time">选择时间</string>
+
+    <!--个人信息-->
+    <string name="editpersonaldata">编辑信息</string>
+    <string name="person_data">个人信息</string>
+    <string name="person_psw">密码</string>
+    <string name="person_name">姓名</string>
+    <string name="person_account">账号</string>
+    <string name="person_sex">性别</string>
+    <string name="Is_post">正在提交...</string>
+    <string name="Is_search">正在搜索...</string>
+    <string name="search_not_user">抱歉，你搜索的用户不存在！</string>
+    <string name="person_info_altersuccess">个人信息修改成功！</string>
+    <string name="password_change_success">密码修改成功，请重新登录！</string>
+    <string name="person_info_alterfail">个人信息修改失败！</string>
+    <string name="person_email">邮箱</string>
+    <string name="person_phone">电话</string>
+    <string name="please_select_way">请选择方式</string>
+    <string name="please_select_sex">选择性别</string>
+    <string name="camera">相机</string>
+    <string name="album">相册</string>
+
+    <string name="personal_hint_old_password">请输入原密码</string>
+    <string name="personal_hint_new_password">请输入新密码</string>
+    <string name="personal_hint_new_again_password">请再次输入新密码</string>
+
+    <string name="request_succeed">提交成功</string>
+    <string name="request_succeed2">发送成功</string>
+    <string name="request_fail">提交失败</string>
+    <string name="request_fail_data">获取失败，网络繁忙</string>
+
+
+    <!--超享 集成部分-->
+    <string name="search_new">搜</string>
+    <string name="address_list">通讯录</string>
+    <string name="not_download">未下载:</string>
+    <string name="text_ack_msg">已读</string>
+    <string name="text_delivered_msg">送达</string>
+
+    <string name="voice_l">语　　音:</string>
+    <string name="sign_l">发送位置:</string>
+    <string name="file_l">附　　　件:</string>
+    <string name="menu_permssion_hint">您没有权限使用该功能</string>
+    <string name="link_customer_l">关联客户(1):</string>
+    <string name="link_person_l">关联联系人(1):</string>
+
+    <string name="Network_error">网络出错</string>
+    <string name="Making_sure_your_location">正在确定你的位置...</string>
+    <string name="location_message">位置信息</string>
+    <string name="button_send">发\u0020\u0020送</string>
+    <string name="Is_to_create_a_group_chat">正在创建群聊...</string>
+    <string name="Failed_to_create_groups">创建群组失败</string>
+    <string name="Send_voice_need_sdcard_support">发送语音需要sdcard支持</string>
+    <string name="Is_download_voice_click_later">正在下载语音，稍后点击</string>
+    <string name="recording_error">录音失败</string>
+    <string name="button_pushtotalk">按住 说话</string>
+    <string name="confirm_to_finish_voice_group">是否结束此会议?</string>
+    <string name="voice_group_is_finish">该会议已经结束！</string>
+    <string name="theme">主题:</string>
+    <string name="host">主持人:</string>
+    <string name="error_load_meeting_list">加载会议记录失败！</string>
+
+    <string name="attach_picture">图片</string>
+    <string name="attach_location">位置</string>
+    <string name="attach_voice_call">语音聊天</string>
+    <string name="attach_video_call">视频通话</string>
+    <string name="attach_hot_chat">阅后即焚</string>
+    <string name="move_up_to_cancel">手指上滑，取消发送</string>
+    <string name="forward">转发</string>
+    <string name="attach_take_pic">拍照</string>
+
+    <string name="kefu_not_online">抱歉,客服不在线！</string>
+    <string name="edit_your_phone">请输入手机号</string>
+    <string name="edit_your_nick">请输入内容</string>
+
+    <!-- 公共模块开始 -->
+    <string name="cancel">取消</string>
+    <string name="send">提交</string>
+    <string name="reply">回复</string>
+    <!-- 公共模块结束 -->
+
+    <string name="p_semail">填写您要发送的邮箱</string>
+    <string name="p_cemail">填写您要抄送的邮箱</string>
+    <string name="p_content">请输入内容</string>
+    <string name="p_title">请填写标题！！</string>
+
+    <string name="rec_l">收件人：</string>
+    <string name="cc_l">抄　送：</string>
+    <string name="theme_l">主　题：</string>
+
+    <string name="at_more">最多</string>
+    <string name="integer_number">位整数</string>
+
+    <string name="running_config">正在配置中...</string>
+    <string name="save_suceess">发送成功</string>
+    <string name="operation_fails">操作失败，请检查网络是否正常</string>
+
+    <string name="p_camera">拍照</string>
+    <string name="p_photo">从相册中选择</string>
+    <string name="p_file">从文件中选择</string>
+    <string name="p_email">请输入邮箱</string>
+    <string name="p_email_a">您已经输入过当前邮箱了</string>
+    <string name="p_email_e">请输入正确的邮箱</string>
+
+    <string name="original">原图</string>
+
+    <string name="email_detail">我的邮件</string>
+    <string name="sender_l">发 件 人 ：</string>
+    <string name="viewpager_indicator">%1$d/%2$d</string>
+    <string name="cc_">抄送范围：</string>
+    <string name="mail_theme">邮件主题：</string>
+    <string name="send_time">发送时间：</string>
+
+    <string name="all_company">全公司</string>
+    <string name="default_text">默认</string>
+
+    <!-- 图片选择器开始 -->
+    <string name="folder_all">所有照片</string>
+    <string name="preview">预览</string>
+    <string name="msg_no_camera">没有系统相机</string>
+    <string name="msg_amount_limit">已经达到最高选择数量</string>
+    <!-- 图片选择器结束 -->
+
+    <string name="login_failure_failed">登录失败: 获取通讯录失败</string>
+    <string name="login_success">登录成功</string>
+    <string name="login_failure">登录失败</string>
+    <string name="scan_text">将二维码放入框内, 即可自动扫描</string>
+    <string name="album_at_more_select">最多选择9张图片</string>
+    <string name="sd_not_exist">内存卡不可用</string>
+    <string name="recoding_fail">录音失败，请重试！</string>
+    <string name="get_photo_img_fail">获取相机图片失败</string>
+    <string name="selected_attach">已添加附件</string>
+    <string name="voice_total">共</string>
+    <string name="voice_total_text">共00秒</string>
+    <string name="total">总计</string>
+    <!--关注标签-->
+    <string name="colleague_number">人</string>
+    <string name="send_range">抄送</string>
+    <string name="im_add_tag">添加标签</string>
+
+    <string name="loading">已加载</string>
+    <string name="loading_voice">正在载入语音</string>
+    <string name="second">秒</string>
+    <string name="recording">录音</string>
+    <string name="recording_length">录音总长</string>
+
+    <!--Im-->
+    <string name="super_tab_01">工作台</string>
+    <string name="super_tab_02">工作圈</string>
+    <string name="super_tab_03">事项</string>
+    <string name="super_tab_04">项目库</string>
+    <string name="super_tab_05">我的</string>
+
+    <string name="investment_tab_01">首页</string>
+    <string name="investment_tab_02">审批</string>
+
+    <string name="super_main_tab">I-Chat</string>
+    <string name="super_call_tab">通话</string>
+    <string name="super_qq_friends_list_tab">通讯录</string>
+    <string name="super_voice_call__tab">工作台</string>
+    <string name="super_mine__tab">我</string>
+
+    <string name="call">通话</string>
+    <string name="Are_connected_to_each_other">正在等待对方接受邀请...</string>
+    <string name="im_talking">正在通话...</string>
+    <string name="im_connected_to_you">邀请您进行语音通话...</string>
+    <string name="im_connected_to_you_video">邀请您进行视频通话...</string>
+    <string name="user_not_online">用户不在线,请稍候联系！</string>
+    <string name="user_refuse_your_call">对不起,对方拒绝你的通话请求！</string>
+    <string name="user_is_busy">对方正忙...</string>
+
+    <!--//小视频-->
+    <string name="text_view_prompt">向上滑动取消</string>
+    <string name="attach_video">视频</string>
+    <string name="attach_small_vedio">小视频</string>
+
+    <!--聊天模块-->
+    <string name="no_more_data">没有更多数据</string>
+    <string name="to_delete_chat_info">你确定要删除该记录？</string>
+    <string name="no_meeting_info">无会议内容！</string>
+
+    <!--群组-->
+    <string name="voice_metting">语音会议</string>
+    <string name="not_group">该群不存在</string>
+    <string name="set_group_name">设置群聊名字</string>
+    <string name="revise_success">修改成功</string>
+    <string name="detele_group_chat_info">你确定要清除聊天记录吗？</string>
+    <string name="group_members">群组成员</string>
+    <string name="clean_chat_info">清空聊天记录</string>
+    <string name="Change_the_group_name">修改群名称</string>
+    <string name="Shielding_of_the_message">屏蔽群消息</string>
+    <string name="can_not_refuse">暂时屏蔽不了！</string>
+    <string name="dismiss_to_group">是否解散群聊</string>
+    <string name="quit_to_group">是否退出群聊</string>
+    <string name="quit_group">退出群聊</string>
+    <string name="dismiss_group">解散群聊</string>
+    <string name="group_no_member">群组成员列表为空！</string>
+    <string name="all_member">全部成员</string>
+    <string name="exit_group">退出群聊</string>
+    <string name="group_detail">群组详情</string>
+    <string name="refuse_group_success">操作成功！</string>
+    <string name="want_to_delete_the_log">删除该记录?</string>
+
+    <!-- oa模块开始 -->
+    <string name="oa_contact">通讯录</string>
+    <!-- 通讯录开始 -->
+    <string name="contact_colleague">同事</string>
+    <string name="department">部门</string>
+    <string name="get_data">正在获取数据...</string>
+    <string name="how_much_contact">位联系人</string>
+
+    <string name="im_new_friend_title">新同事</string>
+
+    <!-- 通讯录结束 -->
+    //客服
+    <string name="im_kefu_title">IDG服务</string>
+    <string name="chatgroup_list">群聊</string>
+    <string name="im_invite_title">邀请加入</string>
+    <string name="im_new_friend">新同事</string>
+
+    //公司通讯录
+    <string name="im_company_contact_title">部门</string>
+
+    <!--Im业务-->
+    <string name="im_business">工作</string>
+
+    <string name="im_business_work_group">公司圈</string>
+
+    //公司圈界面的项目命名
+    <string name="im_business_work_record">事务报告</string>
+    <string name="im_business_work_submit">项目协同</string>
+    <string name="im_business_achievement_submit">语音会议</string>
+    <string name="im_business_borrow_money_submit">工作外出</string>
+    <string name="im_business_leave_submit">借支申请</string>
+    <string name="im_business_private_chat">请假申请</string>
+    <string name="im_business_scan">工作日志</string>
+    <string name="im_business_company">公司通知</string>
+
+    //会话列表的通知
+    <string name="im_conversation_company_notice">公司公告</string>
+    <string name="im_conversation_mailbox_remind">邮箱提醒</string>
+    <string name="im_conversation_private_chat">密语</string>
+    <string name="im_conversation_private_chat_hint">(阅后即焚)</string>
+
+
+    <string name="im_business_title1">综合行业</string>
+    <string name="im_business_title2">服装鞋帽业</string>
+    <string name="im_business_title3">食品行业</string>
+    <string name="im_business_title4">五金工具业</string>
+    <string name="im_business_title5">电器业</string>
+    <string name="im_business_title6">电商业\u0020\u0020\u0020\u0020</string>
+
+    //行业群
+    <string name="im_group_popularize_01">综合群</string>
+    <string name="im_group_popularize_02">服装鞋帽群</string>
+    <string name="im_group_popularize_03">五金工具群</string>
+    <string name="im_group_popularize_04">食品群</string>
+    <string name="im_group_popularize_05">电器群</string>
+    <string name="im_group_popularize_06">电商群</string>
+    <string name="im_group_popularize_07">商务群</string>
+
+    <string name="im_business_submit_title">标题不能为空!</string>
+    <string name="im_business_submit_content">内容不能为空!</string>
+
+    <string name="im_business_submit_leave_time">请假时间不能为空</string>
+    <string name="im_business_submit_leave_start_time_than_end">请假开始时间不能大于结束时间</string>.
+
+    <string name="im_business_submit_borrow_money_empty">借款金额不能为空</string>
+    <string name="im_business_submit_borrow_money_error">请输入正确格式金额,如:100.00</string>
+
+    //业绩报告
+    <string name="im_business_submit_achievement_money_empty">金额不能为空</string>
+    <string name="im_business_submit_achievement_money_error">请输入正确格式金额,如:100.00</string>
+
+    //Im工作-公用
+    <string name="im_business_colon_date">日期:</string>
+    <string name="im_business_colon_title">标题:</string>
+    <string name="im_business_colon_content">内容:</string>
+    <string name="im_business_colon_file">附件:</string>
+    //借款提交
+    <string name="im_business_colon_borrow_money">借支金额:</string>
+    //解体
+    <string name="im_business_colon_money">金额:</string>
+    //请假提交
+    <string name="im_business_colon_leave_date">请假时间:</string>
+
+    <!-- 修改密码开始  邮件  •邮件-->
+    <string name="alterpsw">修改密码</string>
+    <string name="pswchancefail">密码修改失败！</string>
+    <string name="pleaseinputoldpws">请输入原密码！</string>
+    <string name="pleaseinputnewpws">请输入新密码!</string>
+    <string name="pleaseinputnewpwsagain">请确认输入新密码!</string>
+    <string name="oldpswwrang">原密码不符</string>
+    <string name="pleaseinput6to18">请输入6到18位密码</string>
+    <!-- 修改密码结束 -->
+
+    <string name="approver">审批人:</string>
+    <string name="give_an_official">批\t复</string>
+    <string name="p_phone">请输入正确的手机号码!</string>
+    <string name="not_email">请输入格式正确的邮箱!</string>
+    <string name="rightphonestyle">手机号码不能超过11位！</string>
+    <string name="pleaseinput">请输入</string>
+    <string name="emailmaxleng50">邮箱长度最长不能超过50个字符</string>
+    <string name="moneymaxleng10">金额长度最长不能超过10个字符</string>
+
+    <string name="man">男</string>
+    <string name="woman">女</string>
+
+    <!--销售订单-->
+    <string name="create">创建</string>
+    //采购类型
+    <string name="clear">清\u0020\u0020\u0020空</string>
+    <string name="dialog_cancle">取\u0020\u0020\u0020消</string>
+    <string name="add_str">添加</string>
+
+    <string name="voice_str">语音</string>
+
+    <string name="mine_mana_cen">管理</string>
+    <string name="mine_leader_cen">领导</string>
+    <string name="mine_worker_cen">员工</string>
+
+    <string name="file_add_str">附件</string>
+
+    <string name="no_void_str">没有录音播放，现在进行录音！</string>
+
+    //注册
+    <string name="register">注\u0020\u0020\u0020\u0020册</string>
+    <string name="phone_register_ty">体\u0020\u0020\u0020\u0020验</string>
+    <string name="phone">账\u0020\u0020\u0020\u0020号</string>
+    <string name="password">密\u0020\u0020\u0020\u0020码</string>
+    <string name="register_graph_code">图形码</string>
+
+    <string name="phone_your">你的手机号码</string>
+    <string name="login_with_your_phone">手机号登录</string>
+    <string name="input_your_phone_number">请输入你的手机号</string>
+    <string name="verify_code">验证码</string>
+
+    <string name="pleaseinputmobilephonehint">请输入账号</string>
+    <string name="pleaseinputcodehint">请输入图形码</string>
+    <string name="pleaseinputvalidatecode">请填写验证码</string>
+    <string name="getcodehint">获取验证码</string>
+    <string name="nexthint">下一步</string>
+
+    <string name="phone_register_title">手机验证</string>
+    <string name="register_set_password">请设置你的信息</string>
+    <string name="register_password_null">密码不能为空！</string>
+    <string name="pawinputwrongtwice">两次输入的密码不一致！</string>
+    <string name="register_password_length_error">密码范围6至20位！</string>
+    <string name="register_input_password">请输入你的密码</string>
+    <string name="register_input_password_hint">请填写密码</string>
+    <string name="register_input_password_hint2">请再次填写密码</string>
+    <string name="pleaseinputnewpasswordhint">登录密码</string>
+
+    <string name="register_password">密\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020码
+    </string>
+    <string name="secondinputnewpasswordhint">确认密码</string>
+    <string name="register_input_finish">完\u0020\u0020\u0020\u0020成</string>
+    <string name="register_get_message_success">验证码获取成功！</string>
+    <string name="register_get_message_again">请稍候再试！</string>
+
+    <string name="cn_register_name">姓&#8195;&#8195;名</string>
+    <string name="cn_hint_register_name">请填写真实姓名</string>
+    //注册界面3
+    <string name="cn_title_register3">公司信息</string>
+
+    <string name="cn_register_company_name">姓&#8195;&#8195;名</string>
+    <string name="cn_hint_register_company_name">请填写姓名</string>
+
+    <string name="cn_register_email">邮\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020箱</string>
+    <string name="cn_hint_register_email">请填写邮箱账号</string>
+
+    <string name="cn_register_card_account">续费卡号</string>
+    <string name="cn_hint_register_card_account">请填写续费卡号</string>
+
+    <string name="cn_hint_register_card_password">请填写续费密码</string>
+
+    <string name="cn_point_info">请输入完整信息</string>
+
+    <string name="completehint">完\u0020\u0020\u0020\u0020成</string>
+
+    <!--搜索弹出框-->
+    <string name="search_title">搜\u0020\u0020索</string>
+    <string name="search_condition">客户名称\u0020:</string>
+
+    <string name="basic_remark_hint">(\u0020内容\u0020)</string>
+
+    <string name="file_dialog_title_str">附\u0020\u0020件</string>
+    <string name="file_dialog_cancer_str">取\u0020\u0020消</string>
+
+    <!--例子帐对话框String-->
+    <!--开单模块提交成功提示-->
+    <string name="submit_tip_title">提\u0020\u0020示</string>
+    <string name="submit_tip_sure">确\u0020\u0020认</string>
+
+    <!--选择性别-->
+    <string name="choose_sex_sure">确\u0020\u0020认</string>
+    <string name="choose_sex_cancel">取\u0020\u0020消</string>
+
+    <string name="customer_relations_cus_notice_file_ic">附\u0020\u0020件\u0020:</string>
+
+    <string name="operation_analysis_yingshouyingfu">应收应付分析</string>
+    <string name="operation_analysis_xiaoshoumaoli">销售毛利分析</string>
+    <string name="operation_analysis_huopingkuling">库龄分析</string>
+    <string name="business_andanju">按单据</string>
+    <string name="business_anhuoping">按商品</string>
+    <string name="business_ankehu">按客户</string>
+
+    <string name="cus_notice_title_not_empty">标题不能为空!</string>
+    <string name="cus_notice_content_not_empty">内容不能为空!</string>
+    <string name="erp_ativity_businessanaly_caigoujiagefenxi"/>
+    <string name="fund_cash_tixian">资金提现</string>
+    <string name="fund_rate_find">汇率查询</string>
+    <string name="fund_other_captial_withdraw">资金提现</string>
+    <string name="hand_huobi">持有货币：</string>
+    <string name="duihuan_huobi">兑换货币：</string>
+    <string name="fund_danhao_number">单号：</string>
+    <string name="fund_zhuanru_account">转入账户：</string>
+    <string name="fund_zhuanchu_account">转出账户：</string>
+    <string name="fund_tixianjine">提现金额：</string>
+    <string name="fund_withd_date">日期</string>
+    <string name="fund_zhuanchu_accountnumber">转出账号</string>
+    <string name="fund_zhuanru_accountnumber">转入账号</string>
+    <string name="tixianjine">提现金额</string>
+    <string name="erp_fund_recommenddate">备忘日期</string>
+    <string name="erp_fund_title">标题</string>
+    <string name="fund_other_shouru">其它收入</string>
+    <string name="fund_caigou_tuihuo">采购退货</string>
+    <string name="jine">金额</string>
+    <string name="fund_other_zhichu">其它支出</string>
+    <string name="fund_sale_tuihuo">销售退货</string>
+
+    <string name="erp_cus_title_001">客户</string>
+    <string name="basic_data_is_or_not_yes">启用\u0020:</string>
+    <string name="basic_data_is_or_not_often_use">常用\u0020:</string>
+
+    <string name="cus_must_pay_must_get_str">应收应付</string>
+
+    <string name="do_the_deal_count">交易次数</string>
+    <string name="do_the_deal_money">交易金额</string>
+    <string name="zhichu">支出</string>
+    <string name="shouru">收入</string>
+
+
+    <string name="setting_my_get_and_pay_str">收付初始化</string>
+    <string name="setting_first_must_pay_get_str">姓\u0020\u0020\u0020\t\t名\u0020:</string>
+    <string name="setting_first_must_pay_get_customer_company">客户名称\u0020:</string>
+    <string name="setting_first_must_pay_get_money_name_str">币\u0020\u0020\u0020\t\t种\u0020:
+    </string>
+    <string name="setting_first_must_pay_get_huilv_str">汇\u0020\u0020\u0020\t\t率\u0020:</string>
+    <string name="setting_first_must_get_and_pay_str">期初应收\u0020:</string>
+    <string name="setting_first_must_pay_and_get_str">期初应付\u0020:</string>
+    <string name="please_select_money_str">请选择货币！</string>
+    <string name="setting_first_must_get_not_empty_str">请填写期初应收！</string>
+    <string name="setting_first_must_pay_not_empty_str">请填写期初应付！</string>
+    <string name="setting_first_must_pay_get_customer_company_not_empty">请填写客户名称！</string>
+
+
+    <string name="sale_rate">销售毛利</string>
+    <string name="maolilv">毛利率</string>
+    <string name="jingyingliushui_zhang">经营流水帐</string>
+    <string name="account_month">月流水帐、年流水帐</string>
+    <string name="month_flow_account">月流水帐</string>
+    <string name="setting_warehousre_title_str">库存初始化</string>
+    <string name="setting_warehourse_txm_str">条\u0020形\u0020码\u0020:</string>
+    <string name="setting_warehousre_qc_num_str">结存数量\u0020:</string>
+    <string name="setting_warehoures_cb_str">成\u0020本\u0020价\u0020:</string>
+    <string name="setting_sale_goods_buy_size_str">规\u0020\u0020\u0020\t\t格\u0020:</string>
+    <string name="setting_warehoures_money_str">结存金额\u0020:</string>
+    <string name="setting_unit">单\u0020\u0020\u0020\t\t位\u0020:</string>
+    <string name="setting_warehousre_qc_num_not_empty_str">期初数量不能為空！</string>
+    <string name="year_flow_account">年流水帐</string>
+    <string name="zijinzhaiyao">资金摘要：</string>
+    <string name="fund_month_shouru">月收入</string>
+    <string name="fund_year_shouru">年收入</string>
+    <string name="fund_month_zhichu">月支出</string>
+    <string name="fund_year_zhichu">年支出</string>
+    <string name="fund_flow_huizong">资金流水汇总</string>
+    <string name="qchu_money">期初金额</string>
+
+    <string name="setting_money_title_str">资金初始化</string>
+    <string name="setting_money_account_name_str">账号名称\u0020:</string>
+    <string name="setting_money_account_str">账\u0020\u0020\u0020\t\t号\u0020:</string>
+    <string name="setting_money_account_bz_str">账户币种\u0020:</string>
+    <string name="setting_money_qchu_money">期初金额\u0020:</string>
+
+    <string name="setting_money_account_name_str_not_empty">账号名称不能为空！</string>
+    <string name="setting_money_account_bz_str_not_empty">账户币种不能为空！</string>
+    <string name="setting_money_qchu_money_not_empty">期初金额不能为空！</string>
+    <string name="feiyongxinxijiamaohao">费用信息：</string>
+    <string name="fund_feiyong_detai">费用明细</string>
+    <string name="fund_feiyong_xiangmu">费用项目：</string>
+    <string name="jineheji">金额合计：</string>
+    <string name="setting_first_must_pay_get_customer">客户名称</string>
+    <string name="kuilin">库龄（天）</string>
+    <string name="operation_analysis_xiaoshoumaoli_xiaozi">按客户、按商品、按单据</string>
+
+    <string name="add_dialog_logistics_companys_str">物流公司\u0020:</string>
+    <string name="logistics_companys_not_empty">物流公司不能为空!!</string>
+    <string name="logistics_ourier_number_not_empty">快递单号不能为空!!</string>
+
+
+    <string name="share_title">个体富进销存-客户关系</string>
+    <string name="share_core_cus_title">个体富进销存-核心客户</string>
+    <string name="share_cus_notice_title">个体富进销存-客户通知</string>
+    <string name="share_cus_care_title">个体富进销存-客户关怀</string>
+    <string name="share_core_remind_title">个体富进销存-客户备忘</string>
+    <string name="share_content_must_get">客户应收款列表</string>
+    <string name="share_content_must_pay">客户应付款列表</string>
+    <string name="share_content_order_str">业务往来订货排序</string>
+    <string name="share_content_sale_str">业务往来销售排序</string>
+    <string name="share_content_cus_notice_str">客户通知列表</string>
+    <string name="share_content_cus_care_str">客户关怀列表</string>
+    <string name="share_content_core_cus_two_str">销售商列表</string>
+    <string name="share_content_indunds_report_flow">个体富进销存-资金统计</string>
+    <string name="share_content_indunds_summary">资金账户余额</string>
+
+    <string name="share_content_core_cus_thrid_str">供应商列表</string>
+    <string name="share_content_remind_cus_str">客户备忘汇总</string>
+
+    <string name="share_tilte_infund_detail">个体富进销存-其它收入</string>
+    <string name="share_tilte_yingshouyingfu_detail">个体富进销存-经营分析</string>
+    <string name="share_tilte_xiaoshoumaili_detail">个体富进销存-销售毛利分析</string>
+    <string name="share_tilte_jingyingflow_detail">个体富进销存-经营流水账</string>
+    <string name="share_tilte_huopingkulin_detail">商品库龄分析</string>
+    <string name="share_tilte_kehuyingshouyingfu_detail">客户应收应付分析</string>
+    <string name="share_tilte_outfund_detail">个体富进销存-其它支出</string>
+    <string name="share_tilte_cash_detail">个体富进销存-资金提现</string>
+    <string name="share_tilte_rate_detail">个体富进销存-汇率查询</string>
+    <string name="share_tilte_sphnot_detail">个体富进销存-资金备忘</string>
+    <string name="getifu_caigoutuihuo">个体富进销存-采购退货</string>
+    <string name="sale_shouru_detail">个体富进销存-销售开单</string>
+    <string name="sale_tuihuo_detail">个体富进销存-销售退货</string>
+    <string name="zijinbeiwanghuizong">资金备忘汇总</string>
+    <string name="help_dialog_infund">其它收入：处理销售业务以外发生的其它资金收入。</string>
+    <string name="help_dialog_outfund">其它支出：处理采购业务以外发生的其它资金支出。</string>
+    <string name="help_dialog_report">资金统计：根据已发生的资金收入/支出信息进行统计汇总。</string>
+    <string name="withdraw">资金提现：处理不同资金账户间的资金往来。</string>
+    <string name="help_dialog_fund_rate">汇率查询：按币种查询当前汇率。</string>
+    <string name="help_dialog_fund_snphont">资金备忘：将与资金相关的文件、语音、图片等信息进行备份。</string>
+    <string name="help_dialog_Annizs_yingshouyingfu">应收应付分析：对已形成的应收应付进行的数据统计及分析。</string>
+    <string name="help_dialog_Annizs_flow">经营流水账：记录经营业务所产生的资金往来明细。</string>
+    <string name="help_dialog_Annizs_xiaoshoumaoli">销售毛利分析：根据商品进货与销售信息统计得出销售毛利。</string>
+    <string name="help_dialog_Annis_kulin">库龄分析：对库存商品存放时间的统计。</string>
+
+    <string name="sale_page_up_pro">上\u0020\u0020页</string>
+    <string name="sale_page_down_next">下\u0020\u0020页</string>
+
+    <string name="buton_text_sure_new">确\u0020\u0020\u0020定</string>
+    <string name="buton_text_detail_new">清\u0020\u0020\u0020空</string>
+
+    <string name="text_input_type">0123456789abcdefghigklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ
+    </string>
+    <string name="update_hint">升级提示</string>
+    <string name="update_text">使用功能受限,请升级至《专业版》。</string>
+    <string name="take_about_later">以后再说</string>
+    <string name="submit_application">提交申请</string>
+
+    <string name="tip_pay_finish">支付成功,请重新登录！</string>
+
+
+    //客户分析
+    <string name="customer_analyze_a_right_name">客户、销售商、供应商</string>
+    <string name="customer_analyze_c_right_name">按单量、按金额</string>
+    <string name="share_customerhistory_title">个体富CRM-客户历史分析</string>
+    <string name="share_customerhistory_content">客户历史分析</string>
+
+    <string name="pay_order_num">订单编号:</string>
+    <string name="pay_order_money">订单金额:</string>
+
+    <string name="pay_by_online">在线支付</string>
+    <string name="pay_weixin">微信支付</string>
+    <string name="pay_by_bank">银行转账</string>
+
+    <string name="pay_by_bank_1">120 9100 6471 0553</string>
+    <string name="pay_by_bank_2">招商银行金穗支行</string>
+    <string name="pay_by_bank_3">广州超享网络技术有限公司</string>
+
+    <string name="pay_by_bank_4">44058301040009170</string>
+    <string name="pay_by_bank_5">中国农业银行广州体育西支行</string>
+    <string name="pay_by_bank_6">公司名称：广州超享网络技术有限公司</string>
+
+    <string name="app_tip">提\u0020\u0020\u0020\u0020示</string>
+    <string name="pay_result_callback_msg" formatted="false">微信支付结果：%s</string>
+
+    //支付订单界面
+    <string name="pay_activty_title">支付订单</string>
+
+    <string name="forget_password_update">密\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020码
+    </string>
+    <string name="forget_password_update2">确定密码</string>
+
+    <string name="permission_record_audio">允许应用 录制音频吗?</string>
+    <string name="permission_record_camera">允许应用 拍摄照片吗?</string>
+    <string name="permission_record_video">允许应用 拍摄照片和录制视频吗?</string>
+    <string name="permission_open_gps">允许应用 使用定位功能吗?"</string>
+
+    <string name="file_date_title">日期：</string>
+    <string name="file_center_number">编号：</string>
+    <string name="file_center_name">文件名称：</string>
+    <string name="file_center_class">文件类别：</string>
+    <string name="file_center_type">文件类型：</string>
+    <string name="file_center_explain">文件说明：</string>
+
+
+    <string name="back_text">返 回</string>
+    <string name="commit_text">提 交</string>
+    <string name="send_text">发 送</string>
+    <string name="ok_text">确 定</string>
+
+    <string name="leave_apply_one">请假申请</string>
+    <string name="leave_apply_two">事务申请</string>
+    <string name="leave_apply_three">差旅申请</string>
+    <string name="leave_apply_four">加班申请</string>
+    <string name="leave_apply_five">借款申请</string>
+
+    //云境的
+    <string name="main_firstlevel_left">返回</string>
+    <string name="reciver_name">收件人：</string>
+
+
+    <!-- 工作报告 我的报告提交界面-->
+    <string name="myreport_submit_reporttitle">报告标题：</string>
+    <string name="myreport_submit_reportchoice">报告选择：</string>
+    <string name="myreport_submit_reportcc">抄送：</string>
+    <string name="myreport_sumbit_fill">附件：</string>
+    <string name="title_activity_market_customers">MarketCustomersActivity</string>
+
+
+    <!--人事行政模块-->
+    <string name="announcement_file">公告·文件</string>
+    <string name="my_office">我的办公</string>
+    <string name="work_presentation">工作报告</string>
+
+    <string name="personnel_administration">人事行政</string>
+
+    <string name="human_resources">人力资源</string>
+
+    <string name="personal_records">人事档案</string>
+    <string name="personal_experience">个人经历</string>
+    <string name="labor_contract">劳动合约</string>
+    <string name="job_change">任职变更</string>
+
+    <string name="personnel_affairs">人事事务</string>
+    <string name="entry_request">入职申请</string>
+    <string name="departure_request">离职申请</string>
+    <string name="salary_application">调薪申请</string>
+    <string name="transaction_request">异动申请</string>
+
+    <string name="license_use">证照使用</string>
+    <string name="batch_approval">事务批审</string>
+
+    <string name="project_task">项目任务</string>
+
+    <string name="affair_cooperation">事务协作</string>
+    <string name="cooperation_content">协作内容</string>
+    <string name="collaborative_division_of_labor">协作分工</string>
+
+    <string name="work_task">工作任务</string>
+    <string name="task_division_of_labor">任务分工</string>
+    <string name="task_progress">任务进度</string>
+
+    <string name="project_manager">项目管理</string>
+    <string name="project_structure">项目结构</string>
+    <string name="project_progress">项目进度</string>
+    <string name="project_check_accept">项目验收</string>
+
+
+    <string name="sales_operation">销售运营</string>
+    <string name="marketing_work">市场工作</string>
+    <string name="customer_relations">客户关系</string>
+    <string name="super_user">超级用户</string>
+    <string name="super_power">超级权限</string>
+    <string name="main_second_title_attendance">考勤</string>
+
+
+    <!--入职申请-->
+    <string name="work_name">员工姓名：</string>
+    <string name="cc">抄送：</string>
+    <string name="work_department">工作部门：</string>
+    <string name="job_title">工作职务：</string>
+    <string name="marriage">婚姻：</string>
+    <string name="sex">性别：</string>
+    <string name="age">年龄：</string>
+    <string name="education">学历：</string>
+    <string name="contact_information">联系方式：</string>
+    <string name="entry_time">入职时间：</string>
+    <string name="work_user_form">用工形式：</string>
+    <string name="salary">薪资：</string>
+    <string name="entry_note">入职说明：</string>
+
+    <!--调薪申请-->
+    <string name="salary_type">调薪类型：</string>
+    <string name="pre_salary">调前薪金：</string>
+    <string name="later_salary">调后薪金：</string>
+    <string name="salary_expain">调薪说明：</string>
+
+    <!--异动申请-->
+    <string name="current_deparment">目前部门：</string>
+    <string name="current_job">目前职务：</string>
+    <string name="call_time">调动时间：</string>
+    <string name="call_deparment">调入部门：</string>
+    <string name="call_job">调入职务：</string>
+    <string name="transaction_expain">异动说明：</string>
+
+    <!--离职申请-->
+    <string name="leave_time">离职时间：</string>
+    <string name="contract_form">合约形式：</string>
+    <string name="leave_pay">离职赔付：</string>
+    <string name="leave_expain">离职说明：</string>
+
+
+    <!--证照使用申请-->
+    <string name="use_department">使用部门：</string>
+    <string name="use_human">使用人：</string>
+    <string name="license_type">证照类型：</string>
+    <string name="use_time">使用日期：</string>
+    <string name="use_reason">使用事由：</string>
+
+    <string name="pre_btn">上页</string>
+    <string name="next_btn">下页</string>
+
+    //超级用户
+    <string name="yj_super_user_find_title">查找</string>
+    <string name="yj_super_user_delete_title">查找</string>
+
+    //搜索
+    <string name="yj_super_user_find_search">搜 索</string>
+    //一级弹框
+    <string name="yj_super_user_search_first_01">公告文件</string>
+    <string name="yj_super_user_search_first_02">我的办公</string>
+    <string name="yj_super_user_search_first_03">工作报告</string>
+    <string name="yj_super_user_search_first_04">人事行政</string>
+    <string name="yj_super_user_search_first_05">项目任务</string>
+    <string name="yj_super_user_search_first_06">销售运营</string>
+    <string name="yj_super_user_search_first_07">市场工作</string>
+    <string name="yj_super_user_search_first_08">客户关系</string>
+    <string name="yj_super_user_search_first_09">考勤</string>
+
+    //二级弹框-附属于一级目录下
+    //公告文件
+    <string name="yj_super_user_search_notice_01">公司公告</string>
+    <string name="yj_super_user_search_notice_02">部门通知</string>
+    <string name="yj_super_user_search_notice_03">文件中心</string>
+
+    //我的办公
+    <string name="yj_super_user_search_myoffice_01">工作日志</string>
+    <string name="yj_super_user_search_myoffice_02">请假申请</string>
+    <string name="yj_super_user_search_myoffice_03">事务申请</string>
+    <string name="yj_super_user_search_myoffice_04">差旅申请</string>
+    <string name="yj_super_user_search_myoffice_05">加班申请</string>
+    <string name="yj_super_user_search_myoffice_06">借款申请</string>
+
+    //工作报告
+    <string name="yj_super_user_search_report_01">我的报告</string>
+    <string name="yj_super_user_search_report_02">临时报告</string>
+    <string name="yj_super_user_search_report_03">抄送给我</string>
+
+    //人事行政
+    <string name="yj_super_user_search_administration_02">人事档案</string>
+    <string name="yj_super_user_search_administration_03">入职申请</string>
+    <string name="yj_super_user_search_administration_04">离职申请</string>
+    <string name="yj_super_user_search_administration_05">调薪申请</string>
+    <string name="yj_super_user_search_administration_06">异动申请</string>
+    <string name="yj_super_user_search_administration_07">证照使用</string>
+
+    //项目任务
+    <string name="yj_super_user_search_task_01">事务协作</string>
+    <string name="yj_super_user_search_task_02">工作任务</string>
+    <string name="yj_super_user_search_task_03">项目管理</string>
+
+    //销售运营
+    <string name="yj_super_user_search_sell_01">我的客户</string>
+    <string name="yj_super_user_search_sell_02">业绩报告</string>
+    <string name="yj_super_user_search_sell_03">业绩管理</string>
+    <string name="yj_super_user_search_sell_04">销售申请</string>
+    <string name="yj_super_user_search_sell_05">商品管理</string>
+
+    //市场工作
+    <string name="yj_super_user_search_market_01">市场客户</string>
+    <string name="yj_super_user_search_market_02">市场业务</string>
+    <string name="yj_super_user_search_market_03">市场调查</string>
+
+
+    //客户关系
+    <string name="yj_super_user_search_relationship_01">客户资料</string>
+    <string name="yj_super_user_search_relationship_02">客户机会</string>
+    <string name="yj_super_user_search_relationship_03">客户漏斗</string>
+    <string name="yj_super_user_search_relationship_04">客户事务</string>
+    <string name="yj_super_user_search_relationship_05">客户项目</string>
+    <string name="yj_super_user_search_relationship_06">找客户</string>
+    <string name="yj_super_user_search_relationship_07">找商情</string>
+
+    //考勤
+    <string name="yj_attendance_mine_title">我的考勤</string>
+    <string name="yj_attendance_gather_title">考勤汇总</string>
+
+    //推送的
+    <string name="yj_push_ps_gsgg">公司公告</string>
+    <string name="yj_push_ps_bmtz">部门通知</string>
+    <string name="yj_push_ps_wjzx">文件中心</string>
+    <string name="yj_push_ps_gzrz">工作日志</string>
+    <string name="yj_push_ps_qjsq">请假申请</string>
+    <string name="yj_push_ps_clsq">差旅申请</string>
+    <string name="yj_push_ps_jdsq">借贷申请</string>
+    <string name="yj_push_ps_wdbg">我的报告</string>
+    <string name="yj_push_ps_lsbg">临时报告</string>
+    <string name="yj_push_ps_lzsq">离职申请</string>
+    <string name="yj_push_ps_rzsq">入职申请</string>
+    <string name="yj_push_ps_txsq">调薪申请</string>
+    <string name="yj_push_ps_ydsq">异动申请</string>
+    <string name="yj_push_ps_zzsy">证照使用</string>
+    <string name="yj_push_ps_swsq">事务申请</string>
+    <string name="yj_push_ps_jbsq">加班申请</string>
+    <string name="yj_push_ps_xssq">销售申请</string>
+    <string name="yj_push_ps_scyw">市场业务</string>
+    <string name="yj_push_ps_khsw">客户事务</string>
+    <string name="yj_push_ps_grjl">个人经历</string>
+    <string name="yj_push_ps_ldhy">劳动合约</string>
+    <string name="yj_push_ps_rzbg">任职变更</string>
+    <string name="yj_push_ps_swxz">事务协作</string>
+    <string name="yj_push_ps_gzrw">工作任务</string>
+    <string name="yj_push_ps_xmgl">项目管理</string>
+    <string name="yj_push_ps_ddht">订单合同</string>
+    <string name="yj_push_ps_wdkh">我的客户</string>
+    <string name="yj_push_ps_spgl">商品管理</string>
+    <string name="yj_push_ps_yjgl">业绩管理</string>
+    <string name="yj_push_ps_scdc">市场调查</string>
+    <string name="yj_push_ps_scyw_ht">市场业务-合同</string>
+    <string name="yj_push_ps_xsdd">销售订单</string>
+    <string name="yj_push_ps_khjh">客户机会</string>
+    <string name="annex_text">附\u0020\u0020\u0020\u0020\u0020\u0020 件：</string>
+
+
+    <string name="hint_share">分享信息,不完整请重新登录</string>
+    <string name="empty_data_hint_share">当前页面无内容可分享</string>
+
+    <string name="destination">目&#8194;的&#8194;地：</string>
+    <string name="contacts">联&#8194;系&#8194;人：</string>
+    <string name="to_end">&#8195;&#8195;&#8195;至：</string>
+    <string name="annex_text_title">附&#8195;&#8195;件：</string>
+    <string name="copy_to">抄&#8195;&#8195;送：</string>
+    <string name="fax">传&#8195;&#8195;真：</string>
+    <string name="zip_code">邮&#8195;&#8195;编：</string>
+    <string name="type_class">类&#8195;&#8195;别：</string>
+    <string name="remarks">备&#8195;&#8195;注：</string>
+    <string name="coop_man">协&#8194;作&#8194;人：</string>
+    <string name="follow_man">跟&#8194;进&#8194;人：</string>
+    <string name="follow_man2">城&#8195;&#8195;市：</string>
+    <string name="feedback2">轮&#8195;&#8195;次：</string>
+    <string name="share_to">分&#8195;&#8195;享：</string>
+    <string name="send_to">发&#8195;&#8195;送：</string>
+    <string name="name">姓&#8195;&#8195;名：</string>
+    <string name="open_bank">开&#8194;户&#8194;行：</string>
+    <string name="account">账&#8195;&#8195;号：</string>
+    <string name="revenue">纳&#8194;税&#8194;号：</string>
+    <string name="telephone">电&#8195;&#8195;话：</string>
+    <string name="user">账&#8195;&#8195;户：</string>
+    <string name="card_number">卡&#8195;&#8195;号：</string>
+    <string name="receive">收&#8194;件&#8194;人：</string>
+    <string name="depart">部&#8195;&#8195;门：</string>
+    <string name="english">英&#8194;文&#8194;名：</string>
+    <string name="indu">行&#8195;&#8195;业：</string>
+    <string name="feedback">反&#8195;&#8195;馈：</string>
+    <string name="field">领&#8195;&#8195;域：</string>
+    <string name="financing">融&#8194;资&#8194;额：</string>
+    <string name="city">城&#8195;&#8195;市：</string>
+    <string name="time">日&#8195;&#8195;期：</string>
+    <string name="apply">申&#8194;请&#8194;人：</string>
+    <string name="create_person">创&#8194;建&#8194;人：</string>
+    <string name="company">公&#8195;&#8195;司：</string>
+    <string name="project">项&#8195;&#8195;目：</string>
+    <string name="abstracted">摘&#8195;&#8195;要：</string>
+    <string name="accountant">会&#8195;&#8195;计：</string>
+    <string name="teller">出&#8195;&#8195;纳：</string>
+    <string name="remark">备&#8195;&#8195;注：</string>
+
+    <!--例子帐对话框String-->
+    <string name="example_account_title_str">《例子账》</string>
+    <string name="example_account_cancer_str">否</string>
+    <string name="example_account_sure_str">是</string>
+    <string name="example_account_hint">仅供学习，是否下载？</string>
+    <string name="example_account_textview">当前使用为《例子账》</string>
+    <string name="example_account_clear_str">清空例子账</string>
+
+    //超享微办公
+    <string name="voice_title">语音会议</string>
+    <string name="voice_list_add">发起会议</string>
+    <string name="voice_list_search">查找会议</string>
+    <string name="voice_detail_title">议题:</string>
+    <string name="voice_meeting_info_detail_title">会议详情</string>
+
+    <string name="voice_meetin_no_member">会议成员列表为空！</string>
+
+    <string name="testing">加载中...</string>
+    <string name="no_data">暂无内容...</string>
+
+    //搜索
+    <string name="super_find_first_01">通知公告</string>
+    <string name="super_find_first_02">月会安排</string>
+    <string name="super_find_first_03">语音会议</string>
+    <!-- <string name="super_find_first_04">语音会议</string>
+    <string name="super_find_first_05">外出工作</string>
+    <string name="super_find_first_06">借支申请</string>
+    <string name="super_find_first_07">请假申请</string>
+    <string name="super_find_first_08">工作日志</string>-->
+
+    //IDG Capital-推送
+    <string name="im_push_type_01">借支申请</string>
+    <string name="im_push_type_02">请假申请</string>
+    <string name="im_push_type_03">事务报告</string>
+    <string name="im_push_type_04">工作外出</string>
+    <string name="im_push_type_05">我的日志</string>
+    <string name="im_push_type_06">项目协同</string>
+    <string name="im_push_type_07">语音会议</string>
+    <string name="im_push_type_08">通知公告</string>
+    <string name="im_push_type_09">日常会议</string>
+
+    <string name="im_push_type_16">请假审批</string>
+
+    <string name="im_push_type_13">差旅申请</string>
+    <string name="im_push_type_15">差旅审批</string>
+
+    <string name="im_push_type_14">销假申请</string>
+    <string name="im_push_type_12">销假审批</string>
+
+    <string name="im_push_type_171">报销申请</string>
+    <string name="im_push_type_1717">报销审批</string>
+
+    <string name="im_push_type_10">消息</string>
+    <string name="im_push_type_11">流程消息</string>
+
+    <string name="im_push_type_1206">Newsletter消息</string>
+
+    <string name="im_push_type_1209">公司新闻</string>
+
+    <string name="im_push_type_17">公众号</string>
+
+    <string name="im_xzs">发票信息</string>
+
+    <string name="im_business_meeting_all">所有会议</string>
+    <string name="im_business_meeting_mine">我的会议</string>
+
+    <string name="im_business_news">消息</string>
+
+    //年会
+    <string name="im_work_annual_m_first">年会</string>
+    <string name="im_work_annual_m_first_01">年会信息</string>
+    <string name="im_work_annual_m_first_02">节目单</string>
+
+    <string name="im_work_annual_m_second">互动</string>
+    <string name="im_work_annual_m_second_01">节目投票</string>
+    <string name="im_work_annual_m_second_02">iStar唱将</string>
+
+    <string name="im_work_annual_m_third">相册</string>
+    <string name="im_work_annual_m_third_01">相册</string>
+
+    <string name="im_work_travel_add_title">差旅申请</string>
+    <string name="im_work_travel_title">我的差旅</string>
+    <string name="im_work_travel_reserve_title">差旅预定</string>
+    <string name="im_work_travel_mine_title">我的出差</string>
+
+    <string name="im_work_my_expense_title">我的报销</string>
+
+    //HR
+    <string name="im_work_hr_title">移动HR</string>
+    <string name="im_work_my_leave_title">我的请假</string>
+    <string name="im_work_my_leave_finish_title">我的销假</string>
+
+    <string name="im_work_approve_ing">审批中</string>
+    <string name="im_work_approve_finish">审批完成</string>
+
+    <string name="im_work_my_approve_title">我的审批</string>
+    <string name="im_work_my_approve_trip">差旅审批</string>
+    <string name="im_work_my_approve_leave">请假审批</string>
+    <string name="im_work_my_approve_all_holiday">休假汇总</string>
+    <string name="im_work_my_approve_expense">报销审批</string>
+    <string name="im_work_finish_leave_title">销假审批</string>
+
+    <string name="im_work_news_letter">Newsletter</string>
+    <string name="im_work_news_title">新闻公告</string>
+    <string name="im_work_notice_title">通知公告</string>
+    <string name="im_work_common_title">公众号</string>
+    <string name="im_work_system_message_title">系统消息</string>
+
+    <string name="btn_ok">确\u0020\u0020\u0020定</string>
+    <string name="btn_cancel">取\u0020\u0020\u0020消</string>
+    <string name="receiveCompany">收款公司：</string>
+    <string name="payForEntity">代垫管理公司：</string>
+    <string name="payEntityMainland">付款境内管理公司：</string>
+    <string name="payEntityOversea">付款境外管理公司：</string>
+    <string name="payForLast">最终承担主体：</string>
+    <string name="receiveBankNo">收款公司银行账号：</string>
+    <string name="feeDesc">费用说明：</string>
+    <string name="recommendVendor">推荐服务商：</string>
+    <string name="chooseReason">选择理由：</string>
+    <string name="comparable1Vendor">可比服务商1：</string>
+    <string name="comparable2Vendor">可比服务商2：</string>
+    <string name="overBudgetDesc">超预算说明：</string>
+
+    <string name="string_psyj">审批意见：</string>
+
+    <string name="string_expense_title_Payment">付款单</string>
+    <string name="string_expense_title_PaymentVoucher">付款单</string>
+
+    <string name="string_expense_title_Reimbursement">报销单</string>
+    <string name="string_expense_title_EmployeeVoucher">个人费用报销单</string>
+    <string name="string_expense_title_GeneralVoucher">公共费用报销单</string>
+    <string name="string_expense_title_SpecialVoucher">专项费用报销单</string>
+    <string name="string_expense_title_AssetsVoucher">资产采购单</string>
+
+
+    <string name="string_expense_title_Loan">借款单</string>
+    <string name="string_expense_title_EmployeeLoan">员工借款单</string>
+
+    <string name="edit_approval_reason">请输入审批意见</string>
+
+
+    <string name="iceforce_image_text_1">已投资项目</string>
+    <string name="iceforce_image_text_2">跟进项目</string>
+    <string name="iceforce_image_text_3">潜在项目</string>
+    <string name="iceforce_image_text_4">投融资信息</string>
+    <string name="iceforce_image_text_5">NewsLetter</string>
+    <string name="iceforce_image_text_6">研究报告</string>
+    <string name="iceforce_image_text_7">投后管理</string>
+    <string name="iceforce_image_text_8">文档库</string>
+    <string name="iceforce_follow_project_detail">跟进项目进展</string>
+    <string name="iceforce_to_do_list">事项</string>
+    <string name="iceforce_work_circle">工作圈</string>
+
+    <string name="iceforce_invested_project_info1">项目名称</string>
+    <string name="iceforce_invested_project_info2">所在城市</string>
+    <string name="iceforce_invested_project_info3">行业分类</string>
+    <string name="iceforce_invested_project_info4">公司人数</string>
+    <string name="iceforce_invested_project_info5">行业小组</string>
+    <string name="iceforce_invested_project_info6">负责合伙人</string>
+    <string name="iceforce_invested_project_info7">项目负责人</string>
+    <string name="iceforce_invested_project_info8">小组成员</string>
+    <string name="iceforce_invested_project_info9">Contributer</string>
+    <string name="iceforce_invested_project_info10">尽调负责人</string>
+    <string name="iceforce_invested_project_info11">融资轮次</string>
+    <string name="iceforce_invested_project_info12">项目律师</string>
+    <string name="iceforce_invested_project_info13">来源人</string>
+    <string name="iceforce_invested_project_info14">来源渠道</string>
+    <string name="iceforce_invested_project_info15">董事席位</string>
+    <string name="iceforce_invested_project_info16">董事信息</string>
+    <string name="iceforce_invested_project_info17">观察员</string>
+    <string name="iceforce_invested_project_info18">ESG政策</string>
+
+    <string name="iceforce_invested_project_info_default">--</string>
+
+    <string name="left_arrow">\u2190</string>
+    <string name="up_arrow">\u2191</string>
+    <string name="down_arrow">\u2193</string>
+    <string name="right_arrow">\u2192</string>
+
+    <string name="hint_iceforce_ice_base_info1">请输入项目名称</string>
+    <string name="hint_iceforce_ice_base_info2">请选择所在城市</string>
+    <string name="hint_iceforce_ice_base_info3">请选择行业分类</string>
+    <string name="hint_iceforce_ice_base_info4">请输入公司人数</string>
+    <string name="hint_iceforce_ice_base_info5">请选择行业小组</string>
+    <string name="hint_iceforce_ice_base_info6">请选择负责合伙人</string>
+    <string name="hint_iceforce_ice_base_info7">请选择项目负责人</string>
+    <string name="hint_iceforce_ice_base_info8">请选择小组成员</string>
+    <string name="hint_iceforce_ice_base_info9">请选择Contributer</string>
+    <string name="hint_iceforce_ice_base_info10">请选择尽调负责人</string>
+    <string name="hint_iceforce_ice_base_info11">请输入融资轮次</string>
+    <string name="hint_iceforce_ice_base_info12">请选择项目律师</string>
+    <string name="hint_iceforce_ice_base_info13">请输入来源人</string>
+    <string name="hint_iceforce_ice_base_info14">请选择来源渠道</string>
+    <string name="hint_iceforce_ice_base_info15">请选择是否有董事席位</string>
+    <string name="hint_iceforce_ice_base_info16">请选择董事成员信息</string>
+    <string name="hint_iceforce_ice_base_info17">请选择观察员席位</string>
+    <string name="hint_iceforce_ice_base_info18">请选择是否符合ESG政策</string>
+
+    <string name="edt_iceforce_program1">投资日期</string>
+    <string name="edt_iceforce_program2">内容</string>
+    <string name="edt_iceforce_program3">投资金额</string>
+    <string name="edt_iceforce_program4">币种</string>
+    <string name="edt_iceforce_program5">方案类型</string>
+    <string name="edt_iceforce_program6">是否通过</string>
+    <string name="edt_iceforce_program7">基金</string>
+
+    <string name="hint_iceforce_program1">请选择投资日期</string>
+    <string name="hint_iceforce_program2">请输入投资方案内容</string>
+    <string name="hint_iceforce_program3">请输入投资金额</string>
+    <string name="hint_iceforce_program4">请选择币种</string>
+    <string name="hint_iceforce_program5">请选择投资方案类型</string>
+    <string name="hint_iceforce_program6">请选择是否通过方案</string>
+    <string name="hint_iceforce_program7">请输入投资基金</string>
+
+    <string name="hint_iceforce_baseInfo1">请输入项目名称</string>
+    <string name="hint_iceforce_baseInfo2">项目ID为空，请稍后再试</string>
+    <string name="hint_iceforce_baseInfo3">请选择行业分类</string>
+    <string name="hint_iceforce_baseInfo4">请选择行业小组</string>
+
+    <string name="edt_iceforce_follow_up1">报告频率</string>
+    <string name="edt_iceforce_follow_up2">报告年度</string>
+    <string name="edt_iceforce_follow_up3">报告期</string>
+
+    <string name="hint_iceforce_follow_up1">请选择报告频率</string>
+    <string name="hint_iceforce_follow_up2">请选择报告年度</string>
+    <string name="hint_iceforce_follow_up3">请选择报告期</string>
+
+    <string name="choose_iceforce_follow_up1">S (蓝灯)</string>
+    <string name="choose_iceforce_follow_up2">A (绿灯)</string>
+    <string name="choose_iceforce_follow_up3">B (黄灯)</string>
+    <string name="choose_iceforce_follow_up4">C (红灯)</string>
+    <string name="choose_iceforce_follow_up5">X (黑灯)</string>
+
+    <string name="edt_director_program1">项目名称</string>
+    <string name="edt_director_program2">会议日期</string>
+    <string name="edt_director_program3">董事会信息</string>
+    <string name="edt_director_program4">是否有重大决策</string>
+    <string name="edt_director_program5">决策类型</string>
+    <string name="edt_director_program6">具体表述</string>
+    <string name="edt_director_program7">相关文件</string>
+
+    <string name="hint_director_program1">请输入项目名称</string>
+    <string name="hint_director_program2">请选择会议日期</string>
+    <string name="hint_director_program3">请输入董事会信息</string>
+    <string name="hint_director_program4">请选择是否有重大决策</string>
+    <string name="hint_director_program5">请选择决策类型</string>
+    <string name="hint_director_program6">请输入具体表述</string>
+    <string name="hint_director_program7">请选择相关文件</string>
+
+    <string name="iceforce_leave_info1">请假人</string>
+    <string name="iceforce_leave_info2">开始时间</string>
+    <string name="iceforce_leave_info3">结束时间</string>
+    <string name="iceforce_leave_info4">休假天数</string>
+    <string name="iceforce_leave_info5">休假类型</string>
+    <string name="iceforce_leave_info6">休假原因</string>
+    <string name="iceforce_leave_info7">假期是否有月会</string>
+    <string name="iceforce_leave_info8">审批意见</string>
+
+    <string name="remarks2">备&#8195;&#8195;注：</string>
+    <string name="str_apply_p">申&#8194;请&#8194;人：</string>
+
+
+
+
+</resources>
+

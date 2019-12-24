@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_border_gray"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="horizontal">
+
+    <tablayout.view.textview.FontTextView
+        android:id="@+id/before_point_1"
+        android:inputType="number"
+        android:singleLine="true"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:ems="1"
+         />
+
+    <View
+        android:layout_width="@dimen/dp2"
+        android:layout_height="match_parent"
+        android:background="@color/money_cutting_line" />
+
+    <tablayout.view.textview.FontTextView
+        android:id="@+id/before_point_2"
+        android:inputType="number"
+        android:singleLine="true"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:ems="1"
+        />
+
+    <View
+        android:layout_width="@dimen/dp2"
+        android:layout_height="match_parent"
+        android:background="@color/cutting_line" />
+
+    <tablayout.view.textview.FontTextView
+        android:id="@+id/before_point_3"
+        android:inputType="number"
+        android:singleLine="true"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:ems="1"
+         />
+
+    <View
+        android:layout_width="@dimen/dp2"
+        android:layout_height="match_parent"
+        android:background="@color/money_cutting_line" />
+
+    <tablayout.view.textview.FontTextView
+        android:id="@+id/before_point_4"
+        android:inputType="number"
+        android:singleLine="true"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:ems="1"
+         />
+
+    <View
+        android:layout_width="@dimen/dp2"
+        android:layout_height="match_parent"
+        android:background="@color/money_cutting_line" />
+
+    <tablayout.view.textview.FontTextView
+        android:id="@+id/before_point_5"
+        android:inputType="number"
+        android:singleLine="true"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:ems="1"
+         />
+
+    <View
+        android:layout_width="@dimen/dp2"
+        android:layout_height="match_parent"
+        android:background="@color/cutting_line" />
+
+    <tablayout.view.textview.FontTextView
+        android:id="@+id/before_point_6"
+        android:inputType="number"
+        android:singleLine="true"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:ems="1"
+        />
+
+<!--
+    <View
+        android:layout_width="@dimen/dp2"
+        android:layout_height="match_parent"
+        android:background="@color/money_cutting_line" />
+
+    <tablayout.view.textview.FontTextView
+        android:id="@+id/before_point_7"
+        android:inputType="number"
+        android:singleLine="true"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:ems="1"
+        />
+
+    <View
+        android:layout_width="@dimen/dp2"
+        android:layout_height="match_parent"
+        android:background="@color/money_cutting_line" />
+
+    <tablayout.view.textview.FontTextView
+        android:id="@+id/before_point_8"
+        android:inputType="number"
+        android:singleLine="true"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:ems="1"
+         />
+    <View
+        android:layout_width="@dimen/dp2"
+        android:layout_height="match_parent"
+        android:background="@color/money_cutting_line" />
+
+    <tablayout.view.textview.FontTextView
+        android:id="@+id/before_point_9"
+        android:inputType="number"
+        android:singleLine="true"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:ems="1"
+         />
+-->
+
+    <View
+        android:layout_width="@dimen/dp2"
+        android:layout_height="match_parent"
+        android:background="@color/red" />
+
+    <tablayout.view.textview.FontTextView
+        android:id="@+id/after_point_1"
+        android:inputType="number"
+        android:singleLine="true"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:ems="1"
+        android:text="0" />
+
+    <View
+        android:layout_width="@dimen/dp2"
+        android:layout_height="match_parent"
+        android:background="@color/money_cutting_line" />
+
+    <tablayout.view.textview.FontTextView
+        android:id="@+id/after_point_2"
+        android:inputType="number"
+        android:singleLine="true"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:ems="1"
+        android:text="0" />
+</LinearLayout>

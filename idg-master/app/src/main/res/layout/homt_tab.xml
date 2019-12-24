@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="28dp"
+        android:padding="3dp"
+        android:layout_height="28dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/im_selector"/>
+
+    <tablayout.view.textview.FontTextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/icon"
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="3dp"
+        android:textColor="@color/cx_tab_bar_tv_bg"
+        android:textSize="11sp"/>
+
+    <tablayout.view.textview.FontTextView
+        android:id="@+id/unreadcount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="-10dp"
+        android:layout_marginTop="@dimen/dp2"
+        android:layout_toRightOf="@+id/icon"
+        android:background="@mipmap/icon_num"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="10sp"
+        android:visibility="invisible"
+    />
+
+    <tablayout.view.textview.FontTextView
+        android:id="@+id/unreadcount2"
+        android:layout_width="8dp"
+        android:layout_height="8dp"
+        android:layout_marginLeft="-10dp"
+        android:layout_toRightOf="@+id/icon"
+        android:background="@drawable/count_bg"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="10sp"
+        android:visibility="invisible"
+    />
+</RelativeLayout>

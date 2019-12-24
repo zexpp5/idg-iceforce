@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/ll_container"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:descendantFocusability="blocksDescendants"
+              android:orientation="vertical">
+
+    <tablayout.view.textview.FontTextView
+        android:id="@+id/timestamp"
+        style="@style/chat_text_date_style"/>
+
+    <RelativeLayout style="@style/chat_content_style">
+
+        <ImageView
+            android:id="@+id/img_user_icon"
+            style="@style/chat_user_icon_left_style"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_content_new_share"
+            style="@style/chat_content_viewGroup_left_style"
+            android:background="@drawable/chatfrom_bg"
+            android:padding="5dp">
+
+            <LinearLayout
+                android:id="@+id/ll_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:orientation="vertical"
+            >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_share_up_bg"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:id="@+id/img_icon_share"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_centerVertical="true"
+                        android:background="@mipmap/ic_launcher"
+                    />
+
+                    <TextView
+                        android:id="@+id/tv_share_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/img_icon_share"
+                        android:ellipsize="end"
+                        android:maxEms="12"
+                        android:maxLines="2"
+                    />
+
+                </RelativeLayout>
+                <!--<View-->
+                <!--android:layout_width="200dp"-->
+                <!--android:layout_height="0.5dip"-->
+                <!--android:layout_marginTop="5dp"-->
+                <!--android:background="@color/erp_cutting_line_grey">-->
+                <!--</View>-->
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_share_down_bg"
+                    android:padding="5dp"
+                >
+
+                    <TextView
+                        android:id="@+id/tv_share_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:ellipsize="end"
+                        android:maxEms="12"
+                        android:maxLines="3"
+                        android:minEms="12"
+                    />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    style="@style/chat_content_viewGroup_right_style"
+                    android:background="@null"
+                    android:visibility="gone">
+
+                    <com.cc.emojilibrary.EmojiconTextView
+                        android:id="@+id/tv_chatcontent"
+                        style="@style/chat_content_date_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:autoLink="web"
+                        android:background="@null"
+                        android:gravity="left|center"
+                        android:lineSpacingExtra="@dimen/font_size_chat_text_spacing"
+                        android:lineSpacingMultiplier="1"
+                        android:maxWidth="@dimen/chat_content_length"
+                        android:minHeight="@dimen/size_avatar"
+                        android:paddingBottom="@dimen/chat_content_spacing_top_bottom"
+                        android:paddingLeft="@dimen/chat_content_spacing_left"
+                        android:paddingRight="@dimen/chat_content_spacing_right"
+                        android:paddingTop="@dimen/chat_content_spacing_top_bottom"
+                        android:textSize="@dimen/font_size_chat_content"/>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_hot_message_layout"
+                style="@style/hot_chat_content_viewGroup_left_style"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="点击查看"
+                    android:textSize="@dimen/font_size_chat_content"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/chat_contentRelativeLayout_spacing_lr"
+                    android:src="@mipmap/chatting_hot_received_t"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_countdown"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/rl_content"
+                android:background="@mipmap/icon_num"
+                android:gravity="center"
+                android:text="10"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:visibility="gone"/>
+            <!--</RelativeLayout>-->
+        </RelativeLayout>
+
+
+        <ImageView
+            android:id="@+id/icon_baidu"
+            style="@style/chat_left_baidu_style"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/rl_content_new"
+            android:layout_toRightOf="@+id/rl_content_new"
+        />
+
+        <tablayout.view.textview.FontTextView
+            android:id="@+id/tv_user_name"
+            style="@style/chat_text_name_style"/>
+    </RelativeLayout>
+
+</LinearLayout>

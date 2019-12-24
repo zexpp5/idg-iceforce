@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_layout"
+    android:layout_width="110dp"
+    android:layout_height="40dp"
+    android:background="@drawable/erp_shape_info_right"
+    android:orientation="vertical">
+
+    <tablayout.view.textview.FontTextView
+        android:id="@+id/tv_name"
+        android:layout_width="110dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:paddingLeft="2dp"
+        android:text="12321312312312"
+        android:textSize="15sp" />
+</LinearLayout>

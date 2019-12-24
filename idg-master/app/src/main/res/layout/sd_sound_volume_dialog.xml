@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/sound_volume_bk"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="150dp"
+              android:layout_height="150dp"
+              android:background="@mipmap/tt_sound_volume_default_bk"
+              android:gravity="center|right"
+              android:padding="20dp">
+
+    <ImageView
+        android:id="@+id/sound_volume_img"
+        android:layout_width="20dp"
+        android:layout_height="43dp"
+        android:layout_marginRight="10dp"
+        android:src="@mipmap/tt_sound_volume_01"/>
+
+</LinearLayout>

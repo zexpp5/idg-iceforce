@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:focusable="true"
+                android:orientation="vertical">
+    <include
+        android:id="@+id/totle_layout"
+
+        layout="@layout/top_title_layout"
+        />
+    <ScrollView
+        style="@style/erp_scrollview_style"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <include
+                android:id="@+id/head_bar_layout"
+                layout="@layout/person_information_layout" />
+            <include layout="@layout/bottom_line_view_three" />
+
+            <LinearLayout
+                style="@style/d_s_ll_style"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    style="@style/d_s_s_in_tow_ll_style"
+                    android:orientation="horizontal"
+                    >
+
+                    <tablayout.view.textview.FontTextView
+                        android:id="@+id/customer_name"
+                        style="@style/d_s_left_font_sytle"
+                        android:text="@string/myreport_submit_reportchoice"/>
+
+                    <!--倒三角的下拉框style-->
+                    <tablayout.view.textview.FontTextView
+                        android:id="@+id/selection"
+                        style="@style/d_s_content_font_select_textview_sytle"/>
+
+                    <tablayout.view.textview.FontEditext
+                        android:maxLength="15"
+                        android:id="@+id/report_title"
+                        android:visibility="gone"
+                        style="@style/d_s_content_font_edtext_sytle_title"/>
+
+                </LinearLayout>
+                <!--币种和仓库公用字段好了=。= -->
+                <LinearLayout
+                    style="@style/d_s_s_in_tow_ll_right_style">
+
+                    <tablayout.view.textview.FontTextView
+                        android:id="@+id/tv_zhibiaor"
+                        style="@style/d_s_right_font_sytle"
+                        android:text="@string/myreport_submit_reportcc"/>
+
+                    <tablayout.view.textview.FontTextView
+                        android:id="@+id/cc"
+                        style="@style/d_s_content_font_select_textview_sytle"/>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <!--线条高度-->
+            <include layout="@layout/erp_line_one_view"/>
+
+            <LinearLayout
+                style="@style/d_s_ll_style"
+                android:orientation="horizontal"
+                android:paddingRight="10dp">
+
+                <tablayout.view.textview.FontTextView
+
+                    style="@style/d_s_left_font_sytle"
+                    android:text="@string/myreport_submit_reporttitle"/>
+
+                <tablayout.view.textview.FontEditext
+                    android:maxLength="15"
+                    android:id="@+id/title"
+                    style="@style/d_s_content_font_edtext_sytle_title"/>
+
+            </LinearLayout>
+
+            <!--线条高度-->
+            <include layout="@layout/erp_line_one_view"/>
+
+            <LinearLayout
+                style="@style/file_center_explain_style"
+                android:orientation="horizontal"
+                android:paddingRight="10dp">
+
+                <tablayout.view.textview.FontTextView
+                    style="@style/font_text_content_sytle"
+                    android:layout_gravity="top" android:layout_marginTop="@dimen/dp_spacing_8dp"
+                    android:text="报告内容："/>
+
+                <tablayout.view.textview.FontEditext
+                    android:id="@+id/content"
+                    android:gravity="top"
+                    android:layout_marginTop="@dimen/dp_spacing_8dp"
+                    android:layout_marginBottom="@dimen/dp_spacing_8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:textSize="@dimen/sp_font_detail_content_15sp"
+                    android:maxLength="500"/>
+
+            </LinearLayout>
+
+            <include layout="@layout/bottom_line_view_two" />
+
+            <LinearLayout
+                style="@style/enclosure_ll_style"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="附件："
+                    android:textSize="@dimen/sp_font_detail_content_15sp" />
+
+                <include
+                    android:id="@+id/file_btn_include"
+                    layout="@layout/erp_file_select_layout_detail" />
+            </LinearLayout>
+
+            <include layout="@layout/bottom_line_view_three" />
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

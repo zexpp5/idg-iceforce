@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tvContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_spacing_10dp"
+        android:gravity="center"
+        android:padding="@dimen/dp_spacing_10dp"
+        tools:text="未婚" />
+
+
+    <RadioButton
+        android:id="@+id/rbnCheck"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:layout_marginRight="@dimen/dp_spacing_10dp"
+        android:background="@drawable/im_business_rb_bg"
+        android:button="@null"
+        android:checked="false"
+        android:clickable="false" />
+
+
+</RelativeLayout>

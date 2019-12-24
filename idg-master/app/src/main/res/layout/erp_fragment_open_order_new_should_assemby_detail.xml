@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+        <LinearLayout
+            android:background="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include
+                layout="@layout/top_title_layout"
+
+                />
+
+            <!--一行的高度style-->
+            <LinearLayout
+                style="@style/d_s_ll_style"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    style="@style/d_s_s_in_tow_ll_style"
+                    android:orientation="horizontal">
+                    <!--左边的textview的style-->
+                    <tablayout.view.textview.FontTextView
+                        style="@style/d_s_left_font_sytle"
+                        android:text="订单日期："/>
+                    <!--非输入的textview的style-->
+                    <TextView
+                        android:id="@+id/time"
+                        style="@style/d_s_content_font_select_textview_sytle"/>
+
+                </LinearLayout>
+                <!--LinearLayout右边title的style-->
+                <LinearLayout
+                    android:visibility="gone"
+                    android:id="@+id/no_ll"
+                    style="@style/d_s_s_in_tow_ll_right_style">
+                    <!--右边title的style-->
+                    <tablayout.view.textview.FontTextView
+                        style="@style/d_s_right_font_sytle"
+                        android:text="订单编号："/>
+
+                    <EditText
+                        android:textSize="12sp"
+                        android:id="@+id/oodNumber"
+                        style="@style/d_s_content_font_edtext_sytle_title"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <!--线条高度-->
+            <include layout="@layout/erp_line_one_view_grey"/>
+
+            <LinearLayout
+                style="@style/d_s_ll_style"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                   >
+
+                    <tablayout.view.textview.FontTextView
+                        style="@style/d_s_left_font_sytle"
+                        android:text="客户名称："/>
+
+                    <!--倒三角的下拉框style-->
+                    <tablayout.view.textview.FontTextView
+                        android:id="@+id/customer_name"
+                        style="@style/d_s_content_font_select_textview_sytle"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!--线条高度-->
+            <include layout="@layout/erp_line_one_view_grey"/>
+
+
+            <LinearLayout
+                style="@style/d_s_ll_style"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:paddingRight="10dp">
+
+                    <tablayout.view.textview.FontTextView
+                        style="@style/d_s_left_font_sytle"
+                        android:text="联系方式："/>
+
+                    <!--倒三角的下拉框style-->
+                    <EditText
+                        android:id="@+id/contact_information"
+                        style="@style/d_s_content_font_edtext_sytle_title"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!--线条高度-->
+            <include layout="@layout/erp_line_one_view_grey"/>
+
+
+            <LinearLayout
+                style="@style/d_s_ll_style"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:paddingRight="10dp">
+
+                    <tablayout.view.textview.FontTextView
+                        style="@style/d_s_left_font_sytle"
+                        android:text="发货地址："/>
+
+                    <!--倒三角的下拉框style-->
+                    <EditText
+                        android:id="@+id/address"
+                        style="@style/d_s_content_font_edtext_sytle_title"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!--线条高度-->
+            <include layout="@layout/erp_line_one_view_grey"/>
+
+
+            <LinearLayout
+                style="@style/d_s_ll_style"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:paddingRight="10dp">
+
+                    <tablayout.view.textview.FontTextView
+                        style="@style/d_s_left_font_sytle"
+                        android:text="物流信息："/>
+
+                    <!--倒三角的下拉框style-->
+                    <EditText
+                        android:id="@+id/logistics"
+                        style="@style/d_s_content_font_edtext_sytle_title"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!--线条高度-->
+            <include layout="@layout/erp_line_one_view_grey"/>
+
+            <yunjing.view.excelpane.AdaptiveTableLayout
+                android:id="@+id/tableLayout"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_below="@+id/topbarLayout"
+                app:dragAndDropEnabled="false"
+                app:fixedHeaders="true"
+                app:solidRowHeaders="false" />
+
+            <LinearLayout
+                android:id="@+id/add_ll"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@mipmap/type_select_btn_nor"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="新增商品"/>
+
+            </LinearLayout>
+
+            <include layout="@layout/erp_line_one_view_grey"/>
+
+            <LinearLayout
+                android:id="@+id/total_ll"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:paddingLeft="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:paddingRight="10dp">
+
+                    <tablayout.view.textview.FontTextView
+                        style="@style/d_s_left_font_sytle"
+                        android:text="金额合计"/>
+                    <tablayout.view.textview.FontTextView
+                        android:textSize="10sp"
+                        style="@style/d_s_left_font_sytle"
+                        android:text="(元)："/>
+
+                    <!--倒三角的下拉框style-->
+                    <EditText
+                        android:inputType="numberDecimal"
+                        android:id="@+id/total_money"
+                        style="@style/d_s_content_font_edtext_sytle_title"/>
+                </LinearLayout>
+
+            </LinearLayout>
+            <include layout="@layout/erp_line_one_view_grey"/>
+
+        </LinearLayout>
+
+    <include
+        style="@style/list_ShareLayout_Style"
+        layout="@layout/list_share_layout"
+        />
+</RelativeLayout>

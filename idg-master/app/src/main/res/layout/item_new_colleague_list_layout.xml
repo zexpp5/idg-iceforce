@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/ll_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/iv_header_img"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:layout_marginLeft="3dp"
+                android:src="@mipmap/temp_user_head" />
+
+            <tablayout.view.textview.FontTextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/iv_header_img"
+                android:padding="5dp"
+                android:text="张三"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_size_item_name_business" />
+
+        </RelativeLayout>
+
+
+        <Button
+            android:id="@+id/refuse_tv"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="30dp"
+            android:gravity="center"
+            android:text="拒绝"
+            android:textColor="#9e9e9e"
+            android:background="@drawable/shape_blue_normal_btn"
+            android:textSize="@dimen/font_size_item_name_business" />
+
+        <Button
+            android:id="@+id/agree_tv"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/refuse_tv"
+            android:gravity="center"
+            android:text="同意"
+            android:textColor="#fff"
+            android:background="@drawable/shape_blue_press_btn"
+            android:textSize="@dimen/font_size_item_name_business" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="#f2f2f2" />
+</LinearLayout>

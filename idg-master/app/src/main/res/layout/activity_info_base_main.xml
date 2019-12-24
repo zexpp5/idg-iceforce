@@ -1,0 +1,879 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical"
+>
+    <include
+        android:id="@+id/top_bar_layout"
+        layout="@layout/public_title_01"/>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:focusable="true"
+                      android:focusableInTouchMode="true"
+                      android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/dp_spacing_to_left_right_15dp"
+                android:layout_marginRight="@dimen/dp_spacing_to_left_right_15dp"
+                android:layout_height="wrap_content"
+                android:minHeight="50dp"
+                android:orientation="horizontal"
+            >
+
+                <tablayout.view.textview.FontTextView
+                    style="@style/font_text_content_sytle"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/iceforce_invested_project_info1"
+                    android:textColor="@color/text_black_s"/>
+
+                <tablayout.view.textview.FontEditext
+                    android:id="@+id/tv_project_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="3"
+                    android:maxLines="5"
+                    android:background="@null"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:hint="@string/hint_iceforce_ice_base_info1"
+
+                    android:textColor="@color/text_black_xl"
+                    android:textSize="@dimen/sp_font_detail_content_15sp"/>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dp15"
+                android:layout_marginRight="@dimen/dp15"
+            >
+
+                <include layout="@layout/line_layout_05dp"
+                />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/dp_spacing_to_left_right_15dp"
+                android:layout_marginRight="@dimen/dp_spacing_to_left_right_15dp"
+                android:minHeight="50dp"
+                android:orientation="horizontal"
+            >
+
+                <tablayout.view.textview.FontTextView
+                    style="@style/font_text_content_sytle"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/iceforce_invested_project_info2"
+                    android:textColor="@color/text_black_s"/>
+
+                <tablayout.view.textview.FontTextView
+                    android:id="@+id/tv_city"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="3"
+                    android:background="@null"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:hint="@string/hint_iceforce_ice_base_info2"
+                    android:textColor="@color/text_black_xl"
+                    android:textSize="@dimen/sp_font_detail_content_15sp"/>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dp15"
+                android:layout_marginRight="@dimen/dp15"
+            >
+
+                <include layout="@layout/line_layout_05dp"
+                />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/dp_spacing_to_left_right_15dp"
+                android:layout_marginRight="@dimen/dp_spacing_to_left_right_15dp"
+                android:minHeight="50dp"
+                android:orientation="horizontal"
+            >
+
+                <tablayout.view.textview.FontTextView
+                    style="@style/font_text_content_sytle"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/iceforce_invested_project_info3"
+                    android:textColor="@color/text_black_s"/>
+
+                <tablayout.view.textview.FontTextView
+                    android:id="@+id/tv_industry_classification"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="3"
+                    android:background="@null"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:hint="@string/hint_iceforce_ice_base_info3"
+                    android:textColor="@color/text_black_xl"
+                    android:textSize="@dimen/sp_font_detail_content_15sp"/>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dp15"
+                android:layout_marginRight="@dimen/dp15"
+            >
+
+                <include layout="@layout/line_layout_05dp"
+                />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/dp_spacing_to_left_right_15dp"
+                android:layout_marginRight="@dimen/dp_spacing_to_left_right_15dp"
+                android:minHeight="50dp"
+                android:orientation="horizontal"
+            >
+
+                <tablayout.view.textview.FontTextView
+                    style="@style/font_text_content_sytle"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/iceforce_invested_project_info4"
+                    android:textColor="@color/text_black_s"/>
+
+                <tablayout.view.textview.FontEditext
+                    android:id="@+id/tv_company_people_number"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="3"
+                    android:background="@null"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:hint="@string/hint_iceforce_ice_base_info4"
+                    android:textColor="@color/text_black_xl"
+                    android:textSize="@dimen/sp_font_detail_content_15sp"/>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dp15"
+                android:layout_marginRight="@dimen/dp15"
+            >
+
+                <include layout="@layout/line_layout_05dp"
+                />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/dp_spacing_to_left_right_15dp"
+                android:layout_marginRight="@dimen/dp_spacing_to_left_right_15dp"
+                android:minHeight="50dp"
+                android:orientation="horizontal"
+            >
+
+                <tablayout.view.textview.FontTextView
+                    style="@style/font_text_content_sytle"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/iceforce_invested_project_info5"
+                    android:textColor="@color/text_black_s"/>
+
+                <tablayout.view.textview.FontTextView
+                    android:id="@+id/tv_industry_group"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="3"
+                    android:background="@null"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:hint="@string/hint_iceforce_ice_base_info5"
+                    android:textColor="@color/text_black_xl"
+                    android:textSize="@dimen/sp_font_detail_content_15sp"/>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dp15"
+                android:layout_marginRight="@dimen/dp15"
+            >
+
+                <include layout="@layout/line_layout_05dp"
+                />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/dp_spacing_to_left_right_15dp"
+                android:layout_marginRight="@dimen/dp_spacing_to_left_right_15dp"
+                android:minHeight="50dp"
+                android:orientation="horizontal"
+            >
+
+                <tablayout.view.textview.FontTextView
+                    style="@style/font_text_content_sytle"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/iceforce_invested_project_info6"
+                    android:textColor="@color/text_black_s"/>
+
+                <tablayout.view.textview.FontTextView
+                    android:id="@+id/tv_partner"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="3"
+                    android:background="@null"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:hint="@string/hint_iceforce_ice_base_info6"
+                    android:textColor="@color/text_black_xl"
+                    android:textSize="@dimen/sp_font_detail_content_15sp"/>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dp15"
+                android:layout_marginRight="@dimen/dp15"
+            >
+
+                <include layout="@layout/line_layout_05dp"
+                />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/dp_spacing_to_left_right_15dp"
+                android:layout_marginRight="@dimen/dp_spacing_to_left_right_15dp"
+                android:minHeight="50dp"
+                android:orientation="horizontal"
+            >
+
+                <tablayout.view.textview.FontTextView
+                    style="@style/font_text_content_sytle"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/iceforce_invested_project_info7"
+                    android:textColor="@color/text_black_s"/>
+
+                <tablayout.view.textview.FontTextView
+                    android:id="@+id/tv_project_preside"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="3"
+                    android:background="@null"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:hint="@string/hint_iceforce_ice_base_info7"
+                    android:textColor="@color/text_black_xl"
+                    android:textSize="@dimen/sp_font_detail_content_15sp"/>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dp15"
+                android:layout_marginRight="@dimen/dp15"
+            >
+
+                <include layout="@layout/line_layout_05dp"
+                />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/dp_spacing_to_left_right_15dp"
+                android:layout_marginRight="@dimen/dp_spacing_to_left_right_15dp"
+                android:minHeight="50dp"
+                android:orientation="horizontal"
+            >
+
+                <tablayout.view.textview.FontTextView
+                    style="@style/font_text_content_sytle"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/iceforce_invested_project_info8"
+                    android:textColor="@color/text_black_s"/>
+
+                <tablayout.view.textview.FontTextView
+                    android:id="@+id/tv_group_number"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="3"
+                    android:background="@null"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:hint="@string/hint_iceforce_ice_base_info8"
+                    android:maxLines="5"
+                    android:textColor="@color/text_black_xl"
+                    android:textSize="@dimen/sp_font_detail_content_15sp"/>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dp15"
+                android:layout_marginRight="@dimen/dp15"
+            >
+
+                <include layout="@layout/line_layout_05dp"
+                />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/dp_spacing_to_left_right_15dp"
+                android:layout_marginRight="@dimen/dp_spacing_to_left_right_15dp"
+                android:minHeight="50dp"
+                android:orientation="horizontal"
+            >
+
+                <tablayout.view.textview.FontTextView
+                    style="@style/font_text_content_sytle"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/iceforce_invested_project_info9"
+                    android:textColor="@color/text_black_s"/>
+
+                <tablayout.view.textview.FontTextView
+                    android:id="@+id/tv_contributer"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="3"
+                    android:background="@null"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:hint="@string/hint_iceforce_ice_base_info9"
+                    android:textColor="@color/text_black_xl"
+                    android:textSize="@dimen/sp_font_detail_content_15sp"/>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dp15"
+                android:layout_marginRight="@dimen/dp15"
+            >
+
+                <include layout="@layout/line_layout_05dp"
+                />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/dp_spacing_to_left_right_15dp"
+                android:layout_marginRight="@dimen/dp_spacing_to_left_right_15dp"
+                android:minHeight="50dp"
+                android:orientation="horizontal"
+            >
+
+                <tablayout.view.textview.FontTextView
+                    style="@style/font_text_content_sytle"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/iceforce_invested_project_info10"
+                    android:textColor="@color/text_black_s"/>
+
+                <tablayout.view.textview.FontTextView
+                    android:id="@+id/tv_investigate_preside"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="3"
+                    android:background="@null"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:hint="@string/hint_iceforce_ice_base_info10"
+                    android:textColor="@color/text_black_xl"
+                    android:textSize="@dimen/sp_font_detail_content_15sp"/>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dp15"
+                android:layout_marginRight="@dimen/dp15"
+            >
+
+                <include layout="@layout/line_layout_05dp"
+                />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/dp_spacing_to_left_right_15dp"
+                android:layout_marginRight="@dimen/dp_spacing_to_left_right_15dp"
+                android:minHeight="50dp"
+                android:orientation="horizontal"
+            >
+
+                <tablayout.view.textview.FontTextView
+                    style="@style/font_text_content_sytle"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/iceforce_invested_project_info11"
+                    android:textColor="@color/text_black_s"/>
+
+                <tablayout.view.textview.FontEditext
+                    android:id="@+id/tv_financing_round"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="3"
+                    android:background="@null"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:hint="@string/hint_iceforce_ice_base_info11"
+                    android:textColor="@color/text_black_xl"
+                    android:textSize="@dimen/sp_font_detail_content_15sp"/>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dp15"
+                android:layout_marginRight="@dimen/dp15"
+            >
+
+                <include layout="@layout/line_layout_05dp"
+                />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/dp_spacing_to_left_right_15dp"
+                android:layout_marginRight="@dimen/dp_spacing_to_left_right_15dp"
+                android:minHeight="50dp"
+                android:orientation="horizontal"
+            >
+
+                <tablayout.view.textview.FontTextView
+                    style="@style/font_text_content_sytle"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/iceforce_invested_project_info12"
+                    android:textColor="@color/text_black_s"/>
+
+                <tablayout.view.textview.FontTextView
+                    android:id="@+id/tv_project_lawyer"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="3"
+                    android:background="@null"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:hint="@string/hint_iceforce_ice_base_info12"
+                    android:textColor="@color/text_black_xl"
+                    android:textSize="@dimen/sp_font_detail_content_15sp"/>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dp15"
+                android:layout_marginRight="@dimen/dp15"
+            >
+
+                <include layout="@layout/line_layout_05dp"
+                />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/dp_spacing_to_left_right_15dp"
+                android:layout_marginRight="@dimen/dp_spacing_to_left_right_15dp"
+                android:minHeight="50dp"
+                android:orientation="horizontal"
+            >
+
+                <tablayout.view.textview.FontTextView
+                    style="@style/font_text_content_sytle"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/iceforce_invested_project_info13"
+                    android:textColor="@color/text_black_s"/>
+
+                <tablayout.view.textview.FontEditext
+                    android:id="@+id/tv_source_person"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="3"
+                    android:background="@null"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:hint="@string/hint_iceforce_ice_base_info13"
+                    android:textColor="@color/text_black_xl"
+                    android:textSize="@dimen/sp_font_detail_content_15sp"/>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dp15"
+                android:layout_marginRight="@dimen/dp15"
+            >
+
+                <include layout="@layout/line_layout_05dp"
+                />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/dp_spacing_to_left_right_15dp"
+                android:layout_marginRight="@dimen/dp_spacing_to_left_right_15dp"
+                android:minHeight="50dp"
+                android:orientation="horizontal"
+            >
+
+                <tablayout.view.textview.FontTextView
+                    style="@style/font_text_content_sytle"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/iceforce_invested_project_info14"
+                    android:textColor="@color/text_black_s"/>
+
+                <tablayout.view.textview.FontTextView
+                    android:id="@+id/tv_source_way"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="3"
+                    android:background="@null"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:hint="@string/hint_iceforce_ice_base_info14"
+                    android:textColor="@color/text_black_xl"
+                    android:textSize="@dimen/sp_font_detail_content_15sp"/>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dp15"
+                android:layout_marginRight="@dimen/dp15"
+            >
+
+                <include layout="@layout/line_layout_05dp"
+                />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/dp_spacing_to_left_right_15dp"
+                android:layout_marginRight="@dimen/dp_spacing_to_left_right_15dp"
+                android:minHeight="50dp"
+                android:orientation="horizontal"
+            >
+
+                <tablayout.view.textview.FontTextView
+                    style="@style/font_text_content_sytle"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/iceforce_invested_project_info15"
+                    android:textColor="@color/text_black_s"/>
+
+                <tablayout.view.textview.FontTextView
+                    android:id="@+id/tv_director_has"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="3"
+                    android:background="@null"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:hint="@string/hint_iceforce_ice_base_info15"
+                    android:textColor="@color/text_black_xl"
+                    android:textSize="@dimen/sp_font_detail_content_15sp"/>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dp15"
+                android:layout_marginRight="@dimen/dp15"
+            >
+
+                <include layout="@layout/line_layout_05dp"
+                />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/dp_spacing_to_left_right_15dp"
+                android:layout_marginRight="@dimen/dp_spacing_to_left_right_15dp"
+                android:minHeight="50dp"
+                android:orientation="horizontal"
+            >
+
+                <tablayout.view.textview.FontTextView
+                    style="@style/font_text_content_sytle"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/iceforce_invested_project_info16"
+                    android:textColor="@color/text_black_s"/>
+
+                <tablayout.view.textview.FontTextView
+                    android:id="@+id/tv_director_info"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="3"
+                    android:background="@null"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:hint="@string/hint_iceforce_ice_base_info16"
+                    android:textColor="@color/text_black_xl"
+                    android:textSize="@dimen/sp_font_detail_content_15sp"/>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dp15"
+                android:layout_marginRight="@dimen/dp15"
+            >
+
+                <include layout="@layout/line_layout_05dp"
+                />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/dp_spacing_to_left_right_15dp"
+                android:layout_marginRight="@dimen/dp_spacing_to_left_right_15dp"
+                android:minHeight="50dp"
+                android:orientation="horizontal"
+            >
+
+                <tablayout.view.textview.FontTextView
+                    style="@style/font_text_content_sytle"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/iceforce_invested_project_info17"
+                    android:textColor="@color/text_black_s"/>
+
+                <tablayout.view.textview.FontTextView
+                    android:id="@+id/tv_observer"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="3"
+                    android:background="@null"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:hint="@string/hint_iceforce_ice_base_info17"
+                    android:textColor="@color/text_black_xl"
+                    android:textSize="@dimen/sp_font_detail_content_15sp"/>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dp15"
+                android:layout_marginRight="@dimen/dp15"
+            >
+
+                <include layout="@layout/line_layout_05dp"
+                />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/dp_spacing_to_left_right_15dp"
+                android:layout_marginRight="@dimen/dp_spacing_to_left_right_15dp"
+                android:minHeight="50dp"
+                android:orientation="horizontal"
+            >
+
+                <tablayout.view.textview.FontTextView
+                    style="@style/font_text_content_sytle"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/iceforce_invested_project_info18"
+                    android:textColor="@color/text_black_s"/>
+
+                <tablayout.view.textview.FontTextView
+                    android:id="@+id/tv_esg"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="3"
+                    android:background="@null"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:hint="@string/hint_iceforce_ice_base_info18"
+                    android:textColor="@color/text_black_xl"
+                    android:textSize="@dimen/sp_font_detail_content_15sp"/>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dp15"
+                android:layout_marginRight="@dimen/dp15"
+            >
+
+                <include layout="@layout/line_layout_05dp"
+                />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <include layout="@layout/include_ll_save_btn_view"></include>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <yunjing.view.StatusTipsView
+        android:id="@+id/view_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+    />
+</LinearLayout>

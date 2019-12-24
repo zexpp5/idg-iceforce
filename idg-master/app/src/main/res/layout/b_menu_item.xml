@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tablayout.view.rippleview.MaterialRippleLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    app:rippleColor="#fff">
+
+    <com.superdata.marketing.view.percent.PercentLinearLayout
+        android:id="@+id/ll_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <com.superdata.marketing.view.percent.PercentRelativeLayout
+            android:id="@+id/rl_item"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:paddingBottom="8dp"
+            android:paddingLeft="25dp"
+            android:paddingRight="8dp"
+            android:paddingTop="8dp"
+            >
+
+            <ImageView
+                android:id="@+id/menu_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                />
+
+            <tablayout.view.textview.FontTextView
+                android:id="@+id/menu_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/menu_icon"
+                android:gravity="center|left"
+                android:singleLine="true"
+                android:textSize="13sp"
+                />
+
+            <tablayout.view.textview.FontTextView
+                android:id="@+id/menu_item2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/menu_item"
+                android:background="#2f3241"
+                android:gravity="center|left"
+                android:singleLine="true"
+                android:textColor="@color/gray"
+                android:textSize="13sp"
+                app:layout_textSizePercent="7%w"/>
+
+
+        </com.superdata.marketing.view.percent.PercentRelativeLayout>
+
+        <View
+            android:id="@+id/view_009_item"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#8b8b8b"></View>
+    </com.superdata.marketing.view.percent.PercentLinearLayout>
+
+</tablayout.view.rippleview.MaterialRippleLayout>

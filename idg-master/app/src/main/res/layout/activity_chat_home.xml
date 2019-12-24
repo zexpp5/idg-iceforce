@@ -1,0 +1,103 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- 底部四个导航按钮 -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/ll_tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/text_black_sl"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <com.cxgz.activity.cx.utils.dialog.HomeTab
+            android:id="@+id/home_tab_btn_1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:tabfocusable="true"
+            app:tabsrc="@drawable/tab_super_qq_voice_call_bg"
+            app:tabtext="@string/super_voice_call__tab"
+            app:tabtvbg="@color/cx_tab_bar_tv_bg"
+
+            />
+
+        <com.cxgz.activity.cx.utils.dialog.HomeTab
+            android:id="@+id/home_tab_btn_2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:visibility="gone"
+            app:tabfocusable="true"
+            app:tabsrc="@drawable/tab_super_qq_call_bg"
+            app:tabtext="@string/super_call_tab"
+            app:tabtvbg="@color/cx_tab_bar_tv_bg"/>
+
+        <com.cxgz.activity.cx.utils.dialog.HomeTab
+            android:id="@+id/home_tab_btn_4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:tabfocusable="true"
+            app:tabsrc="@drawable/tab_super_qq_friends_bg"
+            app:tabtext="@string/super_main_tab"
+            app:tabtvbg="@color/cx_tab_bar_tv_bg"
+            />
+        <com.cxgz.activity.cx.utils.dialog.HomeTab
+            android:id="@+id/home_tab_btn_3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:tabfocusable="true"
+            app:tabsrc="@drawable/tab_super_qq_main_bg"
+            app:tabtext="@string/super_qq_friends_list_tab"
+            app:tabtvbg="@color/cx_tab_bar_tv_bg"/>
+
+        <com.cxgz.activity.cx.utils.dialog.HomeTab
+            android:id="@+id/home_tab_btn_5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:tabfocusable="true"
+            app:tabsrc="@drawable/tab_super_qq_mine_bg"
+            app:tabtext="@string/super_mine__tab"
+            app:tabtvbg="@color/cx_tab_bar_tv_bg"/>
+
+    </LinearLayout>
+
+    <!-- VIewPager 主要是加载内容的 -->
+
+    <View
+        android:id="@+id/view_01"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_above="@id/ll_tabs"
+        android:background="@color/dividing_line"/>
+
+    <RelativeLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/view_01"
+        android:background="@color/color_fragment_bg"
+        />
+
+    <!--<RelativeLayout-->
+    <!--android:id="@+id/fragment_container_test"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_alignBottom="@+id/view_01"-->
+    <!--android:visibility="gone"-->
+    <!--/>-->
+
+
+</RelativeLayout>

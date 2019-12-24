@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:id="@+id/item_layout"
+
+                android:layout_height="50dp">
+
+
+    <TextView
+        android:layout_centerVertical="true"
+        android:id="@+id/announ_item_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="3dp"
+        android:layout_toLeftOf="@+id/announ_item_time"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:paddingLeft="10dp"
+        android:textSize="16sp"
+        tools:text="helloworldhelloworl"
+        />
+
+
+    <TextView
+        android:id="@+id/announ_item_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:paddingRight="10dp"
+        android:layout_centerVertical="true"
+        android:text="2017-04-12"/>
+
+    <View
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/status"
+        android:background="#f2f2f2"
+        />
+
+
+</RelativeLayout>

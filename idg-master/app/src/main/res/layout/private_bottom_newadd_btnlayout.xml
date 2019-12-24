@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <Button
+        android:id="@+id/btn_newadd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp_spacing_10dp"
+        android:textColor="@color/color_personal_records_top_title"
+        android:textSize="@dimen/sp_font_human_res_15sp"
+        android:visibility="gone"
+        tools:visibility="visible"
+        tools:text="新增xx" />
+</LinearLayout>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/top_title_layout" />
+
+        <LinearLayout
+            style="@style/linear_row_style_common"
+            android:orientation="horizontal">
+
+
+            <tablayout.view.textview.FontTextView
+                style="@style/font_text_content_sytle"
+                android:text="客户单位：" />
+
+            <tablayout.view.textview.FontEditext
+                android:id="@+id/customs_company_title_ed"
+                style="@style/font_edtext_content_sytle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+        </LinearLayout>
+
+        <include layout="@layout/bottom_line_view" />
+
+        <LinearLayout
+            style="@style/linear_row_style_common"
+            android:orientation="horizontal">
+
+
+            <tablayout.view.textview.FontTextView
+                style="@style/font_text_content_sytle"
+                android:text="客户简称：" />
+
+            <tablayout.view.textview.FontEditext
+                android:id="@+id/customs_intro_title_ed"
+                style="@style/font_edtext_content_sytle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                 />
+        </LinearLayout>
+
+        <include layout="@layout/bottom_line_view" />
+
+        <LinearLayout
+            style="@style/linear_row_style_common"
+            android:orientation="horizontal">
+
+
+            <tablayout.view.textview.FontTextView
+                style="@style/font_text_content_sytle"
+                android:text="联系电话：" />
+
+            <tablayout.view.textview.FontEditext
+                android:id="@+id/customs_phone_title_ed"
+                style="@style/font_edtext_content_sytle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+        </LinearLayout>
+
+        <include layout="@layout/bottom_line_view" />
+
+        <LinearLayout
+            style="@style/linear_row_style_common"
+            android:orientation="horizontal">
+
+
+            <tablayout.view.textview.FontTextView
+                style="@style/font_text_content_sytle"
+                android:text="联系地址：" />
+
+            <tablayout.view.textview.FontEditext
+                android:id="@+id/customs_address_title_ed"
+                style="@style/font_edtext_content_sytle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+               />
+        </LinearLayout>
+
+        <include layout="@layout/bottom_line_view" />
+
+        <LinearLayout
+            style="@style/linear_row_style_common"
+            android:orientation="horizontal">
+
+
+            <tablayout.view.textview.FontTextView
+                style="@style/font_text_content_sytle"
+                android:text="@string/fax" />
+
+            <tablayout.view.textview.FontEditext
+                android:id="@+id/customs_fax_title_ed"
+                style="@style/font_edtext_content_sytle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+               />
+        </LinearLayout>
+
+        <include layout="@layout/bottom_line_view" />
+
+        <LinearLayout
+            style="@style/linear_row_style_common"
+            android:orientation="horizontal">
+
+
+            <tablayout.view.textview.FontTextView
+                style="@style/font_text_content_sytle"
+                android:text="@string/zip_code" />
+
+            <tablayout.view.textview.FontEditext
+                android:id="@+id/customs_code_title_ed"
+                style="@style/font_edtext_content_sytle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+        </LinearLayout>
+
+        <include layout="@layout/bottom_line_view" />
+
+    </LinearLayout>
+
+    <include
+        android:id="@+id/share_icon_list_id"
+        style="@style/list_ShareLayout_Style"
+        layout="@layout/list_share_layout"/>
+
+
+
+</RelativeLayout>
+

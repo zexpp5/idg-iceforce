@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="newProject.company.superpower.NewColleagueActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/department_title_layout"
+            layout="@layout/top_title_layout" />
+
+        <LinearLayout
+            style="@style/linear_row_style_common"
+            android:orientation="horizontal">
+
+
+            <tablayout.view.textview.FontTextView
+                style="@style/font_text_content_sytle"
+                android:text="姓  名：" />
+
+            <tablayout.view.textview.FontEditext
+                android:id="@+id/et_name"
+                style="@style/font_edtext_content_sytle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:hint="请输入姓名"
+                android:maxLength="12"
+                android:singleLine="true" />
+        </LinearLayout>
+
+        <include layout="@layout/bottom_line_view" />
+
+
+        <LinearLayout
+            style="@style/linear_row_style_common"
+            android:orientation="horizontal">
+
+
+            <tablayout.view.textview.FontTextView
+                style="@style/font_text_content_sytle"
+                android:text="部  门：" />
+
+            <tablayout.view.textview.FontTextView
+                android:id="@+id/tv_depart"
+                style="@style/font_select_textview_content_sytle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:hint="请选择部门"
+                android:singleLine="true" />
+        </LinearLayout>
+
+        <include layout="@layout/bottom_line_view" />
+
+
+        <LinearLayout
+            style="@style/linear_row_style_common"
+            android:orientation="horizontal">
+
+
+            <tablayout.view.textview.FontTextView
+                style="@style/font_text_content_sytle"
+                android:text="职  位：" />
+
+            <tablayout.view.textview.FontEditext
+                android:id="@+id/et_job"
+                style="@style/font_edtext_content_sytle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:hint="请输入职位"
+                android:maxLength="12"
+                android:singleLine="true" />
+        </LinearLayout>
+
+        <include layout="@layout/bottom_line_view" />
+
+        <LinearLayout
+            style="@style/linear_row_style_common"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+
+            <tablayout.view.textview.FontTextView
+                style="@style/font_text_content_sytle"
+                android:text="上  级：" />
+
+            <tablayout.view.textview.FontTextView
+                android:id="@+id/tv_superior"
+                style="@style/font_select_textview_content_sytle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:singleLine="true" />
+        </LinearLayout>
+
+        <!-- <include layout_city="@layout_city/bottom_line_view" />-->
+
+
+        <LinearLayout
+            style="@style/linear_row_style_common"
+            android:orientation="horizontal">
+
+
+            <tablayout.view.textview.FontTextView
+                style="@style/font_text_content_sytle"
+                android:text="账  号：" />
+
+            <tablayout.view.textview.FontEditext
+                android:id="@+id/et_number"
+                style="@style/font_edtext_content_sytle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:hint="请输入账号"
+                android:inputType="number"
+                android:maxLength="11"
+                android:singleLine="true" />
+        </LinearLayout>
+
+        <include layout="@layout/bottom_line_view" />
+
+
+        <LinearLayout
+            style="@style/linear_row_style_common"
+            android:orientation="horizontal">
+
+
+            <tablayout.view.textview.FontTextView
+                style="@style/font_text_content_sytle"
+                android:text="密  码：" />
+
+            <tablayout.view.textview.FontEditext
+                android:id="@+id/et_password"
+                style="@style/font_edtext_content_sytle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:hint="请输入密码"
+                android:maxLength="12"
+                android:singleLine="true" />
+        </LinearLayout>
+
+        <include layout="@layout/bottom_line_view" />
+
+    </LinearLayout>
+
+    <include
+        layout="@layout/public_add_btn_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

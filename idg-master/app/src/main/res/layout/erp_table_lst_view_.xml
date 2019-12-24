@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="@color/staff_activity_default_bg"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_table"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/erp_up_and_down_dp"
+        android:layout_marginLeft="@dimen/erp_left_and_right_dp"
+        android:layout_marginRight="@dimen/erp_left_and_right_dp"
+        android:layout_weight="1"
+        android:background="@color/white"
+        >
+
+        <View
+            android:id="@+id/view_line_title"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@color/erp_line_view_colors"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_above="@id/tv_name"
+            android:background="@color/erp_line_view_colors"/>
+
+        <!-- 左边 top头-->
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="90dp"
+            android:layout_height="@dimen/table_height"
+            android:layout_below="@id/view_line_title"
+            android:background="@drawable/erp_shape_right"
+            android:gravity="center"
+            android:text="商品名称"
+            android:textSize="15sp"/>
+
+        <!--第二行-->
+        <LinearLayout
+            android:id="@+id/tv_two_line"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/tv_name"
+            android:orientation="vertical"
+            android:visibility="gone"
+            >
+
+            <TextView
+                android:id="@+id/tv_second_line"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:text="崩了个溃"/>
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/no_no"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/tv_two_line"
+            android:background="@color/erp_line_view_colors"
+            android:visibility="gone"/>
+
+
+        <!-- 右边 top头-->
+
+        <yunjing.table.NoScrollHorizontalScrollView
+            android:id="@+id/sv_title"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/view_line_title"
+            android:layout_toRightOf="@id/tv_name"
+            android:overScrollMode="never"
+            android:scrollbars="none"
+            >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/linearlayout_head"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dp"
+                    android:background="#6DD9FC"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:focusableInTouchMode="true"
+                    ></LinearLayout>
+
+                <ListView
+                    android:id="@+id/listview"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:cacheColorHint="#00000000"
+                    android:divider="@drawable/item_v_line"
+                    android:overScrollMode="never"
+                    android:scrollbars="none"
+                    />
+            </LinearLayout>
+        </yunjing.table.NoScrollHorizontalScrollView>
+
+
+        <View
+            android:id="@+id/tv_name_below"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/tv_name"
+            android:background="@color/erp_line_view_colors"/>
+
+        <!--左边list -->
+        <ListView
+            android:id="@+id/lv_goodname"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_name_below"
+            android:divider="@color/erp_line_view_colors"
+            android:dividerHeight="@dimen/dp1"
+            android:footerDividersEnabled="true"
+            android:overScrollMode="never"
+            android:scrollbars="none"/>
+
+
+        <!--右边list -->
+        <yunjing.table.LinkedHorizontalScrollView
+            android:id="@+id/sv_good_detail"
+            android:layout_width="750dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_name_below"
+            android:layout_toRightOf="@id/lv_goodname"
+            android:overScrollMode="never"
+            android:scrollbars="none">
+
+            <ListView
+                android:id="@+id/lv_good_info"
+                android:layout_width="750dp"
+                android:layout_height="wrap_content"
+                android:divider="@color/erp_line_view_colors"
+                android:dividerHeight="@dimen/dp1"
+                android:footerDividersEnabled="true"
+                android:overScrollMode="never"
+                android:scrollbars="none"/>
+        </yunjing.table.LinkedHorizontalScrollView>
+
+        <!--仓库多出来的傻逼合计开始了啊啊啊啊-->
+
+        <include
+            android:id="@+id/warehouse_tatal_ll"
+            layout="@layout/erp_table_bottom_total_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:visibility="gone"/>
+        <!--仓库多出来的傻逼合计结束了啊啊啊啊-->
+
+        <!--有合计的时候右边详情向上滑动错位-->
+        <!-- <View
+            android:visibility="gone"
+            android:id="@+id/test1"
+            android:layout_width="750dp"
+            android:layout_height="1dp"
+            android:layout_above="@id/tv_bottom_name"
+            android:layout_marginLeft="90dp"
+            android:background="@color/search_icon_de_bg" />-->
+        <!--有合计的时候右边详情向上滑动错位-->
+
+        <TextView
+            android:id="@+id/tv_bottom_name"
+            android:layout_width="90dp"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+
+            android:gravity="center"
+            android:text="商品名称"
+            android:textSize="15sp"
+            android:visibility="gone"
+            />
+
+        <yunjing.table.NoScrollBottomHorizontalScrollView
+            android:id="@+id/sv_bottom_total"
+            android:layout_width="750dp"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@id/tv_name"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="750dp"
+                android:layout_height="40dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_bottom1"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/erp_shape_right"
+                    android:gravity="center"
+                    android:text=""
+                    android:textSize="15sp"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/tv_bottom2"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/erp_shape_right"
+                    android:gravity="center"
+                    android:text=""
+                    android:textSize="15sp"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/tv_bottom3"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/erp_shape_right"
+                    android:gravity="center"
+                    android:text=""
+                    android:textSize="15sp"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/tv_bottom4"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/erp_shape_right"
+                    android:gravity="center"
+                    android:text=""
+                    android:textSize="15sp"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/tv_bottom5"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/erp_shape_right"
+                    android:gravity="center"
+                    android:text=""
+                    android:textSize="15sp"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/tv_bottom6"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/erp_shape_right"
+                    android:gravity="center"
+                    android:text=""
+                    android:textSize="15sp"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/tv_bottom7"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/erp_shape_right"
+                    android:gravity="center"
+                    android:text=""
+                    android:textSize="15sp"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/tv_bottom8"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/erp_shape_right"
+                    android:gravity="center"
+                    android:text=""
+                    android:textSize="15sp"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/tv_bottom9"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/erp_shape_right"
+                    android:gravity="center"
+                    android:text=""
+                    android:textSize="15sp"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/tv_bottom10"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/erp_shape_right"
+                    android:gravity="center"
+                    android:text=""
+                    android:textSize="15sp"
+                    android:visibility="gone"/>
+                <!-- <View
+                     android:layout_width="1dp"
+                     android:layout_height="match_parent"
+                     android:background="@color/search_icon_de_bg" />-->
+                <TextView
+                    android:id="@+id/tv_bottom11"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/erp_shape_right"
+                    android:gravity="center"
+                    android:text=""
+                    android:textSize="15sp"
+                    android:visibility="gone"/>
+            </LinearLayout>
+        </yunjing.table.NoScrollBottomHorizontalScrollView>
+
+        <!--  <View
+            android:id="@+id/warehouse_line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_above="@id/tv_bottom_name"
+            android:background="@color/search_icon_de_bg"
+            android:visibility="gone"/>-->
+    </RelativeLayout>
+
+    <!--   <include
+           android:id="@+id/all_bottom_bar_id_list"
+           layout_city="@layout_city/all_bottom_bar"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_alignParentBottom="true"
+           />-->
+</LinearLayout>

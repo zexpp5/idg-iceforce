@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/top_title_layout" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <!--线条高度-->
+            <include layout="@layout/erp_line_one_view" />
+
+            <LinearLayout
+                style="@style/d_s_ll_style"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    style="@style/d_s_s_in_tow_ll_style"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/d_s_left_font_sytle"
+                        android:text="协作人：" />
+
+                    <TextView
+                        android:id="@+id/tv_cooperation_human"
+                        style="@style/d_s_content_font_select_textview_sytle" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!--线条高度-->
+            <include layout="@layout/erp_line_one_view" />
+
+            <LinearLayout
+                style="@style/d_s_ll_style"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    style="@style/d_s_s_in_tow_ll_style"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/d_s_left_font_sytle"
+                        android:text="开始时间：" />
+
+                    <TextView
+                        android:id="@+id/tv_start_time"
+                        style="@style/d_s_content_font_select_textview_sytle" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!--线条高度-->
+            <include layout="@layout/erp_line_one_view" />
+
+            <LinearLayout
+                style="@style/d_s_ll_style"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    style="@style/d_s_s_in_tow_ll_style"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        style="@style/d_s_right_font_sytle"
+                        android:text="结束时间：" />
+
+                    <TextView
+                        android:id="@+id/tv_stop_time"
+                        style="@style/d_s_content_font_select_textview_sytle" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <!--线条高度-->
+            <include layout="@layout/erp_line_one_view" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingRight="10dp">
+
+                <TextView
+                    style="@style/d_s_left_font_sytle"
+                    android:layout_height="@dimen/dp45"
+                    android:gravity="center"
+                    android:layout_marginLeft="@dimen/name_m_to_left_dp"
+                    android:text="协作内容：" />
+
+
+                <EditText
+                    android:id="@+id/et_cooperation_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:maxLength="15"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/s_d_font_size" />
+            </LinearLayout>
+
+            <!--线条高度-->
+
+            <!--线条高度-->
+            <include layout="@layout/erp_line_one_view" />
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

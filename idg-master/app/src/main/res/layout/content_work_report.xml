@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="yunjing.ui.work_report.WorkReportActivity"
+    tools:showIn="@layout/activity_work_report">
+    <yunjing.view.CustomNavigatorBar
+        android:id="@+id/customView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:leftImageVisiable="true"
+        app:rightImageVisible="true"
+        app:leftText="左边"
+        app:rightText="右边"
+        app:midText="标题"
+        app:midTextFontColor="#ffffff"
+        app:leftTextColor="#ffffff"
+        app:rightTextColor="@color/colorAccent"
+        app:titleBarBackground="@color/colorPrimary"
+        app:midTextFontSize="18sp"
+        app:leftTextVisibale="true"
+        app:rightTextVisible="true"
+        app:leftTextFontSize="16sp"
+        app:rightTextFontSize="16sp"
+        />
+</android.support.constraint.ConstraintLayout>

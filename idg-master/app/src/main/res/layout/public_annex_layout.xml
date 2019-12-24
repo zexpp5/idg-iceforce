@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/enclosure_ll_style"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+   >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/annex_text_title"
+        android:textSize="@dimen/sp_font_detail_content_15sp"
+        />
+
+    <include
+        layout="@layout/erp_file_select_layout_detail"/>
+</LinearLayout>

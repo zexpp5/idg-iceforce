@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.superdata.marketing.view.percent.PercentLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_fragment_bg"
+    android:orientation="vertical">
+
+    <!--<include-->
+    <!--android:id="@+id/title_super"-->
+    <!--layout_city="@layout_city/super_top_title"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content" />-->
+
+    <include
+        layout="@layout/sd_top_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <com.superdata.marketing.view.percent.PercentLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_paddingRightPercent="@string/list_margin_right">
+
+
+    </com.superdata.marketing.view.percent.PercentLinearLayout>
+
+    <tablayout.view.rippleview.MaterialRippleLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_heightPercent="16%w">
+
+        <com.superdata.marketing.view.percent.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#fff"
+            android:gravity="center_vertical"
+            android:onClick="erweima"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/invite_erweima"
+                app:layout_marginLeftPercent="3.5%w"
+                app:layout_paddingLeftPercent="@string/list_margin_left"/>
+
+            <tablayout.view.textview.FontTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="二维码邀请"
+                app:layout_marginLeftPercent="3.5%w"
+                app:layout_paddingRightPercent="@string/list_margin_right"
+                android:textSize="@dimen/font_size_item_name"
+            />
+
+        </com.superdata.marketing.view.percent.PercentLinearLayout>
+    </tablayout.view.rippleview.MaterialRippleLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/dividing_line"/>
+
+    <tablayout.view.rippleview.MaterialRippleLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_heightPercent="16%w">
+
+        <com.superdata.marketing.view.percent.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:onClick="copy"
+            android:orientation="horizontal"
+        >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/icon_invite_copy"
+                app:layout_marginLeftPercent="1%w"
+                app:layout_paddingLeftPercent="@string/list_margin_left"/>
+
+            <tablayout.view.textview.FontTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="复制邀请"
+                app:layout_marginLeftPercent="3.5%w"
+                app:layout_paddingRightPercent="@string/list_margin_right"
+                app:layout_textSizePercent="@string/text_size"/>
+        </com.superdata.marketing.view.percent.PercentLinearLayout>
+    </tablayout.view.rippleview.MaterialRippleLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/dividing_line"
+        android:visibility="gone"/>
+</com.superdata.marketing.view.percent.PercentLinearLayout>

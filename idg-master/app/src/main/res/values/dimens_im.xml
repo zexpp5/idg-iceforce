@@ -1,0 +1,130 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <!--//公共资源定义-->
+    //圆点-小红点
+    //小红点宽高(lr)
+    //内嵌多少dp
+    <dimen name="circular_margin_left">-8dp</dimen>
+    <dimen name="circular_margin_bottom">-8dp</dimen>
+    //距离右边和上边的距离
+    <dimen name="circular_margin_right">4dp</dimen>
+    <dimen name="circular_margin_top">4dp</dimen>
+
+    //IM的资源文件
+    <!--Imfragment界面-->
+    //头像距离item左侧的距离
+    <dimen name="item_height">65dp</dimen>
+    //大头像宽高(wh)
+    <dimen name="item_icon_wh">48dp</dimen>
+    //小头像宽高(wh)
+    <dimen name="item_icon_wh_small">30dp</dimen>
+    //头像距离左边距
+    <dimen name="head_imageView_leftSpacing">10dp</dimen>
+    //头像距离上边距
+    <dimen name="head_imageView_topSpacing">10dp</dimen>
+    //head名字和时间父View距离头像下移
+    <dimen name="head_spacing_top">2dp</dimen>
+    //message父View距离头像上移
+    <dimen name="message_spacing_bottom">2dp</dimen>
+    //内容的左右(lr)边距
+    <dimen name="content_lr_spacing">10dp</dimen>
+
+    //chatActivity内部的-聊天的填充！
+
+    //minHeight聊天文字的最小高度
+    <dimen name="size_avatar">35dp</dimen>
+    //头像大小
+    <dimen name="chat_icon_wh">40dp</dimen>
+    //头像距离上左边距！(left -top)-及聊天框到头像距离-也适用
+    <dimen name="chat_icon_spacing_lt">10dp</dimen>
+    //聊天框到头像的距离
+    <dimen name="chat_contentRelativeLayout_spacing_lr">5dp</dimen>
+    //聊天框距离名字的距离
+    <dimen name="chat_contentRelativeLayout_top_spacing_lr">5dp</dimen>
+    //内部聊天文字到聊天框的左边的spacing
+    <dimen name="chat_content_spacing_left">20dp</dimen>
+    //内部聊天文字到聊天框的右边的spacing
+    <dimen name="chat_content_spacing_right">15dp</dimen>
+    //内部聊天文字到上下的spcing
+    <dimen name="chat_content_spacing_top_bottom">10dp</dimen>
+
+    //中间时间文字四周padding
+    <dimen name="chat_content_date_time_padding">4dp</dimen>
+    //中间时间文字上下margin
+    <dimen name="chat_content_date_time_margin">10dp</dimen>
+    //文字长度
+    <dimen name="chat_content_length">225.0dp</dimen>
+    //聊天文字距离顶部-（不包含时间的情况下）
+    <dimen name="chat_item_content_spacing_top">5dp</dimen>
+    //聊天文字距离底部-（不包含时间的情况下）
+    <dimen name="chat_item_content_spacing_bottom">10dp</dimen>
+    //百度定位图标的大小
+    <dimen name="chat_item_baidu_icon_width">11dp</dimen>
+    <dimen name="chat_item_baidu_icon_height">13dp</dimen>
+    //百度小图标(状态等)距离左右布局的spacing
+    <dimen name="chat_item_otherIcon_spacing_lr">10dp</dimen>
+    //发送进度转圈状态宽高(width-heigh)
+    <dimen name="chat_item_progressbar_wh">20dp</dimen>
+    /* 收到信息时候，显示的用户名 */
+    //用户名距离顶部位置-目前不需要！
+    //聊天框距离顶部的用户名
+    //文件传输的图标大小
+    <dimen name="chat_document_icon_size">36dp</dimen>
+    //语音的viewgroup长度
+    <dimen name="chat_voice_width">80dp</dimen>
+    //语音小红点到秒数的距离
+
+    <dimen name="chat_guangzhu_dp12">12dp</dimen>
+
+    <!--//字体大小-->
+    <!--Fragment标题-->
+    //搜索
+
+    <dimen name="font_size_fragment_title">18sp</dimen>
+    //名字
+    <dimen name="font_size_item_name">15sp</dimen>
+    //办公菜单
+    <dimen name="font_size_item_name_business">16sp</dimen>
+    //x密聊后缀
+    <dimen name="font_size_remark_12sp">12sp</dimen>
+    <dimen name="font_size_remark_13sp">13sp</dimen>
+
+    //群聊名字
+    <dimen name="font_size_item_name_received">13sp</dimen>
+    //时间
+    <dimen name="font_size_item_time">12sp</dimen>
+    //内容
+    <dimen name="font_size_item_content">14sp</dimen>
+    //小圆点的内部字体大小
+    <dimen name="font_size_item_circular">11sp</dimen>
+
+    //聊天框内的
+    <dimen name="font_size_chat_content">16sp</dimen>
+    //聊天文字的间距
+    <dimen name="font_size_chat_text_spacing">2dp</dimen>
+    //聊天时间文字的大小
+    <dimen name="font_size_chat_date_text">12sp</dimen>
+    //已读未读字体
+    <dimen name="font_size_chat_message_state">12sp</dimen>
+
+    //通知字体大小
+    <dimen name="font_size_chat_notice">12sp</dimen>
+
+    //call Fragment
+    //通话状态图标大小
+    <dimen name="icon_call_size">28dp</dimen>
+
+    //群组详情。
+    <dimen name="margin_12dp">12dp</dimen>
+
+    //事务的间隔
+    <dimen name="im_business_padding_left_and_right">10dp</dimen>
+
+    //事务头像大小
+    <dimen name="im_business_icon_wh">40dp</dimen>
+
+    //工作圈
+    <dimen name="gudieview_width">6dp</dimen>
+    <dimen name="gudieview_heigh">6dp</dimen>
+
+</resources>

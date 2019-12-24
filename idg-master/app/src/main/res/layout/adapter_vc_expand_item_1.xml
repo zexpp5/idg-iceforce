@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp_spacing_10dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="@dimen/dp_spacing_20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="讨论内容"
+                android:textColor="@color/text_black_l" />
+
+            <TextView
+                android:id="@+id/tv_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_spacing_20dp"
+                android:layout_marginRight="@dimen/dp_spacing_8dp"
+                android:textColor="@color/text_black_l" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginTop="@dimen/dp_spacing_10dp"
+            android:background="@color/dividing_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp_spacing_20dp"
+                android:layout_marginLeft="@dimen/dp_spacing_18dp"
+                android:layout_marginTop="@dimen/dp_spacing_20dp"
+                android:text="见过的人"
+                android:textColor="@color/text_black_xxl" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp_spacing_8dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="@dimen/dp_spacing_20dp"
+                android:text="团队评分"
+                android:textColor="@color/text_black_xxl" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp_spacing_15dp"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="@dimen/dp_spacing_20dp"
+                android:text="市场评分"
+                android:textColor="@color/text_black_xxl" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_spacing_15dp"
+            android:layout_marginBottom="@dimen/dp_spacing_15dp"
+            android:layout_marginLeft="@dimen/dp_spacing_20dp"
+            android:textColor="@color/text_black_s"/>
+
+        <RatingBar
+            android:id="@+id/rb_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_spacing_20dp"
+            android:numStars="5"
+            android:rating="3.5"
+            android:stepSize="0.5"
+            android:isIndicator="true"
+            android:progressTint="#FFDD55"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_gravity="center_vertical"
+            />
+
+        <TextView
+            android:id="@+id/tv_score_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_spacing_15dp"
+            android:layout_marginBottom="@dimen/dp_spacing_15dp"
+            android:layout_marginLeft="@dimen/dp_spacing_6dp"
+            android:textSize="@dimen/sp_font_detail_content_14sp"
+            android:textColor="#FFDD55"/>
+
+        <RatingBar
+            android:id="@+id/rb_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_spacing_15dp"
+            android:numStars="5"
+            android:rating="3.5"
+            android:stepSize="0.5"
+            android:isIndicator="true"
+            android:progressTint="#FFDD55"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_gravity="center_vertical"
+            />
+
+        <TextView
+            android:id="@+id/tv_score_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_spacing_15dp"
+            android:layout_marginBottom="@dimen/dp_spacing_15dp"
+            android:layout_marginLeft="@dimen/dp_spacing_6dp"
+            android:textColor="#FFDD55"
+            android:textSize="@dimen/sp_font_detail_content_14sp"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,26 @@
+<resources>>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+
+    <style name="CXIMTheme" parent="AppBaseTheme"></style>
+
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- customize the color palette -->
+        <item name="colorPrimary">@color/top_bg</item>
+        <item name="colorPrimaryDark">@color/top_bg</item>
+        <item name="colorAccent">@color/material_blue_grey_800</item>
+        <item name="toolbarStyle">@style/ClubToolbar</item>
+        <item name="actionMenuTextColor">@color/white</item>
+    </style>
+
+    <style name="ClubToolbar" parent="Widget.AppCompat.Toolbar">
+        <item name="contentInsetStart">0dp</item><!-- 设置该属性解决空白部分-->
+        <item name="android:minHeight">0dp</item>
+
+    </style>
+</resources>

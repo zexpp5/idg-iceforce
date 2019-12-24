@@ -1,0 +1,35 @@
+apply plugin: 'com.android.library'
+
+android {
+    def versions = rootProject.ext.versions // 配置
+    compileSdkVersion versions.compileSdkVersion
+    buildToolsVersion versions.buildToolsVersion
+
+    defaultConfig {
+        minSdkVersion versions.minSdkVersion
+        targetSdkVersion versions.targetSdkVersion
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+        }
+    }
+    android {
+        lintOptions {
+            abortOnError false
+        }
+    }
+    task intoJar(type: Copy) {
+        delete 'build/libs/CalendarView.jar'
+        from('build/intermediates/bundles/release/')
+        into('build/libs/')
+        include('classes.jar')
+        rename('classes.jar', 'CalendarView.jar')
+    }
+    intoJar.dependsOn(build)
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile project(':base')
+}

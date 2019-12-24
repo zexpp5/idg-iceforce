@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+    <include
+        android:id="@+id/title_super"
+        layout="@layout/sd_top_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+    />
+
+    <ScrollView
+        style="@style/erp_scrollview_style_general"
+        android:layout_above="@+id/all_bottom_bar_id_list"
+    >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <include layout="@layout/erp_line_one_view_grey"/>
+
+            <LinearLayout
+                style="@style/d_s_ll_style"
+                android:orientation="horizontal">
+
+                <tablayout.view.textview.FontTextView
+                    style="@style/d_s_left_font_sytle"
+                    android:text="@string/im_business_colon_date"/>
+
+                <tablayout.view.textview.FontEditext
+                    android:id="@+id/im_business_work_submit_date_edt"
+                    style="@style/d_s_content_font_edtext_sytle"/>
+
+            </LinearLayout>
+
+            <!--线条高度-->
+            <include layout="@layout/erp_line_one_view_grey"/>
+
+            <LinearLayout
+                style="@style/d_s_ll_style"
+                android:orientation="horizontal">
+
+                <tablayout.view.textview.FontTextView
+                    style="@style/d_s_left_font_sytle"
+                    android:text="@string/im_business_colon_title"/>
+
+                <tablayout.view.textview.FontEditext
+                    android:id="@+id/im_business_work_submit_title_edt"
+                    style="@style/d_s_content_font_edtext_sytle"/>
+
+            </LinearLayout>
+
+            <!--线条高度-->
+            <include layout="@layout/erp_line_one_view_grey"/>
+
+            <!--<LinearLayout-->
+                <!--style="@style/d_s_ll_style"-->
+                <!--android:orientation="horizontal">-->
+
+                <!--<tablayout.view.textview.FontTextView-->
+                    <!--style="@style/d_s_left_font_sytle"-->
+                    <!--android:text="@string/im_business_colon_leave_date"/>-->
+
+                <!--<tablayout.view.textview.FontEditext-->
+                    <!--android:id="@+id/im_business_leave_start_time_edt"-->
+                    <!--style="@style/d_s_content_font_edtext_sytle"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:hint="11月11日 11:11"-->
+                <!--/>-->
+
+                <!--<tablayout.view.textview.FontTextView-->
+                    <!--style="@style/d_s_left_font_sytle"-->
+                    <!--android:layout_marginLeft="@dimen/name_m_to_content_left_dp"-->
+                    <!--android:text="至"/>-->
+
+                <!--<tablayout.view.textview.FontEditext-->
+                    <!--android:id="@+id/im_business_leave_end_time_edt"-->
+                    <!--style="@style/d_s_content_font_edtext_sytle"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:hint="11月11日 11:11"-->
+                <!--/>-->
+
+            <!--</LinearLayout>-->
+
+            <LinearLayout
+                style="@style/d_s_ll_style"
+                android:orientation="horizontal">
+
+                <tablayout.view.textview.FontTextView
+                    style="@style/d_s_left_font_sytle"
+                    android:text="@string/im_business_colon_leave_date"/>
+
+                <tablayout.view.textview.FontTextView
+                    android:id="@+id/im_business_leave_start_time_edt"
+                    style="@style/d_s_content_font_edtext_sytle"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:hint="11月11日 11:11"
+                />
+
+                <tablayout.view.textview.FontTextView
+                    style="@style/d_s_left_font_sytle"
+                    android:layout_marginLeft="@dimen/name_m_to_content_left_dp"
+                    android:text="至"/>
+
+                <tablayout.view.textview.FontTextView
+                    android:id="@+id/im_business_leave_end_time_edt"
+                    style="@style/d_s_content_font_edtext_sytle"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:hint="11月11日 11:11"
+                />
+
+            </LinearLayout>
+
+            <!--线条高度-->
+            <include layout="@layout/erp_line_one_view_grey"/>
+
+            <LinearLayout
+                style="@style/d_s_s_in_tow_ll_style_prevision"
+                android:orientation="horizontal">
+
+                <tablayout.view.textview.FontTextView
+                    style="@style/d_s_left_font_sytle"
+                    android:text="@string/im_business_colon_content"/>
+
+                <tablayout.view.textview.FontEditext
+                    android:id="@+id/im_business_work_submit_remark_edt"
+                    style="@style/d_s_content_font_edtext_sytle_remark"
+                    android:hint="@string/basic_remark_hint"
+                />
+
+            </LinearLayout>
+
+            <!--线条高度-->
+            <include layout="@layout/erp_line_one_view_grey"/>
+
+            <LinearLayout
+                style="@style/d_s_ll_style"
+                android:orientation="horizontal">
+
+                <tablayout.view.textview.FontTextView
+                    style="@style/d_s_left_font_sytle"
+                    android:layout_marginRight="@dimen/name_m_to_content_left_dp"
+                    android:text="@string/im_business_colon_file"/>
+
+                <include
+                    android:id="@+id/file_btn_include"
+                    layout="@layout/erp_im_work_file_select_layout"/>
+
+            </LinearLayout>
+
+            <!--线条高度-->
+            <include layout="@layout/erp_line_one_view_grey"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

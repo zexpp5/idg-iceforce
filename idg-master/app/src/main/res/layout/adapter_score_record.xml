@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_spacing_15dp"
+        android:layout_marginBottom="@dimen/dp_spacing_15dp"
+        android:layout_marginLeft="@dimen/dp_spacing_20dp"
+        android:textColor="@color/text_black_s"/>
+
+    <RatingBar
+        android:id="@+id/rb_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_spacing_20dp"
+        android:numStars="5"
+        android:rating="3.5"
+        android:stepSize="0.5"
+        android:isIndicator="true"
+        android:progressTint="#FFDD55"
+        style="?android:attr/ratingBarStyleSmall"
+        android:layout_gravity="center_vertical"
+        />
+
+    <TextView
+        android:id="@+id/tv_score_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_spacing_15dp"
+        android:layout_marginBottom="@dimen/dp_spacing_15dp"
+        android:layout_marginLeft="@dimen/dp_spacing_6dp"
+        android:textSize="@dimen/sp_font_detail_content_14sp"
+        android:textColor="#FFDD55"/>
+
+    <RatingBar
+        android:id="@+id/rb_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_spacing_15dp"
+        android:numStars="5"
+        android:rating="3.5"
+        android:stepSize="0.5"
+        android:isIndicator="true"
+        android:progressTint="#FFDD55"
+        style="?android:attr/ratingBarStyleSmall"
+        android:layout_gravity="center_vertical"
+        />
+
+    <TextView
+        android:id="@+id/tv_score_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_spacing_15dp"
+        android:layout_marginBottom="@dimen/dp_spacing_15dp"
+        android:layout_marginLeft="@dimen/dp_spacing_6dp"
+        android:textColor="#FFDD55"
+        android:textSize="@dimen/sp_font_detail_content_14sp"/>
+
+</LinearLayout>

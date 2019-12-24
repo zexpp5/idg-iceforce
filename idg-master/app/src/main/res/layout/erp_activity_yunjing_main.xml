@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/im_line_color"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/title_yunjing"
+        layout="@layout/yunjing_main_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/info_layout"
+                layout="@layout/erp_info_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+            <include layout="@layout/line_layout_5dp" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/main_rv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

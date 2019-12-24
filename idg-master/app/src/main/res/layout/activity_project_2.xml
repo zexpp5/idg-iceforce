@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <!--<include-->
+    <!--android:id="@+id/top_bar_layout"-->
+    <!--layout_city="@layout_city/top_title_layout" />-->
+
+    <RelativeLayout
+        android:id="@+id/rl_top"
+        android:layout_width="0dp"
+        android:layout_height="160dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="0dp" app:layout_constraintHorizontal_bias="0.0">
+
+        <ImageView
+            android:id="@+id/head_image"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:background="@mipmap/img_project_top_bg"
+            android:scaleType="fitXY" />
+
+        <yunjing.view.CustomNavigatorBar
+            android:id="@+id/title_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:leftImage="@mipmap/icon_public_back"
+            app:leftText="@string/back_text"
+            app:leftTextColor="@color/white"
+            app:leftTextFontSize="@dimen/sp_font_detail_content_15sp"
+            app:leftTextVisibale="false"
+            app:midTextFontColor="@color/white"
+            app:rightImage="@mipmap/icon_public_add"
+            app:rightImageVisible="false"
+            app:rightSecondImage="@mipmap/icon_public_search"
+            app:rightSecondImageVisble="false"
+            app:rightText="@string/commit_text"
+            app:rightTextColor="@color/white"
+            app:rightTextVisible="true"
+            app:titleBarBackground="@color/transparency"></yunjing.view.CustomNavigatorBar>
+
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="1dp"
+        android:layout_marginBottom="@dimen/dp8"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/rl_top"
+        android:layout_height="1dp" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/shape_white_top_5r"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/line">
+
+        <!--<TextView-->
+        <!--android:id="@+id/item_title"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginLeft="@dimen/dp_spacing_10dp"-->
+        <!--android:ellipsize="end"-->
+        <!--android:singleLine="true"-->
+        <!--android:text="你你你"-->
+        <!--android:textColor="#333333"-->
+        <!--android:textSize="16sp"-->
+        <!--android:textStyle="bold"-->
+        <!--android:visibility="gone"-->
+        <!--/>-->
+
+        <LinearLayout
+            android:id="@+id/menu_container_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

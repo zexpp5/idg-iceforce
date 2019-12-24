@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+
+    <com.cxgz.activity.cx.view.photoview.scrollerproxy.HackyViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="40dp"
+        android:background="#0F1214"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/black">
+
+        <LinearLayout
+            android:id="@+id/ll_return"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/not_found_img"
+                android:scaleType="fitXY"
+                android:src="@drawable/folder_back"/>
+        </LinearLayout>
+
+        <tablayout.view.textview.FontTextView
+            android:id="@+id/tv_indicator"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:text="@string/viewpager_indicator"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"/>
+
+        <LinearLayout
+            android:id="@+id/ll_delete"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/not_found_img"
+                android:scaleType="fitCenter"
+                android:src="@mipmap/temp_camera_delete"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>

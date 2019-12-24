@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="290dp"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center"
+              android:orientation="vertical">
+
+    <!--  <LinearLayout 去掉上面的标向箭头
+          android:background="@color/transparency"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+          <ImageView
+              android:id="@+id/arrow_up"
+              android:layout_gravity="left"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="10dp"
+              android:src="@mipmap/action_arrow_down"
+              android:visibility="visible" />
+
+      </LinearLayout>-->
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:background="@color/dialog_title_and_foot_bg">
+
+
+        <tablayout.view.textview.FontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/search_title"
+            android:textSize="16sp"/>
+
+    </RelativeLayout>
+
+    <include
+        layout="@layout/erp_line_one_view_white"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            style="@style/d_s_ll_style"
+            android:layout_height="50dp"
+            android:layout_marginTop="3dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <!--统一定义-->
+            <tablayout.view.textview.FontTextView
+                android:id="@+id/find_dialog_tv"
+                style="@style/d_s_left_font_sytle"
+                android:text="@string/search_condition"/>
+
+            <tablayout.view.textview.FontEditext
+                android:id="@+id/search_condition"
+                style="@style/d_s_content_font_edtext_sytle_remark"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+            />
+
+            <!--非输入框-->
+            <tablayout.view.textview.FontTextView
+                android:id="@+id/find_time_tv"
+                style="@style/d_s_content_font_textview_sytle"
+                android:layout_width="match_parent"
+                android:visibility="gone"
+            />
+        </LinearLayout>
+        
+        <include layout="@layout/erp_line_one_view_grey_dialog_title"/>
+
+        <LinearLayout
+            style="@style/d_s_ll_style"
+            android:layout_height="50dp"
+            android:layout_marginTop="3dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <!--统一定义-->
+            <tablayout.view.textview.FontTextView
+                style="@style/d_s_left_font_sytle"
+                android:text="客户类型\u0020:"/>
+
+            <tablayout.view.textview.FontTextView
+                android:id="@+id/cus_type_tv"
+                style="@style/d_s_content_font_select_textview_sytle"
+                android:layout_width="match_parent"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:layout_height="match_parent"
+                android:drawableRight="@mipmap/dao_sj_bg"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+            />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <include
+        layout="@layout/erp_line_one_view_white"/>
+
+
+    <com.superdata.marketing.view.percent.PercentLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/dialog_title_and_foot_bg"
+        android:gravity="center">
+
+        <RelativeLayout
+            android:id="@+id/send_bottom_rl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/erp_submit_delete_btn_item_bg"
+        >
+
+            <LinearLayout
+                android:layout_width="80dp"
+                android:layout_height="27dp"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:orientation="horizontal"
+            >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@mipmap/btn_submit_bg"/>
+
+                <tablayout.view.textview.FontTextView
+                    android:id="@+id/send_bottom_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:text="@string/choose_sex_sure"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/sumb_detail_size_15"/>
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/delete_bottom_rl"
+            android:layout_width="80dp"
+            android:layout_height="27dp"
+            android:layout_marginLeft="20dp"
+
+            android:background="@drawable/erp_submit_delete_btn_item_bg"
+            android:clickable="true"
+        >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal"
+            >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+
+                    android:background="@mipmap/btn_submit_cancer"/>
+
+                <tablayout.view.textview.FontTextView
+                    android:id="@+id/delete_bottom_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:textColor="#ffffff"
+                    android:text="@string/choose_sex_cancel"
+                    android:textSize="@dimen/sumb_detail_size_15"/>
+            </LinearLayout>
+        </RelativeLayout>
+
+    </com.superdata.marketing.view.percent.PercentLinearLayout>
+</LinearLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingBottom="@dimen/dp_spacing_10dp"
+        android:paddingLeft="@dimen/dp_spacing_20dp"
+        android:paddingTop="@dimen/dp_spacing_10dp"
+        android:text="相关主题"
+        android:textColor="@color/text_black_l"
+        android:textSize="@dimen/sp_font_detail_content_14sp" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/dp_spacing_10dp"
+        android:background="@color/white"
+        android:overScrollMode="never"
+        android:paddingLeft="@dimen/dp_spacing_20dp"
+        android:scrollbars="none" />
+
+    <LinearLayout
+        android:id="@+id/ll_dist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:paddingBottom="@dimen/dp_spacing_10dp"
+            android:paddingLeft="@dimen/dp_spacing_20dp"
+            android:text="分配情况"
+            android:textColor="@color/text_black_l"
+            android:textSize="@dimen/sp_font_detail_content_14sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/dp_spacing_10dp">
+
+            <TextView
+                android:id="@+id/tv_dist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp_spacing_5dp"
+                android:layout_marginLeft="@dimen/dp_spacing_20dp"
+                android:layout_marginTop="@dimen/dp_spacing_5dp"
+                android:padding="5dp"
+                android:text="已分配"
+                android:textColor="@color/text_black_l"
+                android:textSize="@dimen/sp_font_detail_content_14sp"
+                android:background="@color/background"/>
+
+            <TextView
+                android:id="@+id/tv_undist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp_spacing_5dp"
+                android:layout_marginLeft="@dimen/dp_spacing_20dp"
+                android:layout_marginTop="@dimen/dp_spacing_5dp"
+                android:padding="5dp"
+                android:text="待分配"
+                android:textColor="@color/text_black_l"
+                android:textSize="@dimen/sp_font_detail_content_14sp"
+                android:background="@color/background"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

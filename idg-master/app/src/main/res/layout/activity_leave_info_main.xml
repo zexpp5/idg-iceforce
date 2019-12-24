@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+              android:orientation="vertical"
+                android:background="@color/white"
+>
+
+    <include
+        android:id="@+id/top_bar_layout"
+        layout="@layout/public_title_01"/>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/ll_water"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/dp_spacing_to_left_right_15dp"
+                android:layout_marginRight="@dimen/dp_spacing_to_left_right_15dp"
+                android:minHeight="50dp"
+                android:orientation="horizontal"
+            >
+
+                <tablayout.view.textview.FontTextView
+                    style="@style/font_text_content_sytle"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    android:gravity="center_vertical"
+                    android:text="@string/iceforce_leave_info1"
+                    android:textColor="@color/text_black_s"/>
+
+                <tablayout.view.textview.FontEditext
+                    android:id="@+id/tv_leave_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="3"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:maxLines="5"
+                    android:textColor="@color/text_black_xl"
+                    android:textSize="@dimen/sp_font_detail_content_15sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/dp_spacing_to_left_right_15dp"
+                android:layout_marginRight="@dimen/dp_spacing_to_left_right_15dp"
+                android:minHeight="50dp"
+                android:orientation="horizontal"
+            >
+
+                <tablayout.view.textview.FontTextView
+                    style="@style/font_text_content_sytle"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    android:gravity="center_vertical"
+                    android:text="@string/iceforce_leave_info2"
+                    android:textColor="@color/text_black_s"/>
+
+                <tablayout.view.textview.FontEditext
+                    android:id="@+id/tv_start_time"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="3"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:maxLines="5"
+                    android:text=""
+                    android:textColor="@color/text_black_xl"
+                    android:textSize="@dimen/sp_font_detail_content_15sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/dp_spacing_to_left_right_15dp"
+                android:layout_marginRight="@dimen/dp_spacing_to_left_right_15dp"
+                android:minHeight="50dp"
+                android:orientation="horizontal"
+            >
+
+                <tablayout.view.textview.FontTextView
+                    style="@style/font_text_content_sytle"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    android:gravity="center_vertical"
+                    android:text="@string/iceforce_leave_info3"
+                    android:textColor="@color/text_black_s"/>
+
+                <tablayout.view.textview.FontEditext
+                    android:id="@+id/tv_end_time"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="3"
+                    android:background="@null"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:maxLines="5"
+                    android:text=""
+                    android:textColor="@color/text_black_xl"
+                    android:textSize="@dimen/sp_font_detail_content_15sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/dp_spacing_to_left_right_15dp"
+                android:layout_marginRight="@dimen/dp_spacing_to_left_right_15dp"
+                android:minHeight="50dp"
+                android:orientation="horizontal"
+            >
+
+                <tablayout.view.textview.FontTextView
+                    style="@style/font_text_content_sytle"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    android:gravity="center_vertical"
+                    android:text="@string/iceforce_leave_info4"
+                    android:textColor="@color/text_black_s"/>
+
+                <tablayout.view.textview.FontEditext
+                    android:id="@+id/tv_leave_day_num"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="3"
+                    android:background="@null"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:maxLines="5"
+                    android:text=""
+                    android:textColor="@color/text_black_xl"
+                    android:textSize="@dimen/sp_font_detail_content_15sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/dp_spacing_to_left_right_15dp"
+                android:layout_marginRight="@dimen/dp_spacing_to_left_right_15dp"
+                android:minHeight="50dp"
+                android:orientation="horizontal"
+            >
+
+                <tablayout.view.textview.FontTextView
+                    style="@style/font_text_content_sytle"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    android:gravity="center_vertical"
+                    android:text="@string/iceforce_leave_info5"
+                    android:textColor="@color/text_black_s"/>
+
+                <tablayout.view.textview.FontEditext
+                    android:id="@+id/tv_leave_type"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="3"
+                    android:background="@null"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:maxLines="5"
+                    android:text=""
+                    android:textColor="@color/text_black_xl"
+                    android:textSize="@dimen/sp_font_detail_content_15sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/dp_spacing_to_left_right_15dp"
+                android:layout_marginRight="@dimen/dp_spacing_to_left_right_15dp"
+                android:minHeight="50dp"
+                android:orientation="horizontal"
+            >
+
+                <tablayout.view.textview.FontTextView
+                    style="@style/font_text_content_sytle"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    android:gravity="center_vertical"
+                    android:text="@string/iceforce_leave_info6"
+                    android:textColor="@color/text_black_s"/>
+
+                <tablayout.view.textview.FontTextView
+                    android:id="@+id/tv_leave_reason"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="3"
+                    android:background="@null"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:maxLines="5"
+                    android:textColor="@color/text_black_xl"
+                    android:textSize="@dimen/sp_font_detail_content_15sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/dp_spacing_to_left_right_15dp"
+                android:layout_marginRight="@dimen/dp_spacing_to_left_right_15dp"
+                android:minHeight="50dp"
+                android:orientation="horizontal"
+            >
+
+                <tablayout.view.textview.FontTextView
+                    style="@style/font_text_content_sytle"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    android:gravity="center_vertical"
+                    android:text="@string/iceforce_leave_info7"
+                    android:textColor="@color/text_black_s"/>
+
+                <tablayout.view.textview.FontTextView
+                    android:id="@+id/tv_leave_has_meeting"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="3"
+                    android:background="@null"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:maxLines="5"
+                    android:text=""
+                    android:textColor="@color/text_black_xl"
+                    android:textSize="@dimen/sp_font_detail_content_15sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/dp_spacing_to_left_right_15dp"
+                android:layout_marginRight="@dimen/dp_spacing_to_left_right_15dp"
+                android:minHeight="50dp"
+                android:orientation="horizontal"
+            >
+
+                <tablayout.view.textview.FontTextView
+                    style="@style/font_text_content_sytle"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    android:gravity="center_vertical"
+                    android:text="@string/iceforce_leave_info8"
+                    android:textColor="@color/text_black_s"/>
+
+                <tablayout.view.textview.FontTextView
+                    android:id="@+id/tv_leave_approve_content"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="3"
+                    android:background="@null"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:maxLines="5"
+                    android:text=""
+                    android:textColor="@color/text_black_xl"
+                    android:textSize="@dimen/sp_font_detail_content_15sp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

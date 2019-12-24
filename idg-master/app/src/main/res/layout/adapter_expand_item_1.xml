@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/ll_top"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_spacing_20dp"
+            android:layout_marginBottom="@dimen/dp_spacing_20dp"
+            android:layout_marginLeft="@dimen/dp_spacing_18dp"
+            android:text="评分人员"
+            android:textColor="@color/text_black_xxl"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_spacing_20dp"
+            android:layout_marginBottom="@dimen/dp_spacing_8dp"
+            android:layout_marginLeft="40dp"
+            android:text="团队评分记录"
+            android:textColor="@color/text_black_xxl"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_spacing_20dp"
+            android:layout_marginBottom="@dimen/dp_spacing_15dp"
+            android:layout_marginLeft="40dp"
+            android:text="业务评分记录"
+            android:textColor="@color/text_black_xxl"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_spacing_15dp"
+            android:layout_marginBottom="@dimen/dp_spacing_15dp"
+            android:layout_marginLeft="@dimen/dp_spacing_30dp"
+            android:textColor="@color/text_black_s"/>
+
+        <RatingBar
+            android:id="@+id/rb_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_spacing_30dp"
+            android:numStars="5"
+            android:rating="0"
+            android:stepSize="0.5"
+            android:isIndicator="true"
+            android:progressTint="#FFDD55"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_gravity="center_vertical"
+            />
+
+        <TextView
+            android:id="@+id/tv_score_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_spacing_15dp"
+            android:layout_marginBottom="@dimen/dp_spacing_15dp"
+            android:layout_marginLeft="@dimen/dp_spacing_8dp"
+            android:textSize="@dimen/sp_font_detail_content_14sp"
+            android:textColor="#FFDD55"/>
+
+        <RatingBar
+            android:id="@+id/rb_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_spacing_15dp"
+            android:numStars="5"
+            android:rating="0"
+            android:stepSize="0.5"
+            android:isIndicator="true"
+            android:progressTint="#FFDD55"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_gravity="center_vertical"
+            />
+
+        <TextView
+            android:id="@+id/tv_score_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_spacing_15dp"
+            android:layout_marginBottom="@dimen/dp_spacing_15dp"
+            android:layout_marginLeft="@dimen/dp_spacing_8dp"
+            android:textColor="#FFDD55"
+            android:textSize="@dimen/sp_font_detail_content_14sp"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

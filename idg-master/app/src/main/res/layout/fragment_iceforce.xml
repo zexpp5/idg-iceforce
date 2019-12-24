@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/top_bar_layout"
+        layout="@layout/top_title_layout" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="96dp"
+                android:paddingTop="8dp"
+                android:background="#fff"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/ll_work_log"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@mipmap/icon_iceforce_project" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:text="待看项目"
+                        android:textSize="@dimen/sp_font_detail_content_14sp" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/ll_potential_projects"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@mipmap/pe_project" />
+
+                    <TextView
+                        android:id="@+id/tv_potential_str"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:text="@string/iceforce_image_text_3"
+                        android:textSize="@dimen/sp_font_detail_content_14sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_follow_on"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@mipmap/ic_iceforce_image_2" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:text="@string/iceforce_image_text_2"
+                        android:textSize="@dimen/sp_font_detail_content_14sp" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/ll_post_investment"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@mipmap/icon_iceforce_thgl" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:text="已投项目"
+                        android:textSize="@dimen/sp_font_detail_content_14sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="96dp"
+                android:background="#fff"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/ll_investment_and_financing"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@mipmap/icon_iceforce_dichan" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:text="@string/iceforce_image_text_4"
+                        android:textSize="@dimen/sp_font_detail_content_14sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_research_report"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@mipmap/research_report" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:text="@string/iceforce_image_text_6"
+                        android:textSize="@dimen/sp_font_detail_content_14sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_news_letter"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@mipmap/ic_iceforce_image_7" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:text="@string/iceforce_image_text_5"
+                        android:textSize="@dimen/sp_font_detail_content_14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_file_library"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@mipmap/icon_iceforce_wdk" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:text="@string/iceforce_image_text_8"
+                        android:textSize="@dimen/sp_font_detail_content_14sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp_height_title_48dp"
+                android:layout_marginTop="@dimen/dp_spacing_4dp"
+                android:background="#fff">
+
+                <ImageView
+                    android:id="@+id/iv_3"
+                    android:layout_width="4dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="@dimen/dp_spacing_to_left_10dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/gray" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp_spacing_to_left_10dp"
+                    android:layout_toRightOf="@id/iv_3"
+                    android:text="跟进项目"
+                    android:textColor="@color/text_black_xl"
+                    android:textSize="@dimen/sp_font_detail_content_15sp" />
+
+                <ImageView
+                    android:id="@+id/iv_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dp_spacing_to_right_10dp"
+                    android:background="@mipmap/icon_right_arrow_tip" />
+
+                <TextView
+                    android:id="@+id/tv_more_need"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dp_spacing_4dp"
+                    android:layout_toLeftOf="@id/iv_4"
+                    android:text="@string/umeng_socialize_text_more_key"
+                    android:textColor="@color/text_black_l"
+                    android:textSize="@dimen/sp_font_detail_content_13sp" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_view_line_1dp"
+                android:background="@color/dividing_line"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/to_do_list_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp_spacing_8dp"
+                android:background="#fff"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp_height_title_48dp"
+                android:layout_marginTop="@dimen/dp_spacing_4dp"
+                android:background="#fff">
+
+                <ImageView
+                    android:id="@+id/iv_1"
+                    android:layout_width="4dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="@dimen/dp_spacing_to_left_10dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/gray" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp_spacing_to_left_10dp"
+                    android:layout_toRightOf="@id/iv_1"
+                    android:text="已投项目"
+                    android:textColor="@color/text_black_xl"
+                    android:textSize="@dimen/sp_font_detail_content_15sp" />
+
+                <ImageView
+                    android:id="@+id/iv_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dp_spacing_to_right_10dp"
+                    android:background="@mipmap/icon_right_arrow_tip" />
+
+                <TextView
+                    android:id="@+id/tv_more"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dp_spacing_4dp"
+                    android:layout_toLeftOf="@id/iv_2"
+                    android:text="@string/umeng_socialize_text_more_key"
+                    android:textColor="@color/text_black_l"
+                    android:textSize="@dimen/sp_font_detail_content_13sp" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_view_line_1dp"
+                android:background="@color/dividing_line"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/follow_project_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"/>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>

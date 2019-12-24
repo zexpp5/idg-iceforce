@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/left_item_container0"
+        style="@style/project_manager_detail_leftLayoutStyle">
+
+        <ImageView
+            android:id="@+id/left_item_img0"
+            style="@style/project_manager_detail_leftImgStyle"
+            android:layout_marginLeft="@dimen/dp_spacing_10dp" />
+
+        <TextView
+            android:id="@+id/item_leftTV0"
+            style="@style/project_manager_detail_leftTVStyle"
+            android:layout_toRightOf="@+id/left_item_img0"
+            tools:text="计划金额（元）" />
+
+        <View
+            style="@style/project_manager_detail_verticallineStyle"
+            android:layout_alignParentRight="true"
+            android:background="@color/gray" />
+
+        <View
+            style="@style/project_manager_detail_leftLineStyle"
+            android:layout_alignParentBottom="true"
+            android:background="@color/gray" />
+    </RelativeLayout>
+</LinearLayout>

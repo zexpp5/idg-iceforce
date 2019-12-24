@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_height"
+                android:background="@drawable/list_item_bg">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/img_icon"
+        android:layout_width="@dimen/item_icon_wh"
+        android:layout_height="@dimen/item_icon_wh"
+        android:layout_marginLeft="@dimen/head_imageView_leftSpacing"
+        android:layout_marginTop="@dimen/head_imageView_topSpacing"
+        android:background="@mipmap/contact_icon"/>
+
+    <tablayout.view.textview.FontTextView
+        android:id="@+id/tv_user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_toEndOf="@+id/img_icon"
+        android:layout_toRightOf="@+id/img_icon"
+        android:ellipsize="end"
+        android:maxLength="16"
+        android:singleLine="true"
+        android:textColor="@color/text_black_xxxl"
+        android:textSize="@dimen/font_size_item_name"/>
+
+    <tablayout.view.textview.FontTextView
+        android:id="@+id/tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="20dp"
+        android:singleLine="true"
+        android:textColor="@color/text_black_l"
+        android:textSize="@dimen/font_size_item_content"
+        android:visibility="gone"/>
+
+    <tablayout.view.textview.FontTextView
+        android:id="@+id/tv_accept_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/shape_circular_spiny_bg"
+        android:padding="5dp"
+        android:singleLine="true"
+        android:text="接受"
+        android:textColor="@color/text_white"
+        android:textSize="@dimen/font_size_item_content"
+        android:visibility="gone"
+    />
+
+</RelativeLayout>

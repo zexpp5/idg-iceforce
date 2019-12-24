@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="45dp">
+
+    <TextView
+        android:id="@+id/tv_dept"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dp_spacing_to_left_20dp"
+        android:maxLines="1"
+        android:text="部门"
+        android:textColor="@color/black"
+        android:textSize="@dimen/font_size_item_name_business"
+    />
+
+    <TextView
+        android:id="@+id/tv_dept_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dp_spacing_to_left_10dp"
+        android:layout_toRightOf="@+id/tv_dept"
+        android:text="(10)"
+        android:textColor="@color/color_item_content"
+        android:textSize="@dimen/font_size_remark_13sp"
+    />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/dp_spacing_to_right_20dp"
+        android:src="@mipmap/left_img_bg"/>
+
+
+</RelativeLayout>

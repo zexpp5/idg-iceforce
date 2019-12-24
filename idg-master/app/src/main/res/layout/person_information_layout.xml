@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    xmlns:round="http://schemas.android.com/apk/res-auto"
+   >
+
+    <yunjing.view.RoundedImageView
+        android:layout_marginLeft="15dp"
+        android:layout_centerVertical="true"
+        android:id="@+id/head_bar_icon"
+        android:layout_width="37dp"
+        android:layout_height="37dp"
+        round:oval="true"
+        />
+
+    <RelativeLayout
+        android:layout_toLeftOf="@+id/time_and_number_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/head_bar_icon"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:id="@+id/head_bar_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textColor="@color/blackOne"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:text="你好"
+                />
+
+            <TextView
+                android:layout_below="@+id/head_bar_name"
+                android:id="@+id/head_bar_department"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sp_font_detail_content_13sp"
+                android:textColor="@color/blackThree"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:maxEms="5"
+                android:layout_centerVertical="true"
+                android:text="行政部"
+                />
+            <TextView
+                android:layout_below="@+id/head_bar_name"
+                android:layout_toRightOf="@+id/head_bar_department"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/head_bar_job"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sp_font_detail_content_13sp"
+                android:textColor="@color/blackThree"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:maxEms="5"
+                android:text="经理"
+                />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_marginLeft="5dp"
+        android:orientation="vertical"
+        android:layout_marginRight="12dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:id="@+id/time_and_number_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/head_bar_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sp_font_detail_content_15sp"
+            android:text="日期：2017-07-28"
+            android:textColor="@color/blackThree"
+            android:singleLine="true"
+            android:ellipsize="end"
+            />
+
+        <TextView
+            android:id="@+id/head_bar_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="编号：9527"
+            android:textColor="@color/blackThree"
+            android:textSize="@dimen/sp_font_detail_content_15sp" />
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

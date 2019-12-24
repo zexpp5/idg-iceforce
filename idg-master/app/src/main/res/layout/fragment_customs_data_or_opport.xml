@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/top_title_layout" />
+
+        <LinearLayout
+            style="@style/linear_row_style_common"
+            android:orientation="horizontal">
+
+
+            <tablayout.view.textview.FontTextView
+                style="@style/font_text_content_sytle"
+                android:text="客户单位：" />
+
+            <tablayout.view.textview.FontEditext
+                android:id="@+id/customs_data_company_title_ed"
+                style="@style/font_edtext_content_sytle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                 />
+        </LinearLayout>
+
+        <include layout="@layout/bottom_line_view" />
+
+        <LinearLayout
+            style="@style/linear_row_style_common"
+            android:orientation="horizontal">
+
+
+            <tablayout.view.textview.FontTextView
+                style="@style/font_text_content_sytle"
+                android:text="客户简称：" />
+
+            <tablayout.view.textview.FontEditext
+                android:id="@+id/customs_data_intro_title_ed"
+                style="@style/font_edtext_content_sytle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                 />
+        </LinearLayout>
+
+        <include layout="@layout/bottom_line_view" />
+
+        <LinearLayout
+            android:weightSum="2"
+            android:layout_height="@dimen/dp_height_line_45dp"
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:layout_marginLeft="@dimen/dp_spacing_to_left_right_15dp"
+            android:layout_marginRight="6dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_gravity="center"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+
+                <tablayout.view.textview.FontTextView
+                    style="@style/font_text_content_sytle"
+                    android:text="@string/contacts" />
+
+                <tablayout.view.textview.FontEditext
+                    android:id="@+id/customs_data_contacts_ed"
+                    style="@style/font_edtext_content_sytle"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_gravity="center"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+
+
+                <tablayout.view.textview.FontTextView
+                    style="@style/font_text_content_sytle"
+                    android:text="联系方式：" />
+
+                <tablayout.view.textview.FontEditext
+                    android:id="@+id/customs_data_contacts_way_ed"
+                    style="@style/font_edtext_content_sytle"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+        <include layout="@layout/bottom_line_view" />
+
+    </LinearLayout>
+
+    <include
+        android:id="@+id/share_icon_list_id"
+        style="@style/list_ShareLayout_Style"
+        layout="@layout/list_share_layout"/>
+
+</RelativeLayout>

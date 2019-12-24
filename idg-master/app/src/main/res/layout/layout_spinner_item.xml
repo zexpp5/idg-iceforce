@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+	>
+    
+    <tablayout.view.textview.FontTextView
+		android:id="@+id/tv_spinner_item"
+		android:gravity="center_vertical"
+		android:textColor="@color/green"
+	    android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content"
+	    android:layout_gravity="center"
+		android:textSize="@dimen/search_size_14"
+	    android:paddingLeft="@dimen/view_interval_space_small"
+	    android:paddingRight="@dimen/view_interval_space_small"/>
+
+</LinearLayout>

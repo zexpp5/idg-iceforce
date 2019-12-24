@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    tools:ignore="RtlHardcoded,HardcodedText,RtlSymmetry,SmallSp">
+
+    <!--android:fitsSystemWindows="true"-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+    >
+
+        <!--<com.cxgz.activity.cxim.view.NoScroollView-->
+        <!--android:id="@+id/sv"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_above="@+id/bar_bottom"-->
+        <!--android:fillViewport="true"-->
+        <!--android:overScrollMode="never"-->
+        <!--android:scrollbars="none">-->
+
+        <!--<LinearLayout-->
+        <!--android:id="@+id/linearLayout"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:orientation="vertical">-->
+
+        <LinearLayout
+            android:id="@+id/ll_test_01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include
+                layout="@layout/public_title_01"/>
+
+        </LinearLayout>
+
+        <com.cxgz.activity.cxim.view.ResizeLayout
+            android:id="@+id/ll_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/bar_bottom"
+            android:layout_below="@+id/ll_test_01"
+            android:background="@mipmap/img_annual_bg"
+            android:orientation="vertical"
+        >
+
+            <FrameLayout
+                android:id="@+id/frag_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="true"
+            />
+
+
+        </com.cxgz.activity.cxim.view.ResizeLayout>
+
+        <!--</LinearLayout>-->
+        <!--</com.cxgz.activity.cxim.view.NoScroollView>-->
+
+        <master.flame.danmaku.ui.widget.DanmakuView
+            android:id="@+id/danmaku_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="88dp"
+            android:layout_marginTop="80dp"
+        />
+
+        <!--底部-->
+        <LinearLayout
+            android:id="@+id/bar_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:orientation="vertical"
+            android:visibility="visible"
+        >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/dividing_line"/>
+
+            <LinearLayout
+                android:id="@+id/rl_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:gravity="center_vertical|center_horizontal"
+                android:orientation="horizontal"
+            >
+
+                <Button
+                    android:id="@+id/btn_set_mode_keyboard"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginLeft="10dp"
+                    android:visibility="gone"
+                    android:background="@drawable/chatting_setmode_keyboard_btn"
+                />
+
+                <LinearLayout
+                    android:id="@+id/ll_edit_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:layout_marginTop="5dp"
+                    android:background="#ffffff"
+                    android:minHeight="40dp"
+                    android:orientation="horizontal"
+                    android:visibility="gone"
+                >
+
+                    <RelativeLayout
+                        android:id="@+id/edittext_layout"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                    >
+
+                        <!--android:layout_marginRight="35dip"-->
+                        <com.cc.emojilibrary.EmojiconEditText
+                            android:id="@+id/et_sendmessage"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@null"
+                            android:maxLength="20"
+                            android:maxLines="3"
+                            android:minHeight="40dp"
+                            android:paddingBottom="3dp"
+                            android:textSize="15sp"
+                            android:theme="@style/MyEditText2"/>
+
+                        <ImageView
+                            android:id="@+id/iv_emoticons_normal"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center_vertical|right"
+                            android:layout_margin="1dip"
+                            android:scaleType="fitCenter"
+                            android:src="@mipmap/chatting_biaoqing_btn_normal"
+                            android:visibility="gone"/>
+
+                    </RelativeLayout>
+
+                    <Button
+                        android:id="@+id/btn_send"
+                        android:layout_width="45dp"
+                        android:layout_height="34dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/bg_btn_annual_meeting"
+                        android:onClick="onClick"
+                        android:text="发 送"
+                        android:textColor="#ffffff"
+                    />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_main_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="#ffffff"
+                    android:orientation="horizontal"
+                    android:visibility="visible"
+                >
+                    <View
+                        android:layout_width="0.5dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/dividing_line"/>
+
+                    <LinearLayout
+                        android:id="@+id/ll_register"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <tablayout.view.textview.FontTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/im_work_annual_m_first"
+                            android:textSize="14sp"/>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="0.5dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/dividing_line"/>
+
+                    <LinearLayout
+                        android:id="@+id/ll_interaction"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <tablayout.view.textview.FontTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/im_work_annual_m_second"
+                            android:textSize="14sp"/>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="0.5dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/dividing_line"/>
+
+                    <LinearLayout
+                        android:id="@+id/ll_annual_meeting"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <tablayout.view.textview.FontTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/im_work_annual_m_third"
+                            android:textSize="14sp"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

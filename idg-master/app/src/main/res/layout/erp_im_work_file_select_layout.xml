@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:gravity="center_vertical"
+              android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/show_file_img_ll_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dp10"
+        android:layout_marginRight="@dimen/dp10"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:id="@+id/add_photo_btn_detail_img"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="@dimen/dp20"
+            android:layout_weight="1"
+            android:background="@mipmap/take_photo_bg"
+        />
+
+        <ImageView
+            android:id="@+id/add_pic_btn_detail_img"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="@dimen/dp20"
+            android:layout_weight="1"
+            android:background="@mipmap/pic_img_bg_gray"
+            android:text="@string/attach_picture"
+        />
+
+
+        <ImageView
+            android:id="@+id/add_void_btn_detail_img"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="@dimen/dp20"
+            android:layout_weight="1"
+            android:background="@mipmap/voice_img_bg_gray"
+            android:text="@string/voice_str"
+        />
+
+
+        <ImageView
+            android:id="@+id/add_file_btn_detail_img"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="@dimen/dp20"
+            android:layout_weight="1"
+            android:background="@mipmap/fj_img_bg_gray"
+            android:text="@string/file_add_str"
+        />
+
+        <!--app:layout_widthPercent="10%w"-->
+    </LinearLayout>
+
+</LinearLayout>

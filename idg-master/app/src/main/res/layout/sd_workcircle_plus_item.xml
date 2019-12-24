@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.superdata.marketing.view.percent.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <View
+        android:visibility="gone"
+        android:id="@+id/plus_item_top_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/dividing_line" />
+
+    <com.superdata.marketing.view.percent.PercentLinearLayout
+        app:layout_marginBottomPercent="@string/list_margin_bottom"
+        app:layout_marginTopPercent="@string/list_margin_top"
+        app:layout_marginLeftPercent="@string/list_margin_left"
+        android:id="@+id/ll_plus_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.superdata.marketing.view.percent.PercentLinearLayout
+            android:id="@+id/ll_img_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/not_found_img"
+                android:scaleType="fitXY"
+                android:src="@mipmap/sd_attach_file" />
+        </com.superdata.marketing.view.percent.PercentLinearLayout>
+
+        <com.superdata.marketing.view.percent.PercentRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.superdata.marketing.view.percent.PercentLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:orientation="vertical">
+
+                <tablayout.view.textview.FontTextView
+                    app:layout_marginLeftPercent="2%w"
+                    android:text="123"
+                    android:id="@+id/tv1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="middle"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    app:layout_textSizePercent="@string/text_size"
+                    android:textSize="15sp" />
+
+                <tablayout.view.textview.FontTextView
+                    android:id="@+id/tv2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="middle"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:visibility="gone" />
+            </com.superdata.marketing.view.percent.PercentLinearLayout>
+
+            <ImageView
+                app:layout_marginRightPercent="@string/list_margin_right"
+                android:layout_centerVertical="true"
+                android:id="@+id/iv_close"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_alignParentRight="true"
+                android:scaleType="fitXY"
+                android:src="@mipmap/temp_send_failure" />
+        </com.superdata.marketing.view.percent.PercentRelativeLayout>
+
+    </com.superdata.marketing.view.percent.PercentLinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/dividing_line" />
+</com.superdata.marketing.view.percent.PercentLinearLayout>

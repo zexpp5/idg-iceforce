@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/ll_item"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_water"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+    >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dp_spacing_10dp"
+                android:gravity="center"
+                android:textColor="@color/text_black_s"
+                android:textSize="@dimen/sp_font_detail_content_15sp"/>
+
+            <LinearLayout
+                android:id="@+id/ll_add"
+                android:layout_width="48dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dp_spacing_20dp"
+
+                    android:background="@mipmap/icon_add_red"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_view_line_1dp"
+            android:background="@color/dividing_line"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp_spacing_10dp"
+            android:layout_marginLeft="@dimen/dp_spacing_10dp"
+            android:layout_marginTop="@dimen/dp_spacing_15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:text="报告期"
+                android:textColor="@color/text_black_s"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="@dimen/dp_spacing_6dp"
+                android:text="实际收入"
+                android:textColor="@color/text_black_s"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="实际净利润"
+                android:textColor="@color/text_black_s"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="项目估值"
+                android:textColor="@color/text_black_s"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp_spacing_10dp"
+            android:layout_marginLeft="@dimen/dp_spacing_10dp"
+            android:layout_marginTop="@dimen/dp_spacing_5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_reportFrequency"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:textColor="@color/text_black_xxl"/>
+
+            <TextView
+                android:id="@+id/tv_actualIncome"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_spacing_6dp"
+                android:layout_weight="1"
+                android:textColor="@color/text_black_xxl"/>
+
+            <TextView
+                android:id="@+id/tv_actualNetProfit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/text_black_xxl"/>
+
+            <TextView
+                android:id="@+id/tv_appraisement"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/text_black_xxl"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp_spacing_10dp"
+            android:layout_marginLeft="@dimen/dp_spacing_10dp"
+            android:layout_marginTop="@dimen/dp_spacing_5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:text="环比增长"
+                android:textColor="@color/text_black_xxl"/>
+
+            <TextView
+                android:id="@+id/tv_income_rate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_spacing_6dp"
+                android:layout_weight="1"
+                android:textColor="@color/text_black_xxl"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_profit_rate"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/text_black_xxl"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_appraisement_rate"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/text_black_xxl"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp_spacing_10dp"
+            android:layout_marginLeft="@dimen/dp_spacing_10dp"
+            android:layout_marginTop="@dimen/dp_spacing_5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:text="累积投资"
+                android:textColor="@color/text_black_xxl"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:gravity="right"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_all_investment"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_spacing_6dp"
+                    android:layout_weight="1"
+                    android:textColor="@color/text_black_xxl"/>
+
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/dp_spacing_20dp"
+
+                    android:background="@mipmap/icon_right_arrow_tip"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_spacing_5dp"
+        android:layout_marginTop="@dimen/dp_spacing_10dp"
+        android:background="@color/dividing_line"/>
+
+
+</LinearLayout>

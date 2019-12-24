@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/top_bar_layout"
+        layout="@layout/public_title_01"/>
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp_spacing_10dp"
+            android:layout_marginLeft="@dimen/dp_spacing_20dp"
+            android:layout_marginRight="@dimen/dp_spacing_20dp"
+            android:layout_marginTop="@dimen/dp_spacing_10dp"
+            >
+
+            <RelativeLayout
+                android:id="@+id/rl_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:padding="10dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dp_spacing_10dp"
+                    android:background="@mipmap/search_bar_icon_normal"
+                    android:visibility="visible"/>
+
+            </RelativeLayout>
+
+            <tablayout.view.textview.FontEditext
+                android:id="@+id/tv_search"
+                android:layout_toRightOf="@id/rl_search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:hint="搜索项目"
+                android:maxLength="11"
+                android:maxLines="1"
+                android:minHeight="40dp"
+                android:textColorHint="@color/gray" android:textSize="14sp"
+                />
+
+
+
+
+        </RelativeLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/dividing_line"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="10dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/dp_spacing_10dp"
+                android:text="最新项目"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            >
+
+            <com.scwang.smartrefresh.layout.SmartRefreshLayout
+                android:id="@+id/smart_refresh_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:srlEnableLoadmore="true"
+                app:srlEnableLoadmoreWhenContentNotFull="false">
+
+                <ProgressBar
+                    style="@style/CustomProgressStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dp_spacing_15dp"/>
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+                <ProgressBar
+                    style="@style/CustomProgressStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dp_spacing_15dp"/>
+
+
+            </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+            <yunjing.view.StatusTipsView
+                android:id="@+id/loading_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:paddingBottom="150dp"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,549 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <include
+        android:id="@+id/title_layout"
+        layout="@layout/top_title_layout"/>
+
+    <ScrollView
+        android:background="#F1F0F6"
+        android:layout_below="@+id/title_layout"
+        android:fadingEdgeLength="0dp"
+        android:scrollbars="none"
+        android:overScrollMode="never"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:background="#F1F0F6"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/head_image"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:background="@mipmap/approval_head"
+        android:scaleType="fitXY"
+    />
+
+    <TextView
+        android:id="@+id/item_title_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/dp_spacing_5dp"
+        android:paddingLeft="@dimen/dp_spacing_10dp"
+        android:paddingTop="@dimen/dp_spacing_5dp"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="我的申请"
+        android:textColor="#666666"
+        android:textSize="14sp"
+        android:background="#f9f9f9"
+        />
+
+    <LinearLayout
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="4"
+        >
+
+        <RelativeLayout
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:id="@+id/vacation_apply_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_vacation_apply"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:src="@mipmap/vacation_apply_two_icon"/>
+
+            <tablayout.view.textview.FontTextView
+                android:id="@+id/unread_msg_number_work_one"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginLeft="-12dp"
+                android:layout_marginTop="2dp"
+                android:layout_toRightOf="@+id/iv_vacation_apply"
+                android:background="@mipmap/icon_num"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:textSize="11sp"
+                android:visibility="gone"
+
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_vacation_apply"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dp_spacing_5dp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="请假"
+                android:textColor="#333333"
+                android:textSize="15sp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:id="@+id/two_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_two"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:src="@mipmap/xiaojia_icon"/>
+
+            <tablayout.view.textview.FontTextView
+                android:id="@+id/unread_msg_number_work_two"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginLeft="-12dp"
+                android:layout_marginTop="2dp"
+                android:layout_toRightOf="@+id/iv_two"
+                android:background="@mipmap/icon_num"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:textSize="11sp"
+                android:visibility="gone"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_two"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dp_spacing_5dp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="销假"
+                android:textColor="#333333"
+                android:textSize="15sp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:id="@+id/three_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_three"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:src="@mipmap/msg_progress_icon"/>
+
+            <tablayout.view.textview.FontTextView
+                android:id="@+id/unread_msg_number_work_three"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginLeft="-12dp"
+                android:layout_marginTop="6dp"
+                android:layout_toRightOf="@+id/iv_three"
+                android:background="@mipmap/icon_num"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:textSize="11sp"
+                android:visibility="gone"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_three"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dp_spacing_5dp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="流程消息"
+                android:textColor="#333333"
+                android:textSize="15sp"/>
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/item_title_two"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/dp_spacing_5dp"
+        android:paddingLeft="@dimen/dp_spacing_10dp"
+        android:paddingTop="@dimen/dp_spacing_5dp"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="已发申请"
+        android:textColor="#666666"
+        android:textSize="14sp"
+        android:background="#f9f9f9"
+        />
+
+    <LinearLayout
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="4"
+        >
+
+        <RelativeLayout
+            android:id="@+id/vacation_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_vacation"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:src="@mipmap/vacation_icon"/>
+
+            <tablayout.view.textview.FontTextView
+                android:id="@+id/unread_msg_number_work_five"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginLeft="-12dp"
+                android:layout_marginTop="2dp"
+                android:layout_toRightOf="@+id/iv_vacation"
+                android:background="@mipmap/icon_num"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:textSize="11sp"
+                android:visibility="gone"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_vacation"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dp_spacing_5dp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="我的请假"
+                android:textColor="#333333"
+                android:textSize="15sp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:id="@+id/expense_apply_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/expense_apply_img"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:src="@mipmap/expense_approval_icon"/>
+
+            <tablayout.view.textview.FontTextView
+                android:id="@+id/unread_msg_number_work_six"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginLeft="-12dp"
+                android:layout_marginTop="2dp"
+                android:layout_toRightOf="@+id/expense_apply_img"
+                android:background="@mipmap/icon_num"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:textSize="11sp"
+                android:visibility="gone"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/expense_apply_img"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dp_spacing_5dp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="我的报销"
+                android:textColor="#333333"
+                android:textSize="15sp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:id="@+id/seven_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/seven_img"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:src="@mipmap/releave_icon"/>
+
+            <tablayout.view.textview.FontTextView
+                android:id="@+id/unread_msg_number_work_seven"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginLeft="-12dp"
+                android:layout_marginTop="2dp"
+                android:layout_toRightOf="@+id/seven_img"
+                android:background="@mipmap/icon_num"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:textSize="11sp"
+                android:visibility="gone"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/seven_img"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dp_spacing_5dp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="我的销假"
+                android:textColor="#333333"
+                android:textSize="15sp"/>
+
+        </RelativeLayout>
+
+
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/item_title_three"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/dp_spacing_5dp"
+        android:paddingLeft="@dimen/dp_spacing_10dp"
+        android:paddingTop="@dimen/dp_spacing_5dp"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="我的待办"
+        android:textColor="#666666"
+        android:textSize="14sp"
+        android:background="#f9f9f9"
+        />
+
+    <LinearLayout
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="4"
+    >
+
+
+
+        <RelativeLayout
+            android:id="@+id/vacation_approval_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_approval_vacation"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:src="@mipmap/vacation_approval_icon"/>
+
+            <tablayout.view.textview.FontTextView
+                android:id="@+id/unread_msg_number_work_night"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginLeft="-12dp"
+                android:layout_marginTop="2dp"
+                android:layout_toRightOf="@+id/iv_approval_vacation"
+                android:background="@mipmap/icon_num"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:textSize="11sp"
+                android:visibility="gone"
+            />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_approval_vacation"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dp_spacing_5dp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="请假审批"
+                android:textColor="#333333"
+                android:textSize="15sp"/>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+                android:id="@+id/expense_approval_layout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/expense_approval_img"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@mipmap/repense_icon"/>
+
+                <tablayout.view.textview.FontTextView
+                    android:id="@+id/unread_msg_number_work_ten"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginLeft="-12dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_toRightOf="@+id/expense_approval_img"
+                    android:background="@mipmap/icon_num"
+                    android:gravity="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="11sp"
+                    android:visibility="gone"
+                />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/expense_approval_img"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/dp_spacing_5dp"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="报销审批"
+                    android:textColor="#333333"
+                    android:textSize="15sp"/>
+
+            </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/eleven_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/eleven_img"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:src="@mipmap/releave_approval_icon"/>
+
+            <tablayout.view.textview.FontTextView
+                android:id="@+id/unread_msg_number_work_eleven"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginLeft="-12dp"
+                android:layout_marginTop="2dp"
+                android:layout_toRightOf="@+id/eleven_img"
+                android:background="@mipmap/icon_num"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:textSize="11sp"
+                android:visibility="gone"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/eleven_img"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dp_spacing_5dp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="销假审批"
+                android:textColor="#333333"
+                android:textSize="15sp"/>
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+    </ScrollView>
+
+    <FrameLayout
+        android:id="@+id/apply_fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+</RelativeLayout>

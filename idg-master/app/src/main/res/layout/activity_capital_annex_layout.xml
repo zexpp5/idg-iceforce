@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <include
+        android:id="@+id/top_bar_layout"
+        layout="@layout/top_title_layout" />
+
+
+    <yunjing.view.excelpane.AdaptiveTableLayout
+        android:visibility="gone"
+        android:layout_above="@+id/add_capital_annex_btn_layout"
+        android:id="@+id/capital_annex_tableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/top_bar_layout"
+        app:dragAndDropEnabled="false"
+        app:fixedHeaders="true"
+        app:solidRowHeaders="false"
+        />
+
+    <RelativeLayout
+        android:id="@+id/add_capital_annex_btn_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        >
+
+        <include
+            android:id="@+id/line_view"
+            layout="@layout/bottom_line_view" />
+
+        <Button
+            android:layout_below="@+id/line_view"
+            android:layout_marginTop="@dimen/dp_spacing_8dp"
+            android:layout_marginBottom="@dimen/dp_spacing_8dp"
+            android:layout_marginRight="@dimen/dp_spacing_20dp"
+            android:layout_marginLeft="@dimen/dp_spacing_20dp"
+            android:textSize="@dimen/sp_font_detail_content_16sp"
+            android:background="@drawable/button_radius"
+            android:id="@+id/add_capital_annex_btn"
+            android:text="新增"
+            android:textColor="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            />
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/capital_fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</RelativeLayout>

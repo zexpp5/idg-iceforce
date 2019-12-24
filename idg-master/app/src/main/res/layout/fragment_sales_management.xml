@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+
+    <LinearLayout
+        style="@style/d_s_ll_style"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            style="@style/d_s_s_in_tow_ll_style"
+            android:orientation="horizontal">
+
+            <tablayout.view.textview.FontTextView
+                style="@style/d_s_left_font_sytle"
+                android:text="编号："
+                />
+
+            <tablayout.view.textview.FontEditext
+                android:id="@+id/number"
+                style="@style/d_s_content_font_textview_sytle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:inputType="numberDecimal"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/d_s_s_in_tow_ll_style"
+            android:paddingRight="10dp">
+
+            <tablayout.view.textview.FontTextView
+                android:text="类别："
+                style="@style/d_s_left_font_sytle"
+                />
+
+            <tablayout.view.textview.FontTextView
+                android:id="@+id/category"
+                style="@style/d_s_content_font_select_textview_sytle"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <include
+        android:id="@+id/allmoney_ll_line"
+        layout="@layout/erp_line_one_view"/>
+
+    <LinearLayout
+        style="@style/d_s_ll_style"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            style="@style/d_s_s_in_tow_ll_style"
+            android:orientation="horizontal"
+            >
+
+            <tablayout.view.textview.FontTextView
+                android:id="@+id/customer_name"
+                style="@style/d_s_left_font_sytle"
+                android:text="等 级："/>
+
+            <!--倒三角的下拉框style-->
+            <tablayout.view.textview.FontTextView
+                android:layout_marginRight="10dp"
+                android:id="@+id/grade"
+                style="@style/d_s_content_font_select_textview_sytle"/>
+
+        </LinearLayout>
+        <!--币种和仓库公用字段好了=。= -->
+        <LinearLayout
+            style="@style/d_s_s_in_tow_ll_style">
+
+            <tablayout.view.textview.FontTextView
+                android:id="@+id/business"
+                style="@style/d_s_right_font_sytle"
+                android:text="关联业务"/>
+
+            <tablayout.view.textview.FontTextView
+                android:layout_marginRight="10dp"
+
+                android:id="@+id/money_fontTextView"
+                style="@style/d_s_content_font_select_textview_sytle"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <include
+        android:id="@+id/allmoney_ll_line"
+        layout="@layout/erp_line_one_view"/>
+
+    <LinearLayout
+        android:id="@+id/allmoney_ll"
+        style="@style/d_s_ll_style"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            style="@style/d_s_s_in_tow_ll_style"
+            android:orientation="horizontal">
+
+            <tablayout.view.textview.FontTextView
+                style="@style/d_s_right_font_sytle"
+                android:text="关联人："
+                />
+
+            <tablayout.view.textview.FontEditext
+                android:id="@+id/asociation"
+                style="@style/d_s_content_font_textview_sytle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:inputType="numberDecimal"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/d_s_s_in_tow_ll_style"
+            android:paddingRight="10dp">
+
+            <tablayout.view.textview.FontTextView
+                android:id="@+id/payment"
+                android:text="客户区域："
+                style="@style/d_s_left_font_sytle"
+                />
+
+            <tablayout.view.textview.FontTextView
+                android:id="@+id/customer_area"
+                style="@style/d_s_content_font_select_textview_sytle"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <include
+        android:id="@+id/allmoney_ll_line"
+        layout="@layout/erp_line_one_view"/>
+
+</LinearLayout>

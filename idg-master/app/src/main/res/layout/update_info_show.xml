@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_white_top_5r"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+        >
+
+            <tablayout.view.textview.FontTextView
+                android:id="@+id/content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="@dimen/dp_spacing_5dp"
+                android:layout_marginTop="@dimen/dp_spacing_15dp"
+                android:text="发现新版本"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+        >
+
+            <tablayout.view.textview.FontTextView
+                android:id="@+id/et_verify_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp_spacing_15dp"
+                android:layout_marginLeft="@dimen/dp_spacing_15dp"
+                android:layout_marginRight="@dimen/dp_spacing_15dp"
+                android:layout_marginTop="@dimen/dp_spacing_15dp"
+                android:gravity="center"
+                android:lineSpacingExtra="3dp"
+                android:text="山东矿山东矿机看山东矿机看山东矿机看山东矿机看山东矿机看山东矿机看山东矿机看山东矿机看山东矿机看山东矿机看山东矿机看机看"
+                android:textColor="#181818"
+                android:textSize="16sp"
+            />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/et_verify_info"
+                android:layout_marginBottom="@dimen/dp_spacing_15dp"
+                android:layout_marginLeft="@dimen/dp_spacing_15dp"
+                android:layout_marginRight="@dimen/dp_spacing_15dp"
+                android:gravity="center_vertical" 
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/cb_forget"
+                    style="@style/CustomCheckboxTheme"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:checked="false"
+                    android:gravity="center_vertical"
+                />
+
+                <tablayout.view.textview.FontTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:lineSpacingExtra="5dp"
+                    android:textColor="@color/red"
+                    android:text="此版本不再提醒"
+                    android:textSize="13sp"
+                />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/finance_briefing_dialog_line"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_white_bottom_5r"
+        android:gravity="center_horizontal|center_vertical"
+    >
+
+        <tablayout.view.textview.FontTextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingBottom="@dimen/dp_spacing_15dp"
+            android:paddingTop="@dimen/dp_spacing_15dp"
+            android:text="暂不更新"
+            android:textColor="@color/red"
+            android:textSize="16sp"/>
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@color/finance_briefing_dialog_line"/>
+
+        <tablayout.view.textview.FontTextView
+            android:id="@+id/tv_open"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingBottom="@dimen/dp_spacing_15dp"
+            android:paddingTop="@dimen/dp_spacing_15dp"
+            android:text="立即更新"
+            android:textColor="@color/blue"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+</LinearLayout>

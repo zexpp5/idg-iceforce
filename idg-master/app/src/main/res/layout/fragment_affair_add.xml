@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/top_title_layout" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+
+            <LinearLayout
+                style="@style/d_s_ll_style"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    style="@style/d_s_s_in_tow_ll_style"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/d_s_left_font_sytle"
+                        android:text="事务名称：" />
+
+                    <EditText
+                        android:id="@+id/et_affair_name"
+                        style="@style/personnel_affairs_applay_editextStyle" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!--线条高度-->
+            <include layout="@layout/erp_line_one_view" />
+
+            <LinearLayout
+                style="@style/d_s_ll_style"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    style="@style/d_s_s_in_tow_ll_style"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/d_s_left_font_sytle"
+                        android:text="协作人：" />
+
+                    <TextView
+                        android:id="@+id/tv_cooperation_human"
+                        style="@style/d_s_content_font_select_textview_sytle" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!--线条高度-->
+            <include layout="@layout/erp_line_one_view" />
+
+            <LinearLayout
+                style="@style/d_s_ll_style"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    style="@style/d_s_s_in_tow_ll_style"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/d_s_left_font_sytle"
+                        android:text="开始时间：" />
+
+                    <TextView
+                        android:id="@+id/tv_start_time"
+                        style="@style/d_s_content_font_select_textview_sytle" />
+
+                </LinearLayout>
+
+
+                <LinearLayout style="@style/d_s_s_in_tow_ll_right_style">
+
+                    <TextView
+
+                        style="@style/d_s_right_font_sytle"
+                        android:text="结束时间：" />
+
+                    <TextView
+                        android:id="@+id/tv_stop_time"
+                        style="@style/d_s_content_font_select_textview_sytle" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <!--线条高度-->
+            <include layout="@layout/erp_line_one_view" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingRight="10dp">
+                <TextView
+                    style="@style/d_s_left_font_sytle"
+                    android:text="协作内容："
+                    android:paddingTop="8dp"
+                    android:layout_marginLeft="@dimen/name_m_to_left_dp"
+                    android:layout_gravity="center_horizontal"/>
+                <EditText
+                    android:id="@+id/et_cooperation_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="8dp"
+                    android:textColor="@color/black"
+                    android:background="@null"
+                    android:textSize="@dimen/s_d_font_size"
+                    android:gravity="top" />
+            </LinearLayout>
+
+            <!--线条高度-->
+            <include layout="@layout/erp_line_one_view" />
+
+            <include layout="@layout/public_annex_layout" />
+
+            <include layout="@layout/bottom_line_view_three" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

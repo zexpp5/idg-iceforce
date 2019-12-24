@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.superdata.marketing.view.percent.PercentLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparency"
+    android:orientation="vertical">
+
+    <com.superdata.marketing.view.percent.PercentLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/temp_select_img_ll_bg"
+        android:orientation="vertical">
+
+        <com.superdata.marketing.view.percent.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_heightPercent="12.5%w"
+            android:orientation="horizontal">
+
+            <tablayout.view.textview.FontTextView
+                android:id="@+id/tvTitle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/please_select_way"
+                android:textColor="#818181"
+                app:layout_textSizePercent="3.5%w" />
+        </com.superdata.marketing.view.percent.PercentLinearLayout>
+
+        <com.superdata.marketing.view.percent.PercentLinearLayout
+            android:id="@+id/ll_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        </com.superdata.marketing.view.percent.PercentLinearLayout>
+
+    </com.superdata.marketing.view.percent.PercentLinearLayout>
+
+    <com.superdata.marketing.view.percent.PercentLinearLayout
+        android:id="@+id/ll_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/temp_select_img_ll_bg"
+        android:orientation="horizontal"
+        app:layout_heightPercent="11.1%w"
+        app:layout_marginBottomPercent="4.2%w"
+        app:layout_marginTopPercent="2.7%w">
+
+        <tablayout.view.textview.FontTextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/cancel"
+            android:textColor="#818181"
+            app:layout_textSizePercent="@string/text_size" />
+    </com.superdata.marketing.view.percent.PercentLinearLayout>
+
+</com.superdata.marketing.view.percent.PercentLinearLayout>

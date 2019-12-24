@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/top_title_layout" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                style="@style/d_s_ll_style"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    style="@style/d_s_s_in_tow_ll_style"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/d_s_left_font_sytle"
+                        android:text="原部门：" />
+
+                    <TextView
+                        android:id="@+id/tv_originDept"
+                        style="@style/d_s_content_font_select_textview_sytle" />
+
+                </LinearLayout>
+
+
+                <LinearLayout style="@style/d_s_s_in_tow_ll_right_style">
+
+                    <TextView
+
+                        style="@style/d_s_right_font_sytle"
+                        android:text="原职务：" />
+
+                    <EditText
+                        android:id="@+id/et_originJob"
+                        style="@style/personnel_affairs_applay_editextStyle" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <!--线条高度-->
+            <include layout="@layout/erp_line_one_view" />
+
+            <LinearLayout
+                style="@style/d_s_ll_style"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    style="@style/d_s_s_in_tow_ll_style"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/d_s_left_font_sytle"
+                        android:text="变更日期：" />
+
+                    <TextView
+                        android:id="@+id/tv_changeTime"
+                        style="@style/d_s_content_font_select_textview_sytle" />
+
+                </LinearLayout>
+
+
+                <LinearLayout style="@style/d_s_s_in_tow_ll_right_style">
+
+                    <TextView
+
+                        style="@style/d_s_right_font_sytle"
+                        android:text="当前部门：" />
+
+                    <TextView
+                        android:id="@+id/tv_currDept"
+                        style="@style/d_s_content_font_select_textview_sytle" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <!--线条高度-->
+            <include layout="@layout/erp_line_one_view" />
+            <LinearLayout
+                style="@style/d_s_ll_style"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    style="@style/d_s_s_in_tow_ll_style"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/d_s_left_font_sytle"
+                        android:text="当前职务：" />
+
+                    <EditText
+                        android:id="@+id/et_currJob"
+                        style="@style/personnel_affairs_applay_editextStyle" />
+                </LinearLayout>
+
+            </LinearLayout>
+            <!--线条高度-->
+            <include layout="@layout/erp_line_one_view" />
+
+            <LinearLayout
+                style="@style/d_s_ll_style"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    style="@style/d_s_s_in_tow_ll_style"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/d_s_left_font_sytle"
+                        android:text="备注：" />
+
+
+                    <EditText
+                        android:id="@+id/et_remark"
+                        style="@style/personnel_affairs_applay_editextStyle" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <!--线条高度-->
+            <include layout="@layout/erp_line_one_view" />
+
+            <include layout="@layout/public_annex_layout" />
+
+            <include layout="@layout/line_layout_5dp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

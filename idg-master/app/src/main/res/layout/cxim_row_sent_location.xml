@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/ll_container"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:descendantFocusability="blocksDescendants"
+              android:gravity="center_horizontal"
+              android:orientation="vertical"
+>
+    <tablayout.view.textview.FontTextView
+        android:id="@+id/timestamp"
+        style="@style/chat_text_date_style"
+    />
+
+    <RelativeLayout
+        style="@style/chat_content_style"
+    >
+
+        <ImageView
+            android:id="@+id/img_user_icon"
+            style="@style/chat_user_icon_right_style"/>
+
+        <LinearLayout
+            android:id="@+id/ll_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/chat_item_otherIcon_spacing_lr"
+            android:layout_toLeftOf="@id/img_user_icon"
+            android:background="@drawable/chatto_pic_bg">
+
+            <tablayout.view.textview.FontTextView
+                android:id="@+id/tv_location"
+                style="@style/chat_content_date_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/location_msg"
+                android:ellipsize="start"
+                android:gravity="center"
+                android:maxLength="18"
+                android:textColor="@android:color/white"/>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/msg_status"
+            style="@style/chat_msg_status_style"
+            android:layout_toLeftOf="@id/ll_location"/>
+
+        <tablayout.view.textview.FontTextView
+            android:id="@+id/tv_ack"
+            style="@style/chat_tv_ack_style"
+            android:layout_toLeftOf="@id/ll_location"
+        />
+
+        <tablayout.view.textview.FontTextView
+            style="@style/chat_tv_delivered_style"
+            android:layout_toLeftOf="@id/ll_location"
+        />
+
+        <ProgressBar
+            android:id="@+id/pb_sending"
+            style="@style/chat_content_progressBar_need_spacing"
+            android:layout_toLeftOf="@id/ll_location"/>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/ll_item">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_view_line_1dp"
+        android:layout_marginLeft="@dimen/dp_spacing_to_left_20dp"
+        android:layout_marginRight="@dimen/dp_spacing_to_right_20dp"
+        android:background="@color/dividing_line"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_spacing_8dp"
+        android:layout_marginBottom="@dimen/dp_spacing_8dp"
+        android:layout_marginLeft="@dimen/dp_spacing_to_left_20dp"
+        android:layout_marginRight="@dimen/dp_spacing_to_right_20dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:background="@mipmap/icon_all_meeting"/>
+
+        <TextView
+            android:id="@+id/tv_busType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_spacing_8dp"
+            android:layout_marginBottom="@dimen/dp_spacing_8dp"
+            android:layout_marginLeft="@dimen/dp_spacing_10dp"
+            android:textSize="@dimen/sp_font_detail_content_14sp"
+            android:textColor="@color/text_black_l"/>
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_spacing_8dp"
+            android:layout_marginBottom="@dimen/dp_spacing_8dp"
+            android:layout_marginLeft="@dimen/dp_spacing_20dp"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/sp_font_detail_content_14sp" />
+
+        <TextView
+            android:id="@+id/tv_desc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="@dimen/dp_spacing_8dp"
+            android:layout_marginBottom="@dimen/dp_spacing_8dp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textSize="@dimen/sp_font_detail_content_14sp"
+            android:textColor="@color/text_black_l"/>
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:background="@mipmap/icon_right_arrow_tip"/>
+
+    </LinearLayout>
+
+</LinearLayout>

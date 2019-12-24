@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/white"
+              android:gravity="center_vertical"
+              android:orientation="vertical"
+>
+
+    <LinearLayout
+        android:id="@+id/ll_water"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/dp_spacing_10dp"
+        android:paddingLeft="@dimen/dp_spacing_15dp"
+        android:paddingRight="@dimen/dp_spacing_15dp"
+        android:paddingTop="@dimen/dp_spacing_10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:orientation="horizontal"
+        >
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:letterSpacing="0.1"
+                android:maxLines="1"
+                android:textSize="@dimen/sp_font_title_center_18sp"/>
+
+            <ImageView
+                android:id="@+id/iv"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:visibility="gone"
+            />
+
+            <!--android:background="@color/text_black_sl"-->
+
+            <RelativeLayout
+                android:id="@+id/rl_shrink"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:padding="8dp"
+            >
+
+                <TextView
+                    android:id="@+id/tv_edit"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:background="@mipmap/icon_project_info_edt"
+                    android:textColor="@color/white"
+                />
+
+            </RelativeLayout>
+
+            <!--android:background="#E8494B"-->
+
+            <RelativeLayout
+                android:id="@+id/rl_shrink2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/tv_add"
+                    android:layout_width="20dp"
+                    android:layout_height="14dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:background="@mipmap/icon_project_info_add"
+                    android:textColor="@color/white"
+                />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/dp_spacing_10dp"
+        >
+
+            <TextView
+                android:id="@+id/tv_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:letterSpacing="0.1"
+                android:lineSpacingMultiplier="1.1"
+                android:paddingTop="@dimen/dp2"
+                android:textColor="@color/text_black_l"
+                android:textSize="@dimen/sp_font_detail_content_15sp"
+            />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

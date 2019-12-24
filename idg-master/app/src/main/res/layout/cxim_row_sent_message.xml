@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/ll_container"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:gravity="center_horizontal"
+              android:orientation="vertical">
+
+    <tablayout.view.textview.FontTextView
+        android:id="@+id/timestamp"
+        style="@style/chat_text_date_style"/>
+
+    <RelativeLayout style="@style/chat_content_style">
+
+        <ImageView
+            android:id="@+id/img_user_icon"
+            style="@style/chat_user_icon_right_style"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_content_new"
+            style="@style/chat_content_viewGroup_right_style"
+            android:background="@null"
+        >
+
+            <RelativeLayout
+                android:id="@+id/rl_content"
+                style="@style/chat_content_viewGroup_right_style"
+                android:background="@null">
+
+                <com.cc.emojilibrary.EmojiconTextView
+                    android:textIsSelectable="true"
+                    android:id="@+id/tv_chatcontent"
+                    style="@style/chat_content_date_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:autoLink="web"
+                    android:background="@drawable/chatto_bg"
+                    android:gravity="left|center"
+                    android:lineSpacingExtra="@dimen/font_size_chat_text_spacing"
+                    android:lineSpacingMultiplier="1"
+                    android:maxWidth="@dimen/chat_content_length"
+                    android:minHeight="@dimen/size_avatar"
+                    android:paddingBottom="@dimen/chat_content_spacing_top_bottom"
+                    android:paddingLeft="@dimen/chat_content_spacing_right"
+                    android:paddingRight="@dimen/chat_content_spacing_left"
+                    android:paddingTop="@dimen/chat_content_spacing_top_bottom"
+                    android:textSize="@dimen/font_size_chat_content"/>
+            </RelativeLayout>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rl_content_state"
+            style="@style/chat_content_viewGroup_right_state_style"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/rl_content_new"
+            android:layout_toStartOf="@+id/rl_content_new"
+            android:background="@null">
+
+            <!--
+                 <tablayout.view.textview.FontTextView
+                android:id="@+id/tv_userid"
+                style="@style/chat_text_name_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_toRightOf="@id/tv_chatcontent"
+                android:layout_below="@id/iv_userhead"/>
+            -->
+
+            <ImageView
+                android:id="@+id/msg_status"
+                style="@style/chat_msg_status_style"/>
+
+            <ImageView
+                android:id="@+id/icon_baidu"
+                style="@style/chat_right_baidu_style"
+
+            />
+
+            <ProgressBar
+                android:id="@+id/pb_sending"
+                style="@style/chat_content_progressBar_need_spacing"/>
+        </RelativeLayout>
+
+        <tablayout.view.textview.FontTextView
+            android:id="@+id/tv_ack"
+            style="@style/chat_tv_ack_style"
+            android:layout_toLeftOf="@id/rl_content_state"
+
+        />
+
+        <tablayout.view.textview.FontTextView
+            style="@style/chat_tv_delivered_style"
+            android:layout_toLeftOf="@id/rl_content_state"
+
+        />
+
+    </RelativeLayout>
+
+</LinearLayout>

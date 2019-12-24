@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="250dp"
+    android:layout_height="wrap_content"
+    android:background="@color/color_personnel_affairs_dialog_bg"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#d1d1d1"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="提 醒"
+        android:textColor="@color/color_personnel_affairs_dialog"
+        android:textSize="@dimen/sp_font_home_page_title_20sp" />
+
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:padding="10dp"
+       android:gravity="center"
+       android:textSize="15sp"
+       android:textColor="#606060"
+       android:text="是否发送提醒?"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#e1e4e3"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="@dimen/dp_spacing_10dp">
+
+        <Button
+            android:id="@+id/btnOk"
+            style="@style/listDialog_personnel_affairs_btnStyle"
+            android:layout_marginRight="15dp"
+            android:drawableLeft="@mipmap/btn_submit_bg"
+            android:text="确定" />
+
+        <Button
+            android:id="@+id/btnCancel"
+            style="@style/listDialog_personnel_affairs_btnStyle"
+            android:layout_marginLeft="15dp"
+            android:drawableLeft="@mipmap/btn_submit_cancer"
+            android:text="取消" />
+
+    </LinearLayout>
+</LinearLayout>

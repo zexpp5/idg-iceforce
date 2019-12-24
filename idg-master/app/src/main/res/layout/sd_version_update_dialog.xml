@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.superdata.marketing.view.percent.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cx="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.superdata.marketing.view.percent.PercentLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#dcddde"
+        android:orientation="horizontal"
+        cx:layout_paddingPercent="@string/list_margin_left">
+
+        <tablayout.view.textview.FontTextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1.0.5"
+            cx:layout_textSizePercent="@string/text_size" />
+
+        <tablayout.view.textview.FontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="版本更新"
+            cx:layout_textSizePercent="@string/text_size" />
+    </com.superdata.marketing.view.percent.PercentLinearLayout>
+
+    <tablayout.view.textview.FontTextView
+        android:id="@+id/tv_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:text="        现在安装营销工作平台1.0.5版本。之前版本将被覆盖，请关闭所有正在运行的营销工作平台程序。"
+        cx:layout_paddingPercent="4%w"
+        cx:layout_textSizePercent="@string/text_size" />
+
+    <com.superdata.marketing.view.percent.PercentLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00854a"
+        android:gravity="center_vertical">
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/all_transparent"
+            android:text="取消"
+            android:textColor="@color/white"
+            cx:layout_textSizePercent="@string/text_size" />
+
+        <Button
+            android:id="@+id/btn_ok"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/all_transparent"
+            android:text="确定"
+            android:textColor="@color/white"
+            cx:layout_textSizePercent="@string/text_size" />
+
+        <com.superdata.marketing.view.HorizontalProgressBarWithNumber
+            android:id="@+id/progressBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:progress="0"
+            android:visibility="gone"
+            cx:progress_text_color="#ffffff"
+            cx:progress_unreached_color="#00854a" />
+
+        <Button
+            android:id="@+id/btn_install"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/all_transparent"
+            android:text="安装"
+            android:textColor="@color/white"
+            android:visibility="gone"
+            cx:layout_textSizePercent="@string/text_size" />
+    </com.superdata.marketing.view.percent.PercentLinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/all_transparent" />
+</com.superdata.marketing.view.percent.PercentLinearLayout>

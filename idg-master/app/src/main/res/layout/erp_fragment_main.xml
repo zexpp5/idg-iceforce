@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginBottom="@dimen/five_dp"
+    android:layout_marginLeft="@dimen/erp_left_and_right_dp"
+    android:layout_marginRight="@dimen/erp_left_and_right_dp"
+    android:background="@color/staff_tab_title_click_bg">
+
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="90dp"
+        android:layout_height="40dp"
+        android:background="@drawable/erp_shape_right"
+        android:gravity="center"
+        android:text="商品名称"
+        android:textSize="15sp" />
+
+    <com.ui.erp.sale.table.NoScrollHorizontalScrollView
+        android:id="@+id/sv_title"
+        android:layout_width="750dp"
+        android:layout_height="40dp"
+        android:layout_toRightOf="@id/tv_name"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="750dp"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/tv_title1"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:background="@drawable/erp_shape_right"
+                android:gravity="center"
+                android:text="商品条码"
+                android:textSize="15sp" />
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/tv_title2"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:background="@drawable/erp_shape_right"
+                android:gravity="center"
+                android:text="商品图片"
+                android:textSize="15sp" />
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/tv_title3"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:background="@drawable/erp_shape_right"
+                android:gravity="center"
+                android:text="商品分类"
+                android:textSize="15sp" />
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/tv_title4"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:background="@drawable/erp_shape_right"
+                android:gravity="center"
+                android:text="规格"
+                android:textSize="15sp" />
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/tv_title5"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:background="@drawable/erp_shape_right"
+                android:gravity="center"
+                android:text="单位"
+                android:textSize="15sp" />
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/tv_title6"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:background="@drawable/erp_shape_right"
+                android:gravity="center"
+                android:text="供应商"
+                android:textSize="15sp" />
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/tv_title7"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:background="@drawable/erp_shape_right"
+                android:gravity="center"
+                android:text="零售价"
+                android:textSize="15sp" />
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/tv_title8"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:background="@drawable/erp_shape_right"
+                android:gravity="center"
+                android:text="保质期"
+                android:textSize="15sp" />
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/tv_title9"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:background="@drawable/erp_shape_right"
+                android:gravity="center"
+                android:text="进货日期"
+                android:textSize="15sp" />
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/tv_title10"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:background="@drawable/erp_shape_right"
+                android:gravity="center"
+                android:text="进货价"
+                android:textSize="15sp" />
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/tv_title11"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:background="@drawable/erp_shape_right"
+                android:gravity="center"
+                android:text="线上销售"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </com.ui.erp.sale.table.NoScrollHorizontalScrollView>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@id/tv_name"
+        android:background="@color/search_icon_de_bg" />
+
+    <ListView
+        android:id="@+id/lv_goodname"
+        android:layout_width="90dp"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tv_name"
+        android:scrollbars="none" />
+
+    <com.ui.erp.sale.table.LinkedHorizontalScrollView
+        android:id="@+id/sv_good_detail"
+        android:layout_width="750dp"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tv_name"
+        android:layout_toRightOf="@id/lv_goodname"
+        android:scrollbars="none">
+
+        <ListView
+            android:id="@+id/lv_good_info"
+            android:layout_width="750dp"
+            android:layout_height="match_parent"
+            android:scrollbars="none" />
+    </com.ui.erp.sale.table.LinkedHorizontalScrollView>
+
+
+    <TextView
+        android:id="@+id/tv_bottom_name"
+        android:layout_width="90dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/erp_shape_right"
+        android:gravity="center"
+        android:text="商品名称"
+        android:textSize="15sp" />
+
+    <com.ui.erp.sale.table.NoScrollHorizontalScrollView
+        android:id="@+id/sv_bottom_total"
+        android:layout_width="750dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@id/tv_name"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="750dp"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/tv_bottom1"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:background="@drawable/erp_shape_right"
+                android:gravity="center"
+                android:text="商品条码"
+                android:textSize="15sp" />
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/tv_bottom2"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:background="@drawable/erp_shape_right"
+                android:gravity="center"
+                android:text="商品图片"
+                android:textSize="15sp" />
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/tv_bottom3"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:background="@drawable/erp_shape_right"
+                android:gravity="center"
+                android:text="商品分类"
+                android:textSize="15sp" />
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/tv_bottom4"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:background="@drawable/erp_shape_right"
+                android:gravity="center"
+                android:text="规格"
+                android:textSize="15sp" />
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/tv_bottom5"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:background="@drawable/erp_shape_right"
+                android:gravity="center"
+                android:text="单位"
+                android:textSize="15sp" />
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/tv_bottom6"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:background="@drawable/erp_shape_right"
+                android:gravity="center"
+                android:text="供应商"
+                android:textSize="15sp" />
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/tv_bottom7"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:background="@drawable/erp_shape_right"
+                android:gravity="center"
+                android:text="零售价"
+                android:textSize="15sp" />
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/tv_bottom8"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:background="@drawable/erp_shape_right"
+                android:gravity="center"
+                android:text="保质期"
+                android:textSize="15sp" />
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/tv_bottom9"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:background="@drawable/erp_shape_right"
+                android:gravity="center"
+                android:text="进货日期"
+                android:textSize="15sp" />
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/tv_bottom10"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:background="@drawable/erp_shape_right"
+                android:gravity="center"
+                android:text="进货价"
+                android:textSize="15sp" />
+            <!-- <View
+                 android:layout_width="1dp"
+                 android:layout_height="match_parent"
+                 android:background="@color/search_icon_de_bg" />-->
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/tv_bottom11"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:background="@drawable/erp_shape_right"
+                android:gravity="center"
+                android:text="线上销售"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </com.ui.erp.sale.table.NoScrollHorizontalScrollView>
+</RelativeLayout>

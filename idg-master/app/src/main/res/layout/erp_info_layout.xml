@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_home_page_item_infor_bg">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp_spacing_5dp">
+
+        <RelativeLayout
+            android:id="@+id/f_infoLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            tools:visibility="visible">
+
+            <yunjing.view.RoundedImageView
+                android:id="@+id/f_user_img"
+                android:layout_width="@dimen/dp_home_page_personal_icon"
+                android:layout_height="@dimen/dp_home_page_personal_icon"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/dp_spacing_10dp"
+                android:src="@mipmap/temp_user_head"
+                app:oval="true"/>
+
+
+            <TextView
+                android:id="@+id/f_username_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/f_user_img"
+                android:ellipsize="end"
+                android:maxEms="7"
+                android:maxLines="1"
+                android:padding="10dp"
+                android:textSize="@dimen/sp_font_home_page_personal_16sp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_toRightOf="@+id/f_username_tv"
+                android:src="@mipmap/dao_sj_bg"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/s_infoLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+            tools:visibility="visible">
+
+
+            <yunjing.view.RoundedImageView
+                android:id="@+id/s_user_img"
+                android:layout_width="@dimen/dp_personal_info_second_icon"
+                android:layout_height="@dimen/dp_personal_info_second_icon"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="20dp"
+                android:src="@mipmap/temp_user_head"
+                app:oval="false"/>
+
+
+            <TextView
+                android:id="@+id/s_username_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_margin="@dimen/dp_spacing_10dp"
+                android:layout_toRightOf="@+id/s_user_img"
+                android:ellipsize="end"
+                android:maxEms="7"
+                android:maxLines="1"
+                android:textSize="@dimen/sp_font_home_page_personal_16sp"/>
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/msg_img"
+            style="@style/erp_mainActivity_imgStyle"
+            android:layout_toLeftOf="@+id/place_img"
+            android:src="@mipmap/home_im"/>
+
+        <ImageView
+            android:id="@+id/place_img"
+            style="@style/erp_mainActivity_imgStyle"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dp_spacing_20dp"
+            android:src="@mipmap/check_work3x"/>
+
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/label_img"
+        android:layout_width="@dimen/dp_spacing_25dp"
+        android:layout_height="@dimen/dp_spacing_25dp"
+        android:layout_alignParentRight="true"
+        android:src="@mipmap/label3x"/>
+</RelativeLayout>

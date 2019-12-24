@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--列表顶部外边距-->
+    <string name="list_margin_top">3.3%w</string>
+    <!--列表底部外边距-->
+    <string name="list_margin_bottom">3.3%w</string>
+    <!--列表左边外边距-->
+    <string name="list_margin_left">3.3%w</string>
+    <!--列表右边外边距-->
+    <string name="list_margin_right">3.3%w</string>
+    <!--列表顶部内边距-->
+    <string name="list_padding_top">3.3%w</string>
+    <!--列表底部内边距-->
+    <string name="list_padding_bottom">3.3%w</string>
+    <!--列表左边内边距-->
+    <string name="list_padding_left">3.3%w</string>
+    <!--列表右边内边距-->
+    <string name="list_padding_right">3.3%w</string>
+    <!--列表item间隔-->
+    <string name="list_item_interval">1%w</string>
+    <!--一级字体大小-->
+    <string name="one_level_text_size"></string>
+    <!--二级字体大小-->
+    <string name="two_level_text_size"></string>
+
+    <!--二级列表的item的间距-->
+    <string name="space">1.1%w</string>
+    <!--主界面间距-->
+    <string name="space_main">3.0%w</string>
+    <!-- 二级字体大小 -->
+    <string name="text_size">5.0%w</string>
+    <!--三级字体大小-->
+    <string name="text_size_three">4.0%w</string>
+    <!-- 时间字体大小 -->
+    <string name="text_time_size">5.0%w</string>
+    <!-- 头像大小-->
+    <string name="header_img_size">12.5%w</string>
+    <!-- 头像与文字的左边距-->
+    <string name="header_margin_left">1.5%w</string>
+    <!-- 头像和内容间距 -->
+    <string name="list_header_and_content_space">1.1%w</string>
+    <!-- 办公列表底部padding值-->
+    <string name="list_item_padding_bottom">1.5%w</string>
+
+</resources>

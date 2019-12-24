@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/second_linner_comm_midde_em_item_bg"
+              android:focusable="false"
+              android:focusableInTouchMode="false"
+              android:orientation="horizontal"
+    >
+
+    <tablayout.view.textview.FontTextView
+        android:id="@+id/name_second_left"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_weight="1.3"
+        android:background="@drawable/second_item_middle_left_bg"
+        android:gravity="center"
+        android:text="A"
+        android:textColor="@color/gray_normal"
+        android:textSize="15sp"/>
+
+
+    <LinearLayout
+        android:id="@+id/name_second_center_and_right"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="8"
+        android:orientation="horizontal">
+
+        <tablayout.view.textview.FontTextView
+            android:id="@+id/name_second_center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:gravity="center|left"
+            android:text="我的办公"
+            android:textSize="15sp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="4dp"
+            android:orientation="horizontal"
+            >
+
+            <tablayout.view.textview.FontTextView
+                android:id="@+id/unread_msg_number"
+                style="@style/red_point_style"
+                android:layout_alignParentRight="true"
+                />
+
+            <ImageView
+                android:id="@+id/help_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:padding="10dp"
+                android:src="@mipmap/second_menu_help_bg"/>
+
+            <LinearLayout
+                android:id="@+id/name_second_right_ll"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true">
+            </LinearLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
